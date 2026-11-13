@@ -1,0 +1,363 @@
+// Source-grounded stock psychic power display labels and tooltip descriptors; not world data.
+export default {
+  "enfeeble": {
+    "en": "Enfeeble",
+    "ru": "Ослабление",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Challenging (+0) Opposed Willpower test",
+    "sustained": "Half Action"
+  },
+  "endurance": {
+    "en": "Endurance",
+    "ru": "Стойкость",
+    "action": "Half Action",
+    "range": "3 metres x psy rating radius",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "No"
+  },
+  "haemorrhage": {
+    "en": "Haemorrhage",
+    "ru": "Кровоизлияние",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Difficult (–10) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "invigourate": {
+    "en": "Invigourate",
+    "ru": "Придание сил",
+    "action": "Half Action",
+    "range": "1 metre",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "iron-arm": {
+    "en": "Iron Arm",
+    "ru": "Железная рука",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Hard (–20) Willpower test",
+    "sustained": "Free Action"
+  },
+  "life-leech": {
+    "en": "Life Leech",
+    "ru": "Похищение жизни",
+    "action": "Full Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Opposed Difficult (–10) Willpower test",
+    "sustained": "Free Action"
+  },
+  "shape-flesh": {
+    "en": "Shape Flesh",
+    "ru": "Изменение плоти",
+    "action": "Full Action",
+    "range": "1 metre",
+    "focusPower": "Ordinary (+10) Willpower test",
+    "sustained": "Free Action"
+  },
+  "smite": {
+    "en": "Smite",
+    "ru": "Кара",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "warp-speed": {
+    "en": "Warp Speed",
+    "ru": "Скорость Варпа",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "Free Action"
+  },
+  "foreboding": {
+    "en": "Foreboding",
+    "ru": "Предчувствие",
+    "action": "Reaction",
+    "range": "Self",
+    "focusPower": "Difficult (–10) Perception test",
+    "sustained": "No"
+  },
+  "forewarning": {
+    "en": "Forewarning",
+    "ru": "Предостережение",
+    "action": "Half Action",
+    "range": "3 metres x psy rating radius",
+    "focusPower": "Challenging (+0) Psyniscience test",
+    "sustained": "Free Action"
+  },
+  "misfortune": {
+    "en": "Misfortune",
+    "ru": "Несчастье",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Difficult (–10) Opposed Willpower test",
+    "sustained": "Free Action"
+  },
+  "perfect-timing": {
+    "en": "Perfect Timing",
+    "ru": "Идеальный момент",
+    "action": "Half Action",
+    "range": "3 metres x psy rating radius",
+    "focusPower": "Difficult (–10) Psyniscience test",
+    "sustained": "Half Action"
+  },
+  "precognition": {
+    "en": "Precognition",
+    "ru": "Предвидение",
+    "action": "Full Action",
+    "range": "5 metres x psy rating radius",
+    "focusPower": "Hard (–20) Psyniscience test",
+    "sustained": "No"
+  },
+  "prescience": {
+    "en": "Prescience",
+    "ru": "Прозорливость",
+    "action": "Half Action",
+    "range": "3 metres x psy rating radius",
+    "focusPower": "Challenging (+0) Psyniscience test",
+    "sustained": "Half Action"
+  },
+  "scriers-gaze": {
+    "en": "Scrier’s Gaze",
+    "ru": "Взор провидца",
+    "action": "Special",
+    "range": "Self",
+    "focusPower": "Challenging (+0) Psyniscience test",
+    "sustained": "No"
+  },
+  "warp-perception": {
+    "en": "Warp Perception",
+    "ru": "Восприятие Варпа",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Challenging (+0) Psyniscience test",
+    "sustained": "Half Action"
+  },
+  "winding-fate": {
+    "en": "Winding Fate",
+    "ru": "Нити судьбы",
+    "action": "Full Action",
+    "range": "Self",
+    "focusPower": "Difficult (–10) Psyniscience test",
+    "sustained": "No"
+  },
+  "cauterise": {
+    "en": "Cauterise",
+    "ru": "Прижигание",
+    "action": "Half Action",
+    "range": "1 metre",
+    "focusPower": "Routine (+20) Willpower test",
+    "sustained": "No"
+  },
+  "flame-breath": {
+    "en": "Flame Breath",
+    "ru": "Огненное дыхание",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "fiery-form": {
+    "en": "Fiery Form",
+    "ru": "Огненная форма",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "Half Action"
+  },
+  "fire-shield": {
+    "en": "Fire Shield",
+    "ru": "Огненный щит",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "Free Action"
+  },
+  "inferno": {
+    "en": "Inferno",
+    "ru": "Инферно",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "No"
+  },
+  "manipulate-flame": {
+    "en": "Manipulate Flame",
+    "ru": "Управление пламенем",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Routine (+20) Willpower test",
+    "sustained": "Half Action"
+  },
+  "molten-beam": {
+    "en": "Molten Beam",
+    "ru": "Раскалённый луч",
+    "action": "Half Action",
+    "range": "5 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "spontaneous-combustion": {
+    "en": "Spontaneous Combustion",
+    "ru": "Самовозгорание",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Ordinary (+10) Willpower test",
+    "sustained": "No"
+  },
+  "sunburst": {
+    "en": "Sunburst",
+    "ru": "Солнечная вспышка",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "assail": {
+    "en": "Assail",
+    "ru": "Шквал",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Ordinary (+10) Willpower test",
+    "sustained": "No"
+  },
+  "crush": {
+    "en": "Crush",
+    "ru": "Сокрушение",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Challenging (+0) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "gate-of-infinity": {
+    "en": "Gate of Infinity",
+    "ru": "Врата бесконечности",
+    "action": "Extended Action (3)",
+    "range": "1 kilometres x psy rating",
+    "focusPower": "Hard (–20) Willpower test",
+    "sustained": "No"
+  },
+  "objuration-mechanicum": {
+    "en": "Objuration Mechanicum",
+    "ru": "Заклятие Механикум",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "shockwave": {
+    "en": "Shockwave",
+    "ru": "Ударная волна",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "telekine-dome": {
+    "en": "Telekine Dome",
+    "ru": "Телекинетический купол",
+    "action": "Half Action",
+    "range": "5 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "Free Action"
+  },
+  "telekine-shield": {
+    "en": "Telekine Shield",
+    "ru": "Телекинетический щит",
+    "action": "Half Action",
+    "range": "Self",
+    "focusPower": "Routine (+20) Willpower test",
+    "sustained": "Free Action"
+  },
+  "telekinetic-control": {
+    "en": "Telekinetic Control",
+    "ru": "Телекинетический контроль",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Routine (+20) Willpower test",
+    "sustained": "Half Action"
+  },
+  "vortex-of-doom": {
+    "en": "Vortex of Doom",
+    "ru": "Вихрь погибели",
+    "action": "Half Action",
+    "range": "5 metres x psy rating",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "Half Action"
+  },
+  "dominate": {
+    "en": "Dominate",
+    "ru": "Подчинение",
+    "action": "Full Action",
+    "range": "5 metres x psy rating",
+    "focusPower": "Challenging (+0) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "erasure": {
+    "en": "Erasure",
+    "ru": "Стирание",
+    "action": "Full Action",
+    "range": "5 metres x psy rating",
+    "focusPower": "Challenging (+0) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "hallucination": {
+    "en": "Hallucination",
+    "ru": "Галлюцинация",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Challenging (+0) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "invisibility": {
+    "en": "Invisibility",
+    "ru": "Невидимость",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "Free Action"
+  },
+  "mental-fortitude": {
+    "en": "Mental Fortitude",
+    "ru": "Ментальная стойкость",
+    "action": "Half Action",
+    "range": "3 metres x psy rating radius",
+    "focusPower": "Difficult (–10) Willpower test",
+    "sustained": "Free Action"
+  },
+  "psychic-shriek": {
+    "en": "Psychic Shriek",
+    "ru": "Психический вопль",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Challenging (+0) Willpower test",
+    "sustained": "No"
+  },
+  "puppet-master": {
+    "en": "Puppet Master",
+    "ru": "Кукловод",
+    "action": "Full Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Difficult (–10) Opposed Willpower test",
+    "sustained": "Special"
+  },
+  "telepathic-link": {
+    "en": "Telepathic Link",
+    "ru": "Телепатическая связь",
+    "action": "Half Action",
+    "range": "20 metres x psy rating",
+    "focusPower": "Difficult (–10) Opposed Willpower test",
+    "sustained": "No"
+  },
+  "terrify": {
+    "en": "Terrify",
+    "ru": "Устрашение",
+    "action": "Half Action",
+    "range": "10 metres x psy rating",
+    "focusPower": "Difficult (–10) Opposed Willpower test",
+    "sustained": "No"
+  }
+};

@@ -1,0 +1,228 @@
+{
+  "actor_keys": 1213,
+  "item_keys": 1491,
+  "merged_keys": 2467,
+  "conflict_resolution": {
+    "FALLOUTMAW.Ability.ActiveApplication.CostPayerSource": {
+      "en": "Ability activator",
+      "actor": "Активирующий способность",
+      "item": "Активатор способности",
+      "resolved": "Применяющий способность"
+    },
+    "FALLOUTMAW.AuditApps.OK": {
+      "en": "OK",
+      "actor": "ОК",
+      "item": "Готово",
+      "resolved": "ОК"
+    },
+    "FALLOUTMAW.DH2E.Locations.body": {
+      "en": "Body",
+      "actor": "Тело",
+      "item": "Туловище",
+      "resolved": "Корпус"
+    },
+    "FALLOUTMAW.DH2E.Rules.Immunities.poison": {
+      "en": "Poison (Toxic)",
+      "actor": "Яд (Toxic)",
+      "item": "Яд (Токсичное)",
+      "resolved": "Яд (Токсичное)"
+    },
+    "FALLOUTMAW.DH2E.Rules.Immunities.weaponFatigue": {
+      "en": "Fatigue from Luminen weapons",
+      "actor": "Усталость от люминенового оружия",
+      "item": "Усталость от люминен-оружия",
+      "resolved": "Усталость от люминенового оружия"
+    },
+    "FALLOUTMAW.Item.ConditionWeakeningThreshold": {
+      "en": "Weakening Threshold",
+      "actor": "Порог ослабления",
+      "item": "Порог ухудшения",
+      "resolved": "Порог ослабления"
+    },
+    "FALLOUTMAW.Item.ContainerExtraWeaponSlots": {
+      "en": "Extra Weapon Slots",
+      "actor": "Дополнительные ячейки оружия",
+      "item": "Дополнительные слоты оружия",
+      "resolved": "Дополнительные ячейки оружия"
+    },
+    "FALLOUTMAW.Item.EquipmentRequirements": {
+      "en": "Wear Requirements",
+      "actor": "Требования для ношения",
+      "item": "Требования к ношению",
+      "resolved": "Требования для ношения"
+    },
+    "FALLOUTMAW.Item.FirstAidCriticalFailureDamageMax": {
+      "en": "Critical Failure: Max Damage",
+      "actor": "Критический провал: максимальный урон",
+      "item": "Критический провал: макс. урон",
+      "resolved": "Критический провал: максимальный урон"
+    },
+    "FALLOUTMAW.Item.FirstAidMaxDistance": {
+      "en": "Maximum Distance",
+      "actor": "Максимальное расстояние",
+      "item": "Максимальная дистанция",
+      "resolved": "Максимальное расстояние"
+    },
+    "FALLOUTMAW.Item.FirstAidRemoveEffects": {
+      "en": "Removes Effects",
+      "actor": "Снимаемые эффекты",
+      "item": "Снимает эффекты",
+      "resolved": "Снимаемые эффекты"
+    },
+    "FALLOUTMAW.Item.FirstAidSkill": {
+      "en": "Check Skill",
+      "actor": "Проверяемое умение",
+      "item": "Умение проверки",
+      "resolved": "Проверяемое умение"
+    },
+    "FALLOUTMAW.Item.FirstAidWithdrawalChanges": {
+      "en": "Withdrawal",
+      "actor": "Отмена действия",
+      "item": "Последействие",
+      "resolved": "Последействие"
+    },
+    "FALLOUTMAW.Item.FirstAidWithdrawalDuration": {
+      "en": "Withdrawal Duration",
+      "actor": "Длительность отмены действия",
+      "item": "Длительность последействия",
+      "resolved": "Длительность последействия"
+    },
+    "FALLOUTMAW.Item.ImplantSkill": {
+      "en": "Install Skill",
+      "actor": "Умение для установки",
+      "item": "Умение установки",
+      "resolved": "Умение для установки"
+    },
+    "FALLOUTMAW.Item.LightSourceNoResourceCosts": {
+      "en": "No resource costs configured.",
+      "actor": "Расход ресурсов не задан.",
+      "item": "Затраты ресурсов не настроены.",
+      "resolved": "Расход ресурсов не задан."
+    },
+    "FALLOUTMAW.Item.LightSourceResourceCosts": {
+      "en": "Resource Costs",
+      "actor": "Расход ресурсов",
+      "item": "Затраты ресурсов",
+      "resolved": "Расход ресурсов"
+    },
+    "FALLOUTMAW.Item.ModuleTargetFunction": {
+      "en": "Improves Function",
+      "actor": "Улучшаемая функция",
+      "item": "Улучшает функцию",
+      "resolved": "Улучшаемая функция"
+    },
+    "FALLOUTMAW.Item.OccupiedSlots": {
+      "en": "Occupied Slots",
+      "actor": "Занятые ячейки",
+      "item": "Занимаемые слоты",
+      "resolved": "Занятые ячейки"
+    },
+    "FALLOUTMAW.Item.ProsthesisBlockedEffects": {
+      "en": "Blocks",
+      "actor": "Блокируемые эффекты",
+      "item": "Блокирует",
+      "resolved": "Блокируемые эффекты"
+    },
+    "FALLOUTMAW.Item.ProsthesisSkill": {
+      "en": "Install Skill",
+      "actor": "Умение для установки",
+      "item": "Умение установки",
+      "resolved": "Умение для установки"
+    },
+    "FALLOUTMAW.Item.WeaponActionMeleeAttack": {
+      "en": "Unaimed Attack",
+      "actor": "Неприцельная атака",
+      "item": "Атака без прицеливания",
+      "resolved": "Неприцельная атака"
+    },
+    "FALLOUTMAW.Item.WeaponCostEnergy": {
+      "en": "Energy Consumption",
+      "actor": "Потребление энергии",
+      "item": "Расход энергии",
+      "resolved": "Расход энергии"
+    },
+    "FALLOUTMAW.Item.WeaponCostMagazine": {
+      "en": "Magazine Consumption per Attack",
+      "actor": "Расход магазина за атаку",
+      "item": "Расход боеприпасов за атаку",
+      "resolved": "Расход боеприпасов за атаку"
+    },
+    "FALLOUTMAW.Item.WeaponEffectiveRange": {
+      "en": "Effective Range",
+      "actor": "Эффективная дальность",
+      "item": "Эффективная дистанция",
+      "resolved": "Эффективная дальнобойность"
+    },
+    "FALLOUTMAW.Item.WeaponMagazineSource": {
+      "en": "Magazine Source",
+      "actor": "Источник магазина",
+      "item": "Источник боеприпасов",
+      "resolved": "Источник боеприпасов"
+    },
+    "FALLOUTMAW.Item.WeaponModuleNoSlots": {
+      "en": "No module slots configured.",
+      "actor": "Ячейки модулей не заданы.",
+      "item": "Слоты модулей не настроены.",
+      "resolved": "Ячейки модулей не заданы."
+    },
+    "FALLOUTMAW.Item.WeaponModuleSlots": {
+      "en": "Module Slots",
+      "actor": "Ячейки модулей",
+      "item": "Слоты модулей",
+      "resolved": "Ячейки модулей"
+    },
+    "FALLOUTMAW.Item.WeaponSlotModeOneOf": {
+      "en": "One of",
+      "actor": "Одно из",
+      "item": "Один из",
+      "resolved": "Одна из"
+    },
+    "FALLOUTMAW.Item.WeaponUseRequirements": {
+      "en": "Use Requirements",
+      "actor": "Требования для использования",
+      "item": "Требования к использованию",
+      "resolved": "Требования для использования"
+    },
+    "FALLOUTMAW.Messages.ContainerMaxLoadExceeded": {
+      "en": "This container cannot hold that much weight.",
+      "actor": "Этот контейнер не выдержит такой вес.",
+      "item": "Этот контейнер не может вместить такой вес.",
+      "resolved": "Этот контейнер не выдержит такой вес."
+    },
+    "FALLOUTMAW.Messages.ContainerRecursiveError": {
+      "en": "A container cannot be placed inside itself or one of its descendants.",
+      "actor": "Нельзя поместить контейнер внутрь самого себя или вложенного в него контейнера.",
+      "item": "Контейнер нельзя поместить в самого себя или в один из вложенных в него контейнеров.",
+      "resolved": "Нельзя поместить контейнер внутрь самого себя или вложенного в него контейнера."
+    },
+    "FALLOUTMAW.Settings.CreatureOptions.NoEquipmentSlots": {
+      "en": "No equipment slots.",
+      "actor": "Нет ячеек снаряжения.",
+      "item": "Слотов снаряжения нет.",
+      "resolved": "Нет ячеек снаряжения."
+    },
+    "FALLOUTMAW.Trauma.HealingSkill": {
+      "en": "Healing skill",
+      "actor": "Умение для лечения",
+      "item": "Умение лечения",
+      "resolved": "Умение для лечения"
+    },
+    "FALLOUTMAW.Trauma.HealingToolClass": {
+      "en": "Treatment tool class",
+      "actor": "Класс инструментов лечения",
+      "item": "Класс лечебного инструмента",
+      "resolved": "Класс инструментов лечения"
+    }
+  },
+  "other_decisions": {
+    "Body": {
+      "ru": "Корпус",
+      "book_pdf_page": 282,
+      "book_printed_page": 279
+    },
+    "Skill": "Умение; исключение — Навык Рукопашной и Навык Стрельбы",
+    "Talent Tier": "Ранг",
+    "Slots": "Ячейки",
+    "page_references": "Номера страниц исходной системы сохранены до отдельной сверки ссылок."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.22.0",
+  "system": "dark-heresy-2e-apex 0.1.10",
+  "foundry": "14",
+  "source_js": 607,
+  "source_hbs": 85,
+  "source_css": 15,
+  "translated_exact_entries": 519,
+  "sampled_js_literals": 552,
+  "sampled_js_matched": 452,
+  "migrations": 0,
+  "mechanical_data_modifications": 0,
+  "active_system_and_locale_guard": true,
+  "core_compendium_translations_preserved": 9,
+  "test_suites_passed": 12,
+  "live_foundry_tested": false
+}

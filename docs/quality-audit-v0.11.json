@@ -1,0 +1,417 @@
+{
+  "version": "0.11.0",
+  "system_version": "0.1.10",
+  "method": "static audit; no running Foundry VTT instance",
+  "interface": {
+    "source_keys": 7048,
+    "russian_keys_present": 7048,
+    "extra_keys": 71,
+    "missing": [],
+    "blank": [],
+    "placeholder_mismatches": [],
+    "unchanged_vs_english": [
+      "FALLOUTMAW.SystemTitle",
+      "FALLOUTMAW.Tile.CoverMaterialNone",
+      "FALLOUTMAW.Settings.Presets.Columns.Id",
+      "FALLOUTMAW.DH2E.DamageTypes.none",
+      "FALLOUTMAW.DH2E.Item.Classes.none",
+      "FALLOUTMAW.DH2E.Item.Fields.none",
+      "FALLOUTMAW.DH2E.Item.Jam91",
+      "FALLOUTMAW.DH2E.ItemSheet.ArmourTypes.none",
+      "FALLOUTMAW.DH2E.Battlefield.Title",
+      "FALLOUTMAW.DH2E.Initiative.Line"
+    ],
+    "no_cyrillic_with_latin_keys": [
+      "FALLOUTMAW.SystemTitle",
+      "FALLOUTMAW.DH2E.Battlefield.Title",
+      "FALLOUTMAW.DH2E.Initiative.Line"
+    ],
+    "note": "A translated key does not prove visual reachability or editorial correctness."
+  },
+  "compendiums": {
+    "expected_packs": [
+      "dh2e-bestiary",
+      "dh2e-character",
+      "dh2e-critical-effects",
+      "dh2e-critical-tables",
+      "dh2e-equipment",
+      "dh2e-psychic-powers",
+      "dh2e-vehicles",
+      "dh2e-warp-effects",
+      "dh2e-warp-tables"
+    ],
+    "files": [
+      {
+        "pack": "dh2e-bestiary",
+        "entries": 72,
+        "folders": 15,
+        "translation_fields": 1669,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-character",
+        "entries": 225,
+        "folders": 14,
+        "translation_fields": 449,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-critical-effects",
+        "entries": 217,
+        "folders": 14,
+        "translation_fields": 434,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-critical-tables",
+        "entries": 20,
+        "folders": 0,
+        "translation_fields": 240,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-equipment",
+        "entries": 273,
+        "folders": 18,
+        "translation_fields": 546,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-psychic-powers",
+        "entries": 45,
+        "folders": 5,
+        "translation_fields": 90,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-vehicles",
+        "entries": 7,
+        "folders": 0,
+        "translation_fields": 27,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-warp-effects",
+        "entries": 44,
+        "folders": 2,
+        "translation_fields": 122,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      },
+      {
+        "pack": "dh2e-warp-tables",
+        "entries": 2,
+        "folders": 0,
+        "translation_fields": 48,
+        "english_only_text_fields": 0,
+        "english_only_examples": [],
+        "has_mapping": true
+      }
+    ],
+    "total_entry_keys": 905,
+    "note": "Character Creation includes a generic Psyker fallback plus ID-specific disambiguation."
+  },
+  "source_english_literals": {
+    "candidate_occurrences": 326,
+    "source_files": 36,
+    "note": "Heuristic! Includes data catalog names, internal IDs, scripted dialogue, and other strings; not an exact count of untranslated UI.",
+    "priority_examples": [
+      {
+        "file": "inventory/consumption-receipt.mjs",
+        "line": 44,
+        "kind": "title",
+        "literal": "Unfinished item use"
+      },
+      {
+        "file": "inventory/consumption-receipt.mjs",
+        "line": 47,
+        "kind": "label",
+        "literal": "Effect applied: consume the item"
+      },
+      {
+        "file": "inventory/consumption-receipt.mjs",
+        "line": 48,
+        "kind": "label",
+        "literal": "No effect: release the item"
+      },
+      {
+        "file": "inventory/consumption-receipt.mjs",
+        "line": 49,
+        "kind": "label",
+        "literal": "Keep for review"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 331,
+        "kind": "name",
+        "literal": "Phobia"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 332,
+        "kind": "name",
+        "literal": "Fear of the Dead"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 333,
+        "kind": "name",
+        "literal": "Fear of Insects"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 336,
+        "kind": "name",
+        "literal": "Kleptomania"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 337,
+        "kind": "name",
+        "literal": "Self-Mortification"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 338,
+        "kind": "name",
+        "literal": "The Flesh is Weak"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 340,
+        "kind": "name",
+        "literal": "Visions and Voices"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 341,
+        "kind": "name",
+        "literal": "Dead Acolyte"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 342,
+        "kind": "name",
+        "literal": "Flashbacks"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 344,
+        "kind": "name",
+        "literal": "Delusion"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 345,
+        "kind": "name",
+        "literal": "Invulnerability"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 346,
+        "kind": "name",
+        "literal": "Righteousness"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 348,
+        "kind": "name",
+        "literal": "Horrific Nightmares"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 353,
+        "kind": "name",
+        "literal": "Stable"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 354,
+        "kind": "name",
+        "literal": "Unsettled"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 355,
+        "kind": "name",
+        "literal": "Unsettled"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 356,
+        "kind": "name",
+        "literal": "Unsettled"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 357,
+        "kind": "name",
+        "literal": "Disturbed"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 358,
+        "kind": "name",
+        "literal": "Disturbed"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 359,
+        "kind": "name",
+        "literal": "Unhinged"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 360,
+        "kind": "name",
+        "literal": "Unhinged"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 361,
+        "kind": "name",
+        "literal": "Deranged"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 362,
+        "kind": "name",
+        "literal": "Deranged"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 363,
+        "kind": "name",
+        "literal": "Terminally Insane—Character retires from play. Your service will be remembered."
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 367,
+        "kind": "name",
+        "literal": "Tainted"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 368,
+        "kind": "name",
+        "literal": "Soiled"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 369,
+        "kind": "name",
+        "literal": "Debased"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 370,
+        "kind": "name",
+        "literal": "Profane"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 371,
+        "kind": "name",
+        "literal": "Damned—Character is removed from play. Only in death can your soul be redeemed."
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 427,
+        "kind": "name",
+        "literal": "Minor"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 428,
+        "kind": "name",
+        "literal": "Severe"
+      },
+      {
+        "file": "rolls/dh2e-fear.mjs",
+        "line": 429,
+        "kind": "name",
+        "literal": "Acute"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1180,
+        "kind": "short",
+        "literal": "Short range"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1367,
+        "kind": "label",
+        "literal": "Haywire Field"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1373,
+        "kind": "label",
+        "literal": "Baneful Presence"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1380,
+        "kind": "label",
+        "literal": "Gas leak"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1385,
+        "kind": "label",
+        "literal": "Soulless Aura"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1500,
+        "kind": "label",
+        "literal": "Assistance"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1501,
+        "kind": "label",
+        "literal": "Attack modifiers"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1502,
+        "kind": "label",
+        "literal": "Social disposition"
+      },
+      {
+        "file": "rolls/skill-check.mjs",
+        "line": 1503,
+        "kind": "label",
+        "literal": "Item rules"
+      }
+    ]
+  },
+  "fixes": {
+    "chat_check_breakdown": "Scoped renderChatMessageHTML adapter replaces known source-label rows, preserves all numeric values.",
+    "glossary": "Fixed Адептус Арбитрес → Адептус Арбитес in live dictionaries and 2 compendium packs; Psyniscience unified as Психонаука.",
+    "unmodified": "No source system modules or document IDs, stored actor/item keys, UUIDs or dice formulas changed."
+  },
+  "limitations": [
+    "No live Foundry VTT 14 testing.",
+    "Not all source-hardcoded English strings are fixed in 0.11.0; priority examples are documented.",
+    "Importing translated documents into a world, Babele runtime and all UI layouts require hands-on validation.",
+    "This is a consistency and mechanical-safety pass, not a complete manual proofreading of the nine compendiums."
+  ]
+}

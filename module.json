@@ -1,0 +1,59 @@
+{
+  "id": "dark-heresy-2e-apex-ru",
+  "title": "Dark Heresy 2E [Apex Edition] — Русская локализация",
+  "description": "Русская локализация Dark Heresy 2E [Apex Edition] 0.1.10 для Foundry VTT 14. v1.0.1: перевод окна фокусировки 45 психосил и выбора 14 расстройств, 18 рудиментов, 19 мутаций; исходные игровые ключи сохранены. Офлайн-проверки выполнены, живой запуск в Foundry ещё необходим.",
+  "version": "1.0.1",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Arcturn"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs",
+    "scripts/system-bridge.mjs"
+  ],
+  "styles": [
+    "styles/ru.css"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dark-heresy-2e-apex",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.1.10",
+          "verified": "0.1.10",
+          "maximum": "0.1.10"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.9.1",
+          "verified": "2.9.1"
+        }
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md"
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.1.1",
+  "scope": "Create Acolyte UI",
+  "characteristicLabels": [
+    "Рукопашная",
+    "Стрельба",
+    "Сил",
+    "Вын",
+    "Лов",
+    "Инт",
+    "Вос",
+    "Вол",
+    "Общ",
+    "Вли"
+  ],
+  "origins": {
+    "homeWorlds": 6,
+    "backgrounds": 7,
+    "roles": 8
+  },
+  "translatedChoiceLabels": {
+    "talents": 27,
+    "equipmentNames": 44
+  },
+  "russianBookPages": {
+    "homeWorlds": "36–46",
+    "backgrounds": "50–62",
+    "roles": "66–80",
+    "startingXp": 82
+  },
+  "mechanicsSafety": [
+    "select option values preserved",
+    "origin keys preserved",
+    "talent/equipment values preserved",
+    "only displayed text is replaced"
+  ],
+  "source": "Dark Heresy 2 Russian translation v1.8"
+}

@@ -1,0 +1,161 @@
+{
+  "label": "DH2e: Таблицы Варпа",
+  "mapping": {
+    "results": {
+      "path": "results",
+      "converter": "document",
+      "documentType": "TableResult",
+      "cardinality": "many",
+      "mapping": {
+        "name": "name",
+        "description": "description"
+      }
+    }
+  },
+  "entries": {
+    "Perils of the Warp": {
+      "name": "Опасности Варпа",
+      "description": "<p>Таблица 6-3 «Опасности Варпа» (Dark Heresy 2nd Edition, глава VI). Каждый результат ссылается на отдельную запись эффекта Варпа. Система выполняет бросок с модификаторами псайкера при опасном проявлении психосилы; копия таблицы в игровом мире может заменять системную.</p>",
+      "results": {
+        "QNcVh1QC1D8VWJ9Y": {
+          "name": "Бормотание"
+        },
+        "ho6QtXag8BqfdL0I": {
+          "name": "Варп-ожог"
+        },
+        "b5gQTkJhei3tBIvZ": {
+          "name": "Психическая ударная волна"
+        },
+        "wOT2o8ISNilSrfn9": {
+          "name": "Пси-взрыв"
+        },
+        "MtdrJu9BJtuCLboc": {
+          "name": "Духовное иссушение"
+        },
+        "O7ONBohuWbooigY6": {
+          "name": "Заключение"
+        },
+        "fbDmlsr8cdBdZOW0": {
+          "name": "Утечка времени"
+        },
+        "9sTAvN0IPls4gWOj": {
+          "name": "Психическое зеркало"
+        },
+        "YZxpD5L3lADgoowu": {
+          "name": "Шёпот Варпа"
+        },
+        "px25cwviERvMPD9U": {
+          "name": "Обмен"
+        },
+        "3IdZMDddbgowtbIe": {
+          "name": "Тёмный призыв"
+        },
+        "LTSwZirK3ZfPLWef": {
+          "name": "Разрыв завесы"
+        },
+        "mWSDghMMfUqeOAy1": {
+          "name": "Кровавый дождь"
+        },
+        "Z3UOLApLQYYgdwng": {
+          "name": "Катаклизм"
+        },
+        "qRtGk28IPJM9s5Wn": {
+          "name": "Массовое вторжение"
+        },
+        "NEab9N9EWTLPpB0D": {
+          "name": "Сотрясение реальности"
+        },
+        "sP0D9v5aO5FsovmO": {
+          "name": "Высшее вторжение"
+        },
+        "4g1JF4oDCG4NagzK": {
+          "name": "Аннигиляция"
+        }
+      }
+    },
+    "Psychic Phenomena": {
+      "name": "Психические феномены",
+      "description": "<p>Таблица 6-2 «Психические феномены» (Dark Heresy 2nd Edition, глава VI). Каждый результат ссылается на отдельную запись эффекта Варпа. Система выполняет бросок с модификаторами псайкера при соответствующем применении психосилы; копия таблицы в игровом мире может заменять системную.</p>",
+      "results": {
+        "cLYrSyrHz4dbIbX8": {
+          "name": "Тёмное предвестие"
+        },
+        "yDdQIt2cUbqM3gt2": {
+          "name": "Варп-эхо"
+        },
+        "sPKx7jPqm2B9MbmH": {
+          "name": "Нечестивая вонь"
+        },
+        "18kl2aA4xnvpzjji": {
+          "name": "Искажение разума"
+        },
+        "NN4JSu5UAdfCB837": {
+          "name": "Могильный холод"
+        },
+        "NfJckUjJCUTBODWU": {
+          "name": "Неестественная аура"
+        },
+        "Mnl7xPlC44XH5QBK": {
+          "name": "Червь памяти"
+        },
+        "TJi7XQ8UZHEpcQtc": {
+          "name": "Гниение"
+        },
+        "UIzi8TAWCfnCgoc8": {
+          "name": "Призрачный ветер"
+        },
+        "3ftaGNAXzbLeN2MA": {
+          "name": "Вуаль тьмы"
+        },
+        "Z0IifeqyI6O0Usgl": {
+          "name": "Искажение отражений"
+        },
+        "saeWD8vQFFqZLpy1": {
+          "name": "Утечка дыхания"
+        },
+        "5jymMzFem6zUDAci": {
+          "name": "Демоническая маска"
+        },
+        "SZ642A0Sn2uO1e7u": {
+          "name": "Увядание"
+        },
+        "smfm4kB6bTcSUwKb": {
+          "name": "Спектральный шторм"
+        },
+        "6DWbZwLGC6XTD14Y": {
+          "name": "Кровавые слёзы"
+        },
+        "389eVFvtegqw7LXW": {
+          "name": "Протест земли"
+        },
+        "R4SZO4WdA2BSiXF1": {
+          "name": "Пси-разряд"
+        },
+        "RgXVe95GXnMztqO6": {
+          "name": "Призраки Варпа"
+        },
+        "Jl2zNIYv3h85b4R7": {
+          "name": "Падение вверх"
+        },
+        "U09ZP0ovuXDiqslz": {
+          "name": "Вой баньши"
+        },
+        "mo50dtjGm1IQxOMx": {
+          "name": "Фурии"
+        },
+        "CKLDlaihObXqN72l": {
+          "name": "Тень Варпа"
+        },
+        "rFV23giCNcIKNiYu": {
+          "name": "Техно-презрение"
+        },
+        "8UyeP3UzO3OSAeYY": {
+          "name": "Варп-безумие"
+        },
+        "PguiTP7zlLni1MSQ": {
+          "name": "Опасности Варпа"
+        }
+      }
+    }
+  }
+}

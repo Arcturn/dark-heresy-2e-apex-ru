@@ -1,0 +1,35 @@
+{
+  "release": "0.5.0",
+  "source_system": "dark-heresy-2e-apex 0.1.10",
+  "new_packs": [
+    {
+      "name": "dh2e-psychic-powers",
+      "documents": 45,
+      "folders": 5
+    },
+    {
+      "name": "dh2e-bestiary",
+      "documents": 72,
+      "folders": 15,
+      "embedded_items": 814,
+      "embedded_items_with_description": 639,
+      "embedded_items_without_original_description": 175
+    }
+  ],
+  "preserved_previous_compendiums": [
+    "dh2e-equipment",
+    "dh2e-character"
+  ],
+  "validations": [
+    "source names and folders match",
+    "all 814 embedded item names translated",
+    "all 639 nonempty embedded item descriptions translated",
+    "same previous two compendium JSON bytes as 0.4.0",
+    "NPC threat ratings verified",
+    "ammunition and armour values spot checked"
+  ],
+  "limitations": [
+    "не проверено в работающей среде Foundry VTT 14",
+    "175 исходно пустых описаний оставлены пустыми"
+  ]
+}

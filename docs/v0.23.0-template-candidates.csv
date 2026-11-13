@@ -1,0 +1,42 @@
+source,line,label,kind,state
+templates/item/item-sheet.hbs,2155,"Las, Solid Projectile, Chain…",attribute,technical-input-example
+templates/item/item-sheet.hbs,2199,"Tearing, Proven (3), Blast (2)",attribute,technical-input-example
+templates/item/dh2e-critical-steps.hbs,22,Remove step,attribute,dictionary
+templates/item/dh2e-critical-steps.hbs,54,Remove case,attribute,dictionary
+templates/item/dh2e-item-sheet.hbs,39,Semi,text,dictionary
+templates/item/dh2e-item-sheet.hbs,40,Full,text,dictionary
+templates/actor/token-action-hud.hbs,27,Body,attribute,dictionary
+templates/actor/token-action-hud.hbs,43,Limbs,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,83,Operate,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,169,Class,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,170,Rng,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,172,Dmg,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,173,Pen,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,174,Clip,text,dictionary
+templates/actor/parts/apex-main-tab.hbs,199,Damage taken,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,199,Base Wounds,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,201,Critical damage,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,204,Fatigue,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,209,Fate Points,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,209,Fate Threshold,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,215,Initiative modifier,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,220,Insanity,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,224,Corruption,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,228,Influence,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,238,Movement modifier,attribute,dictionary
+templates/actor/parts/apex-main-tab.hbs,248,Remove,attribute,dictionary
+templates/actor/parts/apex-psychic-tab.hbs,73,Pen,text,dictionary
+templates/actor/parts/apex-psychic-tab.hbs,8,Psy rating,attribute,dictionary
+templates/actor/parts/apex-psychic-tab.hbs,14,Psyker class,attribute,dictionary
+templates/actor/parts/apex-advances-tab.hbs,8,Total experience,attribute,dictionary
+templates/actor/parts/apex-advances-tab.hbs,9,Spent experience,attribute,dictionary
+templates/apps/combat-carousel/combat-dock.hbs,3,COMBAT.RollAll,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,4,COMBAT.InitiativeReset,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,5,COMBAT.TurnPrev,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,6,COMBAT.RoundPrev,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,10,FALLOUTMAW.CombatCarousel.AddEvent,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,11,COMBAT.Begin,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,12,COMBAT.End,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,13,COMBAT.Settings,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,14,COMBAT.TurnNext,attribute,localization-key
+templates/apps/combat-carousel/combat-dock.hbs,15,COMBAT.RoundNext,attribute,localization-key

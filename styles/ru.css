@@ -1,0 +1,73 @@
+/* Use locally available Roboto if installed; no font files are distributed. */
+/* Reuse the system's typography tokens; keep icon and editor fonts intact. */
+body.dh2e-ru,
+body.apex-skin.dh2e-ru {
+  --navis-font-stencil: "Roboto Condensed", "Roboto", "Arial Narrow", sans-serif;
+  --navis-font-display: "Roboto Condensed", "Roboto", "Arial Narrow", sans-serif;
+  --navis-font-text: "Roboto", "Segoe UI", sans-serif;
+  --navis-font-data: "Roboto", "Segoe UI", sans-serif;
+  --navis-track-caption: 0.55px;
+  --font-primary: var(--navis-font-text);
+  --font-body: var(--navis-font-text);
+  --font-sans: var(--navis-font-text);
+  --header-font: var(--navis-font-stencil);
+  --type-font: var(--navis-font-text);
+}
+
+body.dh2e-ru .dark-heresy-2e-apex {
+  font-family: var(--navis-font-text);
+}
+
+/* Russian labels need more horizontal room than their English equivalents. */
+body.dh2e-ru :is(.apex-actor-sheet, .dh2e-item-sheet, .dh2e-gear-sheet) :is(nav.tabs, .sheet-tabs) {
+  flex-wrap: wrap;
+}
+
+body.dh2e-ru :is(.apex-actor-sheet, .dh2e-item-sheet, .dh2e-gear-sheet) :is(nav.tabs, .sheet-tabs) > [data-tab] {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.15;
+}
+
+body.dh2e-ru .dh2e-item-sheet .form-group > label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body.dh2e-ru .dh2e-item-sheet :is(input, select) {
+  min-width: 0;
+}
+
+body.apex-skin.dh2e-ru .apex-actor-sheet .apex-cap,
+body.apex-skin.dh2e-ru .dh2e-item-sheet label > span:first-child,
+body.apex-skin.dh2e-ru .dh2e-item-sheet .dh2e-cap {
+  letter-spacing: var(--navis-track-caption);
+}
+
+/* v0.22.0 — literal English pseudo-content in Apex 0.1.10. */
+body.apex-skin.dh2e-ru .application.dark-heresy-2e-apex-advancement-app .window-header .dark-heresy-2e-apex-advancement-gm-toggle::before {
+  content: "Режим мастера" !important;
+  letter-spacing: 0;
+}
+body.apex-skin.dh2e-ru :is(#chat-popout, #interface #sidebar, #interface) .chat-message .message-content .dh2e-card.pass .dh2e-deg::after,
+body.apex-skin.dh2e-ru :is(#chat-popout, #interface #sidebar, #interface) .chat-message .message-content .dh2e-card .dh2e-out.pass .dh2e-deg::after {
+  content: "СУ" !important; /* степени успеха */
+}
+body.apex-skin.dh2e-ru :is(#chat-popout, #interface #sidebar, #interface) .chat-message .message-content .dh2e-card.fail .dh2e-deg::after,
+body.apex-skin.dh2e-ru :is(#chat-popout, #interface #sidebar, #interface) .chat-message .message-content .dh2e-card .dh2e-out.fail .dh2e-deg::after {
+  content: "СП" !important; /* степени провала */
+}
+
+/* v1.0.1 — first-party DH2e Disorder prompt: Russian source suggestions.
+   The existing name input retains the source English value for FormData;
+   this select is display-only and is never submitted itself. */
+body.dh2e-ru .dh2e-ru-disorder-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-block: 0.45rem 0.7rem;
+}
+body.dh2e-ru .dh2e-ru-disorder-choices > select {
+  width: 100%;
+  min-width: 0;
+}

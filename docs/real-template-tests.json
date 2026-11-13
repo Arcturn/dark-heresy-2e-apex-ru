@@ -1,0 +1,2681 @@
+{
+  "passed": true,
+  "safetyAndRegressionPassed": true,
+  "localizationCoverageComplete": true,
+  "mode": "Original Handlebars templates + simulated Foundry helpers/prepared contexts + DOM adapter; NOT live Foundry",
+  "createdAt": "2026-11-04T11:51:03.551Z",
+  "runtime": {
+    "node": "v24.22.1",
+    "handlebars": "4.7.10",
+    "name": "jsdom",
+    "version": "30.1.3",
+    "nativeFormData": true
+  },
+  "system": {
+    "id": "dark-heresy-2e-apex",
+    "version": "0.1.10"
+  },
+  "inputFiles": [
+    {
+      "path": "/workspace/scratch/2216da46e37a/dark-heresy-2e-apex-ru/scripts/sheet-ui-adapter.mjs",
+      "sha256": "eca7791def5aa0e6f0b3bf59dff2077aa0a08453583be624794545a1b12ac39e"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/dark-heresy-2e-apex-ru/lang/ui-literals.ru.json",
+      "sha256": "f6d98c6884b0a5304a795324000e444d4ebc44ab9ff5c0d5a8e222344601c1f0"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/dark-heresy-2e-apex-ru/lang/ru.json",
+      "sha256": "019176f5db0eec77e8df254249a001b0ead070033f36489677ce4aa18a19185b"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/system.json",
+      "sha256": "33ae6d1abe99ea11503519bab0024b48d7acdf5636f9551f79e0c4d04904c0ef"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/lang/en.json",
+      "sha256": "8de4b261b78b79ba750d1e822bdc2f5c94b78ae86d6d36d36294f3e574e6f830"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/container-sheet.hbs",
+      "sha256": "304acb929d3765acfa9b168ad5c946583ed8de962b893f71d6bec196ac2246b4"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/container-special-grids.hbs",
+      "sha256": "079ddb2a3eaf8c5da847299b80735f983cd98d0e7924b1715e3b9c5c7cdab3c2"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-critical-steps.hbs",
+      "sha256": "2ee61e7375ae0493e5bda59aa17be3be4ab0665b74af9bef57152ed27d7c38f3"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-item-applied.hbs",
+      "sha256": "53a9285f1bbe17edff08ab5ffec16a3e8d445a1d9afbd0660e091d542a8e62c0"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-item-inventory-settings.hbs",
+      "sha256": "24279d9714935cd85810f1eb82e36c0921393bdbf149cd949f92470e65de24b5"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-item-rule-fields.hbs",
+      "sha256": "7c4af0a6a9b993ca14b3cd50f46d4373d3b7a16e09f80eb881f0d90b041f3889"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-item-rules.hbs",
+      "sha256": "14948c2de28567e262e6116277a9bfb065618afb453974c155f3fa9632e995e3"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-item-sheet.hbs",
+      "sha256": "25428edce76e7994d0cd8c2a973a6b49c2c26aa60f3e193bc070e743c6a8ceba"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-pick-lines.hbs",
+      "sha256": "13d8cc5e04d59746677d815a6ae20167ec7e81b5dc766a4e207708c34f037d32"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-pick.hbs",
+      "sha256": "b634d14e076a8ef634e5a09b08222f2d4c252de84d8d0c56a5112d2ba98c9f89"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/dh2e-upgrade-fields.hbs",
+      "sha256": "b64f3a46d03441a730c8bde0f3c804f30a57147af7d3795e2fe502322597a32f"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/item-damage-mitigation-editor.hbs",
+      "sha256": "eda4c557e05faffa95e7d3720c2fe174f520cff67645135259bd1c8559d5ceeb"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/item-function-module-slots.hbs",
+      "sha256": "f1a432eacfeafdd12ef6d0ddbc679f15140e32010b617d971cf1b6d5a3b1ef46"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/item-gear-functions.hbs",
+      "sha256": "24c631e4b5a908a30a19c2218ec9705ad58abbc0865f6b7061a89eceb636bea7"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/item-sheet.hbs",
+      "sha256": "556907e40e1b07c9503242adfdc7890899cb556df96e3e48879c9f7eaa6f7b5a"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/item/item-weapon-action-settings.hbs",
+      "sha256": "6769f260e83c2a0ded109f022c978ee6a884489608ed2c59b8acc093e7429a34"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/actor/parts/apex-header.hbs",
+      "sha256": "06e0610ba34ee8ccbf74b12c9f9a562ced59af6c959d663efcd230922dcc9e2d"
+    },
+    {
+      "path": "/workspace/scratch/2216da46e37a/import_dry_run_v2/templates/actor/parts/apex-main-tab.hbs",
+      "sha256": "115b3c63ce0afecc13192bdd0608b028a16469703db821177d9a4c30614319d5"
+    }
+  ],
+  "summary": {
+    "scenarios": 30,
+    "passed": 30,
+    "failed": 0,
+    "itemScenarios": 24,
+    "actorScenarios": 6,
+    "assertedLabelPositions": 103,
+    "nativeKeysUsed": 257,
+    "nativeFallbackKeys": 0,
+    "reachableItemPartials": 7,
+    "gapTypes": 0
+  },
+  "protectedInvariants": [
+    "native FormData entries unchanged (when jsdom available)",
+    "all control values/explicit option values and selected/checked/disabled states unchanged",
+    "all non-ARIA attributes, including data-* and placeholders, unchanged except exact whitelisted characteristic-chip data-tooltip values",
+    "whitelisted characteristic-chip tooltips independently equal native Russian characteristic names; all data-step-* values remain unchanged",
+    "Actor/Item names and catalog/datalist names unchanged",
+    "rich description/editor/textarea HTML unchanged, including colliding UI class names inside description HTML",
+    "entire prepared context and mock Document JSON unchanged",
+    "DOM element identities and hierarchy unchanged",
+    "idempotence",
+    "ru/system guards",
+    "all read source files unchanged"
+  ],
+  "helpersSimulated": {
+    "localize": "Merged native Russian dictionary with original English fallback and named {placeholder} formatting.",
+    "selectOptions": "Escaped explicit value attributes; selected values retained; optional localize=true and blank choice.",
+    "checked": "SafeString Boolean checked attribute; actual checked property is asserted.",
+    "booleanHelpers": "eq/ne/not/and/or/gt/gte/lt/lte subexpressions.",
+    "dh2eChips": "DISPLAY-ONLY identity labels for fixture tokens; no catalog loading, parser, picker writes, UUID resolution or system formatter execution."
+  },
+  "limitations": [
+    "Prepared data is constructed to match the audited system context shape; _prepareContext and game documents are not executed.",
+    "No Foundry startup, ApplicationV2 lifecycle, ProseMirror custom-element form participation, permissions, submit handlers, derived rules, picker writes, canvas, CSS geometry or browser layout is exercised.",
+    "Known risk around translated weapon quality names and canonical picker serialization is outside this DOM-only test; see item-ui.urgent-adapter-note.json and parent core adapter verification.",
+    "English item/actor/catalog names, descriptions, formula aliases, range syntax and custom homebrew options are intentional data preservation, not localization gaps."
+  ],
+  "reachableItemPartials": [
+    "templates/item/dh2e-critical-steps.hbs",
+    "templates/item/dh2e-item-applied.hbs",
+    "templates/item/dh2e-item-rule-fields.hbs",
+    "templates/item/dh2e-item-rules.hbs",
+    "templates/item/dh2e-pick-lines.hbs",
+    "templates/item/dh2e-pick.hbs",
+    "templates/item/dh2e-upgrade-fields.hbs"
+  ],
+  "nativeFallbackKeys": [],
+  "gaps": [],
+  "failures": [],
+  "scenarios": [
+    {
+      "name": "item.weapon.ranged.editable",
+      "kind": "item",
+      "type": "weapon",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Оружие"
+          ]
+        },
+        {
+          "description": "Fixed fire mode labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-rof-cell > small",
+          "actual": [
+            "О",
+            "КО",
+            "ДО"
+          ]
+        },
+        {
+          "description": "Reload option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.reload\"] > option",
+          "actual": [
+            "—",
+            "Полудействие",
+            "Полное действие",
+            "2 полных действия",
+            "3 полных действия",
+            "4 полных действия",
+            "5 полных действий"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "a17d992f2bd3c6c1b7181ce8fac5438b7f47ca5b4e204cc6d37e54f81d9b1b5e",
+        "elements": 257,
+        "controls": 71,
+        "options": 40,
+        "successfulFormEntries": 19
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 29,
+        "translatedAttributes": 13,
+        "translatedOptions": 15,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "8b783ed1904533196b33586d20c337e35d1be61026be1ba6dccf6e9aed18a404"
+      },
+      "nativeKeysUsed": 58
+    },
+    {
+      "name": "item.weapon.melee.editable",
+      "kind": "item",
+      "type": "weapon",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Оружие"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "62c21dc9f9a7d5d074b4c9b530476d9b286a325af6480dfff6e75ffd1e3d7992",
+        "elements": 217,
+        "controls": 59,
+        "options": 33,
+        "successfulFormEntries": 14
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 19,
+        "translatedAttributes": 13,
+        "translatedOptions": 9,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "5b377b6b116c938de1940eacda4e7e733eb5d03c51ec7deb19d2f388d53d9e9f"
+      },
+      "nativeKeysUsed": 49
+    },
+    {
+      "name": "item.weapon.thrown.editable",
+      "kind": "item",
+      "type": "weapon",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Оружие"
+          ]
+        },
+        {
+          "description": "Fixed fire mode labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-rof-cell > small",
+          "actual": [
+            "О",
+            "КО",
+            "ДО"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "d1a73f52f5fb42659614d7b4c67c06d0958e6c5dd0216a0f8a446cc749392c94",
+        "elements": 231,
+        "controls": 62,
+        "options": 33,
+        "successfulFormEntries": 17
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 22,
+        "translatedAttributes": 13,
+        "translatedOptions": 9,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "4bbeae9db5dd77362d954e4351ca528b6bac4679dbc9cb03fcbf74bee1928a96"
+      },
+      "nativeKeysUsed": 54
+    },
+    {
+      "name": "item.psychicPower.blast.editable",
+      "kind": "item",
+      "type": "psychicPower",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Психосила"
+          ]
+        },
+        {
+          "description": "Psychic action labels and custom action preservation",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.action\"] > option",
+          "actual": [
+            "Свободное действие",
+            "Полудействие",
+            "Полное действие",
+            "Реакция",
+            "Длительное действие"
+          ]
+        },
+        {
+          "description": "Psychic sustain labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.sustained\"] > option",
+          "actual": [
+            "Нет",
+            "Свободное действие",
+            "Полудействие",
+            "Полное действие"
+          ]
+        },
+        {
+          "description": "Discipline labels and custom discipline preservation",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.discipline\"] > option",
+          "actual": [
+            "—",
+            "Биомантия",
+            "Прорицание",
+            "Пиромантия",
+            "Телекинез",
+            "Телепатия"
+          ]
+        },
+        {
+          "description": "Hardcoded resistance test label",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.focus.resist\"] > option[value=\"psyniscience\"]",
+          "actual": [
+            "Психонаука"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "aa6535a8c25342786bd925d72f7c4b9f48d6536366944e8302f114a3e290b345",
+        "elements": 258,
+        "controls": 83,
+        "options": 51,
+        "successfulFormEntries": 21
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 33,
+        "translatedAttributes": 13,
+        "translatedOptions": 24,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "608300c648a6d0c77b752cda3ebfc396b8dae8794857a025b96278982d42b63f"
+      },
+      "nativeKeysUsed": 42
+    },
+    {
+      "name": "item.psychicPower.homebrew.readonly",
+      "kind": "item",
+      "type": "psychicPower",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Психосила"
+          ]
+        },
+        {
+          "description": "Psychic action labels and custom action preservation",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.action\"] > option",
+          "actual": [
+            "Свободное действие",
+            "Полудействие",
+            "Полное действие",
+            "Реакция",
+            "Длительное действие",
+            "Custom Ritual"
+          ]
+        },
+        {
+          "description": "Psychic sustain labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.sustained\"] > option",
+          "actual": [
+            "Нет",
+            "Свободное действие",
+            "Полудействие",
+            "Полное действие",
+            "Custom Sustain"
+          ]
+        },
+        {
+          "description": "Discipline labels and custom discipline preservation",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.discipline\"] > option",
+          "actual": [
+            "—",
+            "Биомантия",
+            "Прорицание",
+            "Пиромантия",
+            "Телекинез",
+            "Телепатия",
+            "Custom discipline"
+          ]
+        },
+        {
+          "description": "Hardcoded resistance test label",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.focus.resist\"] > option[value=\"psyniscience\"]",
+          "actual": [
+            "Психонаука"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "678b23ce45e8c3426b762ba2142c699c89e81a4f88fe55bd636a5796b0737ac4",
+        "elements": 220,
+        "controls": 78,
+        "options": 49,
+        "successfulFormEntries": 19
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 33,
+        "translatedAttributes": 9,
+        "translatedOptions": 24,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "48c180fb95f049068caa685e17e3e6dbc82e9d4dcf83a2a8f3485e6195436e4c"
+      },
+      "nativeKeysUsed": 33
+    },
+    {
+      "name": "item.mentalDisorder.editable",
+      "kind": "item",
+      "type": "mentalDisorder",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Психическое расстройство"
+          ]
+        },
+        {
+          "description": "Disorder severity labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.severity\"] > option",
+          "actual": [
+            "Малое",
+            "Сложное",
+            "Острое"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "d9a598923c21287ec815063d12531684cdc3434ff6012b3e9cd78c50bc50e22f",
+        "elements": 61,
+        "controls": 11,
+        "options": 6,
+        "successfulFormEntries": 5
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 3,
+        "translatedAttributes": 0,
+        "translatedOptions": 3,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "49c81c0783e81e0d4840977e3bf1795f602bcddd06d558fffd9a7e804b345ae6"
+      },
+      "nativeKeysUsed": 11
+    },
+    {
+      "name": "item.criticalEffect.editable",
+      "kind": "item",
+      "type": "criticalEffect",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Критический эффект"
+          ]
+        },
+        {
+          "description": "Critical-effect location labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[name=\"system.dh2e.location\"] > option",
+          "actual": [
+            "Рука",
+            "Корпус",
+            "Голова",
+            "Нога"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "a573e79554c4aad329acaa8749ec8bf8105d3e20ba545745860a92e4e44094f8",
+        "elements": 147,
+        "controls": 37,
+        "options": 23,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 22,
+        "translatedAttributes": 13,
+        "translatedOptions": 13,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "0138213eb338e55a613bce58e783f8433a9a6b3b8e4067489351d6861f4e43b7"
+      },
+      "nativeKeysUsed": 21
+    },
+    {
+      "name": "item.criticalInjury.editable",
+      "kind": "item",
+      "type": "criticalInjury",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Критическая травма"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "ce763d24e60465d1895e758c1edf52c815fc6d36fb3edeff8460d17d72ea600a",
+        "elements": 148,
+        "controls": 37,
+        "options": 23,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 18,
+        "translatedAttributes": 13,
+        "translatedOptions": 9,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "72ddde87faf4dbbef1342a3ae602bbabe821b7bf7839ad0112baeca3eba28c7f"
+      },
+      "nativeKeysUsed": 18
+    },
+    {
+      "name": "item.warpEffect.editable",
+      "kind": "item",
+      "type": "warpEffect",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Эффект Варпа"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "9d78d4a1ba5fb22edc12c69815bfd6409daf45f6f48cda3586f7c85079a4eaaa",
+        "elements": 141,
+        "controls": 31,
+        "options": 17,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 18,
+        "translatedAttributes": 13,
+        "translatedOptions": 9,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "51b49731998f27ed5337377247cd33fb15da8cb11a016a672f554c33bc63084a"
+      },
+      "nativeKeysUsed": 17
+    },
+    {
+      "name": "item.armour.editable",
+      "kind": "item",
+      "type": "armour",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Броня"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "a3942aa45b83b2b78f85e60e6c0f96aef2813f323a46c82afd4eb03488ec4e52",
+        "elements": 106,
+        "controls": 31,
+        "options": 13,
+        "successfulFormEntries": 17
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "3486418ad62339a24a4dca99d5d05cfbcc014049d8030ad81002c4db2a1b9660"
+      },
+      "nativeKeysUsed": 32
+    },
+    {
+      "name": "item.forceField.editable",
+      "kind": "item",
+      "type": "forceField",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Силовое поле"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "97f5cfc2483864b3b1221c9b9eea60cfa42821608e46da1d17b4acc3807e20a4",
+        "elements": 83,
+        "controls": 23,
+        "options": 12,
+        "successfulFormEntries": 10
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "331ab5cd7361a51d1b94fc58d9de97a2143fa791f2c8e3830c0471a3330e2ecf"
+      },
+      "nativeKeysUsed": 29
+    },
+    {
+      "name": "item.weaponModification.editable",
+      "kind": "item",
+      "type": "weaponModification",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Модификация оружия"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs",
+        "templates/item/dh2e-upgrade-fields.hbs"
+      ],
+      "before": {
+        "htmlSha256": "da0f1fbefe8849bca201757caea93b4822de2857b37e9e9ab34b612a33531489",
+        "elements": 137,
+        "controls": 29,
+        "options": 10,
+        "successfulFormEntries": 18
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "2e8ceda734ffdf7afeae86197680c205ea5276114106be7f69a63ccdff5ec056"
+      },
+      "nativeKeysUsed": 38
+    },
+    {
+      "name": "item.ammunition.editable",
+      "kind": "item",
+      "type": "ammunition",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Боеприпасы"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs",
+        "templates/item/dh2e-upgrade-fields.hbs"
+      ],
+      "before": {
+        "htmlSha256": "397517e52912037c9bd6af306e288d287a5114dd6c5ef1569d7a2be694a6c6e1",
+        "elements": 140,
+        "controls": 28,
+        "options": 10,
+        "successfulFormEntries": 17
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "c3ef0cc97207f0b80eb3a704fd9d663f2b1a785329dd986672155165133b433e"
+      },
+      "nativeKeysUsed": 39
+    },
+    {
+      "name": "item.cybernetic.editable",
+      "kind": "item",
+      "type": "cybernetic",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Кибернетика"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "ba28ed38d9bf8849a346353ac6dd921dd38466d5fba0e93441e8ff96a807a6d0",
+        "elements": 78,
+        "controls": 20,
+        "options": 10,
+        "successfulFormEntries": 9
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "adb67e8f1b86e6837090d4995abce344e6581f727b4d31f186cd4c88f97bfc7b"
+      },
+      "nativeKeysUsed": 23
+    },
+    {
+      "name": "item.drug.editable",
+      "kind": "item",
+      "type": "drug",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Препарат"
+          ]
+        },
+        {
+          "description": "Critical editor delete labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] .dh2e-step-remove[aria-label]",
+          "actual": [
+            "Удалить шаг",
+            "Удалить условие"
+          ]
+        },
+        {
+          "description": "Critical step characteristic option labels",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] select[data-step-field=\"characteristic\"] > option",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        },
+        {
+          "description": "Critical characteristic chip abbreviations",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"]",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О"
+          ]
+        },
+        {
+          "description": "Whitelisted characteristic display tooltips",
+          "selector": ".dh2e-item-body > section[data-tab=\"data\"] button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-tooltip]",
+          "actual": [
+            "Навык Рукопашной",
+            "Навык Стрельбы",
+            "Сила",
+            "Выносливость",
+            "Ловкость",
+            "Интеллект",
+            "Восприятие",
+            "Сила Воли",
+            "Общительность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-critical-steps.hbs",
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "aabf104c1e6ac1039f444bea491ace4136c8433f4d23a7f2de605e07eb053d6f",
+        "elements": 248,
+        "controls": 72,
+        "options": 34,
+        "successfulFormEntries": 24
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 19,
+        "translatedAttributes": 13,
+        "translatedOptions": 9,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [
+        {
+          "key": "weaponSkill",
+          "en": "Weapon Skill",
+          "ru": "Навык Рукопашной"
+        },
+        {
+          "key": "ballisticSkill",
+          "en": "Ballistic Skill",
+          "ru": "Навык Стрельбы"
+        },
+        {
+          "key": "strength",
+          "en": "Strength",
+          "ru": "Сила"
+        },
+        {
+          "key": "toughness",
+          "en": "Toughness",
+          "ru": "Выносливость"
+        },
+        {
+          "key": "agility",
+          "en": "Agility",
+          "ru": "Ловкость"
+        },
+        {
+          "key": "intelligence",
+          "en": "Intelligence",
+          "ru": "Интеллект"
+        },
+        {
+          "key": "perception",
+          "en": "Perception",
+          "ru": "Восприятие"
+        },
+        {
+          "key": "willpower",
+          "en": "Willpower",
+          "ru": "Сила Воли"
+        },
+        {
+          "key": "fellowship",
+          "en": "Fellowship",
+          "ru": "Общительность"
+        }
+      ],
+      "after": {
+        "htmlSha256": "f1b33672749312258c18ac4fd28e90c2045f8b86b8c0141e61d113fec3540794"
+      },
+      "nativeKeysUsed": 43
+    },
+    {
+      "name": "item.talent.editable",
+      "kind": "item",
+      "type": "talent",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Талант"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "d7f392e42ef630640144e4466605e1dbff194f0be048390cd89bb847f9107c8f",
+        "elements": 90,
+        "controls": 17,
+        "options": 8,
+        "successfulFormEntries": 9
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "d7f392e42ef630640144e4466605e1dbff194f0be048390cd89bb847f9107c8f"
+      },
+      "nativeKeysUsed": 17
+    },
+    {
+      "name": "item.trait.editable",
+      "kind": "item",
+      "type": "trait",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Черта"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "a44f55608b9db1946c1b9697fe3d66b4862a3ae1368a127d58d379de3e208639",
+        "elements": 71,
+        "controls": 13,
+        "options": 5,
+        "successfulFormEntries": 8
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "a44f55608b9db1946c1b9697fe3d66b4862a3ae1368a127d58d379de3e208639"
+      },
+      "nativeKeysUsed": 14
+    },
+    {
+      "name": "item.malignancy.editable",
+      "kind": "item",
+      "type": "malignancy",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Рудимент"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "f74d4c28654b4e36b08c41b2738bb2a888e943c45b0556222f952d1ae707b8c8",
+        "elements": 78,
+        "controls": 22,
+        "options": 14,
+        "successfulFormEntries": 8
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "f74d4c28654b4e36b08c41b2738bb2a888e943c45b0556222f952d1ae707b8c8"
+      },
+      "nativeKeysUsed": 14
+    },
+    {
+      "name": "item.background.editable",
+      "kind": "item",
+      "type": "background",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Предыстория"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick-lines.hbs"
+      ],
+      "before": {
+        "htmlSha256": "2508653c6a2598663ff26155be651beeb93f119451e48e692db0cff7a92c5606",
+        "elements": 88,
+        "controls": 7,
+        "options": 1,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "2508653c6a2598663ff26155be651beeb93f119451e48e692db0cff7a92c5606"
+      },
+      "nativeKeysUsed": 16
+    },
+    {
+      "name": "item.homeWorld.editable",
+      "kind": "item",
+      "type": "homeWorld",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Родной мир"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick-lines.hbs",
+        "templates/item/dh2e-pick.hbs"
+      ],
+      "before": {
+        "htmlSha256": "8fc9b443cd7674d360e00e2248f8cb9cf4e4e37fe36554c930c85e68020dd6d8",
+        "elements": 97,
+        "controls": 9,
+        "options": 1,
+        "successfulFormEntries": 8
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "8fc9b443cd7674d360e00e2248f8cb9cf4e4e37fe36554c930c85e68020dd6d8"
+      },
+      "nativeKeysUsed": 19
+    },
+    {
+      "name": "item.role.editable",
+      "kind": "item",
+      "type": "role",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Роль"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs",
+        "templates/item/dh2e-pick-lines.hbs"
+      ],
+      "before": {
+        "htmlSha256": "b0a6edae719c8f7080e81e35e5c84d81cddb081db3d32bcc9eea4958230445b0",
+        "elements": 77,
+        "controls": 6,
+        "options": 1,
+        "successfulFormEntries": 5
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "b0a6edae719c8f7080e81e35e5c84d81cddb081db3d32bcc9eea4958230445b0"
+      },
+      "nativeKeysUsed": 14
+    },
+    {
+      "name": "item.eliteAdvance.editable",
+      "kind": "item",
+      "type": "eliteAdvance",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Элитное улучшение"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "12dee3f2514a51b414b18b7d04d149be2a6fb174ab480d06de1e2a38a9b71c3c",
+        "elements": 63,
+        "controls": 7,
+        "options": 1,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "12dee3f2514a51b414b18b7d04d149be2a6fb174ab480d06de1e2a38a9b71c3c"
+      },
+      "nativeKeysUsed": 12
+    },
+    {
+      "name": "item.aptitude.editable",
+      "kind": "item",
+      "type": "aptitude",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Склонность"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "7d845ed358504e74fbafd53621044864dea53c9f8785409e23bae885c2b4ccf3",
+        "elements": 55,
+        "controls": 7,
+        "options": 3,
+        "successfulFormEntries": 4
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 0,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "7d845ed358504e74fbafd53621044864dea53c9f8785409e23bae885c2b4ccf3"
+      },
+      "nativeKeysUsed": 10
+    },
+    {
+      "name": "item.gear.readonly",
+      "kind": "item",
+      "type": "gear",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Native Item type label",
+          "selector": ".dh2e-item-plate > .type",
+          "actual": [
+            "Снаряжение"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [
+        "templates/item/dh2e-item-applied.hbs",
+        "templates/item/dh2e-item-rule-fields.hbs",
+        "templates/item/dh2e-item-rules.hbs"
+      ],
+      "before": {
+        "htmlSha256": "95e564bf068f408b253ae373fb22772456428a34bdb13415020bc7486b7cc668",
+        "elements": 63,
+        "controls": 16,
+        "options": 7,
+        "successfulFormEntries": 8
+      },
+      "adapter": {
+        "active": true,
+        "scope": "item",
+        "translatedText": 1,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "3cf3cf54d1164ae79b3e3f24514734ff52d6bf9db284c8a1dad873057d64c4c9"
+      },
+      "nativeKeysUsed": 18
+    },
+    {
+      "name": "actor.acolyte.owner",
+      "kind": "actor",
+      "type": "character",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Actor characteristic abbreviations",
+          "selector": ".apex-chars > .apex-char > .apex-ab",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О",
+            "Вл"
+          ]
+        },
+        {
+          "description": "Base and specialist characteristic abbreviations",
+          "selector": ".apex-skills > .apex-skill > .apex-skill-char",
+          "actual": [
+            "НС",
+            "И"
+          ]
+        },
+        {
+          "description": "Actor vital accessibility labels",
+          "selector": ".apex-stats-tab input.apex-value-input[aria-label]",
+          "actual": [
+            "Полученный урон",
+            "Базовое число Ран",
+            "Критический урон",
+            "Усталость",
+            "Очки Судьбы",
+            "Порог Судьбы",
+            "Модификатор инициативы",
+            "Безумие",
+            "Порча",
+            "Влияние",
+            "Модификатор передвижения"
+          ]
+        },
+        {
+          "description": "GM accessibility label",
+          "selector": "nav.apex-gm-bar",
+          "actual": [
+            "Мастер Игры"
+          ]
+        },
+        {
+          "description": "Movement modifier unit",
+          "actual": [
+            "Модификатор (м)"
+          ]
+        },
+        {
+          "description": "Actor disorder severity display",
+          "actual": [
+            "Сложное"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "f402f56a69c44d9318636bedc7c6910dc5a8f5c5c6c5030f9afd2cdbe286ced3",
+        "elements": 310,
+        "controls": 19,
+        "options": 6,
+        "successfulFormEntries": 13
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 15,
+        "translatedAttributes": 13,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "a82e02ab4d106bc8ee3693618575b4e5057766fa5b16cff3f5643006f73589c2"
+      },
+      "nativeKeysUsed": 44
+    },
+    {
+      "name": "actor.acolyte.freeEdit",
+      "kind": "actor",
+      "type": "character",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Actor characteristic abbreviations",
+          "selector": ".apex-chars > .apex-char > .apex-ab",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О",
+            "Вл"
+          ]
+        },
+        {
+          "description": "Base and specialist characteristic abbreviations",
+          "selector": ".apex-skills > .apex-skill > .apex-skill-char",
+          "actual": [
+            "НС",
+            "И"
+          ]
+        },
+        {
+          "description": "Actor vital accessibility labels",
+          "selector": ".apex-stats-tab input.apex-value-input[aria-label]",
+          "actual": [
+            "Полученный урон",
+            "Базовое число Ран",
+            "Критический урон",
+            "Усталость",
+            "Очки Судьбы",
+            "Порог Судьбы",
+            "Модификатор инициативы",
+            "Безумие",
+            "Порча",
+            "Влияние",
+            "Модификатор передвижения"
+          ]
+        },
+        {
+          "description": "GM accessibility label",
+          "selector": "nav.apex-gm-bar",
+          "actual": [
+            "Мастер Игры"
+          ]
+        },
+        {
+          "description": "Movement modifier unit",
+          "actual": [
+            "Модификатор (м)"
+          ]
+        },
+        {
+          "description": "Actor disorder severity display",
+          "actual": [
+            "Сложное"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "9aee106b44c5e7a49b3ec1fc5280d503f920e69f07ef23ffc3b25e0d4f46584a",
+        "elements": 300,
+        "controls": 30,
+        "options": 6,
+        "successfulFormEntries": 22
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 15,
+        "translatedAttributes": 13,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "cc4cb5792b2e6ce0302ca5c4b5012bd02354baba29712b5d9ddb50133a2d6706"
+      },
+      "nativeKeysUsed": 45
+    },
+    {
+      "name": "actor.npc.readonly",
+      "kind": "actor",
+      "type": "character",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Actor characteristic abbreviations",
+          "selector": ".apex-chars > .apex-char > .apex-ab",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О",
+            "Вл"
+          ]
+        },
+        {
+          "description": "Base and specialist characteristic abbreviations",
+          "selector": ".apex-skills > .apex-skill > .apex-skill-char",
+          "actual": [
+            "НС",
+            "И"
+          ]
+        },
+        {
+          "description": "Actor vital accessibility labels",
+          "selector": ".apex-stats-tab input.apex-value-input[aria-label]",
+          "actual": [
+            "Полученный урон",
+            "Базовое число Ран",
+            "Критический урон",
+            "Усталость",
+            "Очки Судьбы",
+            "Порог Судьбы",
+            "Модификатор инициативы",
+            "Безумие",
+            "Порча",
+            "Влияние",
+            "Модификатор передвижения"
+          ]
+        },
+        {
+          "description": "Movement modifier unit",
+          "actual": [
+            "Модификатор (м)"
+          ]
+        },
+        {
+          "description": "Actor disorder severity display",
+          "actual": [
+            "Сложное"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "b812d455a54813cb63b7792bbcccd4f5dd89f48c6fd0050255ab301e2d13ad85",
+        "elements": 275,
+        "controls": 18,
+        "options": 3,
+        "successfulFormEntries": 6
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 15,
+        "translatedAttributes": 11,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "106ba34d5c5e6a51b19d43f0727239683f1e34ecca1b154cbfba7ee61fd923a2"
+      },
+      "nativeKeysUsed": 35
+    },
+    {
+      "name": "actor.vehicle.owner",
+      "kind": "actor",
+      "type": "vehicle",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Vehicle weapon column labels",
+          "selector": ".dh2e-veh-weapon > .stats > span > i",
+          "actual": [
+            "Класс",
+            "Дальн.",
+            "СКС",
+            "Урон",
+            "Проб.",
+            "Магазин"
+          ]
+        },
+        {
+          "description": "Vehicle primary unit labels",
+          "selector": ".dh2e-veh-tiles .apex-row > .apex-val > small",
+          "actual": [
+            "м",
+            "км/ч"
+          ]
+        },
+        {
+          "description": "Vehicle secondary numeric unit displays",
+          "actual": [
+            "8 м",
+            "↦ 6 м (4)",
+            "Дальн.100 м"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "23475bddbbee33fd27b38ce10426673bd0dd212e474ddae7f19a6de77f4a0ce8",
+        "elements": 202,
+        "controls": 47,
+        "options": 20,
+        "successfulFormEntries": 16
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 12,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "4c11e1621453f8005624b44a1c8f572591677df9abe43781d0fd3d3fab83770c"
+      },
+      "nativeKeysUsed": 46
+    },
+    {
+      "name": "actor.livingVehicle.freeEdit",
+      "kind": "actor",
+      "type": "vehicle",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Actor characteristic abbreviations",
+          "selector": ".apex-chars > .apex-char > .apex-ab",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О",
+            "Вл"
+          ]
+        },
+        {
+          "description": "Base and specialist characteristic abbreviations",
+          "selector": ".apex-skills > .apex-skill > .apex-skill-char",
+          "actual": [
+            "НС",
+            "И"
+          ]
+        },
+        {
+          "description": "Vehicle weapon column labels",
+          "selector": ".dh2e-veh-weapon > .stats > span > i",
+          "actual": [
+            "Класс",
+            "Дальн.",
+            "СКС",
+            "Урон",
+            "Проб.",
+            "Магазин"
+          ]
+        },
+        {
+          "description": "Vehicle primary unit labels",
+          "selector": ".dh2e-veh-tiles .apex-row > .apex-val > small",
+          "actual": [
+            "м",
+            "км/ч"
+          ]
+        },
+        {
+          "description": "Vehicle secondary numeric unit displays",
+          "actual": [
+            "8 м",
+            "↦ 6 м (4)",
+            "Дальн.100 м"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "ce049f1f5b6f45ff751342c836c68b7c4315897b5d8441f02defd381279b64c0",
+        "elements": 335,
+        "controls": 66,
+        "options": 26,
+        "successfulFormEntries": 28
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 24,
+        "translatedAttributes": 0,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "7926e10914f7cb5cf3dafbb037f0468f47f2216bdc8dfec129401c62d78e6824"
+      },
+      "nativeKeysUsed": 52
+    },
+    {
+      "name": "actor.creation.unset",
+      "kind": "actor",
+      "type": "character",
+      "passed": true,
+      "labelEvidence": [
+        {
+          "description": "Actor characteristic abbreviations",
+          "selector": ".apex-chars > .apex-char > .apex-ab",
+          "actual": [
+            "НР",
+            "НС",
+            "С",
+            "В",
+            "Л",
+            "И",
+            "Вос",
+            "СВ",
+            "О",
+            "Вл"
+          ]
+        },
+        {
+          "description": "Base and specialist characteristic abbreviations",
+          "selector": ".apex-skills > .apex-skill > .apex-skill-char",
+          "actual": [
+            "НС",
+            "И"
+          ]
+        },
+        {
+          "description": "Actor vital accessibility labels",
+          "selector": ".apex-stats-tab input.apex-value-input[aria-label]",
+          "actual": [
+            "Полученный урон",
+            "Базовое число Ран",
+            "Критический урон",
+            "Усталость",
+            "Очки Судьбы",
+            "Порог Судьбы",
+            "Модификатор инициативы",
+            "Безумие",
+            "Порча",
+            "Влияние",
+            "Модификатор передвижения"
+          ]
+        },
+        {
+          "description": "GM accessibility label",
+          "selector": "nav.apex-gm-bar",
+          "actual": [
+            "Мастер Игры"
+          ]
+        },
+        {
+          "description": "Movement modifier unit",
+          "actual": [
+            "Модификатор (м)"
+          ]
+        },
+        {
+          "description": "Actor disorder severity display",
+          "actual": [
+            "Сложное"
+          ]
+        }
+      ],
+      "nativeFallbacks": [],
+      "partials": [],
+      "before": {
+        "htmlSha256": "f1c90a7dd8e63b0d0ba24574837ef27a61fc88ca7d924ad0e361965f3bcdd3c2",
+        "elements": 300,
+        "controls": 19,
+        "options": 6,
+        "successfulFormEntries": 13
+      },
+      "adapter": {
+        "active": true,
+        "scope": "actor",
+        "translatedText": 15,
+        "translatedAttributes": 13,
+        "translatedOptions": 0,
+        "skippedOptions": 0
+      },
+      "displayTooltipChanges": [],
+      "after": {
+        "htmlSha256": "0be7004e1c856b696667e1f0911bdf3e72e2c7176c595191d6b01bcc7d2bae20"
+      },
+      "nativeKeysUsed": 40
+    }
+  ]
+}

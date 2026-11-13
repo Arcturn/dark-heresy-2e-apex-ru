@@ -1,0 +1,48 @@
+{
+  "version": "0.7.0",
+  "source_system": "dark-heresy-2e-apex 0.1.10",
+  "new_packs": [
+    {
+      "pack": "dh2e-critical-effects",
+      "type": "Item",
+      "total": 217,
+      "critical_effects": 200,
+      "critical_injuries": 17,
+      "folders": 26,
+      "unique_folder_names": 14,
+      "fully_localized_names": 217,
+      "fully_localized_existing_descriptions": 217,
+      "official_book_table_rows": 200,
+      "corrected_source_number_inconsistencies": 3,
+      "corrected_book_condition_names": 4
+    },
+    {
+      "pack": "dh2e-warp-tables",
+      "type": "RollTable",
+      "tables": 2,
+      "results": 44,
+      "roll_formula": "1d100",
+      "source_result_uuids_preserved": true
+    }
+  ],
+  "preserved_previous_packs": [
+    "equipment",
+    "character",
+    "psychic-powers",
+    "bestiary",
+    "vehicles",
+    "critical-tables"
+  ],
+  "checks": [
+    "200 Russian critical rows aligned against the user-supplied rulebook by table number and severity",
+    "dice expressions checked in each translated row",
+    "critical document translation names exactly match every source document name",
+    "warp result _id mappings exactly match all 44 source results",
+    "no translations overwrite game rolls, steps, UUIDs, formulas or mechanical data",
+    "six previous compendium JSON files byte-identical to v0.6.0"
+  ],
+  "runtime_limitations": [
+    "No live Foundry VTT 14 environment available; runtime Babele validation is pending",
+    "Descriptions for the separate dh2e-warp-effects pack are planned for the next two-pack iteration"
+  ]
+}

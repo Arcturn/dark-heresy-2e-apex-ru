@@ -1,0 +1,340 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "systemId": "dark-heresy-2e-apex",
+    "locale": "ru",
+    "source": "Apex 0.1.10"
+  },
+  "traits": {
+    "amorphous": {
+      "en": "Amorphous",
+      "ru": "Аморфный",
+      "summaryEn": "Creature is a formless blob, and slow.",
+      "summaryRu": "Существо лишено постоянной формы и передвигается медленно."
+    },
+    "amphibious": {
+      "en": "Amphibious",
+      "ru": "Амфибия",
+      "summaryEn": "Creature can breathe underwater.",
+      "summaryRu": "Существо способно дышать под водой."
+    },
+    "auto-stabilised": {
+      "en": "Auto-stabilised",
+      "ru": "Автостабилизация",
+      "summaryEn": "Always counts as braced.",
+      "summaryRu": "Существо всегда считается использующим упор при стрельбе."
+    },
+    "baneful-presence": {
+      "en": "Baneful Presence",
+      "ru": "Пагубное присутствие",
+      "summaryEn": "Creature inflicts Willpower penalty to nearby characters.",
+      "summaryRu": "Находящиеся рядом персонажи получают штраф к проверкам Силы воли."
+    },
+    "bestial": {
+      "en": "Bestial",
+      "ru": "Звериный",
+      "summaryEn": "Automatically passes Survival skill tests, test Willpower to avoid flight.",
+      "summaryRu": "Автоматически преуспевает в проверках Выживания; чтобы не обратиться в бегство, требуется проверка Силы воли."
+    },
+    "blind": {
+      "en": "Blind",
+      "ru": "Слепой",
+      "summaryEn": "Cannot see.",
+      "summaryRu": "Существо не видит."
+    },
+    "brutal-charge": {
+      "en": "Brutal Charge",
+      "ru": "Сокрушительный натиск",
+      "summaryEn": "Deals additional damage on a Charge.",
+      "summaryRu": "При атаке с разбега наносит дополнительный урон."
+    },
+    "burrower": {
+      "en": "Burrower",
+      "ru": "Роющий",
+      "summaryEn": "Move by digging.",
+      "summaryRu": "Может передвигаться, прокладывая ход под землёй."
+    },
+    "crawler": {
+      "en": "Crawler",
+      "ru": "Ползучий",
+      "summaryEn": "No penalties for moving over difficult terrain.",
+      "summaryRu": "Не получает штрафов за перемещение по труднопроходимой местности."
+    },
+    "daemonic": {
+      "en": "Daemonic",
+      "ru": "Демонический",
+      "summaryEn": "Bonus TB against normal weapons, immune to disease and poison.",
+      "summaryRu": "Бонус Выносливости против обычного оружия повышается; существо невосприимчиво к болезням и ядам."
+    },
+    "dark-sight": {
+      "en": "Dark-sight",
+      "ru": "Ночное зрение",
+      "summaryEn": "Can see in darkness.",
+      "summaryRu": "Может видеть в темноте."
+    },
+    "deadly-natural-weapons": {
+      "en": "Deadly Natural Weapons",
+      "ru": "Смертоносное природное оружие",
+      "summaryEn": "Natural weapons are no longer primitive.",
+      "summaryRu": "Природное оружие существа больше не считается примитивным."
+    },
+    "fear": {
+      "en": "Fear",
+      "ru": "Страх",
+      "summaryEn": "Forces others to make Fear tests to avoid Shock and Madness.",
+      "summaryRu": "Заставляет окружающих совершать проверки Страха, чтобы избежать шока и безумия."
+    },
+    "flyer": {
+      "en": "Flyer",
+      "ru": "Летун",
+      "summaryEn": "Fly and enter any altitude.",
+      "summaryRu": "Может летать и подниматься на любую высоту."
+    },
+    "from-beyond": {
+      "en": "From Beyond",
+      "ru": "Потусторонний",
+      "summaryEn": "Immune to Fear, Pinning, Insanity points, and mind-affecting powers.",
+      "summaryRu": "Невосприимчив к Страху, подавлению огнём, очкам Безумия и воздействующим на разум силам."
+    },
+    "hoverer": {
+      "en": "Hoverer",
+      "ru": "Парящий",
+      "summaryEn": "Fly and enter the hover altitude.",
+      "summaryRu": "Может летать на малой высоте."
+    },
+    "incorporeal": {
+      "en": "Incorporeal",
+      "ru": "Бестелесный",
+      "summaryEn": "Insubstantial and weightless, cannot be affected by mundane weaponry.",
+      "summaryRu": "Неосязаем, не имеет веса и неуязвим для обычного оружия."
+    },
+    "machine": {
+      "en": "Machine",
+      "ru": "Машина",
+      "summaryEn": "Creature gains immunities and resistances.",
+      "summaryRu": "Получает дополнительные иммунитеты и сопротивления."
+    },
+    "mechanicus-implants": {
+      "en": "Mechanicus Implants",
+      "ru": "Имплантаты Механикус",
+      "summaryEn": "Character has mechanical augmentations.",
+      "summaryRu": "Персонаж обладает механическими улучшениями тела."
+    },
+    "mind-lock": {
+      "en": "Mind Lock",
+      "ru": "Мыслеблок",
+      "summaryEn": "If not properly controlled, character can become Stunned.",
+      "summaryRu": "Без надлежащего управления существо может быть оглушено."
+    },
+    "multiple-arms": {
+      "en": "Multiple Arms",
+      "ru": "Множество рук",
+      "summaryEn": "Creature gains extra attacks.",
+      "summaryRu": "Получает дополнительные атаки благодаря лишним конечностям."
+    },
+    "natural-armour": {
+      "en": "Natural Armour",
+      "ru": "Природная броня",
+      "summaryEn": "Gain additional Armour points to all locations.",
+      "summaryRu": "Получает дополнительные очки брони на всех участках тела."
+    },
+    "natural-weapons": {
+      "en": "Natural Weapons",
+      "ru": "Природное оружие",
+      "summaryEn": "Unarmed attacks deal 1d10+SB damage.",
+      "summaryRu": "Безоружные атаки наносят 1d10 + БСил урона."
+    },
+    "nauseating": {
+      "en": "Nauseating",
+      "ru": "Тошнотворный",
+      "summaryEn": "A failed Fear test against it Stuns instead of rolling Shock; a passed one costs a level of Fatigue.",
+      "summaryRu": "Проваленная проверка Страха приводит к оглушению вместо броска по таблице шока; успешная даёт один уровень Усталости."
+    },
+    "phase": {
+      "en": "Phase",
+      "ru": "Фазовый",
+      "summaryEn": "Switch between incorporeal and corporeal as a Half Action.",
+      "summaryRu": "Полудействием переключается между бестелесным и материальным состоянием."
+    },
+    "psyker": {
+      "en": "Psyker",
+      "ru": "Псайкер",
+      "summaryEn": "Creature has a psy rating of 1 or more.",
+      "summaryRu": "Обладает пси-рейтингом не ниже 1."
+    },
+    "quadruped": {
+      "en": "Quadruped",
+      "ru": "Четвероногий",
+      "summaryEn": "Movement equals AB×2.",
+      "summaryRu": "Показатель передвижения равен БЛов × 2."
+    },
+    "regeneration": {
+      "en": "Regeneration",
+      "ru": "Регенерация",
+      "summaryEn": "Test Toughness to remove 1 or more damage.",
+      "summaryRu": "Проходит проверку Выносливости, чтобы восстановить одно или несколько очков здоровья."
+    },
+    "sanctioned": {
+      "en": "Sanctioned",
+      "ru": "Санкционированный",
+      "summaryEn": "Avoid Corruption from Psyker elite advance; start at psy rating 2.",
+      "summaryRu": "Не получает Порчу за элитное улучшение «Псайкер» и начинает с пси-рейтингом 2."
+    },
+    "size": {
+      "en": "Size",
+      "ru": "Размер",
+      "summaryEn": "Determines creature size and benefits.",
+      "summaryRu": "Размер существа влияет на его характеристики и игровые преимущества."
+    },
+    "sonar-sense": {
+      "en": "Sonar Sense",
+      "ru": "Эхолокация",
+      "summaryEn": "Perceive surroundings flawlessly within 30 metres.",
+      "summaryRu": "Безошибочно воспринимает окружение в пределах 30 метров."
+    },
+    "soul-bound": {
+      "en": "Soul Bound",
+      "ru": "Связанный душой",
+      "summaryEn": "Bound to a particular group or creatures in exchange for certain benefits.",
+      "summaryRu": "Духовная связь с определённой организацией или существами даёт особые преимущества."
+    },
+    "stampede": {
+      "en": "Stampede",
+      "ru": "Паническое бегство",
+      "summaryEn": "Failed Willpower test causes creature to flee, trampling anything in its path.",
+      "summaryRu": "Провал проверки Силы воли заставляет существо бежать, затаптывая всё на пути."
+    },
+    "stuff-of-nightmares": {
+      "en": "Stuff of Nightmares",
+      "ru": "Порождение кошмаров",
+      "summaryEn": "Become immune to most conditions that would harm normal creatures.",
+      "summaryRu": "Невосприимчив к большинству состояний, опасных для обычных существ."
+    },
+    "sturdy": {
+      "en": "Sturdy",
+      "ru": "Крепкий",
+      "summaryEn": "+20 bonus to resist grapple, Knock Down, and Takedown.",
+      "summaryRu": "Получает бонус +20 к сопротивлению захвату, сбиванию с ног и обезвреживанию."
+    },
+    "touched-by-the-fates": {
+      "en": "Touched by the Fates",
+      "ru": "Отмечен Судьбой",
+      "summaryEn": "NPC has Fate points.",
+      "summaryRu": "У NPC есть очки Судьбы."
+    },
+    "toxic": {
+      "en": "Toxic",
+      "ru": "Ядовитый",
+      "summaryEn": "Gain poisonous attack.",
+      "summaryRu": "Атаки существа обладают отравляющим действием."
+    },
+    "undying": {
+      "en": "Undying",
+      "ru": "Неумирающий",
+      "summaryEn": "The creature is immune to many environmental and natural dangers.",
+      "summaryRu": "Невосприимчив ко многим опасностям окружающей среды и естественным угрозам."
+    },
+    "unnatural-characteristic": {
+      "en": "Unnatural Characteristic",
+      "ru": "Сверхъестественная характеристика",
+      "summaryEn": "Increases one characteristic bonus.",
+      "summaryRu": "Увеличивает бонус выбранной характеристики."
+    },
+    "unnatural-senses": {
+      "en": "Unnatural Senses",
+      "ru": "Сверхъестественные чувства",
+      "summaryEn": "Perceive surroundings by uncanny means.",
+      "summaryRu": "Воспринимает окружение необычным способом."
+    },
+    "warp-instability": {
+      "en": "Warp Instability",
+      "ru": "Варп-нестабильность",
+      "summaryEn": "Creature must deal damage if damaged, or be cast back into the Warp.",
+      "summaryRu": "Получив урон, существо должно нанести урон противнику, иначе его изгонит обратно в Варп."
+    },
+    "warp-weapons": {
+      "en": "Warp Weapons",
+      "ru": "Варп-оружие",
+      "summaryEn": "Creature's attacks ignore armour.",
+      "summaryRu": "Атаки существа игнорируют броню."
+    }
+  },
+  "aptitudes": {
+    "weaponSkill": {
+      "en": "Weapon Skill",
+      "ru": "Навык Рукопашной"
+    },
+    "ballisticSkill": {
+      "en": "Ballistic Skill",
+      "ru": "Навык Стрельбы"
+    },
+    "strength": {
+      "en": "Strength",
+      "ru": "Сила"
+    },
+    "toughness": {
+      "en": "Toughness",
+      "ru": "Выносливость"
+    },
+    "agility": {
+      "en": "Agility",
+      "ru": "Ловкость"
+    },
+    "intelligence": {
+      "en": "Intelligence",
+      "ru": "Интеллект"
+    },
+    "perception": {
+      "en": "Perception",
+      "ru": "Восприятие"
+    },
+    "willpower": {
+      "en": "Willpower",
+      "ru": "Сила воли"
+    },
+    "fellowship": {
+      "en": "Fellowship",
+      "ru": "Общительность"
+    },
+    "offence": {
+      "en": "Offence",
+      "ru": "Нападение"
+    },
+    "finesse": {
+      "en": "Finesse",
+      "ru": "Изящество"
+    },
+    "defence": {
+      "en": "Defence",
+      "ru": "Защита"
+    },
+    "psyker": {
+      "en": "Psyker",
+      "ru": "Псайкер"
+    },
+    "tech": {
+      "en": "Tech",
+      "ru": "Техно"
+    },
+    "knowledge": {
+      "en": "Knowledge",
+      "ru": "Познание"
+    },
+    "leadership": {
+      "en": "Leadership",
+      "ru": "Лидерство"
+    },
+    "fieldcraft": {
+      "en": "Fieldcraft",
+      "ru": "Полевое"
+    },
+    "social": {
+      "en": "Social",
+      "ru": "Общение"
+    },
+    "general": {
+      "en": "General",
+      "ru": "Общая"
+    }
+  }
+}

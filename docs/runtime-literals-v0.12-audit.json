@@ -1,0 +1,21 @@
+{
+  "source_system_version": "0.1.10",
+  "source_literal_candidates": 308,
+  "unique_literal_candidates": 286,
+  "translated_source_literal_candidates": 281,
+  "unmapped_source_literal_candidates": [
+    "falloutMaWGlobalMap",
+    "falloutMawSkillCheckControl",
+    "falloutMawTokenHud",
+    "settings",
+    "text"
+  ],
+  "sanity_display_strings": 86,
+  "shock_summaries": 11,
+  "shock_effects": 11,
+  "mental_trauma_effects": 10,
+  "mental_disorder_example_effects": 14,
+  "mental_disorder_severity_effects": 3,
+  "malignancy_mutation_effects": 37,
+  "scope": "Static dictionary: visibility in actual Foundry VTT still requires runtime verification."
+}

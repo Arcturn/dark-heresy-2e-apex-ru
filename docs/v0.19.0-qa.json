@@ -1,0 +1,15 @@
+{
+  "version": "0.19.0",
+  "systemVersion": "0.1.10",
+  "foundry": "14",
+  "compendiumMaps": 9,
+  "translationKeys": 7048,
+  "offlineTestScripts": 10,
+  "contextPatches": [
+    "FalloutMaWActorSheet",
+    "Dh2eAdvancementApplication",
+    "Dh2eRollDialog"
+  ],
+  "compendiumsUnchanged": true,
+  "inFoundryTested": false
+}

@@ -1,0 +1,74 @@
+// Generated from lang/dialog-ui.ru.json. Run tools/build-ui-dictionaries.mjs after editing.
+export default {
+  "_meta": {
+    "schemaVersion": 1,
+    "adapterId": "sheet-dialogs",
+    "systemId": "dark-heresy-2e-apex",
+    "sourceSystemVersion": "0.1.10",
+    "locale": "ru"
+  },
+  "gainCorruption": {
+    "title": {
+      "en": "Gain Corruption",
+      "ru": "Получить Порчу",
+      "key": "FALLOUTMAW.DH2E.Apex.GainCorruption"
+    },
+    "points": {
+      "en": "Corruption Points",
+      "ru": "Очки Порчи"
+    },
+    "apply": {
+      "en": "Apply",
+      "ru": "Применить",
+      "key": "FALLOUTMAW.Common.Apply"
+    }
+  },
+  "disorder": {
+    "titlePrefix": {
+      "en": "Disorder",
+      "ru": "Расстройство",
+      "key": "FALLOUTMAW.DH2E.Sanity.Disorder"
+    },
+    "severityLabel": {
+      "en": "Severity",
+      "ru": "Тяжесть",
+      "key": "FALLOUTMAW.DH2E.ItemSheet.Severity"
+    },
+    "severity": {
+      "Minor": {
+        "en": "Minor",
+        "ru": "Лёгкое"
+      },
+      "Severe": {
+        "en": "Severe",
+        "ru": "Тяжёлое"
+      },
+      "Acute": {
+        "en": "Acute",
+        "ru": "Острое"
+      }
+    }
+  },
+  "inventoryReceipt": {
+    "title": {
+      "en": "Unfinished item use",
+      "ru": "Незавершённое использование предмета"
+    },
+    "content": {
+      "en": "The previous use is unfinished. Make sure the player who started it has stopped, check the target's state, and choose the outcome. Effects are not applied again.",
+      "ru": "Предыдущее использование предмета не завершено. Убедитесь, что игрок, начавший действие, прекратил его; проверьте состояние цели и выберите результат. Эффекты повторно не применяются."
+    },
+    "consumed": {
+      "en": "Effect applied: consume the item",
+      "ru": "Эффект применён: израсходовать предмет"
+    },
+    "cancelled": {
+      "en": "No effect: release the item",
+      "ru": "Эффекта нет: вернуть предмет"
+    },
+    "close": {
+      "en": "Keep for review",
+      "ru": "Оставить на проверку"
+    }
+  }
+};

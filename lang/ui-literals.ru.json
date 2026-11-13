@@ -1,0 +1,1182 @@
+{
+  "_meta": {
+    "schemaVersion": 1,
+    "systemId": "dark-heresy-2e-apex",
+    "moduleId": "dark-heresy-2e-apex-ru",
+    "locale": "ru",
+    "purpose": "Exact UI literals only. Selectors and mechanics guards live in sheet-ui-adapter.mjs."
+  },
+  "characteristicAbbreviations": {
+    "WS": "НР",
+    "BS": "НС",
+    "S": "Сил",
+    "T": "Вын",
+    "AG": "Лов",
+    "Ag": "Лов",
+    "INT": "Инт",
+    "Int": "Инт",
+    "PER": "Вос",
+    "Per": "Вос",
+    "WP": "СВ",
+    "FEL": "Общ",
+    "Fel": "Общ",
+    "IFL": "Вли",
+    "Ifl": "Вли"
+  },
+  "units": {
+    "kg": "кг",
+    "m": "м",
+    "km": "км",
+    "kph": "км/ч",
+    "XP": "ОО"
+  },
+  "weaponColumns": {
+    "Class": {
+      "ru": "Класс",
+      "key": "FALLOUTMAW.DH2E.Item.Class"
+    },
+    "Rng": "Дальн.",
+    "RoF": "СКС",
+    "Dmg": {
+      "ru": "Урон",
+      "key": "FALLOUTMAW.DH2E.Item.Damage"
+    },
+    "Pen": {
+      "ru": "Проб.",
+      "key": "FALLOUTMAW.DH2E.Item.Pen"
+    },
+    "Clip": {
+      "ru": "Магазин",
+      "key": "FALLOUTMAW.DH2E.Item.Clip"
+    }
+  },
+  "rateOfFire": {
+    "S": "О",
+    "Semi": "КО",
+    "Full": "ДО"
+  },
+  "aria": {
+    "GM": "Мастер Игры",
+    "Psy rating": "Пси-рейтинг",
+    "Psyker class": "Класс псайкера",
+    "Damage taken": "Полученный урон",
+    "Base Wounds": "Базовое число Ран",
+    "Critical damage": "Критический урон",
+    "Fatigue": "Усталость",
+    "Fate Points": "Очки Судьбы",
+    "Fate Threshold": "Порог Судьбы",
+    "Initiative modifier": "Модификатор инициативы",
+    "Insanity": "Безумие",
+    "Corruption": "Порча",
+    "Influence": "Влияние",
+    "Movement modifier": "Модификатор передвижения",
+    "Remove": "Удалить",
+    "Total experience": "Общее количество очков опыта",
+    "Spent experience": "Потраченные очки опыта",
+    "Remove step": "Удалить шаг",
+    "Remove case": "Удалить условие"
+  },
+  "actions": {
+    "Free Action": "Свободное действие",
+    "Half Action": "Полудействие",
+    "Full Action": "Полное действие",
+    "Reaction": "Реакция",
+    "Extended": "Длительное действие",
+    "No": "Нет",
+    "Free": "Свободное",
+    "Half": "Полудействие",
+    "Full": "Полное"
+  },
+  "reload": {
+    "half": {
+      "en": "Half",
+      "ru": "Полудействие"
+    },
+    "full": {
+      "en": "Full",
+      "ru": "Полное действие"
+    },
+    "2full": {
+      "en": "2 Full",
+      "ru": "2 полных действия"
+    },
+    "3full": {
+      "en": "3 Full",
+      "ru": "3 полных действия"
+    },
+    "4full": {
+      "en": "4 Full",
+      "ru": "4 полных действия"
+    },
+    "5full": {
+      "en": "5 Full",
+      "ru": "5 полных действий"
+    }
+  },
+  "severity": {
+    "Minor": {
+      "en": "Minor",
+      "ru": "Лёгкое"
+    },
+    "Severe": {
+      "en": "Severe",
+      "ru": "Тяжёлое"
+    },
+    "Acute": {
+      "en": "Acute",
+      "ru": "Острое"
+    }
+  },
+  "disciplines": {
+    "biomancy": {
+      "en": "Biomancy",
+      "ru": "Биомантия",
+      "key": "FALLOUTMAW.DH2E.Psychic.Disciplines.biomancy"
+    },
+    "divination": {
+      "en": "Divination",
+      "ru": "Предсказание",
+      "key": "FALLOUTMAW.DH2E.Psychic.Disciplines.divination"
+    },
+    "pyromancy": {
+      "en": "Pyromancy",
+      "ru": "Пиромантия",
+      "key": "FALLOUTMAW.DH2E.Psychic.Disciplines.pyromancy"
+    },
+    "telekinesis": {
+      "en": "Telekinesis",
+      "ru": "Телекинез",
+      "key": "FALLOUTMAW.DH2E.Psychic.Disciplines.telekinesis"
+    },
+    "telepathy": {
+      "en": "Telepathy",
+      "ru": "Телепатия",
+      "key": "FALLOUTMAW.DH2E.Psychic.Disciplines.telepathy"
+    }
+  },
+  "criticalLocations": {
+    "arm": {
+      "en": "arm",
+      "ru": "Рука",
+      "key": "FALLOUTMAW.DH2E.Locations.arm"
+    },
+    "body": {
+      "en": "body",
+      "ru": "Корпус",
+      "key": "FALLOUTMAW.DH2E.Locations.body"
+    },
+    "head": {
+      "en": "head",
+      "ru": "Голова",
+      "key": "FALLOUTMAW.DH2E.Locations.head"
+    },
+    "leg": {
+      "en": "leg",
+      "ru": "Нога",
+      "key": "FALLOUTMAW.DH2E.Locations.leg"
+    }
+  },
+  "focusResist": {
+    "psyniscience": {
+      "en": "Psyniscience",
+      "ru": "Психонаука",
+      "key": "FALLOUTMAW.DH2E.Skills.psyniscience"
+    }
+  },
+  "sizeNames": {
+    "1": {
+      "en": "Miniscule",
+      "ru": "Крошечный"
+    },
+    "2": {
+      "en": "Puny",
+      "ru": "Маленький"
+    },
+    "3": {
+      "en": "Scrawny",
+      "ru": "Небольшой"
+    },
+    "4": {
+      "en": "Average",
+      "ru": "Средний"
+    },
+    "5": {
+      "en": "Hulking",
+      "ru": "Большой"
+    },
+    "6": {
+      "en": "Enormous",
+      "ru": "Крупный"
+    },
+    "7": {
+      "en": "Massive",
+      "ru": "Массивный"
+    },
+    "8": {
+      "en": "Immense",
+      "ru": "Огромный"
+    },
+    "9": {
+      "en": "Monumental",
+      "ru": "Монументальный"
+    },
+    "10": {
+      "en": "Titanic",
+      "ru": "Титанический"
+    }
+  },
+  "weaponTrainingGroups": {
+    "Bolt": "Болтерное",
+    "Chain": "Цепное",
+    "Flame": "Зажигательное",
+    "Heavy": "Тяжёлое",
+    "Las": "Лазерное",
+    "Launcher": "Пусковые установки",
+    "Melta": "Мельта",
+    "Plasma": "Плазменное",
+    "Power": "Силовое",
+    "Low-Tech": "Низкотехнологичное",
+    "Shock": "Шоковое",
+    "Solid Projectile": "Твёрдотельное"
+  },
+  "display": {
+    "fear": "Страх",
+    "auto": "Авто",
+    "psyRatingShort": "ПР",
+    "experienceShort": "ОО",
+    "pageShort": "стр.",
+    "tierShort": "Ранг",
+    "operate": "Управление",
+    "self": "На себя",
+    "touch": "Касание"
+  },
+  "characteristicNames": {
+    "weaponSkill": {
+      "en": "Weapon Skill",
+      "ru": "Навык Рукопашной",
+      "short": "WS",
+      "key": "FALLOUTMAW.DH2E.Characteristics.WS"
+    },
+    "ballisticSkill": {
+      "en": "Ballistic Skill",
+      "ru": "Навык Стрельбы",
+      "short": "BS",
+      "key": "FALLOUTMAW.DH2E.Characteristics.BS"
+    },
+    "strength": {
+      "en": "Strength",
+      "ru": "Сила",
+      "short": "S",
+      "key": "FALLOUTMAW.DH2E.Characteristics.S"
+    },
+    "toughness": {
+      "en": "Toughness",
+      "ru": "Выносливость",
+      "short": "T",
+      "key": "FALLOUTMAW.DH2E.Characteristics.T"
+    },
+    "agility": {
+      "en": "Agility",
+      "ru": "Ловкость",
+      "short": "Ag",
+      "key": "FALLOUTMAW.DH2E.Characteristics.Ag"
+    },
+    "intelligence": {
+      "en": "Intelligence",
+      "ru": "Интеллект",
+      "short": "Int",
+      "key": "FALLOUTMAW.DH2E.Characteristics.Int"
+    },
+    "perception": {
+      "en": "Perception",
+      "ru": "Восприятие",
+      "short": "Per",
+      "key": "FALLOUTMAW.DH2E.Characteristics.Per"
+    },
+    "willpower": {
+      "en": "Willpower",
+      "ru": "Сила воли",
+      "short": "WP",
+      "key": "FALLOUTMAW.DH2E.Characteristics.WP"
+    },
+    "fellowship": {
+      "en": "Fellowship",
+      "ru": "Общительность",
+      "short": "Fel",
+      "key": "FALLOUTMAW.DH2E.Characteristics.Fel"
+    },
+    "influence": {
+      "en": "Influence",
+      "ru": "Влияние",
+      "short": "Ifl",
+      "key": "FALLOUTMAW.DH2E.Characteristics.Ifl"
+    }
+  },
+  "specialistGroups": {
+    "commonLore": {
+      "en": "Common Lore",
+      "ru": "Общие знания"
+    },
+    "forbiddenLore": {
+      "en": "Forbidden Lore",
+      "ru": "Запретные знания"
+    },
+    "linguistics": {
+      "en": "Linguistics",
+      "ru": "Лингвистика"
+    },
+    "navigate": {
+      "en": "Navigate",
+      "ru": "Навигация"
+    },
+    "operate": {
+      "en": "Operate",
+      "ru": "Управление"
+    },
+    "scholasticLore": {
+      "en": "Scholastic Lore",
+      "ru": "Учёные знания"
+    },
+    "trade": {
+      "en": "Trade",
+      "ru": "Ремесло"
+    }
+  },
+  "specialistSkillNames": {
+    "commonLoreAdeptaSororitas": {
+      "en": "Adepta Sororitas",
+      "ru": "Адепта Сороритас",
+      "group": "commonLore"
+    },
+    "commonLoreAdeptusArbites": {
+      "en": "Adeptus Arbites",
+      "ru": "Адептус Арбитес",
+      "group": "commonLore"
+    },
+    "commonLoreAdeptusAstartes": {
+      "en": "Adeptus Astartes",
+      "ru": "Адептус Астартес",
+      "group": "commonLore"
+    },
+    "commonLoreAdeptusAstraTelepathica": {
+      "en": "Adeptus Astra Telepathica",
+      "ru": "Адептус Астра Телепатика",
+      "group": "commonLore"
+    },
+    "commonLoreAdeptusMechanicus": {
+      "en": "Adeptus Mechanicus",
+      "ru": "Адептус Механикус",
+      "group": "commonLore"
+    },
+    "commonLoreAdeptusMinistorum": {
+      "en": "Adeptus Ministorum",
+      "ru": "Адептус Министорум",
+      "group": "commonLore"
+    },
+    "commonLoreAdministratum": {
+      "en": "Administratum",
+      "ru": "Администратум",
+      "group": "commonLore"
+    },
+    "commonLoreAskellonSector": {
+      "en": "Askellon Sector",
+      "ru": "Сектор Аскеллон",
+      "group": "commonLore"
+    },
+    "commonLoreChartistCaptains": {
+      "en": "Chartist Captains",
+      "ru": "Капитаны хартистов",
+      "group": "commonLore"
+    },
+    "commonLoreCollegiaTitanicus": {
+      "en": "Collegia Titanicus",
+      "ru": "Коллегия Титаникус",
+      "group": "commonLore"
+    },
+    "commonLoreEcclesiarchy": {
+      "en": "Ecclesiarchy",
+      "ru": "Экклезиархия",
+      "group": "commonLore"
+    },
+    "commonLoreImperialCreed": {
+      "en": "Imperial Creed",
+      "ru": "Имперское кредо",
+      "group": "commonLore"
+    },
+    "commonLoreImperialGuard": {
+      "en": "Imperial Guard",
+      "ru": "Имперская гвардия",
+      "group": "commonLore"
+    },
+    "commonLoreImperialNavy": {
+      "en": "Imperial Navy",
+      "ru": "Имперский флот",
+      "group": "commonLore"
+    },
+    "commonLoreImperium": {
+      "en": "Imperium",
+      "ru": "Империум",
+      "group": "commonLore"
+    },
+    "commonLoreNavigators": {
+      "en": "Navigators",
+      "ru": "Навигаторы",
+      "group": "commonLore"
+    },
+    "commonLorePlanetaryDefenceForces": {
+      "en": "Planetary Defence Forces",
+      "ru": "Планетарные силы обороны",
+      "group": "commonLore"
+    },
+    "commonLoreRogueTraders": {
+      "en": "Rogue Traders",
+      "ru": "Вольные торговцы",
+      "group": "commonLore"
+    },
+    "commonLoreScholaProgenium": {
+      "en": "Schola Progenium",
+      "ru": "Схола Прогениум",
+      "group": "commonLore"
+    },
+    "commonLoreTech": {
+      "en": "Tech",
+      "ru": "Технологии",
+      "group": "commonLore"
+    },
+    "commonLoreUnderworld": {
+      "en": "Underworld",
+      "ru": "Преступный мир",
+      "group": "commonLore"
+    },
+    "commonLoreWar": {
+      "en": "War",
+      "ru": "Война",
+      "group": "commonLore"
+    },
+    "forbiddenLoreArchaeotech": {
+      "en": "Archaeotech",
+      "ru": "Археотех",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreChaosSpaceMarines": {
+      "en": "Chaos Space Marines",
+      "ru": "Космодесантники Хаоса",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreCriminalCartelsAndSmugglers": {
+      "en": "Criminal Cartels and Smugglers",
+      "ru": "Преступные картели и контрабандисты",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreDaemonology": {
+      "en": "Daemonology",
+      "ru": "Демонология",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreHeresy": {
+      "en": "Heresy",
+      "ru": "Ересь",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreTheHorusHeresyAndTheLongWar": {
+      "en": "The Horus Heresy and the Long War",
+      "ru": "Ересь Хоруса и Долгая война",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreInquisition": {
+      "en": "Inquisition",
+      "ru": "Инквизиция",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreMutants": {
+      "en": "Mutants",
+      "ru": "Мутанты",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLorePirates": {
+      "en": "Pirates",
+      "ru": "Пираты",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLorePsykers": {
+      "en": "Psykers",
+      "ru": "Псайкеры",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreTheWarp": {
+      "en": "The Warp",
+      "ru": "Варп",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreXenos": {
+      "en": "Xenos",
+      "ru": "Ксеносы",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptaSororitas": {
+      "en": "Adepta Sororitas",
+      "ru": "Адепта Сороритас",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptusArbites": {
+      "en": "Adeptus Arbites",
+      "ru": "Адептус Арбитес",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptusAstartes": {
+      "en": "Adeptus Astartes",
+      "ru": "Адептус Астартес",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptusAstraTelepathica": {
+      "en": "Adeptus Astra Telepathica",
+      "ru": "Адептус Астра Телепатика",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptusMechanicus": {
+      "en": "Adeptus Mechanicus",
+      "ru": "Адептус Механикус",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdeptusMinistorum": {
+      "en": "Adeptus Ministorum",
+      "ru": "Адептус Министорум",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAdministratum": {
+      "en": "Administratum",
+      "ru": "Администратум",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAskellonSector": {
+      "en": "Askellon Sector",
+      "ru": "Сектор Аскеллон",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreChartistCaptains": {
+      "en": "Chartist Captains",
+      "ru": "Капитаны хартистов",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreCollegiaTitanicus": {
+      "en": "Collegia Titanicus",
+      "ru": "Коллегия Титаникус",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreEcclesiarchy": {
+      "en": "Ecclesiarchy",
+      "ru": "Экклезиархия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreImperialCreed": {
+      "en": "Imperial Creed",
+      "ru": "Имперское кредо",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreImperialGuard": {
+      "en": "Imperial Guard",
+      "ru": "Имперская гвардия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreImperialNavy": {
+      "en": "Imperial Navy",
+      "ru": "Имперский флот",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreImperium": {
+      "en": "Imperium",
+      "ru": "Империум",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreNavigators": {
+      "en": "Navigators",
+      "ru": "Навигаторы",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLorePlanetaryDefenceForces": {
+      "en": "Planetary Defence Forces",
+      "ru": "Планетарные силы обороны",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreRogueTraders": {
+      "en": "Rogue Traders",
+      "ru": "Вольные торговцы",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreScholaProgenium": {
+      "en": "Schola Progenium",
+      "ru": "Схола Прогениум",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreTech": {
+      "en": "Tech",
+      "ru": "Технологии",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreUnderworld": {
+      "en": "Underworld",
+      "ru": "Преступный мир",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreWar": {
+      "en": "War",
+      "ru": "Война",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreAstromancy": {
+      "en": "Astromancy",
+      "ru": "Астромантия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreBeasts": {
+      "en": "Beasts",
+      "ru": "Звери",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreBureaucracy": {
+      "en": "Bureaucracy",
+      "ru": "Бюрократия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreChymistry": {
+      "en": "Chymistry",
+      "ru": "Химия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreCryptology": {
+      "en": "Cryptology",
+      "ru": "Криптология",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreHeraldry": {
+      "en": "Heraldry",
+      "ru": "Геральдика",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreImperialWarrants": {
+      "en": "Imperial Warrants",
+      "ru": "Имперские грамоты",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreJudgement": {
+      "en": "Judgement",
+      "ru": "Правосудие",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreLegend": {
+      "en": "Legend",
+      "ru": "Легенды",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreNumerology": {
+      "en": "Numerology",
+      "ru": "Нумерология",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreOccult": {
+      "en": "Occult",
+      "ru": "Оккультизм",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLorePhilosophy": {
+      "en": "Philosophy",
+      "ru": "Философия",
+      "group": "forbiddenLore"
+    },
+    "forbiddenLoreTacticaImperialis": {
+      "en": "Tactica Imperialis",
+      "ru": "Тактика Империалис",
+      "group": "forbiddenLore"
+    },
+    "linguisticsChapterRunes": {
+      "en": "Chapter Runes",
+      "ru": "Руны орденов",
+      "group": "linguistics"
+    },
+    "linguisticsChaosMarks": {
+      "en": "Chaos Marks",
+      "ru": "Знаки Хаоса",
+      "group": "linguistics"
+    },
+    "linguisticsEldar": {
+      "en": "Eldar",
+      "ru": "Эльдарский язык",
+      "group": "linguistics"
+    },
+    "linguisticsHighGothic": {
+      "en": "High Gothic",
+      "ru": "Высокий готик",
+      "group": "linguistics"
+    },
+    "linguisticsImperialCodes": {
+      "en": "Imperial Codes",
+      "ru": "Имперские коды",
+      "group": "linguistics"
+    },
+    "linguisticsLowGothic": {
+      "en": "Low Gothic",
+      "ru": "Низкий готик",
+      "group": "linguistics"
+    },
+    "linguisticsMercenaryCant": {
+      "en": "Mercenary Cant",
+      "ru": "Жаргон наёмников",
+      "group": "linguistics"
+    },
+    "linguisticsNecrontyr": {
+      "en": "Necrontyr",
+      "ru": "Некронтирский язык",
+      "group": "linguistics"
+    },
+    "linguisticsOrk": {
+      "en": "Ork",
+      "ru": "Орочий язык",
+      "group": "linguistics"
+    },
+    "linguisticsTau": {
+      "en": "Tau",
+      "ru": "Язык тау",
+      "group": "linguistics"
+    },
+    "linguisticsUnderworld": {
+      "en": "Underworld",
+      "ru": "Жаргон преступного мира",
+      "group": "linguistics"
+    },
+    "linguisticsXenosMarkings": {
+      "en": "Xenos Markings",
+      "ru": "Письмена ксеносов",
+      "group": "linguistics"
+    },
+    "navigateSurface": {
+      "en": "Surface",
+      "ru": "Поверхность",
+      "group": "navigate"
+    },
+    "navigateStellar": {
+      "en": "Stellar",
+      "ru": "Звёздная",
+      "group": "navigate"
+    },
+    "navigateWarp": {
+      "en": "Warp",
+      "ru": "Варп",
+      "group": "navigate"
+    },
+    "operateSurface": {
+      "en": "Surface",
+      "ru": "Наземный транспорт",
+      "group": "operate"
+    },
+    "operateAeronautica": {
+      "en": "Aeronautica",
+      "ru": "Авиация",
+      "group": "operate"
+    },
+    "operateVoidship": {
+      "en": "Voidship",
+      "ru": "Космические корабли",
+      "group": "operate"
+    },
+    "scholasticLoreAstromancy": {
+      "en": "Astromancy",
+      "ru": "Астромантия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreBeasts": {
+      "en": "Beasts",
+      "ru": "Звери",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreBureaucracy": {
+      "en": "Bureaucracy",
+      "ru": "Бюрократия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreChymistry": {
+      "en": "Chymistry",
+      "ru": "Химия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreCryptology": {
+      "en": "Cryptology",
+      "ru": "Криптология",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreHeraldry": {
+      "en": "Heraldry",
+      "ru": "Геральдика",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreImperialWarrants": {
+      "en": "Imperial Warrants",
+      "ru": "Имперские грамоты",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreJudgement": {
+      "en": "Judgement",
+      "ru": "Правосудие",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreLegend": {
+      "en": "Legend",
+      "ru": "Легенды",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreNumerology": {
+      "en": "Numerology",
+      "ru": "Нумерология",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreOccult": {
+      "en": "Occult",
+      "ru": "Оккультизм",
+      "group": "scholasticLore"
+    },
+    "scholasticLorePhilosophy": {
+      "en": "Philosophy",
+      "ru": "Философия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreTacticaImperialis": {
+      "en": "Tactica Imperialis",
+      "ru": "Тактика Империалис",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptaSororitas": {
+      "en": "Adepta Sororitas",
+      "ru": "Адепта Сороритас",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptusArbites": {
+      "en": "Adeptus Arbites",
+      "ru": "Адептус Арбитес",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptusAstartes": {
+      "en": "Adeptus Astartes",
+      "ru": "Адептус Астартес",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptusAstraTelepathica": {
+      "en": "Adeptus Astra Telepathica",
+      "ru": "Адептус Астра Телепатика",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptusMechanicus": {
+      "en": "Adeptus Mechanicus",
+      "ru": "Адептус Механикус",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdeptusMinistorum": {
+      "en": "Adeptus Ministorum",
+      "ru": "Адептус Министорум",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAdministratum": {
+      "en": "Administratum",
+      "ru": "Администратум",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreAskellonSector": {
+      "en": "Askellon Sector",
+      "ru": "Сектор Аскеллон",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreChartistCaptains": {
+      "en": "Chartist Captains",
+      "ru": "Капитаны хартистов",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreCollegiaTitanicus": {
+      "en": "Collegia Titanicus",
+      "ru": "Коллегия Титаникус",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreEcclesiarchy": {
+      "en": "Ecclesiarchy",
+      "ru": "Экклезиархия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreImperialCreed": {
+      "en": "Imperial Creed",
+      "ru": "Имперское кредо",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreImperialGuard": {
+      "en": "Imperial Guard",
+      "ru": "Имперская гвардия",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreImperialNavy": {
+      "en": "Imperial Navy",
+      "ru": "Имперский флот",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreImperium": {
+      "en": "Imperium",
+      "ru": "Империум",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreNavigators": {
+      "en": "Navigators",
+      "ru": "Навигаторы",
+      "group": "scholasticLore"
+    },
+    "scholasticLorePlanetaryDefenceForces": {
+      "en": "Planetary Defence Forces",
+      "ru": "Планетарные силы обороны",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreRogueTraders": {
+      "en": "Rogue Traders",
+      "ru": "Вольные торговцы",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreScholaProgenium": {
+      "en": "Schola Progenium",
+      "ru": "Схола Прогениум",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreTech": {
+      "en": "Tech",
+      "ru": "Технологии",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreUnderworld": {
+      "en": "Underworld",
+      "ru": "Преступный мир",
+      "group": "scholasticLore"
+    },
+    "scholasticLoreWar": {
+      "en": "War",
+      "ru": "Война",
+      "group": "scholasticLore"
+    },
+    "tradeAgri": {
+      "en": "Agri",
+      "ru": "Агрономия",
+      "group": "trade"
+    },
+    "tradeArchaeologist": {
+      "en": "Archaeologist",
+      "ru": "Археология",
+      "group": "trade"
+    },
+    "tradeArmourer": {
+      "en": "Armourer",
+      "ru": "Оружейник",
+      "group": "trade"
+    },
+    "tradeAstrographer": {
+      "en": "Astrographer",
+      "ru": "Астрография",
+      "group": "trade"
+    },
+    "tradeChymist": {
+      "en": "Chymist",
+      "ru": "Химик",
+      "group": "trade"
+    },
+    "tradeCryptographer": {
+      "en": "Cryptographer",
+      "ru": "Криптограф",
+      "group": "trade"
+    },
+    "tradeCook": {
+      "en": "Cook",
+      "ru": "Повар",
+      "group": "trade"
+    },
+    "tradeExplorator": {
+      "en": "Explorator",
+      "ru": "Эксплоратор",
+      "group": "trade"
+    },
+    "tradeLinguist": {
+      "en": "Linguist",
+      "ru": "Лингвист",
+      "group": "trade"
+    },
+    "tradeLoremancer": {
+      "en": "Loremancer",
+      "ru": "Знаток преданий",
+      "group": "trade"
+    },
+    "tradeMorticator": {
+      "en": "Morticator",
+      "ru": "Бальзамировщик",
+      "group": "trade"
+    },
+    "tradePerformancer": {
+      "en": "Performancer",
+      "ru": "Артист",
+      "group": "trade"
+    },
+    "tradeProspector": {
+      "en": "Prospector",
+      "ru": "Геологоразведчик",
+      "group": "trade"
+    },
+    "tradeScrimshawer": {
+      "en": "Scrimshawer",
+      "ru": "Резчик по кости",
+      "group": "trade"
+    },
+    "tradeSculptor": {
+      "en": "Sculptor",
+      "ru": "Скульптор",
+      "group": "trade"
+    },
+    "tradeShipwright": {
+      "en": "Shipwright",
+      "ru": "Кораблестроитель",
+      "group": "trade"
+    },
+    "tradeSoothsayer": {
+      "en": "Soothsayer",
+      "ru": "Прорицатель",
+      "group": "trade"
+    },
+    "tradeTechnomat": {
+      "en": "Technomat",
+      "ru": "Техномат",
+      "group": "trade"
+    },
+    "tradeVoidfarer": {
+      "en": "Voidfarer",
+      "ru": "Космоплаватель",
+      "group": "trade"
+    }
+  },
+  "coreSkillNames": {
+    "meleeCombat": {
+      "en": "Weapon Skill",
+      "ru": "Навык Рукопашной"
+    },
+    "rangedCombat": {
+      "en": "Ballistic Skill",
+      "ru": "Навык Стрельбы"
+    },
+    "throwing": {
+      "en": "Ballistic Skill (Thrown)",
+      "ru": "Стрельба (метание)"
+    },
+    "strengthTest": {
+      "en": "Strength",
+      "ru": "Сила"
+    },
+    "resilience": {
+      "en": "Toughness",
+      "ru": "Выносливость"
+    },
+    "agilityTest": {
+      "en": "Agility",
+      "ru": "Ловкость"
+    },
+    "intelligenceTest": {
+      "en": "Intelligence",
+      "ru": "Интеллект"
+    },
+    "perceptionTest": {
+      "en": "Perception",
+      "ru": "Восприятие"
+    },
+    "willpowerTest": {
+      "en": "Willpower",
+      "ru": "Сила воли"
+    },
+    "fellowshipTest": {
+      "en": "Fellowship",
+      "ru": "Общительность"
+    },
+    "influenceTest": {
+      "en": "Influence",
+      "ru": "Влияние"
+    },
+    "acrobatics": {
+      "en": "Acrobatics",
+      "ru": "Акробатика"
+    },
+    "athletics": {
+      "en": "Athletics",
+      "ru": "Атлетика"
+    },
+    "naturalist": {
+      "en": "Awareness",
+      "ru": "Бдительность"
+    },
+    "speech": {
+      "en": "Charm",
+      "ru": "Обаяние"
+    },
+    "command": {
+      "en": "Command",
+      "ru": "Командование"
+    },
+    "barter": {
+      "en": "Commerce",
+      "ru": "Коммерция"
+    },
+    "deceive": {
+      "en": "Deceive",
+      "ru": "Обман"
+    },
+    "dodge": {
+      "en": "Dodge",
+      "ru": "Уклонение"
+    },
+    "inquiry": {
+      "en": "Inquiry",
+      "ru": "Дознание"
+    },
+    "interrogation": {
+      "en": "Interrogation",
+      "ru": "Допрос"
+    },
+    "intimidate": {
+      "en": "Intimidate",
+      "ru": "Запугивание"
+    },
+    "logic": {
+      "en": "Logic",
+      "ru": "Логика"
+    },
+    "doctor": {
+      "en": "Medicae",
+      "ru": "Медика"
+    },
+    "parry": {
+      "en": "Parry",
+      "ru": "Парирование"
+    },
+    "psyniscience": {
+      "en": "Psyniscience",
+      "ru": "Психонаука"
+    },
+    "scrutiny": {
+      "en": "Scrutiny",
+      "ru": "Проницательность"
+    },
+    "lockpicking": {
+      "en": "Security",
+      "ru": "Безопасность"
+    },
+    "theft": {
+      "en": "Sleight of Hand",
+      "ru": "Ловкость рук"
+    },
+    "stealth": {
+      "en": "Stealth",
+      "ru": "Скрытность"
+    },
+    "survival": {
+      "en": "Survival",
+      "ru": "Выживание"
+    },
+    "repair": {
+      "en": "Tech-Use",
+      "ru": "Техпользование"
+    }
+  }
+}

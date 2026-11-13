@@ -1,0 +1,41 @@
+[
+  {
+    "file": "Roboto-Variable.woff2",
+    "bytes": 222516,
+    "sha256": "c06387ed7dc878c88a431577b3582c14a1b4dd7174d669150c7e9833ece1a35f",
+    "cyrillic_glyphs": 66,
+    "axes": [
+      {
+        "wght": [
+          100.0,
+          400.0,
+          900.0
+        ]
+      },
+      {
+        "wdth": [
+          75.0,
+          100.0,
+          100.0
+        ]
+      }
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/roboto"
+  },
+  {
+    "file": "RobotoCondensed-Variable.woff2",
+    "bytes": 169452,
+    "sha256": "267c032511c79d0ccb5f44b9f9d022d0611bf20789441efa0733c978e9655aaa",
+    "cyrillic_glyphs": 66,
+    "axes": [
+      {
+        "wght": [
+          100.0,
+          400.0,
+          900.0
+        ]
+      }
+    ],
+    "source": "https://github.com/google/fonts/tree/main/ofl/robotocondensed"
+  }
+]

@@ -1,0 +1,234 @@
+{
+  "moduleId": "dark-heresy-2e-apex-ru",
+  "systemId": "dark-heresy-2e-apex",
+  "locale": "ru",
+  "status": "complete; all five original-template gaps closed and module rebuilt",
+  "implementation": "renderApplicationV2 receives application + pending HTMLElement; uses known system constructor ancestry and Actor/Item documentName before translating fixed selector positions.",
+  "startup": "Recommended integration: static import dictionary from generated scripts/ui-literals.mjs and registerSheetUiAdapter({dictionary}) during main.mjs evaluation. No async hook registration. Optional loadSheetUiDictionary() defaults to ../lang/ui-literals.ru.json and must be awaited before registration if used.",
+  "exports": {
+    "SHEET_UI_SYSTEM_ID": "dark-heresy-2e-apex",
+    "SHEET_UI_MODULE_ID": "dark-heresy-2e-apex-ru",
+    "isSheetUiAdapterActive": "(game = globalThis.game) => boolean",
+    "applySheetUiTranslations": "(application, element, {dictionary, game = globalThis.game}) => counters",
+    "loadSheetUiDictionary": "async ({url, fetchImpl = globalThis.fetch} = {}) => dictionary",
+    "registerSheetUiAdapter": "({dictionary, Hooks = globalThis.Hooks, game = () => globalThis.game}) => {hookId, apply, dispose}"
+  },
+  "activation": {
+    "systemIdExact": true,
+    "languageExact": "ru",
+    "hook": "renderApplicationV2",
+    "parentClassScope": [
+      "FalloutMaWActorSheet",
+      "FalloutMaWItemSheet",
+      "Dh2eItemSheet",
+      "Dh2eGearSheet",
+      "FalloutMaWContainerSheet"
+    ],
+    "acceptsSubclasses": true,
+    "usesCssAloneAsAuthority": false
+  },
+  "scan": {
+    "templatesSearched": 28,
+    "pureStaticLiteralOccurrences": 50,
+    "uniquePureStaticLiterals": 45,
+    "textOccurrences": 20,
+    "ariaLabelOccurrences": 19,
+    "placeholderOccurrences": 11,
+    "dictionaryMaps": 15,
+    "dictionaryEntries": 116,
+    "note": "Pure-static scan excludes mixed HBS/text runs; adapter additionally handles only bounded numeric page/XP/PR/unit/tier grammar at audited UI positions. Token HUD partial is present in the scan but not in the adapter scope."
+  },
+  "coverage": {
+    "staticUi": [
+      "Characteristic abbreviations in stat/skill/manual rows",
+      "Vehicle weapon column headers",
+      "Psychic penetration header",
+      "Inventory/vehicle units",
+      "Experience history abbreviation",
+      "Item rate-of-fire captions",
+      "Actor and Item accessibility labels"
+    ],
+    "enumUi": [
+      "Reload costs",
+      "Mental disorder severity",
+      "Psychic discipline",
+      "Psychic action/sustain costs",
+      "Psyniscience resist label",
+      "Critical-effect location",
+      "Manual size and Fear choices",
+      "Fixed weapon-training groups",
+      "Critical editor characteristic options",
+      "Critical editor characteristic chip abbreviations and known display tooltips",
+      "Actor disorder severity display"
+    ],
+    "structuredDisplay": [
+      "Numeric inventory weight",
+      "Rule tier and page reference",
+      "Numeric PR labels",
+      "Psychic range units and Self/Touch",
+      "Numeric experience/page reference",
+      "Vehicle Operate modifier",
+      "Sustain action suffix",
+      "Item range and weight label unit suffixes",
+      "Actor movement modifier unit",
+      "Vehicle damaged speed / moved distance / weapon range units"
+    ]
+  },
+  "invariants": [
+    "No system files, application classes, render contexts, CONFIG, Handlebars helpers/partials or Document data are changed.",
+    "No lib-wrapper or global monkeypatch is needed; only one synchronous render hook is installed.",
+    "No global text walker, substring dictionary replace, MutationObserver or HTML reserialization is used.",
+    "Only direct text-node nodeValue, explicitly allowlisted aria-label, and the authorized exact characteristic-chip data-tooltip display attributes are written; existing child nodes/listeners survive.",
+    "Input values, input names, textarea contents, formulas, placeholders, datalist/catalog entries, checked/selected state and all mechanical data-* attributes remain intact. The sole data-tooltip exception is independently asserted.",
+    "Only allowlisted select names and exact option value + English label pairs are eligible. Options without explicit value are skipped; unknown/homebrew options remain unchanged.",
+    "Document names, inventories, power names, rich descriptions, prose-mirror/editor content and Notes tabs are excluded.",
+    "Passes are idempotent. Scope/language mismatch returns inactive and makes no write. Installer is duplicate-safe and has dispose().",
+    "Linked native i18n keys are preferred for common labels so the module keeps terminology consistent."
+  ],
+  "intentionalExclusions": [
+    {
+      "kind": "Catalog and content",
+      "examples": [
+        "Item/Actor names",
+        "trait and psychic-power catalogs",
+        "datalist values",
+        "Spook/Obscura names",
+        "custom specialisations",
+        "prerequisite chips",
+        "modification summaries containing content names"
+      ],
+      "reason": "Outside this UI-only phase; preserve source values and descriptions."
+    },
+    {
+      "kind": "Mechanics syntax",
+      "examples": [
+        "1d10+PR",
+        "SB",
+        "WPB",
+        "S/3/6",
+        "20 metres x psy rating",
+        "Las, Solid Projectile, Chain…",
+        "Tearing, Proven (3), Blast (2)",
+        "{group}"
+      ],
+      "reason": "Formulas, canonical engine examples and data notation are kept exactly; literal UI S/Semi/Full buttons are separately translated."
+    },
+    {
+      "kind": "Other applications",
+      "examples": [
+        "TokenActionHud",
+        "Dialogs",
+        "Catalog pickers",
+        "animation browsers"
+      ],
+      "reason": "Adapter only covers real Actor/Item sheet classes; native i18n can cover shared translated keys."
+    }
+  ],
+  "sourceEvidence": [
+    "src/sheets/registration.mjs registers the five sheet classes and the Handlebars partials.",
+    "src/sheets/actor-sheet.mjs uses HandlebarsApplicationMixin(ActorSheetV2), DEFAULT_OPTIONS apex actor classes, and PARTS for the actor templates.",
+    "src/sheets/dh2e-item-sheet.mjs uses HandlebarsApplicationMixin(ItemSheetV2), contains the literal reload/severity/discipline/action/sustain/location maps.",
+    "src/sheets/dh2e-gear-sheet.mjs inherits FalloutMaWItemSheet and replaces PARTS with the DH2E item template.",
+    "src/sheets/dh2e-manual-panel.mjs derives size/Fear labels and characteristic abbreviations; custom exoticTraining chips are explicitly excluded.",
+    "src/sheets/apex-actor-context.mjs derives fixed abbreviation display and keeps document name strings separate.",
+    "src/sheets/dh2e-psychic-tab.mjs derives numeric range/PR/action display; power.name/effect are separate protected positions.",
+    "Form handlers audited for textContent/selectedOptions: no translated enum option labels are used as form values or rule keys.",
+    "src/items/dh2e-critical-step-editor.mjs CHARACTERISTICS: audited exact key/short/name pairs for nine characteristic options and chips; only visible labels and exact matching display tooltips change."
+  ],
+  "terminologySources": [
+    "book_study/character-notes.json: characteristic abbreviations, PDF 27–28 / printed 24–25",
+    "book_study/combat-narrative-notes.json: action costs and disorder severities",
+    "book_study/armoury-psychic-notes.json: training groups and psychic disciplines",
+    "book_study/glossary-candidates.json: size categories with numeric values"
+  ],
+  "qa": {
+    "report": "adapter-tests.json",
+    "testScript": "test-sheet-ui-adapter.mjs",
+    "passed": true,
+    "actualFoundryRuntime": "Not run live. Thirty scenarios compile original HBS with Handlebars and use jsdom FormData; all original source files are verified unchanged.",
+    "syntax": "node --check passed",
+    "regression": "22 standalone invariants passed; includes negative cases for tooltip whitelist and damage-like metre text.",
+    "realTemplates": {
+      "report": "real-template-tests.json",
+      "script": "test-real-templates.mjs",
+      "passed": true,
+      "localizationCoverageCompleteForTestedBranches": true,
+      "runtime": {
+        "node": "v24.22.1",
+        "handlebars": "4.7.10",
+        "name": "jsdom",
+        "version": "30.1.3",
+        "nativeFormData": true
+      },
+      "summary": {
+        "scenarios": 30,
+        "passed": 30,
+        "failed": 0,
+        "itemScenarios": 24,
+        "actorScenarios": 6,
+        "assertedLabelPositions": 103,
+        "nativeKeysUsed": 257,
+        "nativeFallbackKeys": 0,
+        "reachableItemPartials": 7,
+        "gapTypes": 0
+      }
+    }
+  },
+  "files": {
+    "sheet-ui-adapter.mjs": {
+      "sha256": "eca7791def5aa0e6f0b3bf59dff2077aa0a08453583be624794545a1b12ac39e",
+      "bytes": 19598
+    },
+    "ui-literals.ru.json": {
+      "sha256": "f6d98c6884b0a5304a795324000e444d4ebc44ab9ff5c0d5a8e222344601c1f0",
+      "bytes": 7748
+    },
+    "test-sheet-ui-adapter.mjs": {
+      "sha256": "7f960dda24fbf16be39f29b829fd8d25529cc9ca382f4a9504c35e840b0dbb6f",
+      "bytes": 17413
+    },
+    "test-real-templates.mjs": {
+      "sha256": "80c08b0eeab0ecddb85145bb8c2d5739ba1d4ac85db0e4845fb96c82c26067d7",
+      "bytes": 44809
+    }
+  },
+  "terminologyAlignment": {
+    "GM": "Мастер Игры",
+    "talentTier": "Ранг (T1 → Ранг 1)",
+    "Pen": "Resolved through native FALLOUTMAW.DH2E.Item.Pen",
+    "Locations.body": "Корпус (native and literal fallback)"
+  },
+  "displayAttributeException": {
+    "attribute": "data-tooltip",
+    "selector": ".dh2e-steps button.dh2e-step-chip[data-step-chip-field=\"characteristics\"][data-step-chip]",
+    "requirements": [
+      "Known canonical characteristic key",
+      "Tooltip exactly equals that characteristic’s audited English name",
+      "Actual system Item sheet scope",
+      "Not inside protected editor/description/notes content"
+    ],
+    "purpose": "Display-only characteristic name tooltip; requested explicitly by root in final task.",
+    "untouched": [
+      "Every data-step-* attribute",
+      "Mismatched characteristic/name pairs",
+      "Unknown keys",
+      "Other button fields",
+      "Same markup in Notes/editor HTML",
+      "Other data-* attributes"
+    ]
+  },
+  "moduleCopies": {
+    "scripts/sheet-ui-adapter.mjs": {
+      "sha256": "eca7791def5aa0e6f0b3bf59dff2077aa0a08453583be624794545a1b12ac39e",
+      "bytes": 19598
+    },
+    "lang/ui-literals.ru.json": {
+      "sha256": "f6d98c6884b0a5304a795324000e444d4ebc44ab9ff5c0d5a8e222344601c1f0",
+      "bytes": 7748
+    },
+    "scripts/ui-literals.mjs": {
+      "sha256": "42b7ea3dd136227ef8a5df315bf2d421eba8207da3605db3f02b5b1f5934a6b6",
+      "bytes": 7859
+    }
+  }
+}

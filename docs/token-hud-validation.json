@@ -1,0 +1,30 @@
+{
+  "version": "0.4.0",
+  "target_system_id": "dark-heresy-2e-apex",
+  "target_system_version": "0.1.10",
+  "foundry_major": 14,
+  "coverage": {
+    "original_token_hud_localization_keys": 778,
+    "verified_present_in_ru_json": 778,
+    "new_labels_from_v0_3_0": 599,
+    "built_in_psychic_powers": 45
+  },
+  "scope": [
+    "TokenActionHud",
+    "getSceneControlButtons: falloutMawTokenHud"
+  ],
+  "ui_only": true,
+  "does_not_modify": [
+    "Actor data",
+    "Item data",
+    "Token data",
+    "rolling formulas",
+    "system action keys",
+    "power keys",
+    "custom item names"
+  ],
+  "tests": {
+    "test_suite": "tools/test-token-hud-ui.mjs",
+    "browser_foundry_smoke_test": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "source_module": "0.23.0",
+  "source_system": "0.1.10",
+  "target_foundry": "14",
+  "core_i18n_keys": 7048,
+  "core_i18n_translated": 7048,
+  "compendium_maps": 9,
+  "compendium_entries": 905,
+  "compendium_entry_counts": {
+    "dh2e-bestiary": 72,
+    "dh2e-character": 225,
+    "dh2e-critical-effects": 217,
+    "dh2e-critical-tables": 20,
+    "dh2e-equipment": 273,
+    "dh2e-psychic-powers": 45,
+    "dh2e-vehicles": 7,
+    "dh2e-warp-effects": 44,
+    "dh2e-warp-tables": 2
+  },
+  "test_suites_passed": 14,
+  "mjs_syntax_checked": 45,
+  "json_parsed": 49,
+  "release_changes": [
+    "CHANGELOG.md",
+    "README.md",
+    "compendium/ru/dark-heresy-2e-apex.dh2e-warp-effects.json",
+    "module.json"
+  ],
+  "added_files": [
+    "docs/v1.0.0-manual-validation.md",
+    "tools/test-v100-release.mjs"
+  ],
+  "mechanics_changed": false,
+  "user_data_migrated": false,
+  "live_foundry_tested": false,
+  "qualification": "offline verified build; live Foundry VTT 14 validation pending"
+}

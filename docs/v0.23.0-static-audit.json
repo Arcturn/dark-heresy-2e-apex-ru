@@ -1,0 +1,86 @@
+{
+  "version": "0.23.0",
+  "system_version": "0.1.10",
+  "files": {
+    "js": 607,
+    "hbs": 85,
+    "css": 15
+  },
+  "core_i18n": {
+    "source_keys": 7048,
+    "translated_keys": 7048,
+    "missing_keys": 0,
+    "placeholder_mismatches": 0
+  },
+  "compendium_counts": {
+    "dh2e-character": 225,
+    "dh2e-equipment": 273,
+    "dh2e-bestiary": 72,
+    "dh2e-critical-effects": 217,
+    "dh2e-warp-tables": 2,
+    "dh2e-vehicles": 7,
+    "dh2e-warp-effects": 44,
+    "dh2e-psychic-powers": 45,
+    "dh2e-critical-tables": 20
+  },
+  "compendium_total": 905,
+  "hbs_static_literals": {
+    "occurrences": 41,
+    "unique": 40,
+    "classification": {
+      "technical-input-example": 2,
+      "dictionary": 29,
+      "localization-key": 10
+    }
+  },
+  "css_visible_text": [
+    {
+      "source": "styles/dark-heresy-2e-apex.css",
+      "line": 7855,
+      "text": "GM mode",
+      "status": "css-translated"
+    },
+    {
+      "source": "styles/dark-heresy-2e-apex.css",
+      "line": 19720,
+      "text": "\\25B8",
+      "status": "review"
+    },
+    {
+      "source": "styles/dark-heresy-2e-apex.css",
+      "line": 19725,
+      "text": "\\25BE",
+      "status": "review"
+    },
+    {
+      "source": "styles/skin/51-dh2e-item.css",
+      "line": 518,
+      "text": "\\f078",
+      "status": "review"
+    },
+    {
+      "source": "styles/skin/51-dh2e-item.css",
+      "line": 519,
+      "text": "\\f077",
+      "status": "review"
+    },
+    {
+      "source": "styles/skin/30-chat.css",
+      "line": 316,
+      "text": "DoS",
+      "status": "css-translated"
+    },
+    {
+      "source": "styles/skin/30-chat.css",
+      "line": 317,
+      "text": "DoF",
+      "status": "css-translated"
+    }
+  ],
+  "limitations": [
+    "Only obvious static HBS text is classified, not arbitrary JavaScript output.",
+    "An i18n key in data-tooltip is not itself English and requires Foundry to resolve it at runtime.",
+    "Hardcoded JS may be emitted by dynamic code paths; no VTT browser session tested.",
+    "User-authored and third-party module content is excluded."
+  ]
+}

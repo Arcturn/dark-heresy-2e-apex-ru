@@ -1,0 +1,2464 @@
+{
+  "pack": "dark-heresy-2e-apex.dh2e-equipment",
+  "documents": 273,
+  "folders": 18,
+  "entries": [
+    {
+      "name": "Amputator Shells",
+      "translatedName": "Патроны «ампутатор»",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 202,
+      "sourceChars": 293,
+      "translationChars": 305
+    },
+    {
+      "name": "Autocannon Clip",
+      "translatedName": "Магазин автопушки",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 392
+    },
+    {
+      "name": "Autogun Clip",
+      "translatedName": "Магазин автогана",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 181,
+      "translationChars": 390
+    },
+    {
+      "name": "Autopistol Clip",
+      "translatedName": "Магазин автопистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 395
+    },
+    {
+      "name": "Bleeder Rounds",
+      "translatedName": "Кровопускающие пули",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 202,
+      "sourceChars": 452,
+      "translationChars": 528
+    },
+    {
+      "name": "Bolt Pistol Clip",
+      "translatedName": "Магазин болт-пистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 395
+    },
+    {
+      "name": "Boltgun Clip",
+      "translatedName": "Магазин болтера",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 181,
+      "translationChars": 389
+    },
+    {
+      "name": "Bow Arrows",
+      "translatedName": "Стрелы для лука",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 175,
+      "translationChars": 358
+    },
+    {
+      "name": "Crossbow Quarrels",
+      "translatedName": "Болты для арбалета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 180,
+      "translationChars": 363
+    },
+    {
+      "name": "Dumdum Bullets",
+      "translatedName": "Пули «дум-дум»",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 202,
+      "sourceChars": 285,
+      "translationChars": 309
+    },
+    {
+      "name": "Expander Rounds",
+      "translatedName": "Экспансивные пули",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 202,
+      "sourceChars": 305,
+      "translationChars": 355
+    },
+    {
+      "name": "Explosive Arrows/Quarrels",
+      "translatedName": "Разрывные стрелы и болты",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 202,
+      "sourceChars": 351,
+      "translationChars": 316
+    },
+    {
+      "name": "Flamer Fuel Canister",
+      "translatedName": "Топливная канистра огнемета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 179,
+      "translationChars": 389
+    },
+    {
+      "name": "Grav Pistol Clip",
+      "translatedName": "Магазин гравпистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 394
+    },
+    {
+      "name": "Graviton Gun Clip",
+      "translatedName": "Магазин гравитонной пушки",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 185,
+      "translationChars": 399
+    },
+    {
+      "name": "Hand Cannon Clip",
+      "translatedName": "Магазин ручной пушки",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 394
+    },
+    {
+      "name": "Hand Flamer Fuel Canister",
+      "translatedName": "Топливная канистра ручного огнемета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 396
+    },
+    {
+      "name": "Heavy Bolter Clip",
+      "translatedName": "Магазин тяжелого болтера",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 397
+    },
+    {
+      "name": "Heavy Flamer Fuel Canister",
+      "translatedName": "Топливная канистра тяжелого огнемета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 398
+    },
+    {
+      "name": "Heavy Stubber Clip",
+      "translatedName": "Магазин тяжелого стаббера",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 187,
+      "translationChars": 398
+    },
+    {
+      "name": "Hot-Shot Charge Packs",
+      "translatedName": "Пробивной заряд",
+      "type": "ammunition",
+      "source": "rulebook-manual",
+      "page": 202,
+      "sourceChars": 426,
+      "translationChars": 426
+    },
+    {
+      "name": "Hot-shot Lasgun Charge Pack",
+      "translatedName": "Энергобатарея хот-шот лазгана",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 189,
+      "translationChars": 397
+    },
+    {
+      "name": "Hot-shot Laspistol Charge Pack",
+      "translatedName": "Энергобатарея хот-шот лазпистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 192,
+      "translationChars": 402
+    },
+    {
+      "name": "Inferno Pistol Canister",
+      "translatedName": "Канистра инферно-пистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 187,
+      "translationChars": 398
+    },
+    {
+      "name": "Inferno Shells",
+      "translatedName": "Инферно-патроны",
+      "type": "ammunition",
+      "source": "rulebook-manual",
+      "page": 202,
+      "sourceChars": 247,
+      "translationChars": 203
+    },
+    {
+      "name": "Lasgun Charge Pack",
+      "translatedName": "Энергобатарея лазгана",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 180,
+      "translationChars": 389
+    },
+    {
+      "name": "Laslock Charge Pack",
+      "translatedName": "Энергобатарея лазсамострела",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 179,
+      "translationChars": 369
+    },
+    {
+      "name": "Laspistol Charge Pack",
+      "translatedName": "Энергобатарея лазпистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 183,
+      "translationChars": 394
+    },
+    {
+      "name": "Long Las Charge Pack",
+      "translatedName": "Энергобатарея лонглаза",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 182,
+      "translationChars": 390
+    },
+    {
+      "name": "Man-Stopper Bullets",
+      "translatedName": "Бронебойные пули",
+      "type": "ammunition",
+      "source": "rulebook-manual",
+      "page": 202,
+      "sourceChars": 252,
+      "translationChars": 225
+    },
+    {
+      "name": "Meltagun Canister",
+      "translatedName": "Канистра мельтагана",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 181,
+      "translationChars": 391
+    },
+    {
+      "name": "Needle Pistol Clip",
+      "translatedName": "Магазин игольного пистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 399
+    },
+    {
+      "name": "Needle Rifle Clip",
+      "translatedName": "Магазин игольной винтовки",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 185,
+      "translationChars": 399
+    },
+    {
+      "name": "Plasma Gun Flask",
+      "translatedName": "Плазменная колба плазмагана",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 184,
+      "translationChars": 392
+    },
+    {
+      "name": "Plasma Pistol Flask",
+      "translatedName": "Плазменная колба плазменного пистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 187,
+      "translationChars": 402
+    },
+    {
+      "name": "Scrambler Rounds",
+      "translatedName": "Дезориентирующие патроны",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 203,
+      "sourceChars": 298,
+      "translationChars": 350
+    },
+    {
+      "name": "Shotgun (Combat) Shells",
+      "translatedName": "Патроны боевого дробовика",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 190,
+      "translationChars": 398
+    },
+    {
+      "name": "Shotgun Shells",
+      "translatedName": "Патроны дробовика",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 180,
+      "translationChars": 390
+    },
+    {
+      "name": "Sniper Rifle Clip",
+      "translatedName": "Магазин снайперской винтовки",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 403
+    },
+    {
+      "name": "Storm Bolter Clip",
+      "translatedName": "Магазин шторм-болтера",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 395
+    },
+    {
+      "name": "Stub Automatic Clip",
+      "translatedName": "Магазин автостаба",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 187,
+      "translationChars": 390
+    },
+    {
+      "name": "Stub Revolver Clip",
+      "translatedName": "Боеприпасы стаб-револьвера",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 186,
+      "translationChars": 396
+    },
+    {
+      "name": "Tempest Bolt Shells",
+      "translatedName": "Болт-снаряды Темпест",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 203,
+      "sourceChars": 615,
+      "translationChars": 593
+    },
+    {
+      "name": "Tox Rounds",
+      "translatedName": "Токсичные патроны",
+      "type": "ammunition",
+      "source": "rulebook-auto",
+      "page": 203,
+      "sourceChars": 246,
+      "translationChars": 251
+    },
+    {
+      "name": "Web Pistol Clip",
+      "translatedName": "Заряд сетевого пистолета",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 182,
+      "translationChars": 373
+    },
+    {
+      "name": "Webber Clip",
+      "translatedName": "Заряд сетевика",
+      "type": "ammunition",
+      "source": "rulebook-generated-standard-ammo",
+      "page": 203,
+      "sourceChars": 178,
+      "translationChars": 364
+    },
+    {
+      "name": "Armoured Bodyglove",
+      "translatedName": "Бронекомбинезон",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Carapace Chestplate",
+      "translatedName": "Панцирный нагрудник",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 479,
+      "translationChars": 460
+    },
+    {
+      "name": "Carapace Gauntlets",
+      "translatedName": "Панцирные перчатки",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 479,
+      "translationChars": 460
+    },
+    {
+      "name": "Carapace Greaves",
+      "translatedName": "Панцирные наголенники",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 479,
+      "translationChars": 460
+    },
+    {
+      "name": "Carapace Helm",
+      "translatedName": "Панцирный шлем",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 479,
+      "translationChars": 460
+    },
+    {
+      "name": "Chainmail Suit",
+      "translatedName": "Кольчуга",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Enforcer Light Carapace",
+      "translatedName": "Легкий панцирь силовика",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 317,
+      "translationChars": 333
+    },
+    {
+      "name": "Feudal World Plate",
+      "translatedName": "Латы феодального мира",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Flak Cloak",
+      "translatedName": "Флак-плащ",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Flak Coat",
+      "translatedName": "Флак-пальто",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Flak Gauntlets",
+      "translatedName": "Флак-перчатки",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Flak Helmet",
+      "translatedName": "Флак-шлем",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Flak Vest",
+      "translatedName": "Флак-жилет",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Heavy Leathers",
+      "translatedName": "Тяжелая кожа",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Imperial Guard Flak Armour",
+      "translatedName": "Флак-броня Имперской Гвардии",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Imperial Robes",
+      "translatedName": "Имперские одеяния",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Light Flak Cloak",
+      "translatedName": "Легкий флак-плащ",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 610,
+      "translationChars": 680
+    },
+    {
+      "name": "Light Power Armour",
+      "translatedName": "Легкая силовая броня",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 1058,
+      "translationChars": 1165
+    },
+    {
+      "name": "Mesh Cloak",
+      "translatedName": "Ячеистый плащ",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 290,
+      "translationChars": 288
+    },
+    {
+      "name": "Mesh Vest",
+      "translatedName": "Ячеистый жилет",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 205,
+      "sourceChars": 290,
+      "translationChars": 288
+    },
+    {
+      "name": "Militarum Tempestus Carapace",
+      "translatedName": "Панцирь Милитарум Темпестус",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 479,
+      "translationChars": 460
+    },
+    {
+      "name": "Xenos Hide Vest",
+      "translatedName": "Жилет из ксеношкур",
+      "type": "armour",
+      "source": "rulebook-armour-category",
+      "page": 204,
+      "sourceChars": 503,
+      "translationChars": 527
+    },
+    {
+      "name": "Augur Array",
+      "translatedName": "Массив авгуров",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 224,
+      "sourceChars": 668,
+      "translationChars": 752
+    },
+    {
+      "name": "Autosanguine",
+      "translatedName": "Автосангвинация",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 223,
+      "sourceChars": 365,
+      "translationChars": 294
+    },
+    {
+      "name": "Baleful Eye",
+      "translatedName": "Зловещий глаз",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 681,
+      "translationChars": 708
+    },
+    {
+      "name": "Bionic Arm",
+      "translatedName": "Бионическая рука",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 221,
+      "sourceChars": 827,
+      "translationChars": 797
+    },
+    {
+      "name": "Bionic Heart",
+      "translatedName": "Бионическое сердце",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 221,
+      "sourceChars": 505,
+      "translationChars": 569
+    },
+    {
+      "name": "Bionic Legs",
+      "translatedName": "Бионическая нога",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 221,
+      "sourceChars": 514,
+      "translationChars": 503
+    },
+    {
+      "name": "Bionic Respiratory System",
+      "translatedName": "Бионическая дыхательная система",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 222,
+      "sourceChars": 731,
+      "translationChars": 827
+    },
+    {
+      "name": "Bionic Senses",
+      "translatedName": "Бионические чувства",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 222,
+      "sourceChars": 1289,
+      "translationChars": 1993
+    },
+    {
+      "name": "Calculus Logi Upgrade",
+      "translatedName": "Улучшение Калькулус Логи",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 332,
+      "translationChars": 333
+    },
+    {
+      "name": "Cerebral Implants",
+      "translatedName": "Церебральные имплантаты",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 227,
+      "sourceChars": 971,
+      "translationChars": 954
+    },
+    {
+      "name": "Cranial Armour",
+      "translatedName": "Черепная броня",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 227,
+      "sourceChars": 246,
+      "translationChars": 269
+    },
+    {
+      "name": "Ferric Lure Implants",
+      "translatedName": "Имплантаты Железного Призыва",
+      "type": "cybernetic",
+      "source": "translation-memory-reviewed",
+      "page": 224,
+      "sourceChars": 510,
+      "translationChars": 472
+    },
+    {
+      "name": "Interface Port",
+      "translatedName": "Разъем взаимодействия",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 353,
+      "translationChars": 388
+    },
+    {
+      "name": "Internal Reservoir",
+      "translatedName": "Внутренний накопитель",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 419,
+      "translationChars": 475
+    },
+    {
+      "name": "Locator Matrix",
+      "translatedName": "Локационная матрица",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 224,
+      "sourceChars": 550,
+      "translationChars": 566
+    },
+    {
+      "name": "Luminen Capacitor",
+      "translatedName": "Конденсатор люминена",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 224,
+      "sourceChars": 1006,
+      "translationChars": 1245
+    },
+    {
+      "name": "MIU Weapon Interface",
+      "translatedName": "Оружейный БМУ интерфейс",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 615,
+      "translationChars": 614
+    },
+    {
+      "name": "Maglev Coils",
+      "translatedName": "Катушки маглева",
+      "type": "cybernetic",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 775,
+      "translationChars": 661
+    },
+    {
+      "name": "Mechadendrite",
+      "translatedName": "Механодендрит",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 224,
+      "sourceChars": 1017,
+      "translationChars": 682
+    },
+    {
+      "name": "Memorance Implant",
+      "translatedName": "Запоминающий имплант",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 644,
+      "translationChars": 800
+    },
+    {
+      "name": "Mind Impulse Unit",
+      "translatedName": "Блок мыслеуправления",
+      "type": "cybernetic",
+      "source": "rulebook-manual",
+      "page": 223,
+      "sourceChars": 902,
+      "translationChars": 867
+    },
+    {
+      "name": "Respiratory Filter Implant",
+      "translatedName": "Дыхательные фильтры-имплантаты",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 389,
+      "translationChars": 392
+    },
+    {
+      "name": "Scribe-tines",
+      "translatedName": "Писчие зубья",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 372,
+      "translationChars": 362
+    },
+    {
+      "name": "Subskin Armour",
+      "translatedName": "Подкожная броня",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 364,
+      "translationChars": 325
+    },
+    {
+      "name": "Synthmuscle",
+      "translatedName": "Синтетические мышцы",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 226,
+      "sourceChars": 409,
+      "translationChars": 402
+    },
+    {
+      "name": "Vocal Implant",
+      "translatedName": "Голосовой имплантат",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 337,
+      "translationChars": 349
+    },
+    {
+      "name": "Volitor Implant",
+      "translatedName": "Имплантат-волитор",
+      "type": "cybernetic",
+      "source": "rulebook-auto",
+      "page": 223,
+      "sourceChars": 365,
+      "translationChars": 482
+    },
+    {
+      "name": "Amasec",
+      "translatedName": "Амасек",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 210,
+      "sourceChars": 241,
+      "translationChars": 276
+    },
+    {
+      "name": "De-Tox",
+      "translatedName": "Детокс",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 211,
+      "sourceChars": 801,
+      "translationChars": 920
+    },
+    {
+      "name": "Desoleum Fungus",
+      "translatedName": "Десолеумская поганка",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 210,
+      "sourceChars": 788,
+      "translationChars": 878
+    },
+    {
+      "name": "Frenzon",
+      "translatedName": "Озверин",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 212,
+      "sourceChars": 439,
+      "translationChars": 472
+    },
+    {
+      "name": "Lho-Sticks",
+      "translatedName": "Папиросы лхо",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 212,
+      "sourceChars": 307,
+      "translationChars": 351
+    },
+    {
+      "name": "Obscura",
+      "translatedName": "Обскура",
+      "type": "drug",
+      "source": "rulebook-manual",
+      "page": 211,
+      "sourceChars": 484,
+      "translationChars": 505
+    },
+    {
+      "name": "Ration Pack",
+      "translatedName": "Рацион",
+      "type": "drug",
+      "source": "rulebook-manual",
+      "page": 212,
+      "sourceChars": 597,
+      "translationChars": 653
+    },
+    {
+      "name": "Recaf",
+      "translatedName": "Рекаф",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 528,
+      "translationChars": 578
+    },
+    {
+      "name": "Sacred Unguents",
+      "translatedName": "Священная смазка",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 434,
+      "translationChars": 446
+    },
+    {
+      "name": "Slaught",
+      "translatedName": "Забой",
+      "type": "drug",
+      "source": "rulebook-manual",
+      "page": 211,
+      "sourceChars": 553,
+      "translationChars": 540
+    },
+    {
+      "name": "Spook",
+      "translatedName": "Пугач",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 212,
+      "sourceChars": 1236,
+      "translationChars": 1289
+    },
+    {
+      "name": "Stimm",
+      "translatedName": "Стимм",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 515,
+      "translationChars": 561
+    },
+    {
+      "name": "Tranq",
+      "translatedName": "Транк",
+      "type": "drug",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 411,
+      "translationChars": 424
+    },
+    {
+      "name": "Conversion Field",
+      "translatedName": "Преобразующее поле",
+      "type": "forceField",
+      "source": "rulebook-force-field",
+      "page": 206,
+      "sourceChars": 1900,
+      "translationChars": 1729
+    },
+    {
+      "name": "Displacer Field",
+      "translatedName": "Смещающее поле",
+      "type": "forceField",
+      "source": "rulebook-force-field",
+      "page": 206,
+      "sourceChars": 2374,
+      "translationChars": 2886
+    },
+    {
+      "name": "Power Field (Personal)",
+      "translatedName": "Силовое поле (личное)",
+      "type": "forceField",
+      "source": "rulebook-force-field",
+      "page": 206,
+      "sourceChars": 1886,
+      "translationChars": 1791
+    },
+    {
+      "name": "Power Field (Vehicle/Emplacement)",
+      "translatedName": "Силовое поле (техника/статичное)",
+      "type": "forceField",
+      "source": "rulebook-force-field",
+      "page": 206,
+      "sourceChars": 1886,
+      "translationChars": 1791
+    },
+    {
+      "name": "Refractor Field",
+      "translatedName": "Рефракторное поле",
+      "type": "forceField",
+      "source": "rulebook-force-field",
+      "page": 206,
+      "sourceChars": 1762,
+      "translationChars": 1663
+    },
+    {
+      "name": "Auspex/Scanner",
+      "translatedName": "Ауспик/сканер",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 641,
+      "translationChars": 700
+    },
+    {
+      "name": "Auto Quill",
+      "translatedName": "Автоперо",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 401,
+      "translationChars": 481
+    },
+    {
+      "name": "Backpack",
+      "translatedName": "Рюкзак",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 330,
+      "translationChars": 372
+    },
+    {
+      "name": "Chameleoline Cloak",
+      "translatedName": "Хамелеолиновый плащ",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 210,
+      "sourceChars": 336,
+      "translationChars": 308
+    },
+    {
+      "name": "Chrono",
+      "translatedName": "Хроно",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 210,
+      "sourceChars": 249,
+      "translationChars": 293
+    },
+    {
+      "name": "Clip/Drop Harness",
+      "translatedName": "Страховочный пояс",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 218,
+      "sourceChars": 488,
+      "translationChars": 351
+    },
+    {
+      "name": "Clothing",
+      "translatedName": "Одежда",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 208,
+      "sourceChars": 562,
+      "translationChars": 659
+    },
+    {
+      "name": "Combat Vest",
+      "translatedName": "Разгрузочный жилет",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 414,
+      "translationChars": 535
+    },
+    {
+      "name": "Combi-tool",
+      "translatedName": "Комби-инструмент",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 350,
+      "translationChars": 403
+    },
+    {
+      "name": "Comm Leech",
+      "translatedName": "Вокс-перехватчик",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 525,
+      "translationChars": 546
+    },
+    {
+      "name": "Concealed Holster",
+      "translatedName": "Скрытая кобура",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 363,
+      "translationChars": 360
+    },
+    {
+      "name": "Dataslate",
+      "translatedName": "Инфопланшет",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 272,
+      "translationChars": 278
+    },
+    {
+      "name": "Deadspace Earpiece",
+      "translatedName": "Вакуумные наушники",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 207,
+      "sourceChars": 324,
+      "translationChars": 286
+    },
+    {
+      "name": "Demolition Kit",
+      "translatedName": "Подрывной набор",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 217,
+      "sourceChars": 831,
+      "translationChars": 858
+    },
+    {
+      "name": "Diagnostor",
+      "translatedName": "Диагностор",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 450,
+      "translationChars": 477
+    },
+    {
+      "name": "Disguise Kit",
+      "translatedName": "Маскировочный набор",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 215,
+      "sourceChars": 805,
+      "translationChars": 734
+    },
+    {
+      "name": "Excruciator Kit",
+      "translatedName": "Набор истязателя",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 216,
+      "sourceChars": 371,
+      "translationChars": 472
+    },
+    {
+      "name": "Explosive Collar",
+      "translatedName": "Взрывной ошейник",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 207,
+      "sourceChars": 738,
+      "translationChars": 514
+    },
+    {
+      "name": "Field Suture",
+      "translatedName": "Хирургические иглы",
+      "type": "gear",
+      "source": "translation-memory-reviewed",
+      "page": 218,
+      "sourceChars": 317,
+      "translationChars": 290
+    },
+    {
+      "name": "Filtration Plugs",
+      "translatedName": "Фильтры-затычки",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 363,
+      "translationChars": 405
+    },
+    {
+      "name": "Glow-globe/Stablight",
+      "translatedName": "Светошар/лампа",
+      "type": "gear",
+      "source": "translation-memory-reviewed",
+      "page": 217,
+      "sourceChars": 436,
+      "translationChars": 410
+    },
+    {
+      "name": "Grapnel & Line",
+      "translatedName": "Тросомет",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 218,
+      "sourceChars": 403,
+      "translationChars": 424
+    },
+    {
+      "name": "Grav Chute",
+      "translatedName": "Гравишют",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 652,
+      "translationChars": 739
+    },
+    {
+      "name": "Hand-Held Targeter",
+      "translatedName": "Ручной целеуказатель",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 217,
+      "sourceChars": 438,
+      "translationChars": 531
+    },
+    {
+      "name": "Inhaler/Injector",
+      "translatedName": "Инъектор",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 184,
+      "translationChars": 210
+    },
+    {
+      "name": "Lascutter",
+      "translatedName": "Лазрезак",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 215,
+      "sourceChars": 429,
+      "translationChars": 494
+    },
+    {
+      "name": "Laud Hailer",
+      "translatedName": "Громкоговоритель",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 296,
+      "translationChars": 307
+    },
+    {
+      "name": "Magboots",
+      "translatedName": "Магнитные ботинки",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 215,
+      "sourceChars": 377,
+      "translationChars": 362
+    },
+    {
+      "name": "Magnoculars",
+      "translatedName": "Магнокуляры",
+      "type": "gear",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 313,
+      "translationChars": 309
+    },
+    {
+      "name": "Manacles",
+      "translatedName": "Наручники",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 208,
+      "translationChars": 312
+    },
+    {
+      "name": "Medi-kit",
+      "translatedName": "Медпакет",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 215,
+      "sourceChars": 507,
+      "translationChars": 550
+    },
+    {
+      "name": "Micro-bead",
+      "translatedName": "Микро-наушник",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 215,
+      "sourceChars": 301,
+      "translationChars": 283
+    },
+    {
+      "name": "Monotask Servo-Skull",
+      "translatedName": "Монозадачный сервочереп",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 215,
+      "sourceChars": 1374,
+      "translationChars": 565
+    },
+    {
+      "name": "Multicompass",
+      "translatedName": "Мультикомпас",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 400,
+      "translationChars": 419
+    },
+    {
+      "name": "Multikey",
+      "translatedName": "Мультиключ",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 316,
+      "translationChars": 332
+    },
+    {
+      "name": "Null Rod",
+      "translatedName": "Ноль-жезл",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 703,
+      "translationChars": 743
+    },
+    {
+      "name": "Photo-Visors/Contacts",
+      "translatedName": "Фотовизоры/фотолинзы",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 336,
+      "translationChars": 387
+    },
+    {
+      "name": "Pict Recorder",
+      "translatedName": "Пикт рекордер",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 371,
+      "translationChars": 366
+    },
+    {
+      "name": "Preysense Goggles",
+      "translatedName": "Инфракрасные очки",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 207,
+      "sourceChars": 464,
+      "translationChars": 474
+    },
+    {
+      "name": "Psy Focus",
+      "translatedName": "Пси-фокус",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 217,
+      "sourceChars": 506,
+      "translationChars": 628
+    },
+    {
+      "name": "Rebreather",
+      "translatedName": "Противогаз",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 412,
+      "translationChars": 526
+    },
+    {
+      "name": "Recoil Glove",
+      "translatedName": "Амортизирующая перчатка",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 207,
+      "sourceChars": 483,
+      "translationChars": 578
+    },
+    {
+      "name": "Regicide Set",
+      "translatedName": "Набор для регицида",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 216,
+      "sourceChars": 487,
+      "translationChars": 474
+    },
+    {
+      "name": "Respirator/Gas Mask",
+      "translatedName": "Респиратор",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 421,
+      "translationChars": 474
+    },
+    {
+      "name": "Screamer",
+      "translatedName": "Крикун",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 800,
+      "translationChars": 678
+    },
+    {
+      "name": "Signal Jammer",
+      "translatedName": "Генератор помех",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 345,
+      "translationChars": 347
+    },
+    {
+      "name": "Static Generator",
+      "translatedName": "Генератор статики",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 214,
+      "sourceChars": 376,
+      "translationChars": 366
+    },
+    {
+      "name": "Stummer",
+      "translatedName": "Подавитель звука",
+      "type": "gear",
+      "source": "rulebook-manual",
+      "page": 218,
+      "sourceChars": 325,
+      "translationChars": 312
+    },
+    {
+      "name": "Survival Suit",
+      "translatedName": "Костюм для выживания",
+      "type": "gear",
+      "source": "translation-memory-reviewed",
+      "page": 207,
+      "sourceChars": 954,
+      "translationChars": 795
+    },
+    {
+      "name": "Synskin",
+      "translatedName": "Синтекожа",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 335,
+      "translationChars": 278
+    },
+    {
+      "name": "Void Suit",
+      "translatedName": "Пустотный скафандр",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 209,
+      "sourceChars": 355,
+      "translationChars": 347
+    },
+    {
+      "name": "Vox-caster",
+      "translatedName": "Вокс-передатчик",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 213,
+      "sourceChars": 274,
+      "translationChars": 368
+    },
+    {
+      "name": "Writing Kit",
+      "translatedName": "Набор для письма",
+      "type": "gear",
+      "source": "rulebook-auto",
+      "page": 216,
+      "sourceChars": 180,
+      "translationChars": 188
+    },
+    {
+      "name": "Autocannon",
+      "translatedName": "Автопушка",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 295,
+      "translationChars": 289
+    },
+    {
+      "name": "Autogun",
+      "translatedName": "Автоган",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 383,
+      "translationChars": 471
+    },
+    {
+      "name": "Autopistol",
+      "translatedName": "Автопистолет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 255,
+      "translationChars": 241
+    },
+    {
+      "name": "Blind Grenade",
+      "translatedName": "Ослепляющая граната",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 251,
+      "translationChars": 262
+    },
+    {
+      "name": "Bolas",
+      "translatedName": "Болас",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 188,
+      "sourceChars": 289,
+      "translationChars": 308
+    },
+    {
+      "name": "Bolt Pistol",
+      "translatedName": "Болт-пистолет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 183,
+      "sourceChars": 361,
+      "translationChars": 398
+    },
+    {
+      "name": "Boltgun",
+      "translatedName": "Болтер",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 184,
+      "sourceChars": 320,
+      "translationChars": 386
+    },
+    {
+      "name": "Bow",
+      "translatedName": "Лук",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 188,
+      "sourceChars": 326,
+      "translationChars": 306
+    },
+    {
+      "name": "Chainaxe",
+      "translatedName": "Цепной топор",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 372,
+      "translationChars": 401
+    },
+    {
+      "name": "Chainblade",
+      "translatedName": "Цепной клинок",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 229,
+      "translationChars": 234
+    },
+    {
+      "name": "Chainsword",
+      "translatedName": "Цепной меч",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 397,
+      "translationChars": 410
+    },
+    {
+      "name": "Choke Grenade",
+      "translatedName": "Слезоточивый газ",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 565,
+      "translationChars": 538
+    },
+    {
+      "name": "Crossbow",
+      "translatedName": "Арбалет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 188,
+      "sourceChars": 122,
+      "translationChars": 131
+    },
+    {
+      "name": "Eviscerator",
+      "translatedName": "Эвисцератор",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 491,
+      "translationChars": 501
+    },
+    {
+      "name": "Fire Bomb",
+      "translatedName": "Огненная бомба",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 191,
+      "sourceChars": 404,
+      "translationChars": 416
+    },
+    {
+      "name": "Flamer",
+      "translatedName": "Огнемет",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 184,
+      "sourceChars": 272,
+      "translationChars": 261
+    },
+    {
+      "name": "Force Staff",
+      "translatedName": "Психосиловой посох",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 320,
+      "translationChars": 383
+    },
+    {
+      "name": "Force Sword",
+      "translatedName": "Психосиловой меч",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 193,
+      "sourceChars": 354,
+      "translationChars": 396
+    },
+    {
+      "name": "Frag Grenade",
+      "translatedName": "Фраг-граната",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 217,
+      "translationChars": 221
+    },
+    {
+      "name": "Frag Missile",
+      "translatedName": "Фраг-ракета",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 217,
+      "translationChars": 221
+    },
+    {
+      "name": "Grav Pistol",
+      "translatedName": "Гравпистолет",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 587,
+      "translationChars": 597
+    },
+    {
+      "name": "Graviton Gun",
+      "translatedName": "Гравитонная пушка",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 587,
+      "translationChars": 597
+    },
+    {
+      "name": "Great Weapon",
+      "translatedName": "Двуручное оружие",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 256,
+      "translationChars": 260
+    },
+    {
+      "name": "Grenade Launcher",
+      "translatedName": "Гранатомет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 187,
+      "sourceChars": 550,
+      "translationChars": 484
+    },
+    {
+      "name": "Hallucinogen Grenade",
+      "translatedName": "Галюциногенная граната",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 220,
+      "translationChars": 239
+    },
+    {
+      "name": "Hand Cannon",
+      "translatedName": "Ручная пушка",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 319,
+      "translationChars": 349
+    },
+    {
+      "name": "Hand Flamer",
+      "translatedName": "Ручной огнемет",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 184,
+      "sourceChars": 188,
+      "translationChars": 196
+    },
+    {
+      "name": "Haywire Grenade",
+      "translatedName": "ЭМИ-граната",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 191,
+      "sourceChars": 268,
+      "translationChars": 277
+    },
+    {
+      "name": "Heavy Bolter",
+      "translatedName": "Тяжелый болтер",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": 184,
+      "sourceChars": 278,
+      "translationChars": 271
+    },
+    {
+      "name": "Heavy Flamer",
+      "translatedName": "Тяжелый огнемет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 185,
+      "sourceChars": 307,
+      "translationChars": 294
+    },
+    {
+      "name": "Heavy Stubber",
+      "translatedName": "Тяжелый стаббер",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 553,
+      "translationChars": 619
+    },
+    {
+      "name": "Hot-shot Lasgun",
+      "translatedName": "Хот-шот лазган",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 808,
+      "translationChars": 838
+    },
+    {
+      "name": "Hot-shot Laspistol",
+      "translatedName": "Хот-шот лазпистолет",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 808,
+      "translationChars": 838
+    },
+    {
+      "name": "Hunting Lance",
+      "translatedName": "Охотничья пика",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 194,
+      "sourceChars": 403,
+      "translationChars": 370
+    },
+    {
+      "name": "Improvised",
+      "translatedName": "Импровизированное",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 194,
+      "sourceChars": 449,
+      "translationChars": 456
+    },
+    {
+      "name": "Inferno Pistol",
+      "translatedName": "Инферно-пистолет",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 188,
+      "sourceChars": 271,
+      "translationChars": 269
+    },
+    {
+      "name": "Knife",
+      "translatedName": "Нож",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 237,
+      "translationChars": 311
+    },
+    {
+      "name": "Krak Grenade",
+      "translatedName": "Крак-граната",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 223,
+      "translationChars": 247
+    },
+    {
+      "name": "Krak Missile",
+      "translatedName": "Крак-ракета",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 223,
+      "translationChars": 247
+    },
+    {
+      "name": "Lasgun",
+      "translatedName": "Лазган",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 185,
+      "sourceChars": 269,
+      "translationChars": 293
+    },
+    {
+      "name": "Laslock",
+      "translatedName": "Лазсамострел",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 185,
+      "sourceChars": 554,
+      "translationChars": 498
+    },
+    {
+      "name": "Laspistol",
+      "translatedName": "Лазпистолет",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 101,
+      "translationChars": 84
+    },
+    {
+      "name": "Long Las",
+      "translatedName": "Лонглаз",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 185,
+      "sourceChars": 340,
+      "translationChars": 358
+    },
+    {
+      "name": "Luminen Blast",
+      "translatedName": "Взрыв Люминена",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 154,
+      "sourceChars": 487,
+      "translationChars": 499
+    },
+    {
+      "name": "Luminen Shock",
+      "translatedName": "Шок Люминена",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 154,
+      "sourceChars": 384,
+      "translationChars": 399
+    },
+    {
+      "name": "Melta Bomb",
+      "translatedName": "Мельта-бомба",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 192,
+      "sourceChars": 326,
+      "translationChars": 323
+    },
+    {
+      "name": "Meltagun",
+      "translatedName": "Мельтаган",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 188,
+      "sourceChars": 158,
+      "translationChars": 171
+    },
+    {
+      "name": "Missile Launcher",
+      "translatedName": "Ракетомет",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 187,
+      "sourceChars": 389,
+      "translationChars": 373
+    },
+    {
+      "name": "Needle Pistol",
+      "translatedName": "Игольный пистолет",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 190,
+      "sourceChars": 522,
+      "translationChars": 535
+    },
+    {
+      "name": "Needle Rifle",
+      "translatedName": "Игольная винтовка",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 190,
+      "sourceChars": 522,
+      "translationChars": 535
+    },
+    {
+      "name": "Omnissian Axe",
+      "translatedName": "Топор Омниссии",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 495,
+      "translationChars": 490
+    },
+    {
+      "name": "Photon Flash Grenade",
+      "translatedName": "Фотонная граната",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 356,
+      "translationChars": 319
+    },
+    {
+      "name": "Plasma Gun",
+      "translatedName": "Плазмаган",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 189,
+      "sourceChars": 282,
+      "translationChars": 327
+    },
+    {
+      "name": "Plasma Pistol",
+      "translatedName": "Плазменный пистолет",
+      "type": "weapon",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 199,
+      "translationChars": 198
+    },
+    {
+      "name": "Power Axe",
+      "translatedName": "Силовой топор",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 196,
+      "sourceChars": 274,
+      "translationChars": 289
+    },
+    {
+      "name": "Power Fist",
+      "translatedName": "Силовой кулак",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 196,
+      "sourceChars": 494,
+      "translationChars": 503
+    },
+    {
+      "name": "Power Maul",
+      "translatedName": "Силовая булава",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 196,
+      "sourceChars": 479,
+      "translationChars": 500
+    },
+    {
+      "name": "Power Sword",
+      "translatedName": "Силовой меч",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 196,
+      "sourceChars": 381,
+      "translationChars": 404
+    },
+    {
+      "name": "Shield",
+      "translatedName": "Щит",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 291,
+      "translationChars": 288
+    },
+    {
+      "name": "Shock Maul",
+      "translatedName": "Шоковая булава",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 196,
+      "sourceChars": 293,
+      "translationChars": 300
+    },
+    {
+      "name": "Shock Whip",
+      "translatedName": "Шоковый кнут",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 196,
+      "sourceChars": 246,
+      "translationChars": 262
+    },
+    {
+      "name": "Shotgun",
+      "translatedName": "Дробовик",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 190,
+      "sourceChars": 384,
+      "translationChars": 441
+    },
+    {
+      "name": "Shotgun (Combat)",
+      "translatedName": "Боевой дробовик",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 190,
+      "sourceChars": 384,
+      "translationChars": 458
+    },
+    {
+      "name": "Smoke Grenade",
+      "translatedName": "Дымовая граната",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 192,
+      "sourceChars": 295,
+      "translationChars": 315
+    },
+    {
+      "name": "Sniper Rifle",
+      "translatedName": "Снайперская винтовка",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 190,
+      "sourceChars": 262,
+      "translationChars": 287
+    },
+    {
+      "name": "Spear",
+      "translatedName": "Копьё",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 146,
+      "translationChars": 136
+    },
+    {
+      "name": "Staff",
+      "translatedName": "Посох",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 230,
+      "translationChars": 234
+    },
+    {
+      "name": "Storm Bolter",
+      "translatedName": "Шторм-болтер",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 184,
+      "sourceChars": 233,
+      "translationChars": 232
+    },
+    {
+      "name": "Stub Automatic",
+      "translatedName": "Автостаб",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 190,
+      "sourceChars": 199,
+      "translationChars": 235
+    },
+    {
+      "name": "Stub Revolver",
+      "translatedName": "Стаб-револьвер",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 190,
+      "sourceChars": 259,
+      "translationChars": 303
+    },
+    {
+      "name": "Stun Grenade",
+      "translatedName": "Светошумовая граната",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 192,
+      "sourceChars": 207,
+      "translationChars": 239
+    },
+    {
+      "name": "Sword",
+      "translatedName": "Меч",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 298,
+      "translationChars": 320
+    },
+    {
+      "name": "Truncheon",
+      "translatedName": "Дубина",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 183,
+      "translationChars": 200
+    },
+    {
+      "name": "Warhammer",
+      "translatedName": "Боевой молот",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 378,
+      "translationChars": 406
+    },
+    {
+      "name": "Web Grenade",
+      "translatedName": "Сетевая граната",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 192,
+      "sourceChars": 205,
+      "translationChars": 221
+    },
+    {
+      "name": "Web Pistol",
+      "translatedName": "Сетевой пистолет",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 190,
+      "sourceChars": 395,
+      "translationChars": 395
+    },
+    {
+      "name": "Webber",
+      "translatedName": "Сетевик",
+      "type": "weapon",
+      "source": "rulebook-manual",
+      "page": 190,
+      "sourceChars": 395,
+      "translationChars": 395
+    },
+    {
+      "name": "Whip",
+      "translatedName": "Кнут",
+      "type": "weapon",
+      "source": "rulebook-auto",
+      "page": 194,
+      "sourceChars": 231,
+      "translationChars": 251
+    },
+    {
+      "name": "Auxiliary Grenade Launcher",
+      "translatedName": "Вспомогательный гранатомет",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 198,
+      "sourceChars": 804,
+      "translationChars": 839
+    },
+    {
+      "name": "Backpack Ammo Supply",
+      "translatedName": "Ранцевая подача боеприпасов",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 672,
+      "translationChars": 678
+    },
+    {
+      "name": "Compact",
+      "translatedName": "Компактное",
+      "type": "weaponModification",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 629,
+      "translationChars": 536
+    },
+    {
+      "name": "Custom Grip",
+      "translatedName": "Рукоять на заказ",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 653,
+      "translationChars": 661
+    },
+    {
+      "name": "Deactivated Safety Features",
+      "translatedName": "Деактивированные опции безопасности",
+      "type": "weaponModification",
+      "source": "translation-memory-reviewed",
+      "page": null,
+      "sourceChars": 543,
+      "translationChars": 446
+    },
+    {
+      "name": "Expanded Magazine",
+      "translatedName": "Расширенный магазин",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 358,
+      "translationChars": 406
+    },
+    {
+      "name": "Exterminator",
+      "translatedName": "Экстерминатор",
+      "type": "weaponModification",
+      "source": "translation-memory-reviewed",
+      "page": 201,
+      "sourceChars": 437,
+      "translationChars": 292
+    },
+    {
+      "name": "Fire Selector",
+      "translatedName": "Переключатель вида боеприпасов",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 520,
+      "translationChars": 535
+    },
+    {
+      "name": "Fluid Action",
+      "translatedName": "Смазка",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 554,
+      "translationChars": 535
+    },
+    {
+      "name": "Forearm Weapon Mounting",
+      "translatedName": "Запястное крепление",
+      "type": "weaponModification",
+      "source": "rulebook-manual",
+      "page": 198,
+      "sourceChars": 430,
+      "translationChars": 443
+    },
+    {
+      "name": "Melee Attachment",
+      "translatedName": "Штык",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 201,
+      "sourceChars": 261,
+      "translationChars": 301
+    },
+    {
+      "name": "Modified Stock",
+      "translatedName": "Переделанный приклад",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 598,
+      "translationChars": 565
+    },
+    {
+      "name": "Mono",
+      "translatedName": "Монозаточка",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 649,
+      "translationChars": 702
+    },
+    {
+      "name": "Motion Predictor",
+      "translatedName": "Система наведения",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 383,
+      "translationChars": 428
+    },
+    {
+      "name": "Omni-Scope",
+      "translatedName": "Омни-прицел",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 617,
+      "translationChars": 699
+    },
+    {
+      "name": "Photo Sight",
+      "translatedName": "Прицел ночного видения",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 290,
+      "translationChars": 337
+    },
+    {
+      "name": "Pistol Grip",
+      "translatedName": "Пистолетная рукоять",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 249,
+      "translationChars": 267
+    },
+    {
+      "name": "Preysense Sight",
+      "translatedName": "Тепловизионный прицел",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 368,
+      "translationChars": 395
+    },
+    {
+      "name": "Quick-Release",
+      "translatedName": "Быстрозаряжаемое",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 197,
+      "sourceChars": 470,
+      "translationChars": 527
+    },
+    {
+      "name": "Red-Dot Laser Sight",
+      "translatedName": "Лазерный прицел",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 199,
+      "sourceChars": 336,
+      "translationChars": 357
+    },
+    {
+      "name": "Reinforced",
+      "translatedName": "Укреплённое",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 201,
+      "sourceChars": 619,
+      "translationChars": 647
+    },
+    {
+      "name": "Sacred Inscriptions",
+      "translatedName": "Священные письмена",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 536,
+      "translationChars": 509
+    },
+    {
+      "name": "Silencer",
+      "translatedName": "Глушитель",
+      "type": "weaponModification",
+      "source": "rulebook-manual",
+      "page": 198,
+      "sourceChars": 368,
+      "translationChars": 400
+    },
+    {
+      "name": "Suspensors",
+      "translatedName": "Суспензоры",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 454,
+      "translationChars": 459
+    },
+    {
+      "name": "Targeter",
+      "translatedName": "Целеуказатель",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 201,
+      "sourceChars": 499,
+      "translationChars": 530
+    },
+    {
+      "name": "Telescopic Sight",
+      "translatedName": "Телескопический прицел",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 414,
+      "translationChars": 449
+    },
+    {
+      "name": "Tox Dispenser",
+      "translatedName": "Распылитель яда",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 200,
+      "sourceChars": 689,
+      "translationChars": 650
+    },
+    {
+      "name": "Tripod/Bipod",
+      "translatedName": "Штатив/сошки",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 201,
+      "sourceChars": 514,
+      "translationChars": 546
+    },
+    {
+      "name": "Vox-Operated",
+      "translatedName": "Управляемое по воксу",
+      "type": "weaponModification",
+      "source": "rulebook-auto",
+      "page": 201,
+      "sourceChars": 336,
+      "translationChars": 333
+    }
+  ]
+}

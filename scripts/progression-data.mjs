@@ -1,0 +1,1323 @@
+export default {
+  "_meta": {
+    "schemaVersion": 1,
+    "systemId": "dark-heresy-2e-apex",
+    "locale": "ru",
+    "source": "Apex 0.1.10; Babele v0.12.0 compendium translations"
+  },
+  "talents": {
+    "adamantium-faith": {
+      "en": "Adamantium Faith",
+      "ru": "Несокрушимая вера",
+      "prerequisites": "Jaded, Resistance (Fear), Willpower 45",
+      "benefit": "The Acolyte has become inured to horrors that would cripple lesser men. This might come from years of facing incoming fire, staring down the terrors of the Warp, or simply his absolute faith in the Emperor. He can subtract his Willpower bonus from his degrees of failure on a failed Fear or Pinning test. If this reduces the result to zero or less, he counts as having passed the Fear test with 1 degree of success.",
+      "benefitRu": "Аколит невосприимчив к ужасам, что могли бы сломить более слабого человека. Причиной тому стали годы, проведенные под вражеским огнем, созерцание ужасов Варпа или просто абсолютная вера в Императора. Он может вычесть свой бонус Силы Воли из количества степеней провала в проваленной проверке на Страх или Подавление. Если итоговое количество степеней провала будет равно нулю или меньше, аколит считается прошедшим эту проверку с одной ступенью успеха."
+    },
+    "ambidextrous": {
+      "en": "Ambidextrous",
+      "ru": "Амбидекстрия",
+      "prerequisites": "Agility 30",
+      "benefit": "This talent does not represent true ambidexterity so much as sufficient training with both hands to make the distinction moot. When combined with Two-Weapon Wielder talent, the penalty for making attacks with both weapons in the same turn drops to –10.",
+      "benefitRu": "Этот талант отображает не природную обоюдорукость, но успешную тренировку во владении обоими руками без различий. В комбинации с талантом Обоерукий воин, штраф за совершение атак двумя оружиями в один ход падает до -10"
+    },
+    "armour-monger": {
+      "en": "Armour-Monger",
+      "ru": "Мастер Брони",
+      "prerequisites": "Intelligence 35, Tech-Use, Trade (Armourer)",
+      "benefit": "The Acolyte is a skilled armourer, and constantly tinkers and improves his armour, or keeps it in pristine shape by repairing the slightest damage it sustains. With years of training, he has even learned to enhance the protection afforded by his armour and how to use it to its optimum. The character gains an extra amount of Armour points equal to his Intelligence bonus, which he can distribute to any locations that his armour would normally cover, as long as he has at least an hour each day to clean and repair it or make minor modifications. This bonus applies only to armour when the Acolyte is wearing it, as it combines his training with his skill at armoury.",
+      "benefitRu": "Ранг: 2 Требования: Интеллект 35, Техпользование, Ремесло (Оружейник) Склонности: Интеллект, Техпользование Аколит – мастер в деле создания брони, он постоянно занят возней с ней, её улучшением или поддержанием в первозданном виде, ремонтируя при малейшем повреждении. Благодаря годам практики, персонаж научился даже увеличивать уровень защиты, предоставляемый своими доспехами и использовать её оптимальным образом. Он может получить дополнительное количество очков брони равное его бонусу Интеллекта, которые аколит может распределить на те зоны, что обычно защищает доспех, до тех пор, пока он имеет как минимум один час в день на чистку, обслуживание и внесение незначительных модификаций. Бонус добавляется к броне, только когда персонаж носит её, ведь это результат его тренировок и мастерства в деле создания доспехов."
+    },
+    "assassin-strike": {
+      "en": "Assassin Strike",
+      "ru": "Удар Асассина",
+      "prerequisites": "Acrobatics, Agility 40",
+      "benefit": "The character’s natural agility and graceful martial form turn him into a dervish of death in combat. After making a melee attack, a successful Challenging (+0) Acrobatics skill test allows the Acolyte to move at half rate as a Free Action. He may only make this move once per round, and the character’s opponent does not receive a free attack resulting from this move.",
+      "benefitRu": "Природная ловкость персонажа и изящество его боевого стиля превращают аколита в вихрь смерти. Атакуя противника в ближнем бою, он может пройти Серьёзную (+0) проверку Акробатики, чтобы совершить перемещение на Половинного движения за Свободное действие. Эту способность можно применять один раз за раунд, а противник не получает свободной атаки против перемещающегося рядом с ним аколита."
+    },
+    "bastion-of-iron-will": {
+      "en": "Bastion of Iron Will",
+      "ru": "Бастион Железной Воли",
+      "prerequisites": "Psy rating, Strong Minded, Willpower 40",
+      "benefit": "The Acolyte’s sheer willpower and psychic focus have become one and the same, over years of practice and training, such that their combined use is second nature. He adds 5 x his psy rating to any Opposed test he makes when defending against psychic powers.",
+      "benefitRu": "После долгих лет практик и тренировок огромная сила воли аколита и искусство его психической концентрации становятся единым целым, и их совместное применение для персонажа – совершенно обычное дело. Он получает 5*пси- рейтинг очков ко всем Встречным проверкам, направленным на защиту от психических сил."
+    },
+    "battle-rage": {
+      "en": "Battle Rage",
+      "ru": "Боевая ярость",
+      "prerequisites": "Frenzy",
+      "benefit": "Long experience and indomitable will have allowed the character to master the beast within, directing its rage while keeping his head, despite the howling bloodlust in his mind. The Acolyte can Parry while Frenzied, and can re-roll a failed test to snap out of Frenzy or resist entering Frenzy if he so chooses.",
+      "benefitRu": "Долгий опыт и неукротимая воля позволили персонажу взять верх над своим внутренним зверем, научившись управлять его яростью, не теряя собственной головы, несмотря на бушующую в нём жажду крови. Аколит, пребывая в состоянии Неистовства, может Парировать и получает возможность перебрасывать проваленные проверки при попытке прекратить Неистовство или желая сопротивляться тому, чтобы не впасть в Неистовство."
+    },
+    "blademaster": {
+      "en": "Blademaster",
+      "ru": "Мастер Клинка",
+      "prerequisites": "Weapon Skill 30, Weapon Training (any melee)",
+      "benefit": "The Acolyte’s mastery of bladed weapons and their martial disciplines has no peer. When attacking with any bladed weapon, including chainswords, axes, and power swords, he can re-roll one missed attack per round.",
+      "benefitRu": "Мастерство аколита во владении клинком не знает себе равных. Атакуя любым клинковым оружием, включая цепные мечи, топоры и силовые мечи, персонаж может перебрасывать одну проваленную атаку за раунд."
+    },
+    "blind-fighting": {
+      "en": "Blind Fighting",
+      "ru": "Бой Вслепую",
+      "prerequisites": "Perception 30",
+      "benefit": "Years of practice and development of his other senses allows the Acolyte to fight in close combat without the benefit of sight. He ignores all penalties for fighting with a melee weapon while suffering from obscured vision, permitting him to fight in fog, smoke, or darkness more effectively. See page 229 for a full list of normal penalties based on lighting and vision. Note this talent only improves his chances to hit with melee weapons, and has no effect on ranged weapon attacks.",
+      "benefitRu": "Годы практики и оттачивания всех остальных чувств, позволяют аколиту сражаться в ближнем бою без всех тех преимуществ, что даёт зрение. В ближнем бою он игнорирует все штрафы, которые получает за ведение боя в условиях плохой видимости, вызванных туманом, дымом, темнотой. Полный список обычных штрафов, основанных на освещении, смотрите на странице 283. Заметьте, этот талант лишь повышает шансы попасть по врагу оружием ближнего боя и не оказывает эффекта на стрелковые атаки."
+    },
+    "bulging-biceps": {
+      "en": "Bulging Biceps",
+      "ru": "Крепкие Бицепсы",
+      "prerequisites": "Strength 45",
+      "benefit": "Whereas a weaker man might be sent flying by the recoil of a heavy weapon, this Acolyte’s strong physique allows him to remain standing. He can fire a heavy weapon using Semi-Auto Burst or Full Auto Burst without bracing the weapon, and does not suffer the –30 penalty for failing to brace it. In addition, whenever he uses the Heft special use of the Athletics skill (see page 98) he can add +20 to his Athletics skill test to reflect his powerful musculature.",
+      "benefitRu": "Ранг: 2 Требования: Сила 45 Склонности: Сила, Защита Там, где отдача тяжелого оружия собьет с ног более слабого человека, физическая подготовка этого аколита позволяет ему стрелять, стоя во весь рост. Персонаж может вести огонь Длинной или Короткой очередью из тяжелого оружия, не устанавливая его на опору и не получая за это обычного штрафа -30. Кроме того, обладающий этим умением аколит получает бонус +20 при использовании Рывка (особое применение Атлетики), что отображает мощь мускулатуры персонажа."
+    },
+    "catfall": {
+      "en": "Catfall",
+      "ru": "Мягкое Приземление",
+      "prerequisites": "Agility 30",
+      "benefit": "Gymnastic ability and natural balance enables the Acolyte to fall great distances without harm. He automatically reduces the effective distance of all falls by a number of metres equal to his Agility bonus, ignoring this distance as if it did not exist. He also adds +20 to his Acrobatics skill tests when using the Jump special skill use, as it pertains to reducing damage from falling.",
+      "benefitRu": "Навыки гимнаста и природное чувство равновесия позволяют аколиту падать с большей высоты без особого вреда для себя. Персонаж с этим талантом уменьшает дистанцию падения на число метров, равное его бонусу Ловкости (разумеется, только для подсчёта получаемого урона). Кроме того, персонаж получает бонус +20 при использовании Прыжка (специальное применение умения Акробатика), если применение этого умения в данной ситуации относится к уменьшению урона от падения с высоты."
+    },
+    "clues-from-the-crowds": {
+      "en": "Clues from the Crowds",
+      "ru": "Разговор с Толпой",
+      "prerequisites": "Fellowship 30",
+      "benefit": "It is often difficult to extract information from groups such as hive gangs or Administratum scribes, as often numbers can bolster recalcitrance to questioning. A veteran Acolyte knows that such groups can hold critical information to complete an investigation, and can throw more effective nets when interrogating groups and reveal valued clues. Once per day, he can re-roll a test made to gather information from a group of people.",
+      "benefitRu": "Извлечь нужные данные из таких групп как банда ульев или кучка писцов Администратума – непростая задача, ведь численность придаёт им уверенности и делает более устойчивыми к расспросам. Но опытный аколит знает, что такие группы людей могут обладать критически важной для его расследования информацией и умеет в ходе разговора расставить вербальные ловушки и заставить своих оппонентов проговориться. Один раз в день персонаж может перебросить проваленную проверку, направленную на то, чтобы получить информацию от группы людей."
+    },
+    "combat-master": {
+      "en": "Combat Master",
+      "ru": "Мастер Боя",
+      "prerequisites": "Weapon Skill 30",
+      "benefit": "The Acolyte’s weapon seems to be everywhere at once, keeping many more opponents at bay in close combat than would seem possible. Opponents fighting him in hand-to-hand combat gain no bonuses for Ganging Up (see page 229).",
+      "benefitRu": "Кажется, что оружие сражающегося аколита может поразить любого из врагов, появляясь там, где оно просто не могло оказаться, и заставляя противников держаться подальше. Враги, сражающиеся с персонажем в ближнем бою, не получают бонусов за численное превосходство (см. стр. 283)."
+    },
+    "constant-vigilance": {
+      "en": "Constant Vigilance",
+      "ru": "Постоянная бдительность",
+      "prerequisites": "Awareness +10, Intelligence 35 or Perception 35",
+      "benefit": "From years of surviving ambushes and surprise attacks, the Acolyte is always ready for battle. His subconscious is alert to the slightest footstep or activation of a lasgun pack, and he acts often before he is fully aware of the threat. When this talent is taken, the character selects the Specialisation that matches the prerequisite (Perception or Intelligence) used in purchase. He can use the characteristic that matches that Specialisation when rolling for Initiative instead of his Agility value, and rolls two dice for the roll (picking the highest of the two for his score).",
+      "benefitRu": "Специализации: Восприятие, Интеллект Пережив множество засад и неожиданных нападений, аколит всегда готов к бою. Он настораживается, заслышав легчайшие шаги или тихий звук активации батареи для лазгана, и действует ещё до того, как полностью осознает угрозу. При взятии этого таланта, персонаж должен выбрать специализацию – Интеллект или Восприятие. Отныне он может использовать характеристику, соответствующую специализации, при бросках Инициативы (вместо Ловкости) и бросает два кубика, выбирая наилучший результат. Повысить Секретность на 1к5 за 1 очко Влияния При подсчете урона персонаж всегда считается Легко Раненым Для проверок Реквизиции Общительность вместо Влияния Бонус +10 к проверкам Допроса, +5 за каждого допросчика с таким талантом Возможность стрелять на бегу При Натиске или Беге -20 на попадание Отменяет штрафы за Меткую Атаку Очко Судьбы за неотразимую атаку. Возможность использовать энергию в ближнем бою"
+    },
+    "contact-network": {
+      "en": "Contact Network",
+      "ru": "Сеть Контактов",
+      "prerequisites": "Cover-Up, Intelligence 35",
+      "benefit": "Acolytes rely on a web of relationships, favours, debts, and obligations that can range from within a hab-block to spanning an entire system. Developing and exploiting this network properly allows them to gain access to weapons, travel berths, personnel, and other resources when needed; those who maximise their connections can ensure they are well-armed and well-prepared as they face a new heresy. An Acolyte with this talent can use his Fellowship characteristic in place of his Influence when making Requisition tests (see page 142).",
+      "benefitRu": "Аколиты в своей работе опираются на сеть контактов, сплетённую из доверия, благосклонности, долгов и обязательств. Такая сеть может охватывать один жилой блок улья или раскинуться на целую звёздную систему. Расширяя свою сеть, аколит может получить доступ к оружию, транспорту, персоналу и другим необходимым ресурсам. Те, кто вложил много усилий в построение своей сети, всегда будут лучше вооружены и лучше подготовлены к встрече с новой ересью. Аколит, имеющий этот талант, может использовать свою Общительность вместо Влияния для проверок Реквизиции (см. стр. 173)."
+    },
+    "coordinated-interrogation": {
+      "en": "Coordinated Interrogation",
+      "ru": "Скоординированный Допрос",
+      "prerequisites": "Clues from the Crowds, Strength 40 or Willpower 40",
+      "benefit": "A trained Acolyte, especially when working in conjunction with fellow veteran Acolytes, can induce cooperation from even the most hardened of suspects and captured heretics. He gains a +10 bonus to all Interrogation tests, and gains an additional +5 for each other character participating in the interrogation who also has Coordinated Interrogation. This counts as test assistance, and thus also gains the standard assistance bonuses as per page 25.",
+      "benefitRu": "На допросе обученный аколит может действовать совместно с другими опытными дознавателями, объединяя свои усилия против самых упорных подозреваемых или пойманных еретиков. Он получает бонус +10 к проверкам Допроса и дополнительно +5 за каждого другого персонажа с таким талантом, принимающего участие в допросе. Это также считается Помощью и даёт все остальные обычные для Помощи бонусы (см. стр. 29). Сокрушительный Удар"
+    },
+    "counter-attack": {
+      "en": "Counter Attack",
+      "ru": "Контратака",
+      "prerequisites": "Weapon Skill 40",
+      "benefit": "The Acolyte’s lightning ripostes are things of deadly beauty; swift and invisible as the wind. Once per turn, after successfully Parrying an opponent’s attack, this character may immediately make a Standard Attack action as a Free Action against that opponent using the weapon with which he Parried. The character suffers a –20 penalty on the Weapon Skill test for this attack.",
+      "benefitRu": "Удары аколита, подобно молнии, полны смертоносной красоты, неостановимы и стремительны, как ветер. Один раз за ход, после успешного парирования вражеской атаки, персонаж может немедленно совершить действие Стандартная Атака в качестве Свободного действия против этого противника, используя оружие, которым была парирована атака. Эта атака получает дополнительный штраф -20 к проверке Навыка Рукопашной."
+    },
+    "cover-up": {
+      "en": "Cover-Up",
+      "ru": "Работа Под Прикрытием",
+      "prerequisites": "Intelligence 35",
+      "benefit": "Even the slightest whisper of the Inquisition’s presence can be enough to scatter suspected heretics and drive cults into hiding. To prevent the growth and spread of rumours, Acolytes use combinations of well-placed bribes, dire threats, and other means to keep their activities as secretive as possible. At the GM’s discretion, the character can reduce his Influence to increase his group’s Subtlety. For every point of Influence lost in this way, the Acolyte increases his warband’s Subtlety by 1d5.",
+      "benefitRu": "Даже легчайший признак присутствия Инквизиции заставляет подозреваемых в ереси разбегаться, а культы – уходить в подполье. Чтобы предотвратить рост и распространение слухов, аколиты должны не скупиться на взятки и угрозы или применять другие способы сохранить свои действия в тайне. По решению МИ, персонаж может уменьшить своё Влияние, для того чтобы увеличить Секретность работы группы. За каждое очко Влияния, потраченное таким образом, аколит увеличивает Секретность отряда на 1к5."
+    },
+    "crushing-blow": {
+      "en": "Crushing Blow",
+      "ru": "Костолом",
+      "prerequisites": "Weapon Skill 40",
+      "benefit": "The Acolyte has the ability to focus his entire body into close combat attacks. He adds half his Weapon Skill bonus (rounding up) to damage he inflicts with melee attacks.",
+      "benefitRu": "Ранг: 2 Требования: Ловкость 35, Амбидекстрия, Навык Рукопашной 35 Склонности: Сила, Нападение Долгие тренировки сделали тело аколита таким же опасным, как любое оружие, что использует Муниторум. Персонаж получает черту Смертоносное Природное Оружие (см. стр. 168) и считается имеющим его, даже стоя с голыми руками против толпы вооруженных врагов. Сражаясь голыми руками, персонаж может перебрасывать кости, определяющие нанесенный его ударами Урон."
+    },
+    "deathdealer": {
+      "en": "Deathdealer",
+      "ru": "Несущий Смерть",
+      "prerequisites": "Ballistic Skill 45 or Weapon Skill 45",
+      "benefit": "The Acolyte can place his hits where they inflict maximum harm, such as gaps or joints in armour. When this talent is taken, the character selects the Specialisation that matches the prerequisite used in purchase (Melee with Weapon Skill, Ranged with Ballistic Skill). When the character’s attack in that combat type inflicts Critical damage, he adds his Perception bonus to the damage result.",
+      "benefitRu": "Специализации: Рукопашная, Стрельба Аколит может направлять свои удары туда, где они причинят больше всего вреда — например, в зазоры или стыки в доспехах. При взятии этого таланта, персонаж должен выбрать специализацию – Рукопашная или Стрельба. Когда атака персонажа в ближнем бою (при специализации «Рукопашная») или выстрел (при специализации «Стрельба») наносит Критический урон, аколит добавляет свой бонус Восприятия к количеству нанесенного урона."
+    },
+    "delicate-interrogation": {
+      "en": "Delicate Interrogation",
+      "ru": "Аккуратный Допрос",
+      "prerequisites": "Coordinated Interrogation, Fellowship 50",
+      "benefit": "Questioning suspects and witnesses is always a necessary part of any investigation. Such sessions must remain secretive or obscured, however, lest others learn of the Inquisition’s interest, and a variety of subterfuges, deceptions, and outright threats come into play to aid this effort. Whenever the Acolyte would decrease his warband’s Subtlety due to an interrogation, the amount of Subtlety lost is reduced by 1d5. If this results in a negative number, the Acolyte’s skilled efforts increase the warband’s Subtlety by 1.",
+      "benefitRu": "Расспросы подозреваемых и свидетелей часто бывают важной частью расследования. Подобные действия должны оставаться в тайне, и для этого аколиты прибегают к массе уловок, чтобы отвадить тех, кого заинтересовало присутствие Инквизиции – подкупу, обманам, угрозам. Всякий раз, когда аколит уменьшает Секретность отряда из-за допроса кого-либо, общие потери Секретности отряда уменьшаются на 1к5. Если при этом в результате выходит отрицательное число, Секретность аколитов возрастает на 1."
+    },
+    "deny-the-witch": {
+      "en": "Deny the Witch",
+      "ru": "Отринь ведьмовство",
+      "prerequisites": "Willpower 35",
+      "benefit": "The Acolyte draws on his faith and mental fortitude to act as his shield against those tainted by the Warp. The character may use his Willpower characteristic when making an Evasion Reaction against ranged or melee attacks against him made with psychic powers. When successfully evading an attack with an area of effect, the character does not move but instead is simply unaffected by the psychic power.",
+      "benefitRu": "Из своей веры и психической стойкости аколит создаёт щит против всех затронутых Варпом. Персонаж может использовать свою Силу Воли при свершении Избегания (за Реакцию) от стрелковых и рукопашных атак сделанных с помощью психических сил. В случае успешного прохождения уклонения от воздействующего на область эффекта, персонаж не двигается, психическая сила просто на него не воздействует."
+    },
+    "devastating-assault": {
+      "en": "Devastating Assault",
+      "ru": "Неостановимый Натиск",
+      "prerequisites": "Weapon Skill 35",
+      "benefit": "The Acolyte launches a furious attack on his foe, the rage of the Emperor powering his assault. Once per turn, after resolving an All Out Attack action that successfully hits, the character may make a second All Out Attack action against the same target as a Free Action, with the same bonuses and penalties as the first.",
+      "benefitRu": "Преисполненный гнева Императора, аколит бросается в яростную атаку на своих врагов. Один раз за ход, после успешного разрешения действия Атака всеми силами при успешном попадании, персонаж может провести, в качестве Свободного действия, ещё одно действие Атака всеми силами против того же врага, с такими же бонусами и штрафами как первая."
+    },
+    "die-hard": {
+      "en": "Die Hard",
+      "ru": "Крепкий Орешек",
+      "prerequisites": "Willpower 40",
+      "benefit": "Through either mental resolve or sheer stubbornness, the Acolyte refuses to fall. When this character would suffer a level of Fatigue due to the Blood Loss condition, he makes a Challenging (+0) Willpower test; if he succeeds, he does not suffer a level of Fatigue.",
+      "benefitRu": "Твердая психическая установка или абсолютное упорство не позволяют аколиту пасть. Когда персонаж, страдающий от Кровотечения, должен получить 1 уровень Усталости, аколит может бросить Серьёзную (+0) проверку Силу Воли и, в случае успеха, не получить Усталости."
+    },
+    "disarm": {
+      "en": "Disarm",
+      "ru": "Разоружение",
+      "prerequisites": "Agility 30",
+      "benefit": "The Acolyte can wrest weapons from his opponents’ hands through practised technique or brute force. As a Full Action, the character may make an Opposed Weapon Skill test against one target with whom he is engaged. If the Acolyte wins the test, the enemy drops his weapon to the ground. Should the Acolyte score three or more degrees of success, he can take the enemy’s weapon from him.",
+      "benefitRu": "Хитрым приёмом или грубой силой аколит может выбить оружие из рук врага. В качестве Полного действия персонаж должен пройти Встречную проверку Навыка Рукопашной с врагом, в схватку с которым вовлечён. Если аколит выигрывает эту проверку, он выбивает оружие у противника из рук, и оно падает на землю. Если аколит выигрывает проверку с тремя или более степенями успеха, то он отбрасывает оружие врага прочь."
+    },
+    "double-tap": {
+      "en": "Double Tap",
+      "ru": "Двойной Выстрел",
+      "prerequisites": "Two-Weapon Wielder",
+      "benefit": "The Acolyte is practiced in making dual attacks, and can almost subconsciously tell when his hits strike to best effect. When making a second ranged attack action in the same turn against the same target, he gains a +20 bonus to the attack test if his first attack scored one or more successful hits.",
+      "benefitRu": "Аколит много практиковался и способен почти подсознательно определить наилучший момент для стрельбы. Если в ходе первой атаки он попал во врага хотя бы один раз, то при проведении второй стрелковой атаки в тот же ход, против той же цели, аколит получает бонус +20 к проверке атаки."
+    },
+    "double-team": {
+      "en": "Double Team",
+      "ru": "Плечом к Плечу",
+      "prerequisites": "None",
+      "benefit": "The Acolyte has experience of fighting in paired teams that work together to take down their enemies. When Ganging Up on an opponent, he gains an additional +10 bonus to Weapon Skill tests. If both the characters that outnumber the enemy have this talent, then both gain an additional +10 bonus, for a total of +20. This bonus is in addition to the normal bonus gained from Ganging Up on an opponent (see page 229).",
+      "benefitRu": "Аколит имеет богатый опыт совместной атаки. При Совместной Атаке одного противника вдвоём, персонаж получает дополнительный бонус +10 к проверкам Навыка Рукопашной. Если этот талант есть у обоих союзников, бонус увеличивается до +20. Эти бонусы добавляются к обычному для Совместной Атаки (см. стр."
+    },
+    "enemy": {
+      "en": "Enemy",
+      "ru": "Враг",
+      "prerequisites": "None",
+      "benefit": "The opposite of Peer (see page 130); the Acolyte is particularly despised and possibly hunted by a specific social group or organisation, heretical cult, or xenos race. He suffers an additional –10 penalty to Fellowship and Influence tests when dealing with this group, and the GM can use them to complicate his life from time to time. Unlike other talents, Enemy does not cost any xp to purchase and cannot be taken as an advance. Instead the GM and player can agree to award it when appropriate to the adventure or campaign. It can be removed with the approval of the GM, if the character has redeemed himself with the group in question. The Enemy talent can be awarded multiple times for the same group, in which case it should be listed as Enemy (X), with X equalling the number of times the talent has been awarded. This can be used to represent groups who particularly hate the Acolyte and want to see him dead. In game terms, the penalty to Fellowship tests increases to –10 times X.",
+      "benefitRu": "Специализации: Любой пункт из списка «Силы Аскеллона» (см. врезку Силы Аскеллона) или по выбору МИ Это противоположность таланту Связи (см. стр. 160). У аколита сложные отношения с какой-либо социальной группой, организацией, культом или ксенорасой – для них он презренный изгой или даже враг, на которого объявлена охота. Персонаж получает дополнительный штраф -10 на все проверки Общительности и Влияния, направленные на представителей этой группы. Кроме того, Мастер может периодически использовать эту вражду, чтобы осложнять персонажу жизнь. В отличие от остальных талантов, Враг не имеет цены в очках опыта и не может быть взят как улучшение персонажа, но может быть получен по решению МИ или игрока в качестве «награды» по результатам кампании или отдельного приключения. Персонаж может и утратить этот талант, если каким-либо образом искупит свои прегрешения перед своими врагами. Этот талант, связанный с одной группой, можно получить несколько раз, что отражает усиливающуюся ненависть группы к аколиту, в этом случае это отображается как Враг (X), где X – количество раз, когда этот талант был получен. В игровых терминах, это означает, что штраф -10 к Общительности и Влиянию увеличивается ещё на -10 за каждый раз, когда этот талант был получен."
+    },
+    "exotic-weapon-training": {
+      "en": "Exotic Weapon Training",
+      "ru": "Выучка с Экзотическим Оружием",
+      "prerequisites": "None",
+      "benefit": "The Acolyte is trained to use a particularly obscure type of weapon, such as a graviton gun or needle pistol. Weapons requiring this unique talent are noted in their armoury descriptions. Unlike other kinds of weapons training, this talent applies only to a single weapon type and not a class of weapons. Note that an Exotic weapon with the Heavy class would also require the Weapon Training (Heavy) talent as well as Exotic Weapon Training in that specific weapon.",
+      "benefitRu": "Ранг: 2 Требования: Нет Склонности: Конкретный вид экзотического оружия Склонности: Интеллект, Изящество Аколит обучен использованию одного из особенно непостижимых видов оружия, таких как гравитонная пушка или игольный пистолет. Требует ли оружие такого уникального таланта – указано в его описании. В отличие других оружейных талантов, этот связан только с одним конкретным видом оружия, а не с целым классом. Заметьте, что Экзотическое оружие, являющееся Тяжелым, требует, помимо данного таланта ещё и талант Выучка с Оружием (Тяжёлое)."
+    },
+    "eye-of-vengeance": {
+      "en": "Eye of Vengeance",
+      "ru": "Глаз Мстителя",
+      "prerequisites": "Ballistic Skill 50",
+      "benefit": "The Acolyte can focus his intent on where it is likely to do most damage to his enemy and then strike his foe down with a single shot. Before making a ranged Standard Attack action, he can spend a Fate point. If he does so, he adds the number of degrees of success scored on the attack test to both his damage and penetration for the hit.",
+      "benefitRu": "Аколит может сосредоточить свои намерения на том, чтобы сразить врага одним выстрелом. Перед тем как проводить стрелковое действие Стандартная Атака, персонаж может потратить Очко Судьбы. Если он это сделал, то при успешной атаке, он добавляет количество степеней успеха к Урону и Пробиваемости для этого попадания."
+    },
+    "face-in-a-crowd": {
+      "en": "Face in a Crowd",
+      "ru": "Лицо В Толпе",
+      "prerequisites": "Clues from the Crowds, Fellowship 35",
+      "benefit": "A successful investigation often involves trailing suspects without their knowledge, the better to follow them to hidden dens of heretical worship or criminal activity. With training, the Acolyte can ensure none notice his presence, through careful replication of a crowd’s mannerisms or even joining gatherings while still keeping a careful eye on his quarry. When employing the Shadowing special use of the Stealth skill, he can use his Fellowship characteristic instead of his Agility.",
+      "benefitRu": "Успешное расследование часто включает в себя слежку за подозреваемым, в ходе которой аколит передвигается по незнакомому ему району – он не знает, где найти укрытие, как спрятаться от глаз еретиков или преступников. С опытом аколит научится избегать чужого внимания, искусно смешиваясь с толпой или даже незаметно присоединяясь к нужной ему группе людей. Персонаж, использующий Слежку (особое применение Скрытности) может использовать для проверок свою Общительность вместо Ловкости."
+    },
+    "favoured-by-the-warp": {
+      "en": "Favoured by the Warp",
+      "ru": "Благоволение Варпа",
+      "prerequisites": "Willpower 35",
+      "benefit": "Whenever this character rolls on Table 6–2: Psychic Phenomena (see page 196), so long as he does not receive the Perils of the Warp result, he may roll a second time and choose which result he receives.",
+      "benefitRu": "Когда персонаж бросает кости по таблице 6-2: Психические феномены и не получает результат Опасности Варпа, он может бросить кости ещё раз и выбрать, какой результат он получит."
+    },
+    "ferric-summons": {
+      "en": "Ferric Summons",
+      "ru": "Призыв Железа",
+      "prerequisites": "Ferric Lure Implants, Mechanicus Implants",
+      "benefit": "The Acolyte has trained himself in better use of his Ferric Lure Implants (see page 182). He can summon to his hand an unsecured metal object weighing up to 2 kilograms per point of his Willpower bonus, and can summon such objects up to 40 metres distant.",
+      "benefitRu": "Аколит обучен более эффективному использованию своих имплантатов Железного Призыва (см. стр. 224). Он может призывать в свою руку незакреплённые металлические объекты, массой до 2 кг на каждое очко его бонуса Силы Воли с дистанции до 40 метров."
+    },
+    "flash-of-insight": {
+      "en": "Flash of Insight",
+      "ru": "Вспышка Озарения",
+      "prerequisites": "Contact Network, Coordinated Interrogation, Intelligence 40",
+      "benefit": "Despite steady application of logic and careful analysis, some conundrums remain insoluble, but inspiration could come from outside sources, such as reading patterns from wisps of lho smoke or even making direct appeals to the Emperor for guidance. An Acolyte who has trained his mind to process such lateral data can leap to conclusions that direct thinking cannot provide, and thus quash even the most hidden of heresies. When stuck in an investigation, he can spend one Fate point to reveal a single clue or lead to aid in the progression of his efforts.",
+      "benefitRu": "Несмотря на упорные логические рассуждения и тщательный анализ, некоторые загадки остаются неразгаданными, но ответ можно искать и другим способом – пытаясь увидеть его в дымных узорах тлеющего лхо, или взывая к Императору с просьбой о наставлении. Аколит, что опирается не только на прямые умозаключения, но и на вспышки подсознательного понимания, может больше преуспеть в своём деле и справиться даже с самой скрытой ересью. Зайдя в тупик в расследовании, персонаж может потратить Очко Судьбы, чтобы получить одну подсказку или Силы Аскеллона Империум – это огромная машина, состоящая из множества составляющих разной силы, власти и ответственности. Помимо многочисленных официальных организаций, существует бессчетное количество тех, что находятся вне формальной структуры Империума. В Аскеллоне множество таких групп создают паутину власти, как в секторе, так и за его пределами – в неисследованных пределах космоса, окружающего Аскеллон. Имперские власти, местные правители, неофициальные клики, еретические секты и даже силы ксеносов борются за власть и влияние. Жизни аколитов часто зависят от того, кого они знают, кого могут призвать себе на помощь, и от того, кто хочет их смерти. В Помните, что этот список не полон – существует множество других организаций, что могут действовать лишь в Адепта Сороритас: женские священные ордена на службе Церкви, включающие и воинственных Сестер Битвы. Караул Смерти: загадочные и могущественные космические десантники из разных орденов, сражающиеся против Силы Планетарной Обороны: военные формирования, создаваемые на планетах для защиты их от сил вторжения. Вожди: отпавшие от света Императора повстанцы, от правителей целых планет до ничтожных тиранов мелких"
+    },
+    "frenzy": {
+      "en": "Frenzy",
+      "ru": "Неистовство",
+      "prerequisites": "None",
+      "benefit": "The Acolyte’s temper and passion boil just below the surface of his psyche, mostly held in check by his rational mind, but easily released when needed. If he spends one full round fuelling his anger—by flagellation, drugs, or other means—on the next round, he goes into an uncontrolled rage, gaining a +10 bonus to Weapon Skill, Strength, Toughness, and Willpower, but suffering a –20 penalty to Ballistic Skill, Intelligence, and Fellowship. Note that characteristic penalties are different from characteristic damage (see page 188), and cannot reduce a characteristic below 1. While Frenzied, the character must attack the nearest enemy in melee combat if possible. If he is not engaged with the nearest enemy, he must move towards that enemy and engage it if possible. He will not take obviously suicidal actions such as leaping off a building in order to engage someone on the ground, but he will take any actions that offer a reasonable opportunity to engage in melee with the nearest enemy. While Frenzied, he is immune to Fear, Pinning, Stunning effects, and the effects of Fatigue; he cannot Parry, retreat, or flee. He remains Frenzied for the duration of the combat, and cannot use psychic powers while Frenzied. After combat ends, or if there are no more eligible enemy targets for the character to attack, he can make a Willpower test to snap out of his Frenzy. If he fails, he must continue to attack, favouring NPCs over PCs. Each successive round, however, he can make another Willpower test, with a cumulative +10 bonus to return to a stable state of mind and come out of Frenzy. After Frenzying, he cannot Frenzy again for at least an hour, as he recovers his mental and physical strength.",
+      "benefitRu": "Лёгкий налет цивилизованности скрывает за собой яростную и вспыльчивую натуру, что легко может освободиться, когда это будет нужно. Если аколит потратит один полный раунд на то, чтобы накрутить себя – рыча, колотя себя в грудь, впрыскивая себе специальные наркотики или применяя иные способы – то в следующем раунде он впадет в неконтролируемую ярость, получая бонус +10 к Навыку Рукопашной, Силе, Выносливости и Силе Воли, а также штраф -20 к Навыку Стрельбы, Интеллекту и Общительности. Эти штрафы не являются уроном характеристики (см. стр. 287) и не могут опустить значение последних ниже Будучи в состоянии Неистовства персонаж обязан вступить в ближний бой с ближайшим противником. Если противника поблизости нет, он обязан двигаться в его сторону, чтобы вступить с ним в ближний бой. Конечно же, необязательно совершать откровенно самоубийственные действия типа прыжка с крыши, если враг находится на земле, но любые действия в пределах разумного, позволяющие приблизиться к врагу и вступить в рукопашную, должны быть предприняты обязательно. В состоянии Неистовства, аколит невосприимчив к эффектам Страха, Подавления, Оглушения и Усталости. Он не может Парировать атаки, убегать, отступать или применять психосилы. Состояние Неистовства сохраняется в течении всей боевой сцены. С её окончанием, или если у персонажа больше не осталось целей, которые он мог бы атаковать, он должен пройти проверку Силы Воли, чтобы прийти в себя. Если проверку провален, персонаж должен напасть на дружественных НИП или даже персонажей других игроков. Каждый последующий раунд он может совершать проверку Силы Воли с накопительным бонусом +10, чтобы выйти из состояния Неистовства. После этого персонаж не может вновь впасть в Неистовство в течение часа – он восстанавливает свои физические и ментальные силы."
+    },
+    "halo-of-command": {
+      "en": "Halo of Command",
+      "ru": "Аура Власти",
+      "prerequisites": "Fellowship 40, Willpower 40",
+      "benefit": "The Acolyte has trained himself to better to lead and sway others, either motivating or terrifying those around him to greater levels. When targeting friendly NPCs through skills that have either the Social or Leadership Aptitudes (such as Charm, Command, and Intimidate), he can affect those within 100 times his Fellowship bonus in metres rather than 10 times that number.",
+      "benefitRu": "Аколит лучше других умеет вести людей за собой или склонять их на свою сторону, убеждая или угрожая. При применении умения, связанного со склонностью Общение или Лидерство (такого как Обольщение, Командование или Запугивание) на дружественного НИП, радиус его применения увеличивается на расстояние, равное стократному бонусу Общительности в метрах, вместо обычных 10 метров."
+    },
+    "hammer-blow": {
+      "en": "Hammer Blow",
+      "ru": "Пробивающий Удар",
+      "prerequisites": "Crushing Blow",
+      "benefit": "The Acolyte strikes a single blow with such focus and force that it breaks armour and pulps flesh as it strikes. When he uses an All Out Attack action to make a single melee attack, he can add half his Strength bonus (rounded up) to the weapon’s penetration. The attack also counts as having the Concussive (2) weapon quality, to represent the shocking force of the blow’s impact.",
+      "benefitRu": "Аколит, вкладывая всю свою силу, наносит единственный удар, раскалывающий броню и рассекающий плоть врага. Когда персонаж использует действие Атака всеми силами для нанесения одной атаки в ближнем бою, он может добавить половину своего бонуса Силы (округлять вверх) к Пробиваемости оружия. Помимо этого, для этой атаки оружие также считается имеющей качество Оглушающее оно отображает всю сокрушительную мощь этого удара."
+    },
+    "hard-target": {
+      "en": "Hard Target",
+      "ru": "Трудная Мишень",
+      "prerequisites": "Agility 40",
+      "benefit": "Light on his feet, the Acolyte dodges and weaves as he moves, skills learned from long years in the line of fire. When he performs a Charge or Run action, opponents suffer a –20 penalty to Ballistic Skill tests made to hit him with ranged attacks. This penalty continues until the start of his next turn.",
+      "benefitRu": "Долгая жизнь, проведенная на линии огня, научила аколита уклоняться и петлять на бегу, избегая вражеской стрельбы. Когда персонаж совершает действие Бег или Натиск, враги получают штраф -20 на все проверки Навыка Стрельбы, сделанные для того, чтобы попасть в него из дистанционного оружия. Этот штраф действует до начала следующего хода аколита."
+    },
+    "hardy": {
+      "en": "Hardy",
+      "ru": "Семижильный",
+      "prerequisites": "Toughness 40",
+      "benefit": "The Acolyte’s constitution allows him to rebound quickly from shock or injury. When undergoing medical treatment or healing from injuries, he always recovers damage as if Lightly Damaged, regardless of the level of damage he sustained.",
+      "benefitRu": "Крепкое телосложение аколита позволяет ему быстрее восстанавливаться после травм и ранений. При лечении или исцелении от травм, персонаж всегда устраняет урон как еслибы был Легко Раненым, независимо от реально имеющегося урона."
+    },
+    "hatred": {
+      "en": "Hatred",
+      "ru": "Ненависть",
+      "prerequisites": "None",
+      "benefit": "A group, organisation, or race has wronged the character in the past, fuelling this animosity. When fighting opponents of that group in close combat, the Acolyte gains a +10 bonus to all Weapon Skill tests made against them. He also finds it difficult to back down from a fight with his hated foe, and must make a Challenging (+0) Willpower test to retreat or surrender when fighting them, unless suicidally outnumbered or outclassed.",
+      "benefitRu": "Специализации: Космодесант Хаоса, Демоны, Мутанты, Псайкеры, Ксеносы (конкретный вид) или любые другие группы из врезки «Силы Аскеллона» (стр. 152). У аколита есть причины ненавидеть ту или иную группу, организацию или расу, причины, которые подпитывают эту вражду и сейчас. В сражении в ближнем бою с врагом, принадлежащим к группе, заслужившей его ненависть, аколит получает бонус +10 к проверкам Навыка Рукопашной, направленным против этого врага. Его ненависть настолько велика, что персонаж вынужден пройти Серьёзную (+0) проверку Силы Воли, чтобы попытаться отступить или сдаться в плен, независимо от количественного или качественного превосходства врага."
+    },
+    "hip-shooting": {
+      "en": "Hip Shooting",
+      "ru": "Стрельба от Бедра",
+      "prerequisites": "Agility 40, Ballistic Skill 40",
+      "benefit": "The Acolyte’s prowess with ranged weapons is such that he can still fire accurately without his eye behind the sights. As a Full Action, he can both move up to his Full Move rate and make a single attack with a ranged weapon. This attack can only be a single shot, and so cannot be a semi- or full-automatic ranged attack for example. Characters with the Two-Weapon Fighting talent can use this talent with Hip Shooting to make two single shots, if they are armed with a ranged weapon in each hand.",
+      "benefitRu": "Искусство аколита в обращении со стрелковым оружием таково, что он может метко поражать цель, даже не глядя на неё. В качестве Полного действия, аколит может совершить перемещение на Полную дистанцию и провести одну атаку из дистанционного оружия. Эта атака может быть только одиночным выстрелом, и не может быть Длинной или Короткой очередью. Персонажи с талантом Обоерукий воин могут использовать этот талант вместе с талантом Стрельба от Бедра для того, чтобы совершить два одиночных выстрела, если они держат по одному дистанционному оружию в каждой руке."
+    },
+    "independent-targeting": {
+      "en": "Independent Targeting",
+      "ru": "Независимое Прицеливание",
+      "prerequisites": "Ballistic Skill 40",
+      "benefit": "The Acolyte has developed his situational awareness to a point where he can fire in two directions within a split second. When firing two weapons as part of a single action (using the Two-Weapon Fighting talent, for example), the character does not need his targets to be within 10 metres of each other.",
+      "benefitRu": "Аколит развил своё искусство обращения с оружием настолько, что он может метко стрелять в двух направлениях одновременно. При стрельбе из двух оружий одновременно (например, используя талант Обоерукий воин) аколит может вести огонь по целям, которые разделяет больше 10 метров."
+    },
+    "inescapable-attack": {
+      "en": "Inescapable Attack",
+      "ru": "Неотразимая Атака",
+      "prerequisites": "Ballistic Skill 40 or Weapon Skill 40, Perception 35",
+      "benefit": "The Acolyte can anticipate his opponent’s reactions, and ensures his hits strike no matter how a foe tries to avoid them. This talent applies to Melee or Ranged attacks, depending on the Speciality chosen. After making a successful attack test of the appropriate type as part of an All Out Attack, Called Shot, Charge, Standard Attack, or Stun action, the character imposes a penalty on all evasion attempts (Dodge or Parry tests) made against this attack equal to 10 times the total degrees of success scored on the attack test.",
+      "benefitRu": "Ранг: 2 Требования: Навык Рукопашной 40 или Навык Стрельбы 40, Восприятие 35 Склонности: Навык Рукопашной или Навык Стрельбы, Изящество Специализация: Рукопашная, Стрелковая Аколит умеет предвидеть реакции своего противника и наносить удары так, что враг не сможет упредить их. Этот талант действует только на стрелковые атаки или только на атаки в ближнем бою, в зависимости от специализации. После успешной проверки атаки во время совершения действия Атака всеми силами, Меткая атака, Натиск, Стандартная Атака или Оглушение персонаж налагает штраф на все предпринимаемые противником проверки Избегания (т. е. проверки Парирования и Уклонения). Размер штрафа равен количеству достигнутых атакой степеней успеха, умноженному на 10 (например, одна ступень успеха означает штраф -10, две – штраф -20, и так далее)."
+    },
+    "infused-knowledge": {
+      "en": "Infused Knowledge",
+      "ru": "Вложенное Знание",
+      "prerequisites": "Intelligence 40, Lore (any one)",
+      "benefit": "The Acolyte has been imbued with a great breadth of lore, either through punishing noetic techniques or by arcane methods kept secret by the guardians of technology and learning. He counts as having all Common Lore and Scholastic Lore skills at rank 1 (Known)—basically, he knows something about everything. If he wishes to later improve his Lore skills, these advances must be bought using experience points (from rank 1) as normal. He also adds one degree of success to any successful Common or Scholastic Lore tests, due to his ingrained training.",
+      "benefitRu": "Аколит обладает весьма широкими познаниями, благодаря беспощадным ноэтическим практикам или мистическим методикам, хранимыми в тайне стражами технологии и знаний. Считается, что аколит имеет все умения Общих и Учёных Знаний на уровне 1 (Знает), т.е. знает обо всём по чуть-чуть. Если позже он захочет улучшить одно из этих умений, то эти улучшения должны быть куплены за очки опыта, как обычно, начиная с уровня 1. Кроме того, персонаж получает дополнительную ступень успеха к любой успешно пройденной проверке Общих и Учёных Знаний – это результат его укоренившихся знаний."
+    },
+    "iron-jaw": {
+      "en": "Iron Jaw",
+      "ru": "Железная Челюсть",
+      "prerequisites": "Toughness 40",
+      "benefit": "The Acolyte has taken blows from Orks and given back as good as he got, bouncing back from most strikes without ill effects. Whenever this character becomes Stunned, he may make a Challenging (+0) Toughness test as a Free Action to ignore the effects.",
+      "benefitRu": "Аколит принимал удары от орков и возвращал их, как мог, встречая ответные плюхи и тумаки безо всяких последствий. Когда аколит оказывается Оглушён, он может, за Свободное действие, пройти Серьёзную (+0) проверку Выносливости, и, при успехе, игнорировать эффекты Оглушения."
+    },
+    "jaded": {
+      "en": "Jaded",
+      "ru": "Искушённый",
+      "prerequisites": "Willpower 40",
+      "benefit": "The Acolyte’s wide travels have shown him both wonders and horrors beyond the ken of most. The galaxy has thrown its worst at him and he has yet to flinch. Mundane events, from death’s horrific visage to xenos abominations, do not force him to gain Insanity points or make Fear tests. Daemons, Warp manifestations, and other unnatural effects still affect him normally.",
+      "benefitRu": "В своих путешествиях аколит повидал куда больше, как чудес, так и ужасов, чем многие другие. Галактика столкнула его с худшим, но он не дрогнул. «Обыденные» ужасы, вроде созерцания жуткой сцены убийства или встречи с мерзкими ксеносами не оказывают влияния на персонажа, не могут принести ему очки Безумия или заставить сделать проверку Страха. Однако, встречи с демонами, проявления Варпа и другие сверхъестественные ужасы действуют на аколита по-прежнему."
+    },
+    "keen-intuition": {
+      "en": "Keen Intuition",
+      "ru": "Чуткая Интуиция",
+      "prerequisites": "Intelligence 35",
+      "benefit": "The Acolyte has trained extensively to notice objects that seem out of place or hidden. This can bring the smallest irregularity to prominence, revealing the heresy festering beneath the surface. After failing an Awareness skill test, the character can re-roll the test with a –10 modifier.",
+      "benefitRu": "Глаз аколита наметан замечать вещи, что выглядят странно или необычно. Мельчайшее отклонение от нормы может выдать сокрытую гниль ереси. После проваленной проверки Бдительности, персонаж может перебросить его со штрафом -10."
+    },
+    "killing-strike": {
+      "en": "Killing Strike",
+      "ru": "Убийственный Удар",
+      "prerequisites": "Weapon Skill 50",
+      "benefit": "With expert precision, the Acolyte can land blows which defy his opponent’s ability to counter, slicing through defences as surely as a powerblade cuts flesh. At the beginning of each of his turns, the character may spend a Fate point to make his melee attacks unavoidable with the Dodge and Parry skills until the end of the round. Other means of avoiding or stopping attacks (such as displacer fields or alien protective devices) are unaffected.",
+      "benefitRu": "С убийственной точностью аколит может нанести врагу неотразимый удар, что пройдет через его защиту как силовой меч – сквозь плоть. В начале каждого своего хода персонаж может потратить очко Судьбы для того, чтобы до конца раунда его атак в ближнем бою нельзя было избежать Парированием или Уклонением. Этот талант не влияет на другие способы избежать атаки – например, отражающие силовые поля или защитные ксеноустройства."
+    },
+    "leap-up": {
+      "en": "Leap Up",
+      "ru": "Вскочить",
+      "prerequisites": "Agility 30",
+      "benefit": "A combination of athletic ability and speed allows the Acolyte to spring to his feet in virtually any circumstance. He can stand up as a Free Action.",
+      "benefitRu": "Физическая подготовка и скорость аколита позволяют ему, будучи поваленным на землю, вскочить в любых обстоятельствах. Персонаж может подняться на ноги в качестве Свободного действия. этом списке перечислены самые общеизвестные фракции сектора Аскеллон. одном суб-секторе или даже на одной лишь планете, усиливаться и слабеть, в зависимости от обстоятельств. Администратум: огромная бюрократическая машина Империума, управляющая его владениями. Адептус Арбитес: хранители имперского закона, принуждающие к верности Золотому трону. Адептус Астартес: генетически улучшенные и закованные в силовую броню Ангелы Смерти. Адептус Астра Телепатика: организация, что тренирует и санкционирует имперских псайкеров. Адептус Механикус: служители Омниссии, хранители технологий. Астропаты: телепаты, объединяющие Империум своими психическими связями. Капитаны-хартисты: хозяева космических кораблей, путешествующие по мирам Империума. Коллегия Титаника: Легионы Титанов, огромных машин войны, от чьей поступи сотрясается земля. Преступные картели: множество организаций, работающих за гранью аскеллонских законов. ксеносов и других угроз. Экклезиархия: хранители веры в божественность Императора. Еретические культы: множество отступников и нечестивцев, действующих в секторе и за его границами. Астра Милитариум: бесчисленные армии Империума, сражающиеся в бесконечных битвах по всей галактике. Имперский Флот: боевые корабли, что защищают миры Империума. Инквизиция: тайные защитники Человечества. Навигаторы: мутанты, что способны вести корабли через Варп. Оффицио Ассассинорум: тайно приносящие смерть всем, кто выступил против Воли Императора. Вольные торговцы: те, кто путешествуют по неизведанным мирам в Империуме и за его пределами. Схола Прогениум: школы, где обучают сирот Имперских служащих. Схоластика Псайкана: организация, тренирующая и санкционирующая имперских псайкеров. Легионы предателей: падшие братья Адептус Астартес, полные ненависти и тёмных замыслов. племен."
+    },
+    "lightning-attack": {
+      "en": "Lightning Attack",
+      "ru": "Молниеносная Атака",
+      "prerequisites": "Swift Attack",
+      "benefit": "The Acolyte’s speed with weapons is unmatched, allowing him to launch flurries of attacks in melee. He can make the Lightning Attack action (see page 222).",
+      "benefitRu": "Скорость аколита в бою не знает себе равных, позволяя ему обрушить на своих врагов шквал ударов. Персонаж может применять специальное действие Молниеносная Атака (см. стр. 274)."
+    },
+    "luminen-blast": {
+      "en": "Luminen Blast",
+      "ru": "Взрыв Люминена",
+      "prerequisites": "Luminen Shock, Luminen Capacitors, Mechanicus Implants",
+      "benefit": "The energies charged in the Acolyte’s Luminen Capacitors can be expelled in a ranged attack. The character always counts as being equipped with a Pistol weapon with a 10m range. This can only be used in single shot mode, and deals 1d10 plus twice his Willpower bonus in Energy damage, with Pen 0 and the Shocking quality. The character always counts as having Weapon Training for this weapon and after making an attack with it, he must pass a Toughness test or suffer 1 level of Fatigue.",
+      "benefitRu": "Энергия, накопленная в конденсаторах аколита, может быть использована для поражения врагов на расстоянии. Персонаж всегда считается имеющим при себе оружие типа Пистолет с дальностью выстрела 10 м., стреляющий только в одиночном режиме и наносящий 1к10+(БСВ*2) Энергетического урона, имеющего Пробиваемость 0 и качество Шоковое. Персонаж считается имеющим талант обращения с этим оружием. После применения этого таланта аколит должен преуспеть в проверке Выносливости или получить 1 уровень Усталости."
+    },
+    "luminen-shock": {
+      "en": "Luminen Shock",
+      "ru": "Шок Люминена",
+      "prerequisites": "Luminen Capacitors, Mechanicus Implants",
+      "benefit": "The energies charged in the Acolyte’s Luminen Capacitors can be expelled by touching a foe. The character always counts as being equipped with a melee weapon that inflicts 1d10 plus his WPB in Energy damage, with Pen 0 and the Shocking quality. He always counts as having Weapon Training for it and after making this attack, he must pass a Toughness test or suffer 1 level of Fatigue.",
+      "benefitRu": "Аколит может поражать своих врагов разрядами энергии из своих конденсаторов. Персонаж всегда считается имеющим при себе оружие ближнего боя, наносящее 1к10+БСВ Энергетического урона, Пробиваемость 0 и имеющего качество Шоковое. Персонаж считается имеющим талант обращения с этим оружием. После применения этого таланта аколит должен преуспеть в проверке Выносливости или получить 1 уровень Усталости."
+    },
+    "maglev-transcendence": {
+      "en": "Maglev Transcendence",
+      "ru": "Левитационная Трансценденция",
+      "prerequisites": "Maglev Coils, Mechanicus Implants",
+      "benefit": "The Acolyte has learned how to better use his implanted maglev coils, and can hover for a number of minutes equal to 1d10 plus twice his Toughness bonus. He can move his Run speed when making a Half Move action and suffers no damage from falling if the coils are active. Each use drains half the power stored in the coils (therefore he can use the coils twice before recharging them).",
+      "benefitRu": "Аколит знаком с более эффективными способами использования своей левитационной катушки и может парить в воздухе 1к10+(2*бонус Выносливости) минут. Он может передвигаться со скоростью Бега в качестве Полудействия и не получает урона от падения до тех пор, пока левитационная катушка работает. Каждое применение этого таланта поглощает половину энергии из катушки (поэтому он может быть применен дважды до того как катушке потребуется подзарядка)."
+    },
+    "marksman": {
+      "en": "Marksman",
+      "ru": "Меткий Стрелок",
+      "prerequisites": "Ballistic Skill 35",
+      "benefit": "The Acolyte’s steady hand and eagle eye allow him to keep crosshairs steady on any target, regardless of range. Distance is no protection against the character’s marksmanship, and he suffers no penalties for making Ballistic Skill tests at Long or Extreme range.",
+      "benefitRu": "Твердая рука и зоркий глаз позволяют аколиту удерживать цель на мушке, независимо от того, насколько далеко она находится. Расстояние – не помеха. Аколит не получает штрафов на проверки Навыка Стрельбы, стреляя на дальнюю или сверхдальнюю дистанцию."
+    },
+    "mastery": {
+      "en": "Mastery",
+      "ru": "Мастерство",
+      "prerequisites": "Rank 4 in selected skill",
+      "benefit": "The Acolyte has mastered a single skill. He can spend a Fate point to automatically pass a skill test with his chosen skill, provided the final modifier to his skill test is Challenging (+0) or better. He scores a number of degrees of success equal to the characteristic bonus of the skill’s associated characteristic. This talent may be taken more than once, each time for a different skill.",
+      "benefitRu": "Специализации: Любое умение Аколит – мастер в своём деле. Он может потратить очко Судьбы, чтобы автоматически пройти проверку выбранного умения, облегчая проверку до Серьёзной (+0) или проще. Количество степеней успеха считается равным бонусу связанной с умением характеристики. Это талант можно взять несколько раз, каждый раз для другого умения."
+    },
+    "mechadendrite-use": {
+      "en": "Mechadendrite Use",
+      "ru": "Использование Механодендритов",
+      "prerequisites": "Mechanicus Implants",
+      "benefit": "The Acolyte is trained in the use of a particular kind of mechadendrite (see page 183) in much the same way as Weapon Training allows the use of weapons. Though there are many different types of mechadendrites, this talent divides them into two broad categories: • Weapon: Mechadendrites of this type end in either ranged or close combat weapons, and have the supplemental power supplies and mechanical support necessary for combat. • Utility: Including such varied types as Manipulator, Medicae, Utility, Optical, and countless others, these generally require less hardy mountings, but all function in a similar manner.",
+      "benefitRu": "Аколит обучен использованию одного из типов механодендрита (см. стр. 224). Поскольку существует много видов механодендритов, этот талант делит их на две категории: Боевые: механодендриты этого типа несут оружие (стрелковое или ближнего боя) и оснащены всем для ведения боя. Вспомогательные: сюда входят такие виды как манипуляторный, медицинский, вспомогательный, оптический и множество других. Они не такие крепкие, но очень функциональные."
+    },
+    "mighty-shot": {
+      "en": "Mighty Shot",
+      "ru": "Мощный Выстрел",
+      "prerequisites": "Ballistic Skill 40",
+      "benefit": "The Acolyte knows the weak points in every type of armour and material, and has the skill to ensure that his shots land exactly where they can do the most damage. He adds half his Ballistic Skill bonus (rounded up) to damage he inflicts with ranged weapons.",
+      "benefitRu": "Аколит знает слабые места во всех видах брони и направляет свои выстрелы туда, где они нанесут наибольший урон. Персонаж добавляет половину своего бонуса Навыка Стрельбы (округлять вверх) к урону, наносимому дистанционными атаками."
+    },
+    "never-die": {
+      "en": "Never Die",
+      "ru": "Неубиваемый",
+      "prerequisites": "Willpower 50, Toughness 50",
+      "benefit": "The Acolyte’s will or devotion to the Emperor can sustain him when his mortal body fails. He may spend one Fate point to ignore the effects of injury (such as those from Critical damage), Fatigue, and Stunning for a single combat, so long as they would not kill him immediately. This talent does not prevent the damage, but allows him to temporarily ignore its effects for the duration of the combat. Once the encounter ends, the effects trigger as normal.",
+      "benefitRu": "Воля аколита или его преданность Императору поддерживают его даже тогда, когда его смертное тело вот- вот падет. Персонаж может потратить одно очко Судьбы, чтобы игнорировать эффекты увечья (в том числе от Критического урона), Усталости и Оглушения в течение боя. Это не распространяется на те эффекты Урона, Усталости или Оглушения, что убивают персонажа немедленно. Этот талант не предотвращает урон, а лишь позволяет не замечать его на время боя. Когда боевая сцена заканчивается, эффекты действуют в обычном порядке."
+    },
+    "nowhere-to-hide": {
+      "en": "Nowhere to Hide",
+      "ru": "Негде Прятаться",
+      "prerequisites": "Perception 30",
+      "benefit": "The Acolyte’s keen eye ensures he can spot soft points even in the most impregnable of protective cover. When he damages cover (see page 229), the character adds his degrees of success from the attack to the reduction of the cover’s Armour value. If using a weapon that does not require a skill test, he adds 1 instead.",
+      "benefitRu": "Острый глаз аколита найдет слабые места даже в самом надёжном укрытии. Когда персонаж наносит урон укрытию (см. стр. 282), он может добавить количество степеней успеха своей атаки к сумме, на которую снижается уровень защиты, предоставляемый укрытием. Если аколит использует оружие, которое не предполагает проверки, «прибавка» считается равной 1."
+    },
+    "peer": {
+      "en": "Peer",
+      "ru": "Связи",
+      "prerequisites": "Fellowship 30",
+      "benefit": "The Acolyte knows how to deal with a particular social group or organisation, or even xenos race. He gains a +10 bonus to all Fellowship and Influence tests when interacting with this chosen group, and at the GM’s discretion can sometimes call upon them for favours. The GM and player may agree to award this talent when appropriate to the adventure or campaign, though the character must still pay the experience cost for the Talent as normal. This talent can be awarded multiple times for the same group, in which case it should be listed as Peer (X), with X equalling the number of times the talent has been awarded. This can be used to represent groups who particularly like the character and may even be staunch allies. In game terms, the bonus to Fellowship tests increases to +10 times X. Additionally, when the character acquires this talent, he increases his Influence by 1.",
+      "benefitRu": "Специализации: любой пункт из врезки Силы Аскеллона (стр. 152) или по решению МИ. Аколит знает, как вести себя с определённой группой, организацией или даже расой ксеносов. Он получает бонус +10 ко всем проверкам Общительности и Влияния с представителями данной группы и, по решению МИ, иногда может просить их об услугах. По решению МИ или игрока этот талант нужно заслужить по результатам кампании или отдельного приключения, после чего игрок может приобрести его за очки опыта, в обычном порядке. Этот талант, связанный с одной группой, можно получить несколько раз, что отражает крепнущее расположение этой группы к аколиту, в этом случае он отображается как Связи (X), где X – количество раз когда этот талант был получен. В игровых терминах, это означает, что бонус +10 к Общительности и Влиянию увеличивается ещё на +10*X раз. Кроме того, каждый раз, когда персонаж получает этот талант, его Влияние возрастает на 1."
+    },
+    "precision-killer": {
+      "en": "Precision Killer",
+      "ru": "Убийственная Точность",
+      "prerequisites": "Ballistic Skill 40 or Weapon Skill 40",
+      "benefit": "The Acolyte’s eye, hand, and weapon act seamlessly together, placing his attacks exactly where he intends. When this talent is taken, the character selects the Specialisation that matches the Characteristic and Aptitude pair (Ballistic Skill or Weapon Skill) used in purchase. When making a Called Shot (see page 219) with a melee or ranged attack (depending on the Specialisation), he does not suffer the usual –20 penalty.",
+      "benefitRu": "Ранг: 2 Требования: Навык Рукопашной 40 или Навык Стрельбы 40 Склонности: Навык Рукопашной или Навык Стрельбы, Изящество Специализации: Рукопашное, Стрелковое Глаза, руки и оружие аколита действуют как единое целое, нанося удары точно туда, куда он их нацелил. Выбирая этот талант, персонаж определяет свою специализацию (рукопашную или стрелковую с соответствующей Склонностью). При совершении действия Меткая атака персонаж не получает обычного штрафа -20."
+    },
+    "preternatural-speed": {
+      "en": "Preternatural Speed",
+      "ru": "Нечеловеческая Скорость",
+      "prerequisites": "Weapon Skill 40, Agility 50",
+      "benefit": "The Acolyte is a swift-moving bringer of death, a living, bloody scythe before whom foes die like corn before the reaper. When making a Charge action, he doubles his normal Charge movement (for instance, if he has an Agility bonus of 3 and thus a Charge movement of 9 metres, his movement is then doubled to 18 metres with this talent).",
+      "benefitRu": "В бою аколит стремителен и смертоносен, подобно живой кровавой косе, перед которой враги ложатся, как колосья перед жнецом. При совершении действия Натиск, его возможная дистанция удваивается (например, если аколит имеет бонус Ловкости 3 и дистанцию Натиска 9 метров, то с этим талантом она будет равна 18 метрам)."
+    },
+    "prosanguine": {
+      "en": "Prosanguine",
+      "ru": "Просангвина",
+      "prerequisites": "Autosanguine Implants, Mechanicus Implants",
+      "benefit": "Through the Acolyte’s iron will, he is able to speed the function of his Autosanguinator. He must spend 10 minutes in meditation and make a Tech-Use test. If he succeeds, he removes 1d5 points of damage. If he rolls a 96 or higher, he loses the ability to use his Autosanguinator for one week.",
+      "benefitRu": "Усилиями железной воли аколит может ускорять работу имплантированных ему автосангвинаторов. Персонаж должен медитировать в течение 10 минут и сделать проверку Техпользования. В случае успеха, он убирает 1к5 единиц урона. Если на кубиках выпал результат 96 или выше, персонаж теряет возможность пользоваться своими автосангвинаторами на одну неделю"
+    },
+    "quick-draw": {
+      "en": "Quick Draw",
+      "ru": "Выхватить Оружие",
+      "prerequisites": "None",
+      "benefit": "The Acolyte has practised so frequently with his weapons that they practically leap into his hands in response to a simple thought. As a Free Action, the character may draw and ready a Pistol or Basic weapon, or a one-handed Melee weapon.",
+      "benefitRu": "Аколит настолько часто практиковался в обращении со своим оружием, что теперь в самый ответственный момент оно вмиг может оказаться в его руках. Персонаж может выхватить и приготовить к бою пистолет, Основное оружие или одноручное оружие ближнего боя в качестве Свободного действия."
+    },
+    "rapid-reload": {
+      "en": "Rapid Reload",
+      "ru": "Быстрая Перезарядка",
+      "prerequisites": "None",
+      "benefit": "The firing ranges and weapon drill chambers are the Acolyte’s constant abode. Hours of reloading countless magazines or power cells means that he can replace them without looking and without thinking, even in the middle of combat. He halves all reload times, rounding down. Thus, a Half Action reload becomes a Free Action, a Full Action reload becomes a Half Action, and so on.",
+      "benefitRu": "Стрелковые полигоны и комнаты испытания оружия были постоянной обителью аколита. Часы, потраченные на перезарядку бесконечных магазинов и энергетических ячеек, не прошли даром – теперь аколит, даже в горячке боя, может перезарядить любое оружие быстро, не глядя на него, и даже не задумываясь о том, что он делает. Персонаж тратит вдвое меньше времени на перезарядку (округлять вниз). Таким образом, Полудействие становиться Свободным, Полное – Полудействием и так далее."
+    },
+    "resistance": {
+      "en": "Resistance",
+      "ru": "Сопротивление",
+      "prerequisites": "None",
+      "benefit": "The Acolyte’s background, experience, training, exposure, or plain stubbornness has developed a resistance within him. Each time he selects this talent, choose one area of resistance. He gains a +10 bonus when making tests to resist effects of this type. The GM can require approval for certain choices, or justification based on the Acolyte’s past.",
+      "benefitRu": "Специализации: Холод, Страх, Жара, Токсины, Психические Силы, Радиация, Вакуум и др. Прошлое аколита, его жизненный опыт, тренировки или просто природное упорство выработали в нем сопротивление к определенному виду воздействий. Каждый раз, беря этот талант, игрок должен выбрать, к чему конкретно он хочет получить сопротивляемость. Персонаж получает бонус +10 ко всем проверкам, сделанным для сопротивления эффектам того, к чему у него повышена сопротивляемость. МИ может отклонить некоторые варианты или потребовать соотнести их с прошлым аколита."
+    },
+    "sound-constitution": {
+      "en": "Sound Constitution",
+      "ru": "Крепкое Телосложение",
+      "prerequisites": "None",
+      "benefit": "The Acolyte gains an additional wound. He can purchase this talent additional times up to twice his Toughness bonus. When he gains this talent multiple times, note the number of times it has been taken after the talent, such as Sound Constitution (3).",
+      "benefitRu": "Аколит получает дополнительную рану. Персонаж может брать себе этот талант количество раз, равное его удвоенному бонусу Выносливости. Каждый раз, выбирая этот талант, записывайте в скобках, в который раз он взят, например «Крепкое Телосложение (3)»."
+    },
+    "sprint": {
+      "en": "Sprint",
+      "ru": "Спринт",
+      "prerequisites": "None",
+      "benefit": "The Acolyte moves at great speeds, and when taking a Full Move action can move an extra number of metres equal to his Agility bonus. Additionally, whenever he takes a Run action, he may move double the normal distance. If he did so in the previous round, however, he suffers 1 level of Fatigue.",
+      "benefitRu": "Аколит передвигается очень быстро, и, каждый раз при совершении действия Полное Движение, он может дополнительно пройти количество метров, равное его бонусу Ловкости. Кроме того, расстояние Бега аколита удваивается. Персонаж получает 1 уровень Усталости, если применяет этот талант два раунда подряд."
+    },
+    "step-aside": {
+      "en": "Step Aside",
+      "ru": "Шаг В Сторону",
+      "prerequisites": "Agility 40, Dodge or Parry",
+      "benefit": "Swaying his body out of the path of an attack, the Acolyte causes the shot to pass through thin air, or turns his blade mid-swing to deflect a blow. He can make an additional Evasion attempt (either a Dodge or a Parry) once per round. In effect, this gives him a second Reaction that can only be used for Dodge or Parry attempts, allowing two Dodges, two Parries, or a Dodge and a Parry in each turn. However, he can still only attempt a single Dodge or Parry against each individual attack.",
+      "benefitRu": "Ловким маневром аколит может заставить пулю просвистеть мимо него, а клинком так отклонить удар противника, что тот рассечёт лишь воздух. Персонаж получает одну дополнительную реакцию Избегание в раунд, которую можно потратить на дополнительное Парирование или Уклонение, что позволяет совершить два Парирования или два Уклонения или одно Парирование и одно Уклонение в ход. Однако, от одной конкретной атаки, можно уходить Парированием или Уклонением только один раз."
+    },
+    "strong-minded": {
+      "en": "Strong Minded",
+      "ru": "Непреклонный",
+      "prerequisites": "Resistance (Psychic Powers), Willpower 30",
+      "benefit": "The Acolyte’s mind acts as a fortress against psychic attacks. He can re-roll failed Willpower tests to resist any psychic powers that affect his mind. This talent does not affect psychic powers that have a physical effect, such as Smite or Assail.",
+      "benefitRu": "Разум аколита подобен крепости, защищенной от психических атак. Персонаж может перебрасывать проваленные проверки Силы Воли, сделанные для того, чтобы сопротивляться психическим силам, воздействующим на разум. Этот талант не оказывает влияния на психосилы, имеющие физический эффект, таким как Разрывающий Разряд или Швыряние."
+    },
+    "superior-chirurgeon": {
+      "en": "Superior Chirurgeon",
+      "ru": "Превосходный Хирургеон",
+      "prerequisites": "Rank 2 in the Medicae skill",
+      "benefit": "The Acolyte’s advanced medical training enables him to knit flesh with deft mastery, essential for treating combat casualties. His exceptional education in use of the Narthecium, Med-Slate, and supplemental drugs give his patients an enormous advantage. He gains a +20 bonus on all Medicae skill tests. When providing first aid, he ignores the penalties for Heavily Damaged patients and only suffers a –10 penalty for those suffering Critical damage.",
+      "benefitRu": "Глубокая медицинская подготовка аколита позволяет ему искусно зашивать любые раны, что очень важно в боевой обстановке. Умелое применение нартециума, мадпакета и различных препаратов сильно увеличивает шансы его пациентов. Персонаж получает бонус +20 ко всем проверкам Медики. При оказании первой помощи он не получает штрафов при работе с Тяжело Ранеными пациентами, а исцеляя Критический урон получает штраф только -10."
+    },
+    "swift-attack": {
+      "en": "Swift Attack",
+      "ru": "Быстрая Атака",
+      "prerequisites": "Weapon Skill 30",
+      "benefit": "The Acolyte’s ability with weapons is legendary, allowing him to attack with amazing speed in melee. He can make the Swift Attack action (see page 225).",
+      "benefitRu": "Фехтовальные навыки аколита позволяют ему сражаться в ближнем бою с впечатляющей скоростью. Персонаж может применять действие Быстрая Атака (см. стр. 277)."
+    },
+    "takedown": {
+      "en": "Takedown",
+      "ru": "Нокдаун",
+      "prerequisites": "None",
+      "benefit": "When making a Standard Attack or Charge action, the Acolyte can declare that he is attempting a takedown his target. He then rolls to hit (using his Weapon Skill) as normal, applying all the regular modifiers for the attack action. If the character hits and would have done at least 1 point of damage (after reduction for Armour and Toughness), no wounds are caused. Instead, the opponent must make a Challenging (+0) Toughness test or be Stunned for 1 Round and knocked Prone. In addition, when performing a Stun Action, the character does not suffer the normal –20 penalty to his Weapon Skill.",
+      "benefitRu": "При совершении действий Натиск или Стандартная Атака, аколит может объявить, что пытается оглушить свою цель. Персонаж совершает бросок на попадание (используя свой Навык Рукопашной) со всеми обычными модификаторами. Если атака достигла цели и нанесла хотя бы одно очко урона (после вычитания Брони и бонуса Выносливости), то нанесенный Урон не засчитывается, но цель должна преуспеть в Серьёзной (+0) проверке Выносливости. Если проверка пройдена, враг падает на землю, считается Упавшим и получает Оглушение на 1 Раунд. Кроме того, при попытке совершить действие Оглушить против врага находящегося в Нокдауне, аколит не получает штрафа -20 на проверку Навыка Рукопашной."
+    },
+    "target-selection": {
+      "en": "Target Selection",
+      "ru": "Выбор Цели",
+      "prerequisites": "Ballistic Skill 50",
+      "benefit": "The Acolyte’s dread gaze marks out his chosen victim, and not even the riotous confusion of close combat interferes. He can shoot into melee with no penalty. If he also makes an Aim action beforehand, he prevents any chance of hitting friendly targets as well.",
+      "benefitRu": "Даже сумятица ближнего боя не может скрыть врага от смертоносного взгляда аколита, что уже наметил свою жертву. Персонаж может стрелять в ближний бой без штрафов. Совершение действия Прицелиться перед таким выстрелом предотвращает вероятность попасть в своих."
+    },
+    "technical-knock": {
+      "en": "Technical Knock",
+      "ru": "Искусный Стук",
+      "prerequisites": "Intelligence 30",
+      "benefit": "Either through the ease of long practice, or the proper ritual to appease a weapon’s machine spirit, the Acolyte can clear stoppages with a simple knock or solid smack of his hand to a weapon. Once per round, he may attempt to unjam a gun (see page 224) as a Half Action rather than a Full Action. He must touch the weapon to make use of this talent.",
+      "benefitRu": "Благодаря долгой практике или знанию нужных ритуалов усмирения машинных духов оружия, аколит может устранить осечку простым постукиванием по нему или лёгким ударом руки. Один раз за раунд аколит может снять Клин с оружия (см. стр. 277) в качестве Полудействия, а не Полного. Чтобы использовать этот талант нужно иметь возможность дотронуться до необходимого оружия."
+    },
+    "thunder-charge": {
+      "en": "Thunder Charge",
+      "ru": "Яростный Натиск",
+      "prerequisites": "Strength 50",
+      "benefit": "The Acolyte charges into combat using his body as an additional weapon. Driven by his rage and momentum, the impact of such a charge can knock foes flying or bring them to their knees. When he makes a Charge action, he can barrel through enemies to get to his target. The character makes an Opposed Strength test against each foe in his way (those who his movement would take him past or through). Each foe that loses the Opposed test is knocked Prone. After resolving these Opposed tests, the character’s Charge action resolves against his original target as normal.",
+      "benefitRu": "Аколит бросается в бой, используя своё тело как ещё одно оружие. Ведомый своей яростью, он врезается во врага с такой силой, что может отправить его в полет или швырнуть на колени. При совершении действия Натиск, персонаж может расшвыривать своих врагов, добираясь до цели. Аколит должен предпринять Встречную проверку Силы против того, кто оказался у него на пути (то есть того, кто преградил путь к цели Натиска). Любой враг, проваливший проверку, считается Упавшим. После бросков этих проверок, Натиск персонажа против его первоначальной цели отыгрывается как обычно."
+    },
+    "true-grit": {
+      "en": "True Grit",
+      "ru": "Истинная Стойкость",
+      "prerequisites": "Toughness 40",
+      "benefit": "The Acolyte is able to shrug off wounds that would fell lesser men. Whenever he suffers Critical damage (after reduction for Armour and Toughness), reduce the amount by his Toughness bonus (to a minimum of 1 damage).",
+      "benefitRu": "Аколит способен не обращать внимания на раны, которые свалили бы менее выносливого человека. Каждый раз, получая Критический урон, персонаж уменьшает его значение на свой бонус Выносливости (до минимума в 1)."
+    },
+    "two-weapon-master": {
+      "en": "Two-Weapon Master",
+      "ru": "Обоерукий мастер",
+      "prerequisites": "Agility 45, Ambidextrous, Ballistic Skill 40 or Weapon Skill 40, Two-Weapon Wielder (Melee, Ranged)",
+      "benefit": "The Acolyte has mastered the difficult ability of wielding a weapon in each hand, making him deadly both in personal and short-ranged attacks. When armed with two single-handed weapons (such as a pistol or sword in either hand), he ignores the –20 penalty for Two-Weapon Fighting (see page 228).",
+      "benefitRu": "Ранг: 3 Требования: Ловкость 45, Амбидекстрия, Навык Рукопашной 40 или Навык Стрельбы 40, Обоерукий воин (Навык Рукопашной, Навык Стрельбы) Склонности: Нападение, Изящество Аколит – мастер сложного искусства ведения боя с оружием в каждой руке, что делает его смертоносным врагом, как в рукопашной схватке, так и в перестрелке. Будучи вооружен одним одноручным оружием в каждой руке (таким как, меч или пистолет), аколит не получает штраф -20 за ведения боя двумя руками одновременно (см. стр. 281)."
+    },
+    "two-weapon-wielder": {
+      "en": "Two-Weapon Wielder",
+      "ru": "Обоерукий воин",
+      "prerequisites": "None",
+      "benefit": "Intensive training allows the Acolyte to use a weapon in each hand when needed. When armed with two one-handed weapons (ether melee or ranged weapons), after making a Half Action attack (this can be a Single Attack, a Swift Attack, or a Lightning Attack with a melee weapon, or it can be a single shot, semi-auto burst, or full auto burst with a ranged weapon), he can make a single additional Half Action attack following the same restrictions with the other weapon as a Free Action. In effect, this allows him to attack twice in a round, once from each of his weapons. Both of these attacks count as being part of the same Half Action, and both tests made to attack with the weapons suffer a –20 penalty. This talent can be taken twice, each time with a different specialisation (melee or ranged). If he possesses both talents, then he can fight with one melee and one ranged weapon. When this talent is taken with the melee focus it counts as having the Weapon Skill and Finesse aptitudes, and when it is taken with the ranged focus it counts as having the Ballistic Skill and Finesse aptitudes.",
+      "benefitRu": "Ранг: 2 Требования: Нет Склонности: или Навык Навык Рукопашной Стрельбы, Изящество Специализации: Рукопашное или Стрелковое Интенсивные тренировки позволили аколиту вести бой, держа в каждой руке по оружию. Будучи вооружен двумя одноручными оружиями (рукопашными или стрелковыми), после совершения действия атаки, занимающего Полудействие (для рукопашного оружия это может быть Стандартная Атака, Быстрая или Молниеносная Атака, а для стрелкового оружия — одиночный выстрел, Длинная или Короткая Очередь), персонаж может, в качестве Свободного действия совершить одну дополнительную атаку, которая в обычных условиях заняла бы Полудействие, но атаки другим оружием подвергаются тем же ограничениям что и реакции. Фактически персонаж атакует дважды в раунд, по одному разу каждым оружием. Обе эти атаки считаются занимающими одно Полудействие и получают штраф -20 на проверку навыка. Этот талант может быть взят дважды, с обоими специализациями. Если персонаж владеет обоими талантами, он может сражаться, используя одно стрелковое оружие и одно оружие ближнего боя одновременно. При выборе специализации Рукопашное, этот талант связан со Склонностями Навык Рукопашной и Изящество. При выборе специализации Стрелковое – с Навыком Стрельбы и Изящество."
+    },
+    "unarmed-specialist": {
+      "en": "Unarmed Specialist",
+      "ru": "Специалист по безоружному бою",
+      "prerequisites": "Agility 35, Ambidextrous, Weapon Skill 35",
+      "benefit": "After extensive training, the Acolyte has made his body as dangerous as any Munitorum-issued weapon. He gains the Deadly Natural Weapon trait (see page 135), and counts as armed even when facing weapon-wielding opponents while barehanded. While fighting barehanded, he can also re-roll the damage he inflicts.",
+      "benefitRu": "Благодаря долгим тренировкам аколит сделал собственное тело столь же опасным, как любое оружие Муниторума. Он получает черту «Смертоносное природное оружие» (см. стр. 135 английской книги) и считается вооружённым, даже если сражается голыми руками с противниками, использующими оружие. Когда аколит сражается без оружия, он также может перебросить наносимый им урон."
+    },
+    "warp-conduit": {
+      "en": "Warp Conduit",
+      "ru": "Варп-Канал",
+      "prerequisites": "Psy rating, Strong Minded, Willpower 50",
+      "benefit": "The sheer power of the Acolyte’s mind allows him to channel vast amounts of Warp energy when he chooses. When Pushing (see page 194), before rolling his Focus Power test the character may spend one Fate Point to add an additional 1d5 to the effective psy rating of the power. Channelling such vast amounts of power is dangerous, however, and so he adds +30 to rolls on Table 6–2: Psychic Phenomena when he makes as a result of this talent.",
+      "benefitRu": "Мощь разума аколита позволяет ему создать канал чистой энергии Варпа. При Усилии (см. стр. 239) перед тем как бросать кости на проверку Фокусировки Силы, персонаж может потратить одно очко Судьбы, чтобы увеличить свой фактический пси-рейтинг для совершения этой психосилы на дополнительные 1к5. Использование таких приёмов очень опасно, и персонаж получает +30 к броскам по таблице 6-2: Психические Феномены, если феномен вызван психической силой, примененной с использованием этого таланта."
+    },
+    "warp-lock": {
+      "en": "Warp Lock",
+      "ru": "Варп-блок",
+      "prerequisites": "Psy rating, Strong Minded, Willpower 50",
+      "benefit": "The Acolyte has learned to swiftly cut himself off from the Warp to protect himself from harm. Once per game session, he may ignore the Psychic Phenomena he has rolled (including the Perils of the Warp result on Table 6–2: Psychic Phenomena, see page 196), completely negating its effects. Such rapid dislocation from the Warp, though, is stressful and traumatic to his mind. He suffers 1d5 Energy damage to the Head location (not reduced by Armour or Toughness) as a result, and cannot make any Focus Power tests or sustain other psychic powers until the beginning of his next turn.",
+      "benefitRu": "Аколит обучен быстро отсекать свой разум от Варпа в попытке избежать его пагубного влияния. Один раз за игровую сессию персонаж может избежать выпавшего ему психического феномена из таблицы 6-2: Психические Феномены (см. стр. 242). Феномен не оказывает эффекта, это распространяется и на эффекты Опасностей Варпа. Однако столь быстрый рывок прочь из Варпа очень опасен для разума. Персонаж получает 1к5 Энергетического урона в голову, который не уменьшается ни Броней, ни бонусом Выносливости, и не может проявлять психосилы или поддерживать уже проявленные до конца хода. Бонус +20 к Медике, улучшение первой помощи Могучий удар в рукопашной Добавляет половину бонуса НР к урону в рукопашной Ускорение передвижения в бою Перемещение после рукопашной атаки Дополнительное Парирование или Уклонение Возможность расшвыривать врагов в бою"
+    },
+    "warp-sense": {
+      "en": "Warp Sense",
+      "ru": "Варп-чувство",
+      "prerequisites": "Perception 30, Psy rating, Psyniscience",
+      "benefit": "The Acolyte’s senses have evolved to perceive the Warp in parallel with the physical world. The character can use the Psyniscience Skill as a Free Action instead of as a Half Action. He can also passively detect psychic effects and entities without the need to actively seek them out. Whenever the character could detect such a Warp signature or a creature, the GM can allow him to make a Psyniscience skill test to detect it, in the same way he could use Awareness to spot an ambush without knowing it is there.",
+      "benefitRu": "Чувства аколита развиты так, что могут воспринимать как Варп, так и физический мир. Персонаж может использовать умение Психонаука как Свободное действие, вместо Полудействия. Также он может замечать психические эффекты или созданий, не концентрируясь на этом. Каждый раз, когда персонаж способен почуять какую-либо варп- сущность или энергию, МИ может разрешить ему сделать проверку Психонауки таким же образом, каким используется Бдительность, чтобы обнаружить засаду."
+    },
+    "weapon-tech": {
+      "en": "Weapon-Tech",
+      "ru": "Длань Омниссии",
+      "prerequisites": "Intelligence 40, Tech Use +10",
+      "benefit": "The Acolyte calls upon the blessings of the Omnissiah, channelling his faith into his weapon and performing armament rituals to more readily smite his foes. Once per combat encounter, as a Free Action, this character may enhance any Melta, Plasma, Power, or Exotic weapon he is personally wielding. This increases the weapon’s damage and penetration by an amount equal to the character’s Intelligence bonus until the end of the round.",
+      "benefitRu": "Аколит взывает к Омниссии, направляя веру в своё оружие и совершая ритуалы, что помогут ему вернее поразить своих врагов. Один раз за бой персонаж, в качестве Свободного действия, может улучшить одно оружие, находящееся у него. Это может быть плазменное, силовое, экзотическое или мельта-оружие которое он несёт лично. Наносимый оружием Урон и его Пробиваемость возрастают на количество единиц, равное бонусу Интеллекта аколита. Это улучшение действует до конца раунда."
+    },
+    "weapon-training": {
+      "en": "Weapon Training",
+      "ru": "Выучка с Оружием",
+      "prerequisites": "None",
+      "benefit": "The Acolyte can use all weapons with Class: Pistol, Basic, Melee, Throwing, and Vehicle within the group he has selected with this talent. When a character attempts to use a weapon he does not have the correct Weapon Training talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill test. The character can only use weapons with Class: Heavy without suffering the –20 penalty if he has both Weapon Training in the appropriate group and Weapon Training (Heavy). This talent can be taken more than once, each time with a different Specialisation. Note that a character without the Weapon Training (Low-Tech) talent operating a weapon that functions as a Low-Tech weapon in certain circumstances does not suffer this penalty, so long as he has the applicable Weapon Training talent for the weapon (Power for a power sword, for example).",
+      "benefitRu": "Специализации: Болтерное, Цепное, Зажигательное, Тяжёлое, Лазерное, Пусковое, Мельта, Плазма, Силовое, Низкотехнологичное, Шоковое и Твёрдотельное. Взяв талант из этой группы, персонаж получает возможность без штрафов использовать любое оружие, связанное с выбранной специализацией, за исключением Тяжелого. Если персонаж использует оружие, таланта обращения с которым он не имеет, то он получает штраф -20 на все проверки Навыка Рукопашной или Навыка Стрельбы, совершенные с применением этого оружия. Персонаж может использовать оружие класса Тяжёлое без штрафа -20, только если у него есть как талант Выучка с Оружием (Тяжёлое), так и талант Выучки с оружием, той группы, к которой принадлежит конкретный образец тяжелого оружия (например, для стрельбы из лазпушки без штрафа, нужно обладать талантами Выучка с Оружием (Тяжёлое) и Выучка с Оружием (Лазерное)). Этот талант можно брать несколько раз, каждый раз с новой специализацией. Заметьте, что персонаж, не имеющий таланта Выучка с Оружием (Низкотехнологичное) может без штрафа управляться с оружием, что в определенных обстоятельствах функционирует как Низкотехнологичное (например, силовой меч с выключенным силовым полем считается обычным мечом (низкотехнологичным)), но персонаж, имеющий навык Выучка с Оружием (Силовое) и не имеющий Выучка с Оружием (Низкотехнологичное) может использовать этот меч без штрафов)."
+    },
+    "whirlwind-of-death": {
+      "en": "Whirlwind of Death",
+      "ru": "Вихрь Смерти",
+      "prerequisites": "Weapon Skill 40",
+      "benefit": "When facing massed opponents in close quarters, the Acolyte becomes a streak of blows, moving, hacking, gutting, and beheading his enemies with ceaseless fury. As a Half Action, the character may make one Standard Attack action (see page 224) with a melee weapon against a foe, plus one additional Standard Attack action with the same weapon targeting each other foe also engaged in melee combat with the character beyond the first (to a maximum number of attacks up to his Weapon Skill bonus).",
+      "benefitRu": "Встречая многочисленных врагов в тесных пространствах, аколит превращается в ураган ударов, рубящих, режущих и обезглавливающих своих врагов с неиссякаемой яростью. В качестве Полудействия персонаж может провести одно действие Стандартная Атака (см. стр. 276) оружием ближнего боя против одного врага, плюс дополнительную Стандартную Атаку тем же оружием, нацеленную в другого врага, участвующего в той же схватке, что и первый (максимальное количество дополнительных атак равно бонусу Навыка Рукопашной аколита)."
+    },
+    "complete-control": {
+      "en": "Complete Control",
+      "ru": "Совершенный Контроль",
+      "prerequisites": "Perception 45",
+      "benefit": "The character may spend a Fate point to increase or decrease his warband's Subtlety value by 1d10 + his Willpower bonus at any time.",
+      "benefitRu": "Эффект: В любое время персонаж может потратить очко Судьбы для увеличения или уменьшения Секретности отряда на 1к10 + бонус Силы Воли персонажа."
+    },
+    "fated": {
+      "en": "Fated",
+      "ru": "Предначертание",
+      "prerequisites": "Inspired Intuition, Shield of Contempt, Strength through Conviction",
+      "benefit": "When this talent is acquired, the character immediately increases his Fate threshold by one.",
+      "benefitRu": "Эффект: При приобретении этого таланта персонаж немедленно увеличивает свой порог Судьбы на 1."
+    },
+    "inspired-intuition": {
+      "en": "Inspired Intuition",
+      "ru": "Рука Судьбы",
+      "prerequisites": "Intelligence 50",
+      "benefit": "The character may spend a Fate point to gain exceptional insight into his immediate status. This is represented by the player asking the GM a question about the current situation the character faces, which the GM should answer as helpfully as possible.",
+      "benefitRu": "Эффект: Персонаж может потратить очко Судьбы на получение исключительного понимания своего текущего состояния. Это отображается тем, что игрок может задать МИ вопрос о текущей ситуации, с которой столкнулся персонаж, и тот обязан ответить настолько полно и полезно насколько это возможно."
+    },
+    "jack-of-all-trades": {
+      "en": "Jack of All Trades",
+      "ru": "Ученик на все Руки",
+      "prerequisites": "Intelligence 45",
+      "benefit": "When this talent is acquired, the character gains all unknown non-Specialist skills as Known skills (rank 1).",
+      "benefitRu": "Эффект: При приобретении этого таланта персонаж немедленно получает все неизвестные не Специальные умения на уровне Знает (уровень 1)."
+    },
+    "master-of-all-trades": {
+      "en": "Master of All Trades",
+      "ru": "Мастер на все Руки",
+      "prerequisites": "Intelligence 55, Jack of All Trades",
+      "benefit": "When this talent is acquired, the character immediately advances all Known skills (rank 1) to Trained (rank 2).",
+      "benefitRu": "Эффект: При приобретении этого таланта персонаж немедленно улучшает все известные ему умения уровня Знает (уровень 1) до Обучен (уровень 2)."
+    },
+    "shared-destiny": {
+      "en": "Shared Destiny",
+      "ru": "Общая Судьба",
+      "prerequisites": "Willpower 40",
+      "benefit": "The character may spend two Fate points as a Free Action to grant another character within 10 metres a Fate point. Likewise, any character in 10 metres may spend two Fate points as a Free Action to grant this character a Fate point. This does not allow characters to gain Fate points in excess of their Fate threshold.",
+      "benefitRu": "Эффект: За Свободное действие персонаж может потратить два очка Судьбы, дав другому персонажу в пределах 10 метров одно очко Судьбы. Точно также, любой персонаж в 10 метрах может за Свободное действие потратить два очка Судьбы, дав этому персонажу одно очко Судьбы. Этот талант не позволяет персонажу получить больше очков Судьбы, чем его порог Судьбы."
+    },
+    "shield-of-contempt": {
+      "en": "Shield of Contempt",
+      "ru": "Щит Презрения",
+      "prerequisites": "Willpower 50",
+      "benefit": "Whenever this character would gain any amount of Corruption points, he may spend a Fate point to gain 0 instead.",
+      "benefitRu": "Эффект: Каждый раз когда персонаж получает любое количество очков Порчи, он может потратить очко Судьбы и не получить их."
+    },
+    "strength-through-conviction": {
+      "en": "Strength through Conviction",
+      "ru": "Крепость Убеждений",
+      "prerequisites": "Willpower 50",
+      "benefit": "Whenever this character would gain any amount of Insanity points, he may spend a Fate point to gain 0 instead.",
+      "benefitRu": "Эффект: Каждый раз когда персонаж получает любое количество очков Безумия, он может потратить очко Судьбы и не получить их."
+    },
+    "will-of-the-inquisitor": {
+      "en": "Will of the Inquisitor",
+      "ru": "Воля Инквизитора",
+      "prerequisites": "Fated, Intelligence 50, Perception 50, Willpower 55",
+      "benefit": "Before rolling the d100 when making a test, the character may spend one Fate point to count as having rolled a result of 01 on that roll.",
+      "benefitRu": "Эффект: Перед совершением броска к100 для совершения проверки, персонаж может потратить очко Судьбы на то, чтобы считать, что на кубике выпало 01."
+    },
+    "bane-of-the-daemon": {
+      "en": "Bane of the Daemon",
+      "ru": "Бич демонов",
+      "prerequisites": "Willpower 40",
+      "benefit": "Creatures with the Warp Instability trait within WPB metres of the Untouchable suffer a penalty on their Willpower test to remain in realspace equal to five times the Untouchable's WPB.",
+      "benefitRu": "Эффект: Существо с чертой Варп-нестабильность находящиеся на расстоянии БСВ метров от Неприкасаемого получают штраф на проверки Силы Воли для удержания себя в реальности равный -(БСВ Неприкасаемого x5)."
+    },
+    "daemonic-anathema": {
+      "en": "Daemonic Anathema",
+      "ru": "Анафема демонов",
+      "prerequisites": "Warp Anathema, Willpower 55",
+      "benefit": "All creatures with the Daemonic trait within WPB metres of the character do not gain any benefits from that trait.",
+      "benefitRu": "Эффект: Все создания с чертой Демонический в радиусе БСВ метров от персонажа не получают никаких преимуществ от этой черты."
+    },
+    "null-field": {
+      "en": "Null Field",
+      "ru": "Нуль-поле",
+      "prerequisites": "Psychic Null, Willpower 50",
+      "benefit": "The effects of Psychic Null apply to all characters within WPB metres of the character.",
+      "benefitRu": "Эффект: Эффект Психического Обнуления применяется ко всем персонажам в радиусе БСВ от этого персонажа."
+    },
+    "psychic-null": {
+      "en": "Psychic Null",
+      "ru": "Психическое Обнуление",
+      "prerequisites": "Willpower 40",
+      "benefit": "The character gains the Deny the Witch talent. He also gains a +20 bonus when making Evasion tests against psychic attacks and when making Opposed tests to resist psychic powers. This talent stacks with Resistance (Psychic Powers) and can be purchased multiple times; each time a character purchases it, increase the bonus it grants by +5.",
+      "benefitRu": "Эффект: Персонаж получает талант Отринь ведьмовство. Кроме того он получает бонус +20 при совершении проверки Уклонения от психических атак и при встречных проверках сопротивления"
+    },
+    "soulless-aura": {
+      "en": "Soulless Aura",
+      "ru": "Аура Бездушия",
+      "prerequisites": "Willpower 30",
+      "benefit": "Enemy characters within WPB metres of the Untouchable suffer a –10 penalty to all Charm and Deceive tests.",
+      "benefitRu": "Эффект: Враждебные персонажи с радиусе БСВ метров от Неприкасаемого получают штраф -10 на все проверки Обаяния и Обмана."
+    },
+    "warp-anathema": {
+      "en": "Warp Anathema",
+      "ru": "Анафема Варпа",
+      "prerequisites": "Warp Disruption, Willpower 55",
+      "benefit": "Characters affected by Warp Disruption reduce their psy rating by 2, instead of the normal amount. This talent can be purchased multiple times; each time a character purchases it the reduction in psy rating increases by 1. If purchased 3 times, for example, the reduction would be 4.",
+      "benefitRu": "Эффект: Персонажи, затронутые Разрушением Варпа, уменьшают свой пси-рейтинг на 2 вместо обычного числа. Этот талант может быть приобретён несколько раз, при каждой покупке пси-рейтинг уменьшается ещё на 1. Например, при троекратной покупке пси-рейтинг будет уменьшаться на 4."
+    },
+    "warp-bane": {
+      "en": "Warp Bane",
+      "ru": "Проклятие Варпа",
+      "prerequisites": "Warp Disruption, Willpower 55",
+      "benefit": "The effects of Warp Disruption apply to all characters with a psy rating within two times WPB metres of the character, instead of the normal amount.",
+      "benefitRu": "Эффект: Эффект Разрушения Варпа применяется ко всем персонажам, находящимся на расстоянии (БСВ x 2) метров от персонажа."
+    },
+    "warp-disruption": {
+      "en": "Warp Disruption",
+      "ru": "Разрушение Варпа",
+      "prerequisites": "Willpower 45",
+      "benefit": "All characters with a psy rating within WPB metres of the character reduce their base psy rating by 1 while they remain within range. Characters reduced to a psy rating of 0 cannot use any psychic powers.",
+      "benefitRu": "Эффект: Все персонажи с пси-рейтингом в радиусе БСВ метров от персонажа-Неприкасаемого уменьшают свой базовый пси-рейтинг на 1, пока не покидают указанную область. Персонажи, чей пси-рейтинг уменьшен до 0 не могут использовать какие-либо психические силы."
+    }
+  },
+  "psychicPowers": {
+    "enfeeble": {
+      "en": "Enfeeble",
+      "ru": "Ослабление"
+    },
+    "endurance": {
+      "en": "Endurance",
+      "ru": "Живучесть"
+    },
+    "haemorrhage": {
+      "en": "Haemorrhage",
+      "ru": "Кровоизлияние"
+    },
+    "invigourate": {
+      "en": "Invigourate",
+      "ru": "Укрепление Сил"
+    },
+    "iron-arm": {
+      "en": "Iron Arm",
+      "ru": "Железная Плоть"
+    },
+    "life-leech": {
+      "en": "Life Leech",
+      "ru": "Вытягивание Жизни"
+    },
+    "shape-flesh": {
+      "en": "Shape Flesh",
+      "ru": "Скульптор Плоти"
+    },
+    "smite": {
+      "en": "Smite",
+      "ru": "Разрывающий Разряд"
+    },
+    "warp-speed": {
+      "en": "Warp Speed",
+      "ru": "Варп-скорость"
+    },
+    "foreboding": {
+      "en": "Foreboding",
+      "ru": "Предчувствие"
+    },
+    "forewarning": {
+      "en": "Forewarning",
+      "ru": "Предостережение"
+    },
+    "misfortune": {
+      "en": "Misfortune",
+      "ru": "Несчастье"
+    },
+    "perfect-timing": {
+      "en": "Perfect Timing",
+      "ru": "Идеальный Расчёт Времени"
+    },
+    "precognition": {
+      "en": "Precognition",
+      "ru": "Прекогниция"
+    },
+    "prescience": {
+      "en": "Prescience",
+      "ru": "Предвидение"
+    },
+    "scriers-gaze": {
+      "en": "Scrier’s Gaze",
+      "ru": "Ясновидение"
+    },
+    "warp-perception": {
+      "en": "Warp Perception",
+      "ru": "Варп-чувства"
+    },
+    "winding-fate": {
+      "en": "Winding Fate",
+      "ru": "Виток Судьбы"
+    },
+    "cauterise": {
+      "en": "Cauterise",
+      "ru": "Прижигание"
+    },
+    "flame-breath": {
+      "en": "Flame Breath",
+      "ru": "Пламенное Дыхание"
+    },
+    "fiery-form": {
+      "en": "Fiery Form",
+      "ru": "Пылающая Форма"
+    },
+    "fire-shield": {
+      "en": "Fire Shield",
+      "ru": "Огненный Щит"
+    },
+    "inferno": {
+      "en": "Inferno",
+      "ru": "Инферно"
+    },
+    "manipulate-flame": {
+      "en": "Manipulate Flame",
+      "ru": "Управление Пламенем"
+    },
+    "molten-beam": {
+      "en": "Molten Beam",
+      "ru": "Расплавляющий Луч"
+    },
+    "spontaneous-combustion": {
+      "en": "Spontaneous Combustion",
+      "ru": "Самопроизвольное Возгорание"
+    },
+    "sunburst": {
+      "en": "Sunburst",
+      "ru": "Солнечная Вспышка"
+    },
+    "assail": {
+      "en": "Assail",
+      "ru": "Швыряние"
+    },
+    "crush": {
+      "en": "Crush",
+      "ru": "Сдавливание"
+    },
+    "gate-of-infinity": {
+      "en": "Gate of Infinity",
+      "ru": "Врата Бесконечности"
+    },
+    "objuration-mechanicum": {
+      "en": "Objuration Mechanicum",
+      "ru": "Объюрацион Механикум"
+    },
+    "shockwave": {
+      "en": "Shockwave",
+      "ru": "Акустическая Волна"
+    },
+    "telekine-dome": {
+      "en": "Telekine Dome",
+      "ru": "Телекинетический Купол"
+    },
+    "telekine-shield": {
+      "en": "Telekine Shield",
+      "ru": "Телекинетический Щит"
+    },
+    "telekinetic-control": {
+      "en": "Telekinetic Control",
+      "ru": "Телекинетический Контроль"
+    },
+    "vortex-of-doom": {
+      "en": "Vortex of Doom",
+      "ru": "Погибельный Вихрь"
+    },
+    "dominate": {
+      "en": "Dominate",
+      "ru": "Доминирование"
+    },
+    "erasure": {
+      "en": "Erasure",
+      "ru": "Стирание"
+    },
+    "hallucination": {
+      "en": "Hallucination",
+      "ru": "Галлюцинации"
+    },
+    "invisibility": {
+      "en": "Invisibility",
+      "ru": "Невидимость"
+    },
+    "mental-fortitude": {
+      "en": "Mental Fortitude",
+      "ru": "Ментальная Стойкость"
+    },
+    "psychic-shriek": {
+      "en": "Psychic Shriek",
+      "ru": "Психический Вопль"
+    },
+    "puppet-master": {
+      "en": "Puppet Master",
+      "ru": "Кукловод"
+    },
+    "telepathic-link": {
+      "en": "Telepathic Link",
+      "ru": "Телепатическая Связь"
+    },
+    "terrify": {
+      "en": "Terrify",
+      "ru": "Устрашение"
+    }
+  },
+  "specialisations": {
+    "Melee": "Рукопашный бой",
+    "Ranged": "Стрельба",
+    "Weapon": "Оружейный",
+    "Utility": "Вспомогательный",
+    "Intelligence": "Интеллект",
+    "Perception": "Восприятие",
+    "Fear": "Страх",
+    "Cold": "Холод",
+    "Heat": "Жара",
+    "Poisons": "Яды",
+    "Psychic Powers": "Психические силы",
+    "Radiation": "Радиация",
+    "Vacuum": "Вакуум",
+    "Bolt": "Болтерное",
+    "Chain": "Цепное",
+    "Flame": "Зажигательное",
+    "Heavy": "Тяжёлое",
+    "Las": "Лазерное",
+    "Launcher": "Пусковое",
+    "Melta": "Мельта",
+    "Plasma": "Плазменное",
+    "Power": "Силовое",
+    "Low-Tech": "Низкотехнологичное",
+    "Shock": "Шоковое",
+    "Solid Projectile": "Твёрдотельное",
+    "Administratum": "Администратум",
+    "Adeptus Arbites": "Адептус Арбитес",
+    "Adeptus Astartes": "Адептус Астартес",
+    "Adeptus Astra Telepathica": "Адептус Астра Телепатика",
+    "Adeptus Mechanicus": "Адептус Механикус",
+    "Adepta Sororitas": "Адепта Сороритас",
+    "Astropaths": "Астропаты",
+    "Chartist Captains": "Капитаны-хартисты",
+    "Collegia Titanicus": "Коллегия Титаникус",
+    "Criminal Cartels": "Преступные картели",
+    "The Deathwatch": "Караул Смерти",
+    "Ecclesiarchy": "Экклезиархия",
+    "Heretical Cults": "Еретические культы",
+    "Imperial Guard": "Астра Милитарум",
+    "Imperial Navy": "Имперский флот",
+    "Inquisition": "Инквизиция",
+    "Navigators": "Навигаторы",
+    "Officio Assassinorum": "Официо Ассасинорум",
+    "Planetary Defence Forces": "Планетарные силы обороны",
+    "Rogue Traders": "Вольные торговцы",
+    "Schola Progenium": "Схола Прогениум",
+    "Scholastica Psykana": "Схоластика Псайкана",
+    "Traitor Legions": "Легионы предателей",
+    "Warlords": "Военачальники",
+    "Chaos Space Marines": "Космодесантники Хаоса",
+    "Daemons": "Демоны",
+    "Mutants": "Мутанты",
+    "Psykers": "Псайкеры",
+    "Xenos": "Ксеносы"
+  },
+  "terms": {
+    "Psy rating": "Пси-рейтинг",
+    "Psy Rating": "Пси-рейтинг",
+    "Untrained": "Неизученный",
+    "Known": "Знакомый",
+    "Trained": "Обученный",
+    "Experienced": "Опытный",
+    "Veteran": "Ветеран",
+    "None": "Нет",
+    "Any": "Любое",
+    "Other": "Другое",
+    "any melee": "любое оружие ближнего боя",
+    "any ranged": "любое стрелковое оружие",
+    "Any Melee": "Любой рукопашный",
+    "any melee weapon": "любое оружие ближнего боя",
+    "Weapon Training (any melee)": "Выучка с Оружием (любое оружие ближнего боя)",
+    "Psyker": "Псайкер",
+    "Adeptus Mechanicus": "Адептус Механикус",
+    "Agility": "Ловкость",
+    "Ballistic Skill": "Навык Стрельбы",
+    "Weapon Skill": "Навык Рукопашной",
+    "Toughness": "Выносливость",
+    "Strength": "Сила",
+    "Intelligence": "Интеллект",
+    "Perception": "Восприятие",
+    "Willpower": "Сила воли",
+    "Fellowship": "Общительность",
+    "Influence": "Влияние",
+    "Offence": "Нападение",
+    "Finesse": "Изящество",
+    "Defence": "Защита",
+    "Knowledge": "Познание",
+    "Tech": "Техника",
+    "Leadership": "Лидерство",
+    "Fieldcraft": "Выживание",
+    "Social": "Общение",
+    "General": "Общая",
+    "Tech-Use": "Техпользование",
+    "Psyniscience": "Психонаука",
+    "Scrutiny": "Проницательность",
+    "Awareness": "Бдительность",
+    "Dodge": "Уклонение",
+    "Athletics": "Атлетика",
+    "Interrogation": "Допрос",
+    "Intimidate": "Запугивание",
+    "Charm": "Обаяние",
+    "Command": "Командование",
+    "Trade": "Ремесло",
+    "Lore": "Знания",
+    "Linguistics": "Языки",
+    "and": "и",
+    "or": "или",
+    "not purchased": "не приобретено",
+    "not known": "не изучено",
+    "Ballistic Skill (Thrown)": "Стрельба (метание)",
+    "Acrobatics": "Акробатика",
+    "Commerce": "Коммерция",
+    "Deceive": "Обман",
+    "Inquiry": "Дознание",
+    "Logic": "Логика",
+    "Medicae": "Медика",
+    "Parry": "Парирование",
+    "Security": "Безопасность",
+    "Sleight of Hand": "Ловкость рук",
+    "Stealth": "Скрытность",
+    "Survival": "Выживание",
+    "Common Lore (Adepta Sororitas)": "Общие знания (Адепта Сороритас)",
+    "Common Lore (Adeptus Arbites)": "Общие знания (Адептус Арбитес)",
+    "Common Lore (Adeptus Astartes)": "Общие знания (Адептус Астартес)",
+    "Common Lore (Adeptus Astra Telepathica)": "Общие знания (Адептус Астра Телепатика)",
+    "Common Lore (Adeptus Mechanicus)": "Общие знания (Адептус Механикус)",
+    "Common Lore (Adeptus Ministorum)": "Общие знания (Адептус Министорум)",
+    "Common Lore (Administratum)": "Общие знания (Администратум)",
+    "Common Lore (Askellon Sector)": "Общие знания (Сектор Аскеллон)",
+    "Common Lore (Chartist Captains)": "Общие знания (Капитаны хартистов)",
+    "Common Lore (Collegia Titanicus)": "Общие знания (Коллегия Титаникус)",
+    "Common Lore (Ecclesiarchy)": "Общие знания (Экклезиархия)",
+    "Common Lore (Imperial Creed)": "Общие знания (Имперское кредо)",
+    "Common Lore (Imperial Guard)": "Общие знания (Имперская гвардия)",
+    "Common Lore (Imperial Navy)": "Общие знания (Имперский флот)",
+    "Common Lore (Imperium)": "Общие знания (Империум)",
+    "Common Lore (Navigators)": "Общие знания (Навигаторы)",
+    "Common Lore (Planetary Defence Forces)": "Общие знания (Планетарные силы обороны)",
+    "Common Lore (Rogue Traders)": "Общие знания (Вольные торговцы)",
+    "Common Lore (Schola Progenium)": "Общие знания (Схола Прогениум)",
+    "Common Lore (Tech)": "Общие знания (Технологии)",
+    "Common Lore (Underworld)": "Общие знания (Преступный мир)",
+    "Common Lore (War)": "Общие знания (Война)",
+    "Forbidden Lore (Archaeotech)": "Запретные знания (Археотех)",
+    "Forbidden Lore (Chaos Space Marines)": "Запретные знания (Космодесантники Хаоса)",
+    "Forbidden Lore (Criminal Cartels and Smugglers)": "Запретные знания (Преступные картели и контрабандисты)",
+    "Forbidden Lore (Daemonology)": "Запретные знания (Демонология)",
+    "Forbidden Lore (Heresy)": "Запретные знания (Ересь)",
+    "Forbidden Lore (The Horus Heresy and the Long War)": "Запретные знания (Ересь Хоруса и Долгая война)",
+    "Forbidden Lore (Inquisition)": "Запретные знания (Инквизиция)",
+    "Forbidden Lore (Mutants)": "Запретные знания (Мутанты)",
+    "Forbidden Lore (Pirates)": "Запретные знания (Пираты)",
+    "Forbidden Lore (Psykers)": "Запретные знания (Псайкеры)",
+    "Forbidden Lore (The Warp)": "Запретные знания (Варп)",
+    "Forbidden Lore (Xenos)": "Запретные знания (Ксеносы)",
+    "Forbidden Lore (Adepta Sororitas)": "Запретные знания (Адепта Сороритас)",
+    "Forbidden Lore (Adeptus Arbites)": "Запретные знания (Адептус Арбитес)",
+    "Forbidden Lore (Adeptus Astartes)": "Запретные знания (Адептус Астартес)",
+    "Forbidden Lore (Adeptus Astra Telepathica)": "Запретные знания (Адептус Астра Телепатика)",
+    "Forbidden Lore (Adeptus Mechanicus)": "Запретные знания (Адептус Механикус)",
+    "Forbidden Lore (Adeptus Ministorum)": "Запретные знания (Адептус Министорум)",
+    "Forbidden Lore (Administratum)": "Запретные знания (Администратум)",
+    "Forbidden Lore (Askellon Sector)": "Запретные знания (Сектор Аскеллон)",
+    "Forbidden Lore (Chartist Captains)": "Запретные знания (Капитаны хартистов)",
+    "Forbidden Lore (Collegia Titanicus)": "Запретные знания (Коллегия Титаникус)",
+    "Forbidden Lore (Ecclesiarchy)": "Запретные знания (Экклезиархия)",
+    "Forbidden Lore (Imperial Creed)": "Запретные знания (Имперское кредо)",
+    "Forbidden Lore (Imperial Guard)": "Запретные знания (Имперская гвардия)",
+    "Forbidden Lore (Imperial Navy)": "Запретные знания (Имперский флот)",
+    "Forbidden Lore (Imperium)": "Запретные знания (Империум)",
+    "Forbidden Lore (Navigators)": "Запретные знания (Навигаторы)",
+    "Forbidden Lore (Planetary Defence Forces)": "Запретные знания (Планетарные силы обороны)",
+    "Forbidden Lore (Rogue Traders)": "Запретные знания (Вольные торговцы)",
+    "Forbidden Lore (Schola Progenium)": "Запретные знания (Схола Прогениум)",
+    "Forbidden Lore (Tech)": "Запретные знания (Технологии)",
+    "Forbidden Lore (Underworld)": "Запретные знания (Преступный мир)",
+    "Forbidden Lore (War)": "Запретные знания (Война)",
+    "Forbidden Lore (Astromancy)": "Запретные знания (Астромантия)",
+    "Forbidden Lore (Beasts)": "Запретные знания (Звери)",
+    "Forbidden Lore (Bureaucracy)": "Запретные знания (Бюрократия)",
+    "Forbidden Lore (Chymistry)": "Запретные знания (Химия)",
+    "Forbidden Lore (Cryptology)": "Запретные знания (Криптология)",
+    "Forbidden Lore (Heraldry)": "Запретные знания (Геральдика)",
+    "Forbidden Lore (Imperial Warrants)": "Запретные знания (Имперские грамоты)",
+    "Forbidden Lore (Judgement)": "Запретные знания (Правосудие)",
+    "Forbidden Lore (Legend)": "Запретные знания (Легенды)",
+    "Forbidden Lore (Numerology)": "Запретные знания (Нумерология)",
+    "Forbidden Lore (Occult)": "Запретные знания (Оккультизм)",
+    "Forbidden Lore (Philosophy)": "Запретные знания (Философия)",
+    "Forbidden Lore (Tactica Imperialis)": "Запретные знания (Тактика Империалис)",
+    "Linguistics (Chapter Runes)": "Лингвистика (Руны орденов)",
+    "Linguistics (Chaos Marks)": "Лингвистика (Знаки Хаоса)",
+    "Linguistics (Eldar)": "Лингвистика (Эльдарский язык)",
+    "Linguistics (High Gothic)": "Лингвистика (Высокий готик)",
+    "Linguistics (Imperial Codes)": "Лингвистика (Имперские коды)",
+    "Linguistics (Low Gothic)": "Лингвистика (Низкий готик)",
+    "Linguistics (Mercenary Cant)": "Лингвистика (Жаргон наёмников)",
+    "Linguistics (Necrontyr)": "Лингвистика (Некронтирский язык)",
+    "Linguistics (Ork)": "Лингвистика (Орочий язык)",
+    "Linguistics (Tau)": "Лингвистика (Язык тау)",
+    "Linguistics (Underworld)": "Лингвистика (Жаргон преступного мира)",
+    "Linguistics (Xenos Markings)": "Лингвистика (Письмена ксеносов)",
+    "Navigate (Surface)": "Навигация (Поверхность)",
+    "Navigate (Stellar)": "Навигация (Звёздная)",
+    "Navigate (Warp)": "Навигация (Варп)",
+    "Operate (Surface)": "Управление (Наземный транспорт)",
+    "Operate (Aeronautica)": "Управление (Авиация)",
+    "Operate (Voidship)": "Управление (Космические корабли)",
+    "Scholastic Lore (Astromancy)": "Учёные знания (Астромантия)",
+    "Scholastic Lore (Beasts)": "Учёные знания (Звери)",
+    "Scholastic Lore (Bureaucracy)": "Учёные знания (Бюрократия)",
+    "Scholastic Lore (Chymistry)": "Учёные знания (Химия)",
+    "Scholastic Lore (Cryptology)": "Учёные знания (Криптология)",
+    "Scholastic Lore (Heraldry)": "Учёные знания (Геральдика)",
+    "Scholastic Lore (Imperial Warrants)": "Учёные знания (Имперские грамоты)",
+    "Scholastic Lore (Judgement)": "Учёные знания (Правосудие)",
+    "Scholastic Lore (Legend)": "Учёные знания (Легенды)",
+    "Scholastic Lore (Numerology)": "Учёные знания (Нумерология)",
+    "Scholastic Lore (Occult)": "Учёные знания (Оккультизм)",
+    "Scholastic Lore (Philosophy)": "Учёные знания (Философия)",
+    "Scholastic Lore (Tactica Imperialis)": "Учёные знания (Тактика Империалис)",
+    "Scholastic Lore (Adepta Sororitas)": "Учёные знания (Адепта Сороритас)",
+    "Scholastic Lore (Adeptus Arbites)": "Учёные знания (Адептус Арбитес)",
+    "Scholastic Lore (Adeptus Astartes)": "Учёные знания (Адептус Астартес)",
+    "Scholastic Lore (Adeptus Astra Telepathica)": "Учёные знания (Адептус Астра Телепатика)",
+    "Scholastic Lore (Adeptus Mechanicus)": "Учёные знания (Адептус Механикус)",
+    "Scholastic Lore (Adeptus Ministorum)": "Учёные знания (Адептус Министорум)",
+    "Scholastic Lore (Administratum)": "Учёные знания (Администратум)",
+    "Scholastic Lore (Askellon Sector)": "Учёные знания (Сектор Аскеллон)",
+    "Scholastic Lore (Chartist Captains)": "Учёные знания (Капитаны хартистов)",
+    "Scholastic Lore (Collegia Titanicus)": "Учёные знания (Коллегия Титаникус)",
+    "Scholastic Lore (Ecclesiarchy)": "Учёные знания (Экклезиархия)",
+    "Scholastic Lore (Imperial Creed)": "Учёные знания (Имперское кредо)",
+    "Scholastic Lore (Imperial Guard)": "Учёные знания (Имперская гвардия)",
+    "Scholastic Lore (Imperial Navy)": "Учёные знания (Имперский флот)",
+    "Scholastic Lore (Imperium)": "Учёные знания (Империум)",
+    "Scholastic Lore (Navigators)": "Учёные знания (Навигаторы)",
+    "Scholastic Lore (Planetary Defence Forces)": "Учёные знания (Планетарные силы обороны)",
+    "Scholastic Lore (Rogue Traders)": "Учёные знания (Вольные торговцы)",
+    "Scholastic Lore (Schola Progenium)": "Учёные знания (Схола Прогениум)",
+    "Scholastic Lore (Tech)": "Учёные знания (Технологии)",
+    "Scholastic Lore (Underworld)": "Учёные знания (Преступный мир)",
+    "Scholastic Lore (War)": "Учёные знания (Война)",
+    "Trade (Agri)": "Ремесло (Агрономия)",
+    "Trade (Archaeologist)": "Ремесло (Археология)",
+    "Trade (Armourer)": "Ремесло (Оружейник)",
+    "Trade (Astrographer)": "Ремесло (Астрография)",
+    "Trade (Chymist)": "Ремесло (Химик)",
+    "Trade (Cryptographer)": "Ремесло (Криптограф)",
+    "Trade (Cook)": "Ремесло (Повар)",
+    "Trade (Explorator)": "Ремесло (Эксплоратор)",
+    "Trade (Linguist)": "Ремесло (Лингвист)",
+    "Trade (Loremancer)": "Ремесло (Знаток преданий)",
+    "Trade (Morticator)": "Ремесло (Бальзамировщик)",
+    "Trade (Performancer)": "Ремесло (Артист)",
+    "Trade (Prospector)": "Ремесло (Геологоразведчик)",
+    "Trade (Scrimshawer)": "Ремесло (Резчик по кости)",
+    "Trade (Sculptor)": "Ремесло (Скульптор)",
+    "Trade (Shipwright)": "Ремесло (Кораблестроитель)",
+    "Trade (Soothsayer)": "Ремесло (Прорицатель)",
+    "Trade (Technomat)": "Ремесло (Техномат)",
+    "Trade (Voidfarer)": "Ремесло (Космоплаватель)",
+    "Adamantium Faith": "Несокрушимая вера",
+    "Ambidextrous": "Амбидекстрия",
+    "Armour-Monger": "Мастер Брони",
+    "Assassin Strike": "Удар Асассина",
+    "Bastion of Iron Will": "Бастион Железной Воли",
+    "Battle Rage": "Боевая ярость",
+    "Blademaster": "Мастер Клинка",
+    "Blind Fighting": "Бой Вслепую",
+    "Bulging Biceps": "Крепкие Бицепсы",
+    "Catfall": "Мягкое Приземление",
+    "Clues from the Crowds": "Разговор с Толпой",
+    "Combat Master": "Мастер Боя",
+    "Constant Vigilance": "Постоянная бдительность",
+    "Contact Network": "Сеть Контактов",
+    "Coordinated Interrogation": "Скоординированный Допрос",
+    "Counter Attack": "Контратака",
+    "Cover-Up": "Работа Под Прикрытием",
+    "Crushing Blow": "Костолом",
+    "Deathdealer": "Несущий Смерть",
+    "Delicate Interrogation": "Аккуратный Допрос",
+    "Deny the Witch": "Отринь ведьмовство",
+    "Devastating Assault": "Неостановимый Натиск",
+    "Die Hard": "Крепкий Орешек",
+    "Disarm": "Разоружение",
+    "Double Tap": "Двойной Выстрел",
+    "Double Team": "Плечом к Плечу",
+    "Enemy": "Враг",
+    "Exotic Weapon Training": "Выучка с Экзотическим Оружием",
+    "Eye of Vengeance": "Глаз Мстителя",
+    "Face in a Crowd": "Лицо В Толпе",
+    "Favoured by the Warp": "Благоволение Варпа",
+    "Ferric Summons": "Призыв Железа",
+    "Flash of Insight": "Вспышка Озарения",
+    "Frenzy": "Неистовство",
+    "Halo of Command": "Аура Власти",
+    "Hammer Blow": "Пробивающий Удар",
+    "Hard Target": "Трудная Мишень",
+    "Hardy": "Семижильный",
+    "Hatred": "Ненависть",
+    "Hip Shooting": "Стрельба от Бедра",
+    "Independent Targeting": "Независимое Прицеливание",
+    "Inescapable Attack": "Неотразимая Атака",
+    "Infused Knowledge": "Вложенное Знание",
+    "Iron Jaw": "Железная Челюсть",
+    "Jaded": "Искушённый",
+    "Keen Intuition": "Чуткая Интуиция",
+    "Killing Strike": "Убийственный Удар",
+    "Leap Up": "Вскочить",
+    "Lightning Attack": "Молниеносная Атака",
+    "Luminen Blast": "Взрыв Люминена",
+    "Luminen Shock": "Шок Люминена",
+    "Maglev Transcendence": "Левитационная Трансценденция",
+    "Marksman": "Меткий Стрелок",
+    "Mastery": "Мастерство",
+    "Mechadendrite Use": "Использование Механодендритов",
+    "Mighty Shot": "Мощный Выстрел",
+    "Never Die": "Неубиваемый",
+    "Nowhere to Hide": "Негде Прятаться",
+    "Peer": "Связи",
+    "Precision Killer": "Убийственная Точность",
+    "Preternatural Speed": "Нечеловеческая Скорость",
+    "Prosanguine": "Просангвина",
+    "Quick Draw": "Выхватить Оружие",
+    "Rapid Reload": "Быстрая Перезарядка",
+    "Resistance": "Сопротивление",
+    "Sound Constitution": "Крепкое Телосложение",
+    "Sprint": "Спринт",
+    "Step Aside": "Шаг В Сторону",
+    "Strong Minded": "Непреклонный",
+    "Superior Chirurgeon": "Превосходный Хирургеон",
+    "Swift Attack": "Быстрая Атака",
+    "Takedown": "Нокдаун",
+    "Target Selection": "Выбор Цели",
+    "Technical Knock": "Искусный Стук",
+    "Thunder Charge": "Яростный Натиск",
+    "True Grit": "Истинная Стойкость",
+    "Two-Weapon Master": "Обоерукий мастер",
+    "Two-Weapon Wielder": "Обоерукий воин",
+    "Unarmed Specialist": "Специалист по безоружному бою",
+    "Warp Conduit": "Варп-Канал",
+    "Warp Lock": "Варп-блок",
+    "Warp Sense": "Варп-чувство",
+    "Weapon-Tech": "Длань Омниссии",
+    "Weapon Training": "Выучка с Оружием",
+    "Whirlwind of Death": "Вихрь Смерти",
+    "Complete Control": "Совершенный Контроль",
+    "Fated": "Предначертание",
+    "Inspired Intuition": "Рука Судьбы",
+    "Jack of All Trades": "Ученик на все Руки",
+    "Master of All Trades": "Мастер на все Руки",
+    "Shared Destiny": "Общая Судьба",
+    "Shield of Contempt": "Щит Презрения",
+    "Strength through Conviction": "Крепость Убеждений",
+    "Will of the Inquisitor": "Воля Инквизитора",
+    "Bane of the Daemon": "Бич демонов",
+    "Daemonic Anathema": "Анафема демонов",
+    "Null Field": "Нуль-поле",
+    "Psychic Null": "Психическое Обнуление",
+    "Soulless Aura": "Аура Бездушия",
+    "Warp Anathema": "Анафема Варпа",
+    "Warp Bane": "Проклятие Варпа",
+    "Warp Disruption": "Разрушение Варпа",
+    "Melee": "Рукопашный бой",
+    "Ranged": "Стрельба",
+    "Weapon": "Оружейный",
+    "Utility": "Вспомогательный",
+    "Fear": "Страх",
+    "Cold": "Холод",
+    "Heat": "Жара",
+    "Poisons": "Яды",
+    "Psychic Powers": "Психические силы",
+    "Radiation": "Радиация",
+    "Vacuum": "Вакуум",
+    "Bolt": "Болтерное",
+    "Chain": "Цепное",
+    "Flame": "Зажигательное",
+    "Heavy": "Тяжёлое",
+    "Las": "Лазерное",
+    "Launcher": "Пусковое",
+    "Melta": "Мельта",
+    "Plasma": "Плазменное",
+    "Power": "Силовое",
+    "Low-Tech": "Низкотехнологичное",
+    "Shock": "Шоковое",
+    "Solid Projectile": "Твёрдотельное",
+    "Administratum": "Администратум",
+    "Adeptus Arbites": "Адептус Арбитес",
+    "Adeptus Astartes": "Адептус Астартес",
+    "Adeptus Astra Telepathica": "Адептус Астра Телепатика",
+    "Adepta Sororitas": "Адепта Сороритас",
+    "Astropaths": "Астропаты",
+    "Chartist Captains": "Капитаны-хартисты",
+    "Collegia Titanicus": "Коллегия Титаникус",
+    "Criminal Cartels": "Преступные картели",
+    "The Deathwatch": "Караул Смерти",
+    "Ecclesiarchy": "Экклезиархия",
+    "Heretical Cults": "Еретические культы",
+    "Imperial Guard": "Астра Милитарум",
+    "Imperial Navy": "Имперский флот",
+    "Inquisition": "Инквизиция",
+    "Navigators": "Навигаторы",
+    "Officio Assassinorum": "Официо Ассасинорум",
+    "Planetary Defence Forces": "Планетарные силы обороны",
+    "Rogue Traders": "Вольные торговцы",
+    "Schola Progenium": "Схола Прогениум",
+    "Scholastica Psykana": "Схоластика Псайкана",
+    "Traitor Legions": "Легионы предателей",
+    "Warlords": "Военачальники",
+    "Chaos Space Marines": "Космодесантники Хаоса",
+    "Daemons": "Демоны",
+    "Mutants": "Мутанты",
+    "Psykers": "Псайкеры",
+    "Xenos": "Ксеносы"
+  }
+};

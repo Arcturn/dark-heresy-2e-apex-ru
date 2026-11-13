@@ -1,0 +1,41 @@
+{
+  "status": "ready_for_integration",
+  "files": [
+    "picker-compat.mjs",
+    "picker-quality-names.en.json",
+    "test-picker-compat.mjs"
+  ],
+  "api": "installPickerCompatibility({formats, canonicalNames, game = () => globalThis.game})",
+  "integration": "Call synchronously once with the statically imported DH2E_PICKER_FORMATS and the parsed canonical English JSON before sheet picker writes. Returns true on installation and false on repeated installation. Only qualities.write is replaced.",
+  "scope": {
+    "system_id": "dark-heresy-2e-apex",
+    "language": "ru",
+    "format": "qualities.write",
+    "source": "weaponQualities"
+  },
+  "implementation": "Known quality keys are replaced in a new picks array with exact English labels from the original en.json. The original writer then keeps those labels verbatim because source lookup matches keys exactly; its value formatting remains unchanged. Unknown entries are passed through, preserving original behavior. The source catalog, original reader, other formats, original picks, game documents and system files are unchanged.",
+  "canonical_names_count": 40,
+  "test_command": "node --test translation_work/test-picker-compat.mjs",
+  "validation": {
+    "passed": 10,
+    "failed": 0,
+    "actual_system_modules": [
+      "src/apps/dh2e-picker.mjs",
+      "src/combat/dh2e-armoury.mjs"
+    ],
+    "cases": [
+      "canonical map exactly matches all 40 original English quality labels",
+      "original untranslated-writer bug reproduced with Russian UI labels",
+      "single wrapper installation and idempotence",
+      "all 40 keys round-trip through real format reader with blank, 2 and 0 values",
+      "real numeric parser round-trip for all 40 keys",
+      "X, PR, PR/2, 2, 0, numeric 0, undefined and null match original formatting",
+      "unknown English/Cyrillic/custom keys preserved",
+      "Russian picker labels and chips preserved while English storage is canonical",
+      "powerSubtypes and other sources delegate to original",
+      "en/de/ru-RU and wrong system delegate to original",
+      "this, extra arguments and original picks identity preserved on delegated paths"
+    ]
+  },
+  "limit": "This patch does not broaden parsers or migrate already corrupted saved data. The original numeric parseWeaponQualities ignores symbolic parameters such as X/PR/2; these are preserved exactly and round-trip through the original picker reader, matching original system behavior."
+}

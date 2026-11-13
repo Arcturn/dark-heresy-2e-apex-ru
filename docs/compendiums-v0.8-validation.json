@@ -1,0 +1,383 @@
+{
+  "version": "0.8.0",
+  "system": "Dark Heresy 2E [Apex Edition] 0.1.10",
+  "foundry": "14",
+  "new_compendium": "dh2e-warp-effects",
+  "entries_total": 44,
+  "psychic_phenomena": 26,
+  "perils_of_the_warp": 18,
+  "folders": 2,
+  "complete_russian_names": 44,
+  "complete_russian_descriptions": 44,
+  "russian_cross_reference_to_previous_warp_tables": 44,
+  "mechanical_note_texts_translated": 27,
+  "temporary_effect_names_translated": 6,
+  "modifier_labels_translated": 1,
+  "nested_localization_runtime_test": {
+    "translated": 44,
+    "stepsTranslated": 28,
+    "translatedNestedFields": 34,
+    "method": "actual Babele StructuredDataConverter mapping with mocked Foundry utility surface"
+  },
+  "previous_compendiums_byte_identical": 8,
+  "total_localized_compendiums": 9,
+  "dice_roll_expression_comparisons_passed": 44,
+  "valid_js_scripts": 14,
+  "token_ui_regression_stdout": "Passed 8 token HUD adapter regression tests",
+  "original_item_uuids_and_mechanics_not_modified": true,
+  "limitation": "Live test inside a running Foundry VTT 14 world was not possible.",
+  "items": [
+    {
+      "source_name": "Haunting Breeze",
+      "russian_name": "Призрачный ветер",
+      "id": "0kPDx0tBfArAPF1I",
+      "group": "phenomena",
+      "roll": 24,
+      "rollMax": 26
+    },
+    {
+      "source_name": "Aura of Taint",
+      "russian_name": "Неестественная аура",
+      "id": "54m9G8bTax8DtjPY",
+      "group": "phenomena",
+      "roll": 15,
+      "rollMax": 17
+    },
+    {
+      "source_name": "Warp Ghosts",
+      "russian_name": "Призраки Варпа",
+      "id": "5kX3oNNJVgVlz8WA",
+      "group": "phenomena",
+      "roll": 54,
+      "rollMax": 56
+    },
+    {
+      "source_name": "Daemonic Mask",
+      "russian_name": "Демоническая маска",
+      "id": "8pjNqRkgoHwS4Kkj",
+      "group": "phenomena",
+      "roll": 36,
+      "rollMax": 38
+    },
+    {
+      "source_name": "Distorted Reflections",
+      "russian_name": "Искажение отражений",
+      "id": "9aySw7TyZ22ct63Q",
+      "group": "phenomena",
+      "roll": 30,
+      "rollMax": 32
+    },
+    {
+      "source_name": "Veil of Darkness",
+      "russian_name": "Вуаль тьмы",
+      "id": "A3rLMIrFixKz818R",
+      "group": "phenomena",
+      "roll": 27,
+      "rollMax": 29
+    },
+    {
+      "source_name": "Vice Versa",
+      "russian_name": "Обмен",
+      "id": "E7FHq9h52Yu4wu9g",
+      "group": "perils",
+      "roll": 56,
+      "rollMax": 58
+    },
+    {
+      "source_name": "Dark Summoning",
+      "russian_name": "Тёмный призыв",
+      "id": "EECsRmHjNWdSl8yl",
+      "group": "perils",
+      "roll": 59,
+      "rollMax": 67
+    },
+    {
+      "source_name": "Warp Echo",
+      "russian_name": "Варп-эхо",
+      "id": "GupSLHsageFg6N6N",
+      "group": "phenomena",
+      "roll": 4,
+      "rollMax": 5
+    },
+    {
+      "source_name": "Memory Worm",
+      "russian_name": "Червь памяти",
+      "id": "KGPIqWNaNmbLwE3I",
+      "group": "phenomena",
+      "roll": 18,
+      "rollMax": 20
+    },
+    {
+      "source_name": "Psy Blast",
+      "russian_name": "Пси-взрыв",
+      "id": "LQudbX8CadHZPFd2",
+      "group": "perils",
+      "roll": 14,
+      "rollMax": 18
+    },
+    {
+      "source_name": "Warp Whispers",
+      "russian_name": "Шёпот Варпа",
+      "id": "NTQcwl7DRlM0HWLY",
+      "group": "perils",
+      "roll": 47,
+      "rollMax": 55
+    },
+    {
+      "source_name": "Reality Quake",
+      "russian_name": "Сотрясение реальности",
+      "id": "O6s375rT3tq7GCuf",
+      "group": "perils",
+      "roll": 87,
+      "rollMax": 90
+    },
+    {
+      "source_name": "Locked In",
+      "russian_name": "Заключение",
+      "id": "OKL2AeskjgSORb0a",
+      "group": "perils",
+      "roll": 25,
+      "rollMax": 30
+    },
+    {
+      "source_name": "Shadow of the Warp",
+      "russian_name": "Тень Варпа",
+      "id": "OXTWLkfLToDIU0iV",
+      "group": "phenomena",
+      "roll": 66,
+      "rollMax": 68
+    },
+    {
+      "source_name": "The Furies",
+      "russian_name": "Фурии",
+      "id": "OecGZK4G5zVGKVN7",
+      "group": "phenomena",
+      "roll": 63,
+      "rollMax": 65
+    },
+    {
+      "source_name": "Grand Incursion",
+      "russian_name": "Высшее вторжение",
+      "id": "QW1O43bSVAP2ezhJ",
+      "group": "perils",
+      "roll": 91,
+      "rollMax": 99
+    },
+    {
+      "source_name": "Warp Burn",
+      "russian_name": "Варп-ожог",
+      "id": "RU0mmEksu186Twcu",
+      "group": "perils",
+      "roll": 6,
+      "rollMax": 9
+    },
+    {
+      "source_name": "Bloody Tears",
+      "russian_name": "Кровавые слёзы",
+      "id": "VDKddMCb5WT0vDot",
+      "group": "phenomena",
+      "roll": 45,
+      "rollMax": 47
+    },
+    {
+      "source_name": "Spectral Gale",
+      "russian_name": "Спектральный шторм",
+      "id": "VMmcHTw0ttcwcscP",
+      "group": "phenomena",
+      "roll": 42,
+      "rollMax": 44
+    },
+    {
+      "source_name": "Psychic Mirror",
+      "russian_name": "Психическое зеркало",
+      "id": "W9fwSRbyjSj9epeO",
+      "group": "perils",
+      "roll": 39,
+      "rollMax": 46
+    },
+    {
+      "source_name": "Blood Rain",
+      "russian_name": "Кровавый дождь",
+      "id": "WXh7WtCoitre09gB",
+      "group": "perils",
+      "roll": 73,
+      "rollMax": 78
+    },
+    {
+      "source_name": "Dark Foreboding",
+      "russian_name": "Тёмное предвестие",
+      "id": "YoDrh7XqGH6b1Tib",
+      "group": "phenomena",
+      "roll": 1,
+      "rollMax": 3
+    },
+    {
+      "source_name": "Warp Madness",
+      "russian_name": "Варп-безумие",
+      "id": "cx9WJHsyg9VEec8G",
+      "group": "phenomena",
+      "roll": 72,
+      "rollMax": 74
+    },
+    {
+      "source_name": "Annihilation",
+      "russian_name": "Аннигиляция",
+      "id": "d9SbPdXyImrTzIi7",
+      "group": "perils",
+      "roll": 100,
+      "rollMax": 0
+    },
+    {
+      "source_name": "Psychic Concussion",
+      "russian_name": "Психическая ударная волна",
+      "id": "ef3VlJ0pfz0gS7Fd",
+      "group": "perils",
+      "roll": 10,
+      "rollMax": 13
+    },
+    {
+      "source_name": "Mass Incursion",
+      "russian_name": "Массовое вторжение",
+      "id": "h15rdJ1pdEAaWBf8",
+      "group": "perils",
+      "roll": 83,
+      "rollMax": 86
+    },
+    {
+      "source_name": "Unholy Stench",
+      "russian_name": "Нечестивая вонь",
+      "id": "h26y8A299cJeb0An",
+      "group": "phenomena",
+      "roll": 6,
+      "rollMax": 8
+    },
+    {
+      "source_name": "Actinic Discharge",
+      "russian_name": "Пси-разряд",
+      "id": "i84sk8VeEx5o9mmp",
+      "group": "phenomena",
+      "roll": 51,
+      "rollMax": 53
+    },
+    {
+      "source_name": "Soul Sear",
+      "russian_name": "Духовное иссушение",
+      "id": "jbHAy94qkkHG9dIH",
+      "group": "perils",
+      "roll": 19,
+      "rollMax": 24
+    },
+    {
+      "source_name": "Hoarfrost",
+      "russian_name": "Могильный холод",
+      "id": "lknPEcpPRQit48Yt",
+      "group": "phenomena",
+      "roll": 12,
+      "rollMax": 14
+    },
+    {
+      "source_name": "Rending the Veil",
+      "russian_name": "Разрыв завесы",
+      "id": "mgug0xC8KiSoGlL3",
+      "group": "perils",
+      "roll": 68,
+      "rollMax": 72
+    },
+    {
+      "source_name": "Mind Warp",
+      "russian_name": "Искажение разума",
+      "id": "n2yEP1XoPM7Utdz0",
+      "group": "phenomena",
+      "roll": 9,
+      "rollMax": 11
+    },
+    {
+      "source_name": "Spoilage",
+      "russian_name": "Гниение",
+      "id": "njtGWdgJNMqBOAtS",
+      "group": "phenomena",
+      "roll": 21,
+      "rollMax": 23
+    },
+    {
+      "source_name": "The Earth Protests",
+      "russian_name": "Протест земли",
+      "id": "ovLSDy52Scb191RK",
+      "group": "phenomena",
+      "roll": 48,
+      "rollMax": 50
+    },
+    {
+      "source_name": "Chronological Incontinence",
+      "russian_name": "Утечка времени",
+      "id": "s6dcXbGckWYSBB4r",
+      "group": "perils",
+      "roll": 31,
+      "rollMax": 38
+    },
+    {
+      "source_name": "Banshee Howl",
+      "russian_name": "Вой баньши",
+      "id": "t68edrt7QR6ES8bP",
+      "group": "phenomena",
+      "roll": 60,
+      "rollMax": 62
+    },
+    {
+      "source_name": "Unnatural Decay",
+      "russian_name": "Увядание",
+      "id": "tpoHdfOrNr6j0PGJ",
+      "group": "phenomena",
+      "roll": 39,
+      "rollMax": 41
+    },
+    {
+      "source_name": "Perils of the Warp",
+      "russian_name": "Опасности Варпа",
+      "id": "uDI2cFhJ9nblwlPX",
+      "group": "phenomena",
+      "roll": 75,
+      "rollMax": 0
+    },
+    {
+      "source_name": "Falling Upwards",
+      "russian_name": "Падение вверх",
+      "id": "uKwX108kq75IoeSi",
+      "group": "phenomena",
+      "roll": 57,
+      "rollMax": 59
+    },
+    {
+      "source_name": "Cataclysmic Blast",
+      "russian_name": "Катаклизм",
+      "id": "vpd3tbI2w6GkFrXJ",
+      "group": "perils",
+      "roll": 79,
+      "rollMax": 82
+    },
+    {
+      "source_name": "Breath Leech",
+      "russian_name": "Утечка дыхания",
+      "id": "yWax4TzZNPG0OSni",
+      "group": "phenomena",
+      "roll": 33,
+      "rollMax": 35
+    },
+    {
+      "source_name": "Tech Scorn",
+      "russian_name": "Техно-презрение",
+      "id": "z933gsInVkcQvyvN",
+      "group": "phenomena",
+      "roll": 69,
+      "rollMax": 71
+    },
+    {
+      "source_name": "The Gibbering",
+      "russian_name": "Бормотание",
+      "id": "zpkj2txUMun9hCIB",
+      "group": "perils",
+      "roll": 1,
+      "rollMax": 5
+    }
+  ]
+}

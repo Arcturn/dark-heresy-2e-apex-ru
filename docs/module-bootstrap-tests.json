@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "ESM import with Foundry hook contract",
+    "synchronous render registration before init",
+    "typography ru/system guard",
+    "Babele init registration",
+    "Babele foreign-system guard",
+    "ready typography",
+    "JSDOM FormData preservation",
+    "implicit option values unchanged",
+    "literal JSON matches generated ESM",
+    "actual names and descriptions unchanged"
+  ],
+  "runtime": "JSDOM plus stubbed Foundry Hooks; not a running Foundry server"
+}

@@ -1,0 +1,553 @@
+english,source_location,source_mentions,has_exact_ru_dictionary_entry,review_status
+Item Condition,sheets/item-sheet.mjs:10025,5,yes,display dictionary match
+Ballistic Skill,apps/dh2e-prerequisites-editor.mjs:13,4,yes,display dictionary match
+Construct part,sheets/item-sheet.mjs:412,4,yes,display dictionary match
+Custom configuration,sheets/item-sheet.mjs:402,4,yes,display dictionary match
+Half Action,apps/token-action-hud.mjs:3419,4,yes,display dictionary match
+One of them at random,items/dh2e-critical-step-editor.mjs:78,4,yes,display dictionary match
+Weapon Skill,apps/dh2e-prerequisites-editor.mjs:13,4,yes,display dictionary match
+Ability energy cost,sheets/actor-sheet.mjs:9445,3,yes,display dictionary match
+ActorContainerPassenger,sheets/actor-sheet.mjs:946,3,no,candidate—not necessarily user-visible
+Attack Power,sheets/actor-sheet.mjs:7407,3,yes,display dictionary match
+Characteristics,apps/creature-options-config.mjs:1025,3,yes,display dictionary match
+Critical Failure,sheets/item-sheet.mjs:6709,3,yes,display dictionary match
+Critical Success,sheets/item-sheet.mjs:6712,3,yes,display dictionary match
+Energy consumption,items/energy-consumption.mjs:61,3,yes,display dictionary match
+Final Calculation,sheets/actor-sheet.mjs:7891,3,yes,display dictionary match
+Full Action,apps/token-action-hud.mjs:3419,3,yes,display dictionary match
+Prepared Actor Data,sheets/actor-sheet.mjs:7756,3,yes,display dictionary match
+Ability owner,sheets/item-sheet.mjs:6671,2,yes,display dictionary match
+Ability reaction point cost,sheets/actor-sheet.mjs:9455,2,yes,display dictionary match
+Active preset not found.,apps/settings-preset-migration.mjs:47,2,yes,display dictionary match
+Active use,sheets/item-sheet.mjs:470,2,yes,display dictionary match
+Actor container,sheets/item-sheet.mjs:377,2,yes,display dictionary match
+Actor not found.,apps/token-action-hud.mjs:4313,2,yes,display dictionary match
+Actor.,sheets/actor-sheet.mjs:5095,2,no,candidate—not necessarily user-visible
+Aimed Attack,utils/effect-key-tokens.mjs:691,2,yes,display dictionary match
+Aimed Shot,utils/effect-key-tokens.mjs:686,2,yes,display dictionary match
+All body parts,utils/effect-key-tokens.mjs:1301,2,yes,display dictionary match
+All skills,sheets/item-sheet.mjs:6468,2,yes,display dictionary match
+Apply to existing actors and tokens,apps/token-prototype-defaults-config.mjs:44,2,yes,display dictionary match
+Attack from Stealth,sheets/actor-sheet.mjs:7876,2,yes,display dictionary match
+Attacking action,sheets/item-sheet.mjs:474,2,yes,display dictionary match
+Base Bonus,sheets/actor-sheet.mjs:7218,2,yes,display dictionary match
+Board transport,apps/token-action-hud.mjs:2512,2,yes,display dictionary match
+Character resource,sheets/item-sheet.mjs:8727,2,yes,display dictionary match
+Characteristic,items/dh2e-critical-step-editor.mjs:52,2,yes,display dictionary match
+Concentration,apps/dh2e-picker.mjs:45,2,yes,display dictionary match
+Contextual Ability,sheets/actor-sheet.mjs:7983,2,yes,display dictionary match
+Continue chain,sheets/item-sheet.mjs:6732,2,yes,display dictionary match
+Critical failure,sheets/item-sheet.mjs:6511,2,yes,display dictionary match
+Critical success,sheets/item-sheet.mjs:6514,2,yes,display dictionary match
+Damage type,items/dh2e-critical-step-editor.mjs:62,2,yes,display dictionary match
+Dark Heresy Item,sheets/registration.mjs:30,2,yes,display dictionary match
+Detection skill,apps/stealth-settings-config.mjs:16,2,yes,display dictionary match
+Event target,sheets/item-sheet.mjs:6568,2,yes,display dictionary match
+Free Action,sheets/dh2e-item-sheet.mjs:252,2,yes,display dictionary match
+Highest current value,sheets/item-sheet.mjs:6691,2,yes,display dictionary match
+If not,items/dh2e-critical-step-editor.mjs:90,2,yes,display dictionary match
+"Incoming healing, %",sheets/actor-sheet.mjs:9517,2,yes,display dictionary match
+Item.,utils/world-items.mjs:24,2,yes,display dictionary match
+Knocked down,sheets/item-sheet.mjs:7181,2,yes,display dictionary match
+Lowest current value,sheets/item-sheet.mjs:6692,2,yes,display dictionary match
+Maximum AP,apps/stealth-settings-config.mjs:21,2,yes,display dictionary match
+Maximum MP,apps/stealth-settings-config.mjs:22,2,yes,display dictionary match
+Maximum body part HP,sheets/actor-sheet.mjs:9483,2,yes,display dictionary match
+Movement cost,apps/creature-options-config.mjs:1041,2,yes,display dictionary match
+New category,apps/item-category-settings-config.mjs:69,2,yes,display dictionary match
+No active GM is available to manage settings presets.,settings/presets/manager.mjs:1991,2,yes,display dictionary match
+No actor owner permission.,apps/token-action-hud.mjs:4315,2,yes,display dictionary match
+No suitable energy source.,items/energy-consumption.mjs:114,2,yes,display dictionary match
+"Outgoing healing, %",sheets/actor-sheet.mjs:9518,2,yes,display dictionary match
+Preset document,settings/presets/schema.mjs:120,2,yes,display dictionary match
+Reaction points,sheets/item-sheet.mjs:6887,2,yes,display dictionary match
+Resistance to loss of consciousness,apps/combat-settings-config.mjs:26,2,yes,display dictionary match
+Skill Limit,sheets/actor-sheet.mjs:8905,2,yes,display dictionary match
+Snap Shot,utils/effect-key-tokens.mjs:687,2,yes,display dictionary match
+Split item,sheets/container-sheet.mjs:1472,2,yes,display dictionary match
+Temporarily suppressed,sheets/actor-sheet.mjs:9308,2,yes,display dictionary match
+Temporary effect,sheets/item-sheet.mjs:6626,2,yes,display dictionary match
+The item is broken.,apps/token-action-hud.mjs:1316,2,yes,display dictionary match
+The part type does not match this construct slot type.,sheets/actor-sheet.mjs:2721,2,yes,display dictionary match
+Token Action HUD,apps/token-action-hud.mjs:452,2,yes,display dictionary match
+Travel participant,apps/travel-group-hud.mjs:168,2,yes,display dictionary match
+Trial branch,settings/abilities.mjs:810,2,yes,display dictionary match
+Unaimed Attack,utils/effect-key-tokens.mjs:690,2,yes,display dictionary match
+WeaponAttackModeSwing,utils/weapon-module-actions.mjs:133,2,no,candidate—not necessarily user-visible
+WeaponAttackModeThrust,utils/weapon-module-actions.mjs:133,2,no,candidate—not necessarily user-visible
+WeaponModeAccuracyModifier,utils/weapon-module-actions.mjs:24,2,no,candidate—not necessarily user-visible
+Ability Bonus,sheets/actor-sheet.mjs:8897,1,yes,display dictionary match
+Ability change selection is incomplete. The ability was not added.,sheets/actor-sheet.mjs:1122,1,yes,display dictionary match
+Action checks,utils/effect-key-tokens.mjs:473,1,yes,display dictionary match
+Action cost,apps/creature-options-config.mjs:1042,1,yes,display dictionary match
+Action costs,utils/effect-key-tokens.mjs:194,1,yes,display dictionary match
+Active application target,sheets/item-sheet.mjs:6554,1,yes,display dictionary match
+Actor cannot carry this weight.,utils/inventory-grants.mjs:305,1,yes,display dictionary match
+Actor is not active in the current combat turn.,apps/token-action-hud.mjs:4318,1,yes,display dictionary match
+Actual health loss,apps/ability-accumulation-ui.mjs:17,1,yes,display dictionary match
+Actual item condition loss,apps/ability-accumulation-ui.mjs:24,1,yes,display dictionary match
+Actual limb damage,apps/ability-accumulation-ui.mjs:23,1,yes,display dictionary match
+Add a check first,sheets/item-sheet.mjs:8279,1,yes,display dictionary match
+Add a condition,sheets/dh2e-item-rules-view.mjs:126,1,yes,display dictionary match
+Add a requirement,apps/dh2e-prerequisites-editor.mjs:115,1,yes,display dictionary match
+Add a rule block,sheets/dh2e-item-rules-view.mjs:206,1,yes,display dictionary match
+Add at least one limb first.,apps/creature-options-config.mjs:364,1,yes,display dictionary match
+Adds function,sheets/actor-sheet.mjs:6427,1,yes,display dictionary match
+Against all damage types,utils/effect-key-tokens.mjs:1272,1,yes,display dictionary match
+Agility test modifier,items/dh2e-critical-step-editor.mjs:81,1,yes,display dictionary match
+All attack targets,sheets/item-sheet.mjs:8114,1,yes,display dictionary match
+All eligible,sheets/item-sheet.mjs:5834,1,yes,display dictionary match
+All function targets,sheets/item-sheet.mjs:6814,1,yes,display dictionary match
+Ammunition lost,items/dh2e-critical-step-editor.mjs:28,1,yes,display dictionary match
+Any Melee,apps/dh2e-prerequisites-editor.mjs:39,1,yes,display dictionary match
+Any damage,sheets/dh2e-item-rules-view.mjs:82,1,yes,display dictionary match
+Any gunner,sheets/dh2e-vehicle-panel.mjs:92,1,yes,display dictionary match
+Apply changes to targets,sheets/item-sheet.mjs:7045,1,yes,display dictionary match
+Area Radius,sheets/actor-sheet.mjs:8340,1,yes,display dictionary match
+Area damage,sheets/actor-sheet.mjs:8342,1,yes,display dictionary match
+Area duration,sheets/actor-sheet.mjs:8344,1,yes,display dictionary match
+Armour check,items/dh2e-critical-step-editor.mjs:25,1,yes,display dictionary match
+"Armour points (dice, or half)",items/dh2e-critical-step-editor.mjs:84,1,yes,display dictionary match
+Armour torn off,items/dh2e-critical-step-editor.mjs:37,1,yes,display dictionary match
+Assign the entire silhouette outline to limbs first.,apps/limb-silhouette-config.mjs:820,1,yes,display dictionary match
+Attack distance,sheets/item-sheet.mjs:6257,1,yes,display dictionary match
+Attack type,sheets/item-sheet.mjs:6258,1,yes,display dictionary match
+Attitudes.awe,apps/dh2e-social.mjs:90,1,no,candidate—not necessarily user-visible
+Attitudes.hatred,apps/dh2e-social.mjs:89,1,no,candidate—not necessarily user-visible
+Attitudes.neutral,apps/dh2e-social.mjs:87,1,no,candidate—not necessarily user-visible
+Attitudes.servant,apps/dh2e-social.mjs:88,1,no,candidate—not necessarily user-visible
+Aura condition targets,sheets/item-sheet.mjs:7054,1,yes,display dictionary match
+Available implant change,utils/effect-key-tokens.mjs:1326,1,yes,display dictionary match
+Award experience,apps/token-action-hud.mjs:1153,1,yes,display dictionary match
+Base Formula,sheets/actor-sheet.mjs:7654,1,yes,display dictionary match
+Base Skill,sheets/actor-sheet.mjs:8872,1,yes,display dictionary match
+Base defense,sheets/actor-sheet.mjs:7505,1,yes,display dictionary match
+Base resistance,sheets/actor-sheet.mjs:7505,1,yes,display dictionary match
+Base value,sheets/actor-sheet.mjs:6954,1,yes,display dictionary match
+Base weapon damage,sheets/item-sheet.mjs:8126,1,yes,display dictionary match
+Blood Loss,items/dh2e-critical-step-editor.mjs:21,1,yes,display dictionary match
+Calculated for,sheets/actor-sheet.mjs:6937,1,yes,display dictionary match
+Challenging (+0) Willpower test,items/dh2e-rule-items.mjs:49,1,no,candidate—not necessarily user-visible
+Change available implants,sheets/actor-sheet.mjs:9485,1,yes,display dictionary match
+Change selection (permanent),sheets/item-sheet.mjs:6309,1,yes,display dictionary match
+Change source,apps/settings-preset-migration.mjs:275,1,yes,display dictionary match
+Characteristic damage,items/dh2e-critical-step-editor.mjs:22,1,yes,display dictionary match
+Choose Function,sheets/item-sheet.mjs:464,1,yes,display dictionary match
+Choose a specialisation first.,apps/dh2e-advancement.mjs:486,1,yes,display dictionary match
+Clothing and Personal Gear,apps/dh2e-compendium-builder.mjs:76,1,yes,display dictionary match
+Collapse category,apps/settings-preset-migration.mjs:364,1,yes,display dictionary match
+Collect external conditions to apply to self,sheets/item-sheet.mjs:7046,1,yes,display dictionary match
+Combat Carousel,settings/registration.mjs:388,1,yes,display dictionary match
+Combat Carousel Size,settings/registration.mjs:396,1,yes,display dictionary match
+Combat Tracker Dock,apps/combat-carousel/combat-dock.mjs:559,1,yes,display dictionary match
+Combat not found.,apps/token-action-hud.mjs:4311,1,yes,display dictionary match
+Compendium.,utils/world-items.mjs:2,1,yes,display dictionary match
+Condition loss multiplier,sheets/actor-sheet.mjs:8116,1,yes,display dictionary match
+Condition progress,sheets/actor-sheet.mjs:5365,1,yes,display dictionary match
+ConditionLabel,sheets/item-sheet.mjs:6281,1,no,candidate—not necessarily user-visible
+Context Calculation,sheets/actor-sheet.mjs:7993,1,yes,display dictionary match
+Corruption points,items/dh2e-critical-step-editor.mjs:26,1,yes,display dictionary match
+Could not confirm the passenger of the moved vehicle.,utils/actor-container-passengers.mjs:15,1,no,candidate—not necessarily user-visible
+Could not sort contents.,utils/inventory-transfer-mode.mjs:188,1,yes,display dictionary match
+Could not transfer contents.,utils/inventory-transfer-mode.mjs:173,1,yes,display dictionary match
+Cover settings saved.,apps/cover-settings-config.mjs:86,1,yes,display dictionary match
+Cover-Up,apps/dh2e-subtlety.mjs:139,1,yes,display dictionary match
+Craftsmanship,apps/dh2e-requisition.mjs:50,1,yes,display dictionary match
+Critical Injury,items/dh2e-critical-step-editor.mjs:24,1,yes,display dictionary match
+Critical damage by outcome,sheets/item-sheet.mjs:8215,1,yes,display dictionary match
+Critical failure damage,items/first-aid-chat-card.mjs:37,1,yes,display dictionary match
+Critical limbs,sheets/item-sheet.mjs:7096,1,yes,display dictionary match
+Critical part,sheets/actor-sheet.mjs:6299,1,yes,display dictionary match
+CriticalFailure,items/first-aid.mjs:1174,1,no,candidate—not necessarily user-visible
+CriticalSuccess,items/first-aid.mjs:1171,1,no,candidate—not necessarily user-visible
+Custom Ammunition,apps/dh2e-compendium-builder.mjs:69,1,yes,display dictionary match
+Custom damage formula,sheets/item-sheet.mjs:8127,1,yes,display dictionary match
+Damage absorbed by the barrier,apps/ability-accumulation-ui.mjs:20,1,yes,display dictionary match
+"Damage after Defense, before Resistance",apps/ability-accumulation-ui.mjs:19,1,yes,display dictionary match
+Damage after resistance,apps/ability-accumulation-ui.mjs:18,1,yes,display dictionary match
+Damage after the barrier,apps/ability-accumulation-ui.mjs:21,1,yes,display dictionary match
+Damage condition key,items/dh2e-critical-step-editor.mjs:83,1,yes,display dictionary match
+Damage defense,sheets/actor-sheet.mjs:9496,1,yes,display dictionary match
+Damage in the negative range,apps/combat-settings-config.mjs:18,1,yes,display dictionary match
+Damage in the normal range,apps/combat-settings-config.mjs:17,1,yes,display dictionary match
+Damage protection bonus,utils/effect-key-tokens.mjs:1355,1,yes,display dictionary match
+Damage reduction icon,apps/token-action-hud-settings-config.mjs:14,1,yes,display dictionary match
+Damage resistance,sheets/actor-sheet.mjs:9497,1,yes,display dictionary match
+Damage resistance bonus,utils/effect-key-tokens.mjs:1359,1,yes,display dictionary match
+Damage type from event,apps/ability-accumulation-ui.mjs:28,1,yes,display dictionary match
+Damage types,sheets/actor-sheet.mjs:9551,1,yes,display dictionary match
+Damaged limbs prevent the use of this weapon.,apps/token-action-hud.mjs:202,1,yes,display dictionary match
+Decrease to,sheets/item-sheet.mjs:6209,1,yes,display dictionary match
+Delay before explosion,sheets/actor-sheet.mjs:8345,1,yes,display dictionary match
+Delete carrier item,sheets/active-effect-sheet.mjs:111,1,yes,display dictionary match
+Delete saved version,apps/settings-presets-config.mjs:278,1,yes,display dictionary match
+Destroyed on 1d10 of this or less,items/dh2e-critical-step-editor.mjs:86,1,yes,display dictionary match
+Development Bonus,sheets/actor-sheet.mjs:8891,1,yes,display dictionary match
+Development multiplier,utils/effect-key-tokens.mjs:392,1,yes,display dictionary match
+"Direction (away, random)",items/dh2e-critical-step-editor.mjs:72,1,yes,display dictionary match
+Disposition test,apps/dh2e-social.mjs:76,1,yes,display dictionary match
+Do not split,apps/ability-accumulation-ui.mjs:27,1,yes,display dictionary match
+Document Migration Version,settings/registration.mjs:94,1,yes,display dictionary match
+Dodge from AP conversion icon,apps/token-action-hud-settings-config.mjs:16,1,yes,display dictionary match
+Drops what he holds,items/dh2e-critical-step-editor.mjs:29,1,yes,display dictionary match
+Drugs and Consumables,apps/dh2e-compendium-builder.mjs:77,1,yes,display dictionary match
+Dual Wield,apps/token-action-hud.mjs:1408,1,yes,display dictionary match
+Each branch participant,sheets/item-sheet.mjs:6821,1,yes,display dictionary match
+Each function target,sheets/item-sheet.mjs:6820,1,yes,display dictionary match
+Each of them,items/dh2e-critical-step-editor.mjs:92,1,yes,display dictionary match
+Effect targets,sheets/item-sheet.mjs:7057,1,yes,display dictionary match
+EffectTargets.EventTarget,sheets/item-sheet.mjs:6580,1,no,candidate—not necessarily user-visible
+EffectTargets.Reactor,sheets/item-sheet.mjs:6579,1,no,candidate—not necessarily user-visible
+Effective Range,sheets/item-sheet.mjs:6218,1,yes,display dictionary match
+Electronic hacking tools,settings/tools.mjs:9,1,yes,display dictionary match
+Elite Advance Talents,apps/dh2e-compendium-builder.mjs:95,1,yes,display dictionary match
+Elite Advances,apps/dh2e-compendium-builder.mjs:90,1,yes,display dictionary match
+Empty weapon slot icon,apps/token-action-hud-settings-config.mjs:17,1,yes,display dictionary match
+End of Turn,apps/token-action-hud.mjs:520,1,yes,display dictionary match
+End turn,apps/token-action-hud.mjs:521,1,yes,display dictionary match
+Energy Consumption,sheets/item-sheet.mjs:6339,1,yes,display dictionary match
+Equipment effectiveness,utils/effect-key-tokens.mjs:250,1,yes,display dictionary match
+"Equipment requirements, change, %",utils/effect-key-tokens.mjs:235,1,yes,display dictionary match
+Equipment slot occupancy,sheets/item-sheet.mjs:6251,1,yes,display dictionary match
+"Equipment, prosthesis, and implant bonuses, %",utils/effect-key-tokens.mjs:262,1,yes,display dictionary match
+Event reaction,sheets/item-sheet.mjs:6281,1,yes,display dictionary match
+Event source,sheets/item-sheet.mjs:6567,1,yes,display dictionary match
+EventSubjects.EventSource,sheets/item-sheet.mjs:6567,1,no,candidate—not necessarily user-visible
+EventSubjects.EventTarget,sheets/item-sheet.mjs:6568,1,no,candidate—not necessarily user-visible
+EventSubjects.Reactor,sheets/item-sheet.mjs:6566,1,no,candidate—not necessarily user-visible
+Exactly the specified number,sheets/item-sheet.mjs:6082,1,yes,display dictionary match
+Expand category,apps/settings-preset-migration.mjs:364,1,yes,display dictionary match
+Experienced (+20),apps/dh2e-prerequisites-editor.mjs:18,1,yes,display dictionary match
+Explosion radius,sheets/actor-sheet.mjs:8333,1,yes,display dictionary match
+Explosives detonate,items/dh2e-critical-step-editor.mjs:28,1,yes,display dictionary match
+Export is available after completing the silhouette.,apps/limb-silhouette-config.mjs:729,1,yes,display dictionary match
+Failed to end the turn.,apps/token-action-hud.mjs:1111,1,yes,display dictionary match
+Failed to find the passenger actor.,sheets/actor-sheet.mjs:1259,1,yes,display dictionary match
+Failed to read the image pixels.,apps/limb-silhouette-config.mjs:672,1,yes,display dictionary match
+Failed to read the silhouette JSON.,apps/limb-silhouette-config.mjs:754,1,yes,display dictionary match
+Fallout MAW | Failed to render container item tooltip,sheets/container-sheet.mjs:373,1,no,candidate—not necessarily user-visible
+Fallout MAW | Failed to render installed module tooltip,utils/inventory-module-slots.mjs:198,1,no,candidate—not necessarily user-visible
+Fallout content removal,settings/registration.mjs:318,1,yes,display dictionary match
+Fear rating,items/dh2e-critical-step-editor.mjs:60,1,yes,display dictionary match
+Fear test,items/dh2e-critical-step-editor.mjs:26,1,yes,display dictionary match
+Fingers lost,items/dh2e-critical-step-editor.mjs:53,1,yes,display dictionary match
+Finish or cancel the current ability use first.,apps/token-action-hud.mjs:1581,1,yes,display dictionary match
+First Aid,items/active-item-use.mjs:309,1,yes,display dictionary match
+Focus Power,apps/dh2e-roll-dialog.mjs:80,1,yes,display dictionary match
+Fold those aboard,apps/dh2e-combat-tracker.mjs:60,1,yes,display dictionary match
+For each branch participant,sheets/item-sheet.mjs:6826,1,yes,display dictionary match
+Force Field,items/dh2e-item-builder.mjs:207,1,yes,display dictionary match
+Force Fields,apps/dh2e-compendium-builder.mjs:63,1,yes,display dictionary match
+Foundry ClipperLib is not available.,utils/limb-silhouette.mjs:168,1,no,candidate—not necessarily user-visible
+Foundry FilePicker is unavailable.,settings/presets/manager.mjs:1726,1,no,candidate—not necessarily user-visible
+Foundry did not materialize every managed Setting document.,settings/presets/manager.mjs:1037,1,no,candidate—not necessarily user-visible
+Foundry game socket is unavailable.,settings/presets/manager.mjs:1661,1,no,candidate—not necessarily user-visible
+Foundry rejected Setting document materialization before preset application.,settings/presets/manager.mjs:1177,1,no,candidate—not necessarily user-visible
+Foundry rejected one or more operations in the atomic settings batch.,settings/presets/manager.mjs:1065,1,no,candidate—not necessarily user-visible
+From initial creation — do not refresh,apps/ability-accumulation-ui.mjs:36,1,yes,display dictionary match
+Full block icon,apps/token-action-hud-settings-config.mjs:15,1,yes,display dictionary match
+Full recovery,apps/token-action-hud.mjs:1124,1,yes,display dictionary match
+Function targets,sheets/item-sheet.mjs:6670,1,yes,display dictionary match
+Gain Corruption,sheets/actor-sheet.mjs:2112,1,yes,display dictionary match
+General category,settings/abilities.mjs:439,1,yes,display dictionary match
+General health only,sheets/item-sheet.mjs:8137,1,yes,display dictionary match
+Gore on the ground,items/dh2e-critical-step-editor.mjs:29,1,yes,display dictionary match
+His weapon fires,items/dh2e-critical-step-editor.mjs:29,1,yes,display dictionary match
+Home Worlds,apps/dh2e-compendium-builder.mjs:87,1,yes,display dictionary match
+If armour is worn there,items/dh2e-critical-step-editor.mjs:90,1,yes,display dictionary match
+If he carries it,items/dh2e-critical-step-editor.mjs:91,1,yes,display dictionary match
+If he fails,items/dh2e-critical-step-editor.mjs:89,1,yes,display dictionary match
+If he passes,items/dh2e-critical-step-editor.mjs:89,1,yes,display dictionary match
+Ignores Armour,items/dh2e-critical-step-editor.mjs:63,1,yes,display dictionary match
+Ignores Toughness bonus,items/dh2e-critical-step-editor.mjs:63,1,yes,display dictionary match
+Immunity to loss of consciousness,utils/effect-key-tokens.mjs:949,1,yes,display dictionary match
+Imported preset,settings/presets/schema.mjs:125,1,yes,display dictionary match
+Incoming damage before resistance,apps/ability-accumulation-ui.mjs:22,1,yes,display dictionary match
+Increase to,sheets/item-sheet.mjs:6208,1,yes,display dictionary match
+InfluenceAmount,apps/dh2e-subtlety.mjs:155,1,no,candidate—not necessarily user-visible
+InfluenceMitigate,apps/dh2e-subtlety.mjs:156,1,no,candidate—not necessarily user-visible
+Injury item (drop it here),items/dh2e-critical-step-editor.mjs:51,1,yes,display dictionary match
+Insanity points,items/dh2e-critical-step-editor.mjs:26,1,yes,display dictionary match
+Isolated automatic application,sheets/item-sheet.mjs:6450,1,yes,display dictionary match
+Item categories,apps/item-category-settings-config.mjs:41,1,yes,display dictionary match
+Item categories saved.,apps/item-category-settings-config.mjs:62,1,yes,display dictionary match
+Item does not fit this slot.,utils/equipment-hud-placement.mjs:71,1,yes,display dictionary match
+Item does not fit this weapon slot.,utils/equipment-hud-placement.mjs:115,1,yes,display dictionary match
+Item requirements,utils/effect-key-tokens.mjs:230,1,yes,display dictionary match
+Item value,sheets/actor-sheet.mjs:6114,1,yes,display dictionary match
+Jam100,sheets/item-sheet.mjs:10793,1,no,candidate—not necessarily user-visible
+Jam91,sheets/item-sheet.mjs:10793,1,no,candidate—not necessarily user-visible
+Jam96,sheets/item-sheet.mjs:10793,1,no,candidate—not necessarily user-visible
+Knocked Prone,items/dh2e-critical-step-editor.mjs:21,1,yes,display dictionary match
+"Left (blank, damaged, destroyed)",items/dh2e-critical-step-editor.mjs:71,1,yes,display dictionary match
+Left Arm,items/dh2e-item-choices.mjs:13,1,yes,display dictionary match
+Left Leg,items/dh2e-item-choices.mjs:13,1,yes,display dictionary match
+Legacy settings baseline,settings/presets/schema.mjs:292,1,no,candidate—not necessarily user-visible
+Legacy settings baseline.settings,settings/presets/schema.mjs:294,1,no,candidate—not necessarily user-visible
+Level Up,apps/token-action-hud-settings-config.mjs:39,1,yes,display dictionary match
+Light level,sheets/item-sheet.mjs:6248,1,yes,display dictionary match
+Limb maximum,apps/combat-settings-config.mjs:22,1,yes,display dictionary match
+Limb minimum,apps/combat-settings-config.mjs:21,1,yes,display dictionary match
+Limited number of changes,sheets/item-sheet.mjs:6302,1,yes,display dictionary match
+Limited number of effect copies,sheets/item-sheet.mjs:6316,1,yes,display dictionary match
+Limited number of uses,sheets/item-sheet.mjs:6323,1,yes,display dictionary match
+Location (random for any),items/dh2e-critical-step-editor.mjs:80,1,yes,display dictionary match
+Manual selection,sheets/item-sheet.mjs:5833,1,yes,display dictionary match
+Matching result,settings/abilities.mjs:1900,1,yes,display dictionary match
+Mechanical lockpicking tools,settings/tools.mjs:10,1,yes,display dictionary match
+Mechanicus Implants,apps/dh2e-prerequisites-editor.mjs:62,1,yes,display dictionary match
+Medical tools,settings/tools.mjs:7,1,yes,display dictionary match
+Migrate from other presets,apps/token-prototype-defaults-config.mjs:50,1,yes,display dictionary match
+Migrate selected,apps/settings-preset-migration.mjs:274,1,yes,display dictionary match
+Migration source,apps/settings-preset-migration.mjs:89,1,yes,display dictionary match
+Mounts.none,sheets/dh2e-vehicle-panel.mjs:86,1,no,candidate—not necessarily user-visible
+Multiplication,sheets/periodic-damage-region-behavior-config.mjs:269,1,yes,display dictionary match
+Negative depth fraction,apps/combat-settings-config.mjs:24,1,yes,display dictionary match
+New level,apps/stealth-settings-config.mjs:124,1,yes,display dictionary match
+New limb,apps/creature-options-config.mjs:311,1,yes,display dictionary match
+New proficiency,apps/proficiency-settings-config.mjs:83,1,yes,display dictionary match
+New subcategory,apps/item-category-settings-config.mjs:93,1,yes,display dictionary match
+New value,items/dh2e-critical-step-editor.mjs:57,1,yes,display dictionary match
+Next check of the selected skill,utils/effect-key-tokens.mjs:750,1,yes,display dictionary match
+Next check with the selected skill,sheets/actor-sheet.mjs:9456,1,yes,display dictionary match
+No abilities or categories selected for migration.,apps/settings-preset-migration.mjs:261,1,yes,display dictionary match
+No active GM to access the first aid target.,items/first-aid.mjs:655,1,yes,display dictionary match
+No data selected for migration.,apps/settings-preset-migration.mjs:164,1,yes,display dictionary match
+No description provided.,sheets/actor-sheet.mjs:5342,1,yes,display dictionary match
+No eligible first aid targets.,items/active-item-use.mjs:310,1,yes,display dictionary match
+No energy source installed.,items/energy-consumption.mjs:178,1,yes,display dictionary match
+No item describes this entry; the compendiums may not be built.,apps/dh2e-advancement.mjs:609,1,yes,display dictionary match
+No opaque outline was found in the image.,apps/limb-silhouette-config.mjs:680,1,yes,display dictionary match
+No prerequisites.,apps/dh2e-prerequisites-editor.mjs:109,1,yes,display dictionary match
+No psychic powers,items/dh2e-critical-step-editor.mjs:27,1,yes,display dictionary match
+No settings were selected for migration.,settings/presets/manager.mjs:409,1,yes,display dictionary match
+Not sustained,sheets/dh2e-psychic-tab.mjs:141,1,yes,display dictionary match
+Not used,sheets/item-sheet.mjs:10000,1,yes,display dictionary match
+Note for the GM,items/dh2e-critical-step-editor.mjs:25,1,yes,display dictionary match
+Nothing to sort.,utils/inventory-transfer-mode.mjs:186,1,yes,display dictionary match
+Nothing to transfer.,utils/inventory-transfer-mode.mjs:172,1,yes,display dictionary match
+Obscura (p. 173),sheets/dh2e-item-sheet.mjs:249,1,no,candidate—not necessarily user-visible
+Occupied cover,sheets/item-sheet.mjs:6256,1,yes,display dictionary match
+Once per branch,sheets/item-sheet.mjs:6825,1,yes,display dictionary match
+Once per use,sheets/item-sheet.mjs:8042,1,yes,display dictionary match
+One-time change on acquisition,sheets/item-sheet.mjs:5819,1,yes,display dictionary match
+Only a GM can manage settings presets.,settings/presets/manager.mjs:1989,1,yes,display dictionary match
+Only a live Dark Heresy 2E [Apex Edition] base preset can be cloned.,settings/presets/schema.mjs:233,1,no,candidate—not necessarily user-visible
+Only an active GM may request settings preset mutations.,settings/presets/manager.mjs:1963,1,no,candidate—not necessarily user-visible
+Only from a ranged attack,items/dh2e-critical-step-editor.mjs:82,1,yes,display dictionary match
+Only his next turn,items/dh2e-critical-step-editor.mjs:48,1,yes,display dictionary match
+Only the active GM client can process settings preset mutations.,settings/presets/manager.mjs:1967,1,no,candidate—not necessarily user-visible
+Only the live main Dark Heresy 2E [Apex Edition] preset can be cloned.,settings/presets/schema.mjs:223,1,no,candidate—not necessarily user-visible
+Only the one in the struck hand,items/dh2e-critical-step-editor.mjs:69,1,yes,display dictionary match
+Operate test modifier,items/dh2e-critical-step-editor.mjs:77,1,yes,display dictionary match
+Other Source,sheets/actor-sheet.mjs:6954,1,yes,display dictionary match
+OtherDiscipline,sheets/dh2e-psychic-tab.mjs:172,1,no,candidate—not necessarily user-visible
+Outside effective range,sheets/item-sheet.mjs:6219,1,yes,display dictionary match
+Overheat91,sheets/item-sheet.mjs:10793,1,no,candidate—not necessarily user-visible
+Own posture,sheets/item-sheet.mjs:7175,1,yes,display dictionary match
+Part type,sheets/actor-sheet.mjs:6298,1,yes,display dictionary match
+Participants in this branch,sheets/item-sheet.mjs:6812,1,yes,display dictionary match
+Participants in this check,sheets/item-sheet.mjs:8112,1,yes,display dictionary match
+Pending preset backup is unavailable.,settings/presets/manager.mjs:747,1,no,candidate—not necessarily user-visible
+Percentage of base damage,sheets/item-sheet.mjs:8128,1,yes,display dictionary match
+Percentage of primary changes,sheets/item-sheet.mjs:6769,1,yes,display dictionary match
+Perils of the Warp,sheets/dh2e-item-sheet.mjs:265,1,yes,display dictionary match
+Permanent characteristic loss,items/dh2e-critical-step-editor.mjs:23,1,yes,display dictionary match
+Portable preset deletion markers are no longer supported.,settings/presets/manager.mjs:453,1,no,candidate—not necessarily user-visible
+Positions killed outright,items/dh2e-critical-step-editor.mjs:85,1,yes,display dictionary match
+Power Maul,apps/dh2e-compendium-builder.mjs:57,1,yes,display dictionary match
+Prerequisites,apps/dh2e-prerequisites-editor.mjs:112,1,yes,display dictionary match
+Presence in a region,sheets/item-sheet.mjs:6249,1,yes,display dictionary match
+Preset application failed and its previous settings could not be fully restored.,settings/presets/manager.mjs:1078,1,no,candidate—not necessarily user-visible
+Preset id must be a safe non-empty file id.,settings/presets/schema.mjs:423,1,no,candidate—not necessarily user-visible
+Preset migration is not configured for this window.,apps/settings-preset-migration.mjs:31,1,yes,display dictionary match
+Preset name cannot be empty.,settings/presets/manager.mjs:2270,1,no,candidate—not necessarily user-visible
+Preset name cannot exceed 200 characters.,settings/presets/manager.mjs:2271,1,no,candidate—not necessarily user-visible
+Preset name contains control characters.,settings/presets/manager.mjs:2272,1,no,candidate—not necessarily user-visible
+Preset name must be a string.,settings/presets/schema.mjs:430,1,no,candidate—not necessarily user-visible
+Preset revision input,settings/presets/schema.mjs:480,1,no,candidate—not necessarily user-visible
+Preset revision must be a lowercase SHA-256 hex digest.,settings/presets/schema.mjs:458,1,no,candidate—not necessarily user-visible
+Preset saves must be an array.,settings/presets/schema.mjs:351,1,no,candidate—not necessarily user-visible
+Preset settings must be an array.,settings/presets/schema.mjs:313,1,no,candidate—not necessarily user-visible
+Preset system and systemId must match.,settings/presets/schema.mjs:412,1,no,candidate—not necessarily user-visible
+Preset systemVersion must be a non-empty string or null.,settings/presets/schema.mjs:442,1,no,candidate—not necessarily user-visible
+Preset updatedAt must be an ISO date string or null.,settings/presets/schema.mjs:450,1,no,candidate—not necessarily user-visible
+Primary changes,sheets/item-sheet.mjs:6768,1,yes,display dictionary match
+Proficiencies,apps/creature-options-config.mjs:1035,1,yes,display dictionary match
+"Protection effectiveness, %",utils/effect-key-tokens.mjs:255,1,yes,display dictionary match
+Prototype Token,apps/dh2e-actor-directory.mjs:16,1,yes,display dictionary match
+Psy Rating,apps/dh2e-prerequisites-editor.mjs:61,1,yes,display dictionary match
+Psychic Phenomena,sheets/dh2e-item-sheet.mjs:265,1,yes,display dictionary match
+Psychic Powers,apps/dh2e-advancement.mjs:651,1,yes,display dictionary match
+Radius change,sheets/actor-sheet.mjs:8346,1,yes,display dictionary match
+Random body part,sheets/item-sheet.mjs:8134,1,yes,display dictionary match
+Random key limb,sheets/item-sheet.mjs:8135,1,yes,display dictionary match
+RcContributions,apps/dh2e-reinforcements.mjs:47,1,no,candidate—not necessarily user-visible
+ReactionModes.IsolatedAuto,sheets/item-sheet.mjs:6450,1,no,candidate—not necessarily user-visible
+ReactionModes.Standard,sheets/item-sheet.mjs:6446,1,no,candidate—not necessarily user-visible
+Ready weapons,utils/actor-display-data.mjs:220,1,yes,display dictionary match
+Reinforcement,apps/dh2e-reinforcements.mjs:85,1,yes,display dictionary match
+Remove the installed part from this slot first.,sheets/actor-sheet.mjs:3084,1,yes,display dictionary match
+Removes effects,items/first-aid-chat-card.mjs:36,1,yes,display dictionary match
+Repair tools,settings/tools.mjs:8,1,yes,display dictionary match
+Replace weapon,apps/token-action-hud-settings-config.mjs:55,1,yes,display dictionary match
+Resource change,sheets/item-sheet.mjs:6627,1,yes,display dictionary match
+Resources.ReactionPoints,sheets/item-sheet.mjs:6887,1,no,candidate—not necessarily user-visible
+Respiratory System,items/dh2e-item-choices.mjs:14,1,yes,display dictionary match
+Restart on accumulation,apps/ability-accumulation-ui.mjs:37,1,yes,display dictionary match
+Right Arm,items/dh2e-item-choices.mjs:13,1,yes,display dictionary match
+Right Leg,items/dh2e-item-choices.mjs:13,1,yes,display dictionary match
+Roll a die,items/dh2e-critical-step-editor.mjs:24,1,yes,display dictionary match
+Round down after accumulating fractions,apps/ability-accumulation-ui.mjs:31,1,yes,display dictionary match
+Round to nearest after accumulating fractions,apps/ability-accumulation-ui.mjs:32,1,yes,display dictionary match
+Round up after accumulating fractions,apps/ability-accumulation-ui.mjs:33,1,yes,display dictionary match
+Rule blocks (JSON),items/dh2e-critical-step-editor.mjs:49,1,yes,display dictionary match
+Run conditions on targets,sheets/item-sheet.mjs:7044,1,yes,display dictionary match
+Search…,apps/dh2e-picker.mjs:123,1,yes,display dictionary match
+Select a check outcome,sheets/item-sheet.mjs:8272,1,yes,display dictionary match
+Select a consequence,sheets/item-sheet.mjs:6767,1,yes,display dictionary match
+Select a sub-event,sheets/item-sheet.mjs:6401,1,yes,display dictionary match
+Select an event,sheets/item-sheet.mjs:6398,1,yes,display dictionary match
+Select timing,sheets/item-sheet.mjs:6400,1,yes,display dictionary match
+SelectSubEvent,sheets/item-sheet.mjs:6401,1,no,candidate—not necessarily user-visible
+Selected body part,sheets/item-sheet.mjs:8136,1,yes,display dictionary match
+Selected targets,sheets/item-sheet.mjs:7977,1,yes,display dictionary match
+Separately for each participant,sheets/item-sheet.mjs:8117,1,yes,display dictionary match
+Separately for each target,sheets/item-sheet.mjs:8043,1,yes,display dictionary match
+Set a characteristic,items/dh2e-critical-step-editor.mjs:23,1,yes,display dictionary match
+"Set off by (move, runCharge)",items/dh2e-critical-step-editor.mjs:73,1,yes,display dictionary match
+Set on fire,items/dh2e-critical-step-editor.mjs:22,1,yes,display dictionary match
+Settings Preset State,settings/registration.mjs:102,1,yes,display dictionary match
+Settings migrated to the active preset.,apps/settings-preset-migration.mjs:65,1,yes,display dictionary match
+Settings preset state is not registered.,settings/presets/manager.mjs:1014,1,no,candidate—not necessarily user-visible
+Show those aboard as rows,apps/dh2e-combat-tracker.mjs:60,1,yes,display dictionary match
+Skill Bonus,sheets/actor-sheet.mjs:8882,1,yes,display dictionary match
+Skill change,utils/effect-key-tokens.mjs:475,1,yes,display dictionary match
+Skill development multipliers,utils/effect-key-tokens.mjs:386,1,yes,display dictionary match
+Skill used by the weapon,sheets/item-sheet.mjs:6259,1,yes,display dictionary match
+Skills used,sheets/item-sheet.mjs:6042,1,yes,display dictionary match
+Skills used by the weapon,sheets/item-sheet.mjs:6042,1,yes,display dictionary match
+Sort contents,utils/inventory-sort-menu.mjs:21,1,yes,display dictionary match
+Spook (p. 174),sheets/dh2e-item-sheet.mjs:249,1,no,candidate—not necessarily user-visible
+Standard Clips,apps/dh2e-compendium-builder.mjs:68,1,yes,display dictionary match
+Standard reaction,sheets/item-sheet.mjs:6446,1,yes,display dictionary match
+Starting equipment,items/dh2e-origin-equipment-grant.mjs:23,1,yes,display dictionary match
+Stealth settings,apps/stealth-settings-config.mjs:59,1,yes,display dictionary match
+Stealth settings saved.,apps/stealth-settings-config.mjs:100,1,yes,display dictionary match
+Stop for branch participants,sheets/item-sheet.mjs:6733,1,yes,display dictionary match
+Stop for this participant,sheets/item-sheet.mjs:8090,1,yes,display dictionary match
+Stop the entire attack,sheets/item-sheet.mjs:8091,1,yes,display dictionary match
+Stop the entire chain,sheets/item-sheet.mjs:6734,1,yes,display dictionary match
+Stun immunity,utils/effect-key-tokens.mjs:963,1,yes,display dictionary match
+"Stun, %",utils/effect-key-tokens.mjs:956,1,yes,display dictionary match
+Sub-event,sheets/item-sheet.mjs:6396,1,yes,display dictionary match
+Talent Weapons,apps/dh2e-compendium-builder.mjs:59,1,yes,display dictionary match
+Target faction,sheets/item-sheet.mjs:6252,1,yes,display dictionary match
+Target is too far away.,items/active-item-use.mjs:314,1,yes,display dictionary match
+Target posture,sheets/item-sheet.mjs:7176,1,yes,display dictionary match
+Target race,sheets/item-sheet.mjs:6253,1,yes,display dictionary match
+Target type,sheets/item-sheet.mjs:6254,1,yes,display dictionary match
+Targets for collecting conditions,sheets/item-sheet.mjs:7056,1,yes,display dictionary match
+Tech-Use,apps/dh2e-prerequisites-editor.mjs:17,1,yes,display dictionary match
+Test modifier,items/dh2e-critical-step-editor.mjs:78,1,yes,display dictionary match
+That specialisation is not in the book list.,apps/dh2e-advancement.mjs:490,1,yes,display dictionary match
+The active GM changed. Retry the turn request.,apps/token-action-hud.mjs:4317,1,yes,display dictionary match
+The actor cannot carry this much weight.,sheets/actor-sheet.mjs:9268,1,yes,display dictionary match
+The attacker attacks again,items/dh2e-critical-step-editor.mjs:37,1,yes,display dictionary match
+The character already has this talent.,apps/dh2e-advancement.mjs:496,1,yes,display dictionary match
+The file does not contain a valid silhouette.,apps/limb-silhouette-config.mjs:542,1,yes,display dictionary match
+The passenger does not fit in the selected area.,sheets/actor-sheet.mjs:1244,1,yes,display dictionary match
+The polygon did not intersect the remaining available silhouette.,apps/limb-silhouette-config.mjs:571,1,yes,display dictionary match
+The power fails,items/dh2e-critical-step-editor.mjs:27,1,yes,display dictionary match
+The power turns on the psyker,items/dh2e-critical-step-editor.mjs:27,1,yes,display dictionary match
+The preset manager is not ready yet.,apps/settings-preset-migration.mjs:43,1,yes,display dictionary match
+The selected preset is no longer available.,apps/settings-preset-migration.mjs:61,1,yes,display dictionary match
+The selected source has no settings for this window.,apps/settings-preset-migration.mjs:127,1,yes,display dictionary match
+The turret flies 3d10 metres,items/dh2e-critical-step-editor.mjs:85,1,yes,display dictionary match
+The weapon does not fit in the selected slots.,apps/token-action-hud.mjs:2959,1,yes,display dictionary match
+There are no differences from the selected source.,apps/settings-preset-migration.mjs:145,1,yes,display dictionary match
+There is no other preset to migrate from.,apps/settings-preset-migration.mjs:102,1,yes,display dictionary match
+This modification does not fit this weapon.,sheets/dh2e-item-sheet.mjs:357,1,yes,display dictionary match
+This preset has no saved versions yet.,apps/settings-presets-config.mjs:246,1,yes,display dictionary match
+This saved event is not present in the current catalog.,sheets/item-sheet.mjs:6415,1,yes,display dictionary match
+Those nearby,items/dh2e-critical-step-editor.mjs:28,1,yes,display dictionary match
+"Thrown, Grenades and Missiles",apps/dh2e-compendium-builder.mjs:58,1,yes,display dictionary match
+Time of day,sheets/item-sheet.mjs:6247,1,yes,display dictionary match
+Token Action HUD Collapsed Sections,settings/registration.mjs:342,1,yes,display dictionary match
+Token Action HUD Icons,settings/registration.mjs:350,1,yes,display dictionary match
+Token Action HUD Scale,settings/registration.mjs:334,1,yes,display dictionary match
+Token HUD Equipment Slots,settings/registration.mjs:359,1,yes,display dictionary match
+Token HUD socket request failed.,apps/token-action-hud.mjs:4701,1,yes,display dictionary match
+Token Prototype Defaults,settings/registration.mjs:377,1,yes,display dictionary match
+Tool supplies,sheets/item-sheet.mjs:10024,1,yes,display dictionary match
+TrackingTargetOptions.ActiveApplicationTarget,sheets/item-sheet.mjs:6553,1,no,candidate—not necessarily user-visible
+TrackingTargetOptions.Ally,sheets/item-sheet.mjs:6549,1,no,candidate—not necessarily user-visible
+TrackingTargetOptions.Enemy,sheets/item-sheet.mjs:6550,1,no,candidate—not necessarily user-visible
+TrackingTargetOptions.Neutral,sheets/item-sheet.mjs:6551,1,no,candidate—not necessarily user-visible
+TrackingTargetOptions.Owner,sheets/item-sheet.mjs:6548,1,no,candidate—not necessarily user-visible
+Traded in,apps/dh2e-requisition.mjs:162,1,yes,display dictionary match
+Trained (+10),apps/dh2e-prerequisites-editor.mjs:18,1,yes,display dictionary match
+Transfer contents,utils/inventory-transfer-mode.mjs:71,1,yes,display dictionary match
+Trigger chance,sheets/item-sheet.mjs:6246,1,yes,display dictionary match
+Turn off,items/energy-consumption.mjs:410,1,yes,display dictionary match
+Turn on,items/energy-consumption.mjs:410,1,yes,display dictionary match
+Unavailable participant,apps/travel-group-hud.mjs:304,1,yes,display dictionary match
+Unknown settings preset error.,settings/presets/manager.mjs:2351,1,yes,display dictionary match
+Unknown weapon reload action.,apps/token-action-hud.mjs:4332,1,yes,display dictionary match
+Unknown workflow error,utils/system-event-workflow.mjs:114,1,yes,display dictionary match
+UnknownEventDescription,sheets/item-sheet.mjs:6415,1,no,candidate—not necessarily user-visible
+Unnamed resource change,sheets/item-sheet.mjs:6779,1,yes,display dictionary match
+Unnamed temporary effect,sheets/item-sheet.mjs:6778,1,yes,display dictionary match
+Unsupported saved event,sheets/item-sheet.mjs:6389,1,yes,display dictionary match
+UnsupportedGroup,sheets/item-sheet.mjs:6389,1,no,candidate—not necessarily user-visible
+Until treated,sheets/dh2e-item-sheet.mjs:262,1,yes,display dictionary match
+Up to the specified number,sheets/item-sheet.mjs:6087,1,yes,display dictionary match
+Use activator parameters (snapshot),sheets/item-sheet.mjs:5838,1,yes,display dictionary match
+Use an item,sheets/item-sheet.mjs:6344,1,yes,display dictionary match
+Use target parameters,sheets/item-sheet.mjs:5837,1,yes,display dictionary match
+Used Skill,sheets/item-sheet.mjs:6260,1,yes,display dictionary match
+Value Calculation,sheets/actor-sheet.mjs:6928,1,yes,display dictionary match
+Value after damage,apps/combat-settings-config.mjs:20,1,yes,display dictionary match
+Value before damage,apps/combat-settings-config.mjs:19,1,yes,display dictionary match
+Veteran (+30),apps/dh2e-prerequisites-editor.mjs:18,1,yes,display dictionary match
+Walking group,apps/travel-group-hud.mjs:180,1,yes,display dictionary match
+Weapon Configuration,sheets/actor-sheet.mjs:8978,1,yes,display dictionary match
+Weapon Modifications,apps/dh2e-compendium-builder.mjs:72,1,yes,display dictionary match
+Weapon not found.,apps/token-action-hud.mjs:4339,1,yes,display dictionary match
+Weapon proficiency used,sheets/item-sheet.mjs:6261,1,yes,display dictionary match
+"Weapon requirements, change, %",utils/effect-key-tokens.mjs:242,1,yes,display dictionary match
+WeaponActionAimedMeleeAttack,utils/weapon-module-actions.mjs:3,1,no,candidate—not necessarily user-visible
+WeaponActionAimedShot,utils/weapon-module-actions.mjs:2,1,no,candidate—not necessarily user-visible
+WeaponActionBurst,utils/weapon-module-actions.mjs:2,1,no,candidate—not necessarily user-visible
+WeaponActionMeleeAttack,utils/weapon-module-actions.mjs:3,1,no,candidate—not necessarily user-visible
+WeaponActionName,utils/weapon-module-actions.mjs:129,1,no,candidate—not necessarily user-visible
+WeaponActionPush,utils/weapon-module-actions.mjs:4,1,no,candidate—not necessarily user-visible
+WeaponActionReload,utils/weapon-module-actions.mjs:4,1,no,candidate—not necessarily user-visible
+WeaponActionSnapshot,utils/weapon-module-actions.mjs:2,1,no,candidate—not necessarily user-visible
+WeaponActionVolley,utils/weapon-module-actions.mjs:3,1,no,candidate—not necessarily user-visible
+WeaponAttackCone,utils/weapon-module-actions.mjs:17,1,no,candidate—not necessarily user-visible
+WeaponBurstCount,utils/weapon-module-actions.mjs:19,1,no,candidate—not necessarily user-visible
+WeaponBurstDifficultyPerShot,utils/weapon-module-actions.mjs:20,1,no,candidate—not necessarily user-visible
+WeaponCostCondition,utils/weapon-module-actions.mjs:156,1,no,candidate—not necessarily user-visible
+WeaponCostEnergy,utils/weapon-module-actions.mjs:156,1,no,candidate—not necessarily user-visible
+WeaponCostMagazine,utils/weapon-module-actions.mjs:156,1,no,candidate—not necessarily user-visible
+WeaponCostQuantity,utils/weapon-module-actions.mjs:156,1,no,candidate—not necessarily user-visible
+WeaponCriticalFailureConsequences,utils/weapon-module-actions.mjs:147,1,no,candidate—not necessarily user-visible
+WeaponExplosionAnimation,utils/weapon-module-actions.mjs:144,1,no,candidate—not necessarily user-visible
+WeaponExplosionSound,utils/weapon-module-actions.mjs:144,1,no,candidate—not necessarily user-visible
+WeaponMaxRange,utils/weapon-module-actions.mjs:23,1,no,candidate—not necessarily user-visible
+WeaponModeCriticalChanceModifier,utils/weapon-module-actions.mjs:31,1,no,candidate—not necessarily user-visible
+WeaponModeDamagePercentModifier,utils/weapon-module-actions.mjs:32,1,no,candidate—not necessarily user-visible
+WeaponPushDifficultyModifier,utils/weapon-module-actions.mjs:25,1,no,candidate—not necessarily user-visible
+WeaponVolleyDamageRadius,utils/weapon-module-actions.mjs:11,1,no,candidate—not necessarily user-visible
+WeaponVolleyExplosionDelay,utils/weapon-module-actions.mjs:14,1,no,candidate—not necessarily user-visible
+WeaponVolleyRegion,utils/weapon-module-actions.mjs:147,1,no,candidate—not necessarily user-visible
+WeaponVolleyRegionDuration,utils/weapon-module-actions.mjs:13,1,no,candidate—not necessarily user-visible
+WeaponVolleyRegionRadius,utils/weapon-module-actions.mjs:12,1,no,candidate—not necessarily user-visible
+WeaponVolleyRegionRadiusDelta,utils/weapon-module-actions.mjs:15,1,no,candidate—not necessarily user-visible
+"What (ammo, explosives, poweredHeld, rangedHeld, explosiveHeld, anyHeld)",items/dh2e-critical-step-editor.mjs:68,1,yes,display dictionary match
+What he carries,items/dh2e-critical-step-editor.mjs:28,1,yes,display dictionary match
+What is rolled,items/dh2e-critical-step-editor.mjs:53,1,yes,display dictionary match
+"Who (all, allies)",items/dh2e-critical-step-editor.mjs:67,1,yes,display dictionary match
+Whoever is in the way,items/dh2e-critical-step-editor.mjs:93,1,yes,display dictionary match
+You do not have observer permission for this passenger.,sheets/actor-sheet.mjs:1263,1,yes,display dictionary match

@@ -1,0 +1,28 @@
+{
+  "version": "0.23.0",
+  "source_system": "0.1.10",
+  "foundry_target": "14",
+  "source_file_counts": {
+    "js": 607,
+    "hbs": 85,
+    "css": 15
+  },
+  "source_i18n_keys": 7048,
+  "ru_keys_present": 7048,
+  "placeholder_mismatches": 0,
+  "babele_maps": 9,
+  "babele_entries": 905,
+  "hardcoded_dict_entries": 520,
+  "test_suites_passed": 13,
+  "syntax_mjs_checked": 44,
+  "json_files_checked": 47,
+  "live_foundry_tested": false,
+  "confirmed_fixes": [
+    "vehicle-stats-css-selector",
+    "dynamic-vehicle-operate",
+    "talent-and-trait-page-labels",
+    "opt-in-readonly-open-window-audit"
+  ],
+  "mechanical_source_changes": 0,
+  "data_migrations": 0
+}

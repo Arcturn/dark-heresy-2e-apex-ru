@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "checks": [
+    "Gain Corruption: only three static captions change; controls/options/listeners remain intact",
+    "Disorder: pin the three original implicit enums; preserve the actor title, typed name and catalog suggestions",
+    "English native labels are accepted only within the full Disorder dialog signature",
+    "Matching explicit severity values are retained",
+    "Fail closed: ordinary Gain Corruption words outside a DialogV2",
+    "Fail closed: constructor-name spoof",
+    "Fail closed: other dialog title with amount",
+    "Fail closed: additional user input",
+    "Fail closed: changed numeric constraints",
+    "Fail closed: other action button",
+    "Fail closed: custom point label",
+    "Fail closed: editor surface",
+    "Fail closed: unrelated Disorder field names",
+    "Fail closed: mismatched suggestion-list reference",
+    "Fail closed: wrong datalist id",
+    "Fail closed: title prefix mismatch",
+    "Fail closed: source/rendered title mismatch",
+    "Fail closed: custom severity option",
+    "Fail closed: different explicit enum",
+    "Fail closed: reordered severity options",
+    "Fail closed: additional severity option",
+    "Fail closed: translated option without an original explicit enum",
+    "Fail closed: option label attribute",
+    "Fail closed: option child markup",
+    "Fail closed: multiple severity selector",
+    "Fail closed: changed native field caption",
+    "Inactive system/locale or absent DialogV2 cannot change any dialog",
+    "Registration is synchronous, duplicate-safe, disposable and reads current locale",
+    "Native DOM FormData invariance: severity default first option",
+    "Native DOM FormData invariance: severity Minor",
+    "Native DOM FormData invariance: severity Severe",
+    "Native DOM FormData invariance: severity Acute",
+    "Native DOM FormData invariance: user-edited corruption amount and source attributes"
+  ],
+  "checkCount": 33,
+  "testRuntimes": {
+    "structuralDom": "linkedom 0.18.15",
+    "formSemantics": "jsdom 30.1.3 native window.FormData(form)"
+  },
+  "source": "import_dry_run_v2/src/sheets/actor-sheet.mjs",
+  "sourceSignaturesConfirmed": [
+    "#onApexCorruption",
+    "#onDh2eAddDisorderDialog",
+    "source implicit severity options and exact accepted enum array"
+  ],
+  "formDataChecks": [
+    {
+      "kind": "disorder",
+      "selection": "default",
+      "before": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Minor"
+        ]
+      ],
+      "after": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Minor"
+        ]
+      ]
+    },
+    {
+      "kind": "disorder",
+      "selection": "Minor",
+      "before": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Minor"
+        ]
+      ],
+      "after": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Minor"
+        ]
+      ]
+    },
+    {
+      "kind": "disorder",
+      "selection": "Severe",
+      "before": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Severe"
+        ]
+      ],
+      "after": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Severe"
+        ]
+      ]
+    },
+    {
+      "kind": "disorder",
+      "selection": "Acute",
+      "before": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Acute"
+        ]
+      ],
+      "after": [
+        [
+          "name",
+          "Custom \"Severe\" <b>Minor</b> 1d10+WP"
+        ],
+        [
+          "severity",
+          "Acute"
+        ]
+      ]
+    },
+    {
+      "kind": "gainCorruption",
+      "before": [
+        [
+          "amount",
+          "37"
+        ]
+      ],
+      "after": [
+        [
+          "amount",
+          "37"
+        ]
+      ]
+    }
+  ],
+  "scope": [
+    "DialogV2 + target system + ru locale",
+    "Gain Corruption title/field/constraints/label/button signature",
+    "Disorder native title prefix + name/severity fields + unique datalist id + exact ordered severity enum set"
+  ],
+  "allowedWrites": [
+    "Three static text nodes in Gain Corruption",
+    "Explicit original value attributes only on audited implicit severity options",
+    "Three severity option text nodes"
+  ],
+  "unchanged": [
+    "All Application options and Actor data",
+    "Actor name in Disorder title",
+    "Typed input values",
+    "Datalist content/catalog names",
+    "Control names and selectors",
+    "Current selection and FormData",
+    "Callbacks/listeners/icons",
+    "Every unmatched dialog"
+  ],
+  "intentionallyUnadapted": [
+    {
+      "surface": "Actor-titled generic confirmation dialogs (Fate burn, item deletion, undo)",
+      "reason": "No independent unique form schema; visible instructions already use native i18n keys."
+    },
+    {
+      "surface": "Talent/trait/malignancy/mutation and other catalog pickers",
+      "reason": "Names and descriptions are user/catalog content; no generic caption substitution is permitted."
+    },
+    {
+      "surface": "Changed or ambiguous versions of either audited prompt",
+      "reason": "Any title, field, enum or structural mismatch leaves the entire dialog unchanged."
+    }
+  ],
+  "limitation": "Tests exercise source-derived content inside the standard ApplicationV2/DialogV2 frame in two DOM implementations. A live Foundry v14 rendering smoke check remains the integration-level verification."
+}

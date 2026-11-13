@@ -1,0 +1,136 @@
+{
+  "module": "dark-heresy-2e-apex-ru",
+  "version": "0.1.0",
+  "passed": true,
+  "target": {
+    "foundry": "14",
+    "system": "dark-heresy-2e-apex",
+    "system_version": "0.1.10",
+    "babele_minimum": "2.9.1"
+  },
+  "scope": "Stage 1: character and item UI; actual document names and descriptions excluded.",
+  "counts": {
+    "native_translation_keys": 2467,
+    "literal_ui_entries": 116,
+    "item_types": 25,
+    "canonical_weapon_qualities": 40
+  },
+  "static_checks": {
+    "manifest_paths": true,
+    "json_unique_keys": true,
+    "javascript_syntax": [
+      "scripts/canonical-qualities.mjs",
+      "scripts/dialog-ui-adapter.mjs",
+      "scripts/dialog-ui.mjs",
+      "scripts/main.mjs",
+      "scripts/picker-compat.mjs",
+      "scripts/sheet-ui-adapter.mjs",
+      "scripts/system-bridge.mjs",
+      "scripts/ui-literals.mjs",
+      "tools/build-ui-dictionaries.mjs"
+    ],
+    "placeholder_mismatches": [],
+    "html_mismatches": [],
+    "dice_token_mismatches": [],
+    "book_core_terms": true,
+    "empty_babele_compendium_directory": true,
+    "offline_font_assets": true
+  },
+  "runtime_checks": {
+    "original_templates": {
+      "scenarios": 30,
+      "passed": 30,
+      "failed": 0,
+      "itemScenarios": 24,
+      "actorScenarios": 6,
+      "assertedLabelPositions": 103,
+      "nativeKeysUsed": 257,
+      "nativeFallbackKeys": 0,
+      "reachableItemPartials": 7,
+      "gapTypes": 0
+    },
+    "sheet_adapter_invariants": 22,
+    "dialog_checks": 33,
+    "bootstrap_checks": [
+      "ESM import with Foundry hook contract",
+      "synchronous render registration before init",
+      "typography ru/system guard",
+      "Babele init registration",
+      "Babele foreign-system guard",
+      "ready typography",
+      "JSDOM FormData preservation",
+      "implicit option values unchanged",
+      "literal JSON matches generated ESM",
+      "actual names and descriptions unchanged"
+    ],
+    "quality_serialization": {
+      "passed": 10,
+      "failed": 0,
+      "actual_system_modules": [
+        "src/apps/dh2e-picker.mjs",
+        "src/combat/dh2e-armoury.mjs"
+      ],
+      "cases": [
+        "canonical map exactly matches all 40 original English quality labels",
+        "original untranslated-writer bug reproduced with Russian UI labels",
+        "single wrapper installation and idempotence",
+        "all 40 keys round-trip through real format reader with blank, 2 and 0 values",
+        "real numeric parser round-trip for all 40 keys",
+        "X, PR, PR/2, 2, 0, numeric 0, undefined and null match original formatting",
+        "unknown English/Cyrillic/custom keys preserved",
+        "Russian picker labels and chips preserved while English storage is canonical",
+        "powerSubtypes and other sources delegate to original",
+        "en/de/ru-RU and wrong system delegate to original",
+        "this, extra arguments and original picks identity preserved on delegated paths"
+      ]
+    }
+  },
+  "fonts": [
+    {
+      "file": "Roboto-Variable.woff2",
+      "bytes": 222516,
+      "sha256": "c06387ed7dc878c88a431577b3582c14a1b4dd7174d669150c7e9833ece1a35f",
+      "cyrillic_glyphs": 66,
+      "axes": [
+        {
+          "wght": [
+            100.0,
+            400.0,
+            900.0
+          ]
+        },
+        {
+          "wdth": [
+            75.0,
+            100.0,
+            100.0
+          ]
+        }
+      ],
+      "source": "https://github.com/google/fonts/tree/main/ofl/roboto"
+    },
+    {
+      "file": "RobotoCondensed-Variable.woff2",
+      "bytes": 169452,
+      "sha256": "267c032511c79d0ccb5f44b9f9d022d0611bf20789441efa0733c978e9655aaa",
+      "cyrillic_glyphs": 66,
+      "axes": [
+        {
+          "wght": [
+            100.0,
+            400.0,
+            900.0
+          ]
+        }
+      ],
+      "source": "https://github.com/google/fonts/tree/main/ofl/robotocondensed"
+    }
+  ],
+  "live_foundry_test_performed": false,
+  "limitations": [
+    "Template/DOM tests use simulated Foundry helpers and prepared contexts; no running Foundry world was available.",
+    "Expanded legacy event catalogs and some generated automation summaries remain English.",
+    "Book page references preserve the original system numbering pending a separate reference pass.",
+    "Canonical input examples, formulas, internal values and actual document content remain unchanged."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.6.0",
+  "source": "dark-heresy-2e-apex (0.1.10)",
+  "new_compendiums": [
+    {
+      "pack": "dh2e-vehicles",
+      "type": "Actor",
+      "actors": 7,
+      "translated_actor_names": 7,
+      "translated_token_names": 7,
+      "translated_actor_descriptions": 7,
+      "embedded_items": 4,
+      "embedded_nonempty_descriptions": 2
+    },
+    {
+      "pack": "dh2e-critical-tables",
+      "type": "RollTable",
+      "tables": 20,
+      "translated_table_names": 20,
+      "translated_table_descriptions": 20,
+      "translated_result_names": 200,
+      "table_roll_formula": "1d10"
+    }
+  ],
+  "preserved_previous_compendiums": [
+    "dh2e-equipment",
+    "dh2e-character",
+    "dh2e-psychic-powers",
+    "dh2e-bestiary"
+  ],
+  "checks": [
+    "all source entry names and IDs matched",
+    "all 200 roll result IDs mapped",
+    "TableResult referenced UUIDs untouched",
+    "four earlier dictionaries byte-identical",
+    "JS and JSON syntax checks passed"
+  ],
+  "limitations": [
+    "critical-effect item descriptions remain in the separate source pack; this release only translates their RollTable links and titles",
+    "live Foundry VTT 14+Babele runtime not available for direct testing"
+  ]
+}

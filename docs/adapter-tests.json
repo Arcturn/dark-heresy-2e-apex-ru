@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "actorCounts": {
+    "active": true,
+    "scope": "actor",
+    "translatedText": 24,
+    "translatedAttributes": 3,
+    "translatedOptions": 4,
+    "skippedOptions": 1
+  },
+  "itemCounts": {
+    "active": true,
+    "scope": "item",
+    "translatedText": 19,
+    "translatedAttributes": 3,
+    "translatedOptions": 11,
+    "skippedOptions": 2
+  },
+  "checks": [
+    "constructor-and-document scope",
+    "ru-and-system guard",
+    "actor/item forms byte stable",
+    "explicit-option value preservation",
+    "implicit-option skipped",
+    "unrelated/catalog names unchanged",
+    "rich HTML and editors byte stable",
+    "all data attributes unchanged except exact whitelisted display tooltips",
+    "whitelisted characteristic tooltip Russian values verified",
+    "mismatched/unknown/out-of-scope/editor characteristic tooltips unchanged",
+    "step characteristic options and chips translated",
+    "actor severity enum scoped to disorder column",
+    "movement and vehicle units translated without changing damage expressions",
+    "Document JSON unchanged",
+    "formula and placeholder invariance",
+    "markup and text-node whitespace preservation",
+    "idempotence",
+    "native subclass support",
+    "synchronous registration",
+    "duplicate registration",
+    "dispose",
+    "dictionary loading and failure"
+  ]
+}

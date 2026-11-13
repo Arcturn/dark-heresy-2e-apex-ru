@@ -1,0 +1,18 @@
+{
+  "version": "1.0.1",
+  "testedSourceVersion": "0.1.10",
+  "foundryCompatibility": "14",
+  "mainTranslationKeys": 7048,
+  "stockCompendiumMaps": 9,
+  "focusPowerCatalog": 45,
+  "mentalDisorderChoices": 14,
+  "malignancyChoices": 18,
+  "mutationChoices": 19,
+  "testSuites": 15,
+  "scriptSyntax": "passed",
+  "javascriptRegression": "passed",
+  "jsonSyntax": "passed",
+  "compendiumMapsUnchanged": true,
+  "liveFoundryCheck": "not performed",
+  "note": "Automated checks only; live Foundry VTT 14 validation is required."
+}
