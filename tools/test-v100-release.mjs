@@ -5,7 +5,7 @@ import {dirname, join} from 'node:path';
 const root=join(dirname(fileURLToPath(import.meta.url)), '..');
 const manifest=JSON.parse(readFileSync(join(root,'module.json'), 'utf8'));
 assert.equal(manifest.id,'dark-heresy-2e-apex-ru');
-assert.match(manifest.version,/^1\.0\.\d+$/u);
+assert.match(manifest.version,/^1\.\d+\.\d+$/u);
 assert.equal(manifest.compatibility.minimum,'14');
 assert.equal(manifest.relationships.systems[0].id,'dark-heresy-2e-apex');
 assert.equal(manifest.relationships.systems[0].compatibility.minimum,'0.1.10');
@@ -19,4 +19,4 @@ for (const file of maps) {
   assert.ok(value && typeof value==='object',file);
   assert.match(value.label,/[А-Яа-яЁё]/,`Compendium label is not Russian: ${file}`);
 }
-console.log('v1.0.x: package manifest, Babele dependencies and 9 maps: PASS');
+console.log('Package manifest, Babele dependencies and 9 maps: PASS');

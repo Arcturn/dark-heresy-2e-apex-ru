@@ -3,6 +3,7 @@
  * results, target/player names or HTML markup. */
 import book from './book-view-data.mjs';
 import {psychicNameFromEnglish} from './book-view-l10n.mjs';
+import {translatePowerDescriptor} from './token-hud-ui-adapter.mjs';
 const SYS='dark-heresy-2e-apex';
 const REG=new WeakMap();
 const active=g=>g?.system?.id===SYS&&g?.i18n?.lang==='ru';
@@ -43,6 +44,83 @@ function changeText(element,translator,stats){
     if(typeof next==='string' && next!==node.nodeValue){node.nodeValue=next;stats.translated++;}
   }
 }
+const PSYCHIC_LABELS=Object.freeze({
+  SustainedLabel:['Sustained','Поддерживаемые'],
+  RangeLabel:['Range','Дальность'],
+  EffectLabel:['Effect','Эффект'],
+  EndOfTurnBlast:['End of turn','Конец хода'],
+  HaywireField:['Haywire Field','Электромагнитное поле'],
+  Kind_bolt:['Psychic Bolt','Психический разряд'],
+  Kind_barrage:['Psychic Barrage','Психический шквал'],
+  Kind_storm:['Psychic Storm','Психический шторм'],
+  Kind_blast:['Psychic Blast','Психический взрыв'],
+  Phenomena:['Psychic Phenomena','Психические феномены'],
+  Perils:['Perils of the Warp','Опасности Варпа']
+});
+const STOCK_POWER_EFFECTS=new Map(Object.values(book.powers)
+  .filter(power=>power.effectEn&&power.effectRu).map(power=>[power.effectEn.trim(),power.effectRu]));
+const SUSTAIN_ACTIONS=[...new Set(Object.values(book.powers).map(power=>power.sustained))]
+  .map(action=>[action,translatePowerDescriptor(action,'action')]).filter(([source,translated])=>source!==translated);
+function psychicLabelMatches(label,key,game){
+  const variants=PSYCHIC_LABELS[key]??[];
+  return variants.includes(label)||label===game?.i18n?.localize?.(`FALLOUTMAW.DH2E.Psychic.${key}`);
+}
+/** Match a source-authored fact and its shape before touching any value. */
+export function translatePsychicChatFact(fact,{game=globalThis.game}={}){
+  const {label,value='',tooltip=''}=fact;
+  const out={...fact};
+  const matches=key=>psychicLabelMatches(label,key,game);
+  if(matches('SustainedLabel')){
+    out.value=translatePowerDescriptor(value,'action');
+    for(const [source,translated] of SUSTAIN_ACTIONS){
+      if(value!==source&&value!==translated)continue;
+      if(tooltip===`Sustained (${source} each turn).`
+        ||tooltip===`Поддерживается (${source} каждый ход).`
+        ||tooltip===game?.i18n?.format?.('FALLOUTMAW.DH2E.Psychic.Sustained',{action:source}))
+        out.tooltip=`Поддерживается (${translated} каждый ход).`;
+    }
+  }
+  if(matches('RangeLabel')&&/^\d+(?:[.,]\d+)? m$/u.test(value))out.value=value.slice(0,-1)+'м';
+  if(matches('HaywireField'))out.value=value.replace(/(^| · )(\d+(?:[.,]\d+)?) m$/u,'$1$2 м');
+  if(matches('EndOfTurnBlast'))out.value=value.replace(/^PR (\d+)$/u,'ПР $1');
+  if(['Kind_bolt','Kind_barrage','Kind_storm','Kind_blast'].some(matches))
+    out.value=value.replace(/ · Pen (\d+)$/u,' · БП $1');
+  if(label==='Soul Bound' && /^\d+ → \d+$/u.test(value)&&/^d10: \d+$/u.test(tooltip))
+    out.label='Связанный душой';
+  if(matches('EffectLabel'))out.tooltip=STOCK_POWER_EFFECTS.get(tooltip.trim())??tooltip;
+  if(matches('Phenomena')||matches('Perils')){
+    out.value=book.warpNames?.[value]??value;
+    const match=/^(\d+): (.+)$/u.exec(tooltip);
+    if(match){
+      const translated=book.warpTexts?.[match[2]]??book.warpEffects?.[value]?.effectRu;
+      const source=book.warpEffects?.[value]?.effectEn;
+      if(book.warpTexts?.[match[2]] || match[2]===source)out.tooltip=`${match[1]}: ${translated}`;
+    }
+  }
+  return out;
+}
+function replaceFactText(element,before,after,stats){
+  if(before===after)return;
+  changeText(element,text=>{
+    if(text.trim()!==before)return text;
+    const position=text.indexOf(before);
+    return text.slice(0,position)+after+text.slice(position+before.length);
+  },stats);
+}
+function translatePsychicFacts(card,game,stats){
+  for(const line of roots(card,'p')){
+    const children=Array.from(line.children??[]);
+    const left=children[0],right=children[1];
+    // cardLine emits a plain span and optional b. Nested content is outside this shape.
+    if(left?.tagName!=='SPAN'||children.length>2||(right&&right.tagName!=='B'))continue;
+    if(left.children?.length||right?.children?.length)continue;
+    const fact={label:left.textContent?.trim()??'',value:right?.textContent?.trim()??'',tooltip:line.getAttribute?.('data-tooltip')??''};
+    const translated=translatePsychicChatFact(fact,{game});
+    replaceFactText(left,fact.label,translated.label,stats);
+    replaceFactText(right,fact.value,translated.value,stats);
+    if(translated.tooltip!==fact.tooltip){line.setAttribute('data-tooltip',translated.tooltip);stats.translated++;}
+  }
+}
 export function applyBookChatTranslations(message,html,{game=globalThis.game}={}){
   const stats={active:false,translated:0};
   if(!active(game))return stats;
@@ -51,6 +129,7 @@ export function applyBookChatTranslations(message,html,{game=globalThis.game}={}
   stats.active=true;
   for(const card of roots(root,'.dark-heresy-2e-apex-chat-card.dh2e-psychic-card')){
     for(const title of roots(card,'.dh2e-ti'))changeText(title,translateStockPsychicHeading,stats);
+    translatePsychicFacts(card,game,stats);
   }
   for(const card of roots(root,'.dh2e-warp-card')){
     const name=card.querySelector?.('.dh2e-warp-name');

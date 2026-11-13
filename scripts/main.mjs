@@ -19,6 +19,10 @@ import {registerChatBreakdownUiAdapter} from "./chat-breakdown-ui-adapter.mjs";
 import runtimeDictionary from "./runtime-literals.mjs";
 import {registerRuntimeUiAdapter} from "./runtime-ui-adapter.mjs";
 import {registerSoulPickerUiAdapter} from "./soul-picker-ui-adapter.mjs";
+import {registerRuntimeMessageLocalization} from "./runtime-message-l10n.mjs";
+import {registerStockUiAdapterV110} from "./stock-ui-adapter-v110.mjs";
+import {registerVehicleUiAdapter} from "./vehicle-ui-l10n.mjs";
+import {registerStateEffectTranslations} from "./state-effect-l10n.mjs";
 
 export const MODULE_ID = "dark-heresy-2e-apex-ru";
 export const SYSTEM_ID = "dark-heresy-2e-apex";
@@ -31,6 +35,11 @@ export function applyRussianTypography(gameInstance = globalThis.game, documentI
 }
 
 // Static dictionary import keeps the render path synchronous, even on first render.
+// Context-specific labels run before the legacy exact-text dictionaries.
+registerStockUiAdapterV110();
+registerVehicleUiAdapter();
+registerRuntimeMessageLocalization();
+registerStateEffectTranslations();
 registerSheetUiAdapter({dictionary});
 registerDialogUiAdapter({dictionary: dialogDictionary});
 registerSoulPickerUiAdapter();

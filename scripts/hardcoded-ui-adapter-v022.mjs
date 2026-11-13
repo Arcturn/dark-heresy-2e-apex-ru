@@ -121,6 +121,8 @@ function translateOptions(root, stats) {
   const options = root.querySelectorAll?.('select option') ?? [];
   for (const option of options) {
     if (unsupported(option) || !option.hasAttribute?.('value')) continue;
+    // Tile cover labels need their own context and stock-value checks.
+    if (option.closest?.('.dark-heresy-2e-apex-tile-special-property-row select[name$=".coverKey"], select[data-tile-cover-material]')) continue;
     // Option labels are never submitted if value="..." is explicit.
     if (option.children?.length || option.childNodes?.length !== 1 || option.firstChild?.nodeType !== 3) continue;
     const before = option.firstChild.nodeValue;

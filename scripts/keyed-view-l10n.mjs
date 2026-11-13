@@ -15,6 +15,7 @@ import {localizeSoulContext} from './soul-picker-l10n.mjs';
 import powerData from './token-hud-powers.mjs';
 import {translatePowerDescriptor} from './token-hud-ui-adapter.mjs';
 import {localizeStockFocusRollContext} from './psychic-focus-l10n.mjs';
+import {localizeVehicleContext} from './vehicle-ui-l10n.mjs';
 
 const has=(o,key)=>Object.prototype.hasOwnProperty.call(o??{},key);
 const text=x=>typeof x==='string'?x:'';
@@ -123,6 +124,7 @@ export function localizeActorContext(context,actor){
   if(!context||typeof context!=='object'||!actor)return context;
   const system=actor.system?.dh2e??{};
   const out={...context};
+  if(context.dh2eVehicle)out.dh2eVehicle=localizeVehicleContext(context.dh2eVehicle);
   if(Array.isArray(context.dh2eTalents))out.dh2eTalents=context.dh2eTalents.map((row,i)=>{
     const entry=system.talents?.[i]??{};
     const key=entry.key;

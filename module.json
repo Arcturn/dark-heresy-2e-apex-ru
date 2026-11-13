@@ -1,8 +1,8 @@
 {
   "id": "dark-heresy-2e-apex-ru",
   "title": "Dark Heresy 2E [Apex Edition] — Русская локализация",
-  "description": "Русская локализация Dark Heresy 2E [Apex Edition] 0.1.10 для Foundry VTT 14. v1.0.1: перевод окна фокусировки 45 психосил и выбора 14 расстройств, 18 рудиментов, 19 мутаций; исходные игровые ключи сохранены. Офлайн-проверки выполнены, живой запуск в Foundry ещё необходим.",
-  "version": "1.0.1",
+  "description": "Русская локализация Dark Heresy 2E [Apex Edition] 0.1.10–0.1.12 для Foundry VTT 14. Перевод интерфейсов, уведомлений, психосил, транспорта и компендиумов. Дополнительная обработка строк, встроенных в код системы.",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -34,8 +34,8 @@
         "type": "system",
         "compatibility": {
           "minimum": "0.1.10",
-          "verified": "0.1.10",
-          "maximum": "0.1.10"
+          "verified": "0.1.12",
+          "maximum": "0.1.12"
         }
       }
     ],

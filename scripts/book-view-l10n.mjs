@@ -6,6 +6,7 @@
 import book from './book-view-data.mjs';
 import {translatePowerDescriptor, translatedStockPowerTooltip, stockPowerTooltip} from './token-hud-ui-adapter.mjs';
 import {translateAdvancementRuleText} from './progression-ui-adapter.mjs';
+import {translateFocusTest} from './psychic-focus-l10n.mjs';
 
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o??{},k);
 const NPC_BY_RU=new Map(Object.entries(book.npcs).map(([en,npc])=>[npc.name,{en,npc}]));
@@ -66,6 +67,7 @@ export function localizePowerName(key,name){
   return p&&nameMatches(name,p.en,p.ru)?p.ru:name;
 }
 const TYPES=Object.freeze({'Attack':'Атака','Concentration':'Сосредоточение','Melee':'Ближний бой','Ranged':'Дальний бой','Movement':'Перемещение','Special':'Особое'});
+const DAMAGE_TYPE_SYMBOLS=Object.freeze({E:'Э',I:'У',X:'В',R:'Р'});
 function types(value){
   if(typeof value!=='string')return value;
   return value.split(/(,\s*|\s*\/\s*)/g).map(x=>TYPES[x]??x).join('');
@@ -78,7 +80,11 @@ function powerAction(value){
   return translatePowerDescriptor(withoutAction+' Action','action')!==withoutAction+' Action' ? translatePowerDescriptor(withoutAction+' Action','action') : value;
 }
 function powerRange(value){return typeof value==='string'?translatePowerDescriptor(value,'range'):value;}
-function powerFocus(value){return typeof value==='string'?translatePowerDescriptor(value,'test'):value;}
+function powerFocus(value){
+  if(typeof value!=='string')return value;
+  const translated=translateFocusTest(value);
+  return translated!==value?translated:translatePowerDescriptor(value,'test');
+}
 function powerSustain(value){
   if(typeof value!=='string')return value;
   if(value==='No')return 'Нет';
@@ -110,9 +116,40 @@ export function localizePowerRow(row){
   if(row.effect===p.effectEn)out.effect=translatedEffect(p,row.effect);
   if(row.sustained===p.sustained)out.sustained=powerSustain(row.sustained);
   if(row.sustained===`Поддержание: ${p.sustained}` || row.sustained===`Sustain: ${p.sustained}`)out.sustained=powerSustain(row.sustained);
+  if(typeof row.attack?.damage==='string')out.attack={...row.attack,
+    damage:row.attack.damage.replace(/^([0-9dD+\-×*/(). ]+) ([EIXR])$/u,
+      (_match,formula,type)=>`${formula} ${DAMAGE_TYPE_SYMBOLS[type]}`)};
   if(Array.isArray(row.tags))out.tags=row.tags.map(types);
   if(row.discipline===p.discipline)out.discipline=row.discipline; // technical key
   return out;
+}
+function localizeSustainedPowerRow(row){
+  const out=localizePowerRow(row);
+  const power=stockPower(row?.key);
+  return power&&row.action===power.sustained?{...out,action:powerSustain(row.action)}:out;
+}
+/** The system inserts the longest raw sustain action into its localized text. */
+export function localizeSustainWarning(sustained){
+  const warning=sustained?.warning;
+  const count=sustained?.count;
+  if(typeof warning?.text!=='string'||!Number.isInteger(count)||count<2)return warning;
+  for(const entry of sustained.entries??[]){
+    const action=entry?.action;
+    const translated=translatePowerDescriptor(action,'action');
+    if(typeof action!=='string'||translated===action)continue;
+    const sourceTemplates=[
+      `Each sustained power at −${count} PR · ${action} each turn`,
+      `Каждая поддерживаемая психосила получает −${count} ПР · ${action} каждый ход`
+    ];
+    if(sourceTemplates.includes(warning.text))return {...warning,
+      text:`Каждая поддерживаемая психосила получает −${count} ПР · ${translated} каждый ход`};
+    const formatted=globalThis.game?.i18n?.format?.('FALLOUTMAW.DH2E.Apex.Psy.SustainWarning',{n:count,action});
+    if(typeof formatted!=='string'||warning.text!==formatted)continue;
+    const position=warning.text.lastIndexOf(action);
+    if(position<0)continue;
+    return {...warning,text:warning.text.slice(0,position)+translated+warning.text.slice(position+action.length)};
+  }
+  return warning;
 }
 /** Actor sheet context: only known source data rendered by the templates. */
 export function localizeActorBookContext(context,actor){
@@ -133,7 +170,8 @@ export function localizeActorBookContext(context,actor){
     out.dh2ePsychic={...psy,groups:psy.groups.map(group=>({
       ...group,powers:group.powers?.map(localizePowerRow)??group.powers
     })),sustained:psy.sustained ? {...psy.sustained,
-      entries:psy.sustained.entries?.map(localizePowerRow)??psy.sustained.entries} : psy.sustained};
+      entries:psy.sustained.entries?.map(localizeSustainedPowerRow)??psy.sustained.entries,
+      warning:localizeSustainWarning(psy.sustained)} : psy.sustained};
   }
   return out;
 }
