@@ -54,7 +54,7 @@ const EXTRA_TEST_ROW_NAMES = Object.freeze([
   'Standard Attack','Called Shot','Semi-Auto Burst','Full Auto Burst',
   'Swift Attack','Lightning Attack','All Out Attack','Charge','Manoeuvre',
   'Double Tap','Invisibility',
-  'Foreboding','Bionic arm (Poor): fine dexterity, Agility halved',
+  'Foreboding','Prescience','Forewarning','Bionic arm (Poor): fine dexterity, Agility halved',
   'Bionic lungs (Poor)','Synthmuscle (Best)'
 ]);
 const DIRECT_ROWS = /^([^<>:\r\n]{1,100}): ([+\-−]?\d+)$/u;

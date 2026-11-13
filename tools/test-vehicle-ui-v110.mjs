@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {
-  vehicleTraitSources, localizeVehicleContext, translateVehicleRepairOption,
+  vehicleTraitSources, vehicleProfileSources, localizeVehicleContext, translateVehicleRepairOption,
+  translateVehicleProfileOption,
   translateVehicleUnit, applyVehicleUiTranslations, applyVehicleChatTranslations,
   registerVehicleUiAdapter
 } from '../scripts/vehicle-ui-l10n.mjs';
@@ -68,6 +69,40 @@ function repairRoot() {
   return root;
 }
 class DialogV2 {}
+const profileEntries = Object.entries(vehicleProfileSources);
+assert.equal(profileEntries.length, 7);
+for (const [key, profile] of profileEntries) {
+  const context = {notes: profile.notes, typeKey: key};
+  assert.equal(localizeVehicleContext(context).notes, profile.notesRu);
+  assert.equal(context.notes, profile.notes);
+  assert.equal(translateVehicleProfileOption(key, `${profile.en} (p. ${profile.page})`), `${profile.ru} (стр. ${profile.page})`);
+  assert.equal(translateVehicleProfileOption(key, 'My vehicle'), 'My vehicle');
+}
+function profileRoot() {
+  const root = new Element();
+  const select = new Element();
+  select.options = profileEntries.map(([key, row]) => new Element(`${row.en} (p. ${row.page})`, {value: key}));
+  const label = new Element('Chimera Armoured Transport: Турель\n ', {'data-dh2e-vehicle-for': 'chimera'});
+  const mounted = [new Element('Multilaser', {value: '0'}), new Element('Heavy Bolter', {value: '1'}), new Element('My custom gun', {value: '2'})];
+  const child = new Element(); label.childNodes.push(child);
+  label.querySelectorAll = selector => selector === 'select option' ? mounted : [];
+  root.querySelector = selector => selector === 'select[name="key"]' ? select : selector === 'input[name="rename"][type="checkbox"]' ? new Element() : null;
+  root.querySelectorAll = selector => selector === 'label[data-dh2e-vehicle-for]' ? [label] : [];
+  return Object.assign(root, {select, label, mounted, child});
+}
+const profileForm = profileRoot();
+const profileKeys = profileForm.select.options.map(option => option.getAttribute('value'));
+assert.equal(applyVehicleUiTranslations(new DialogV2(), profileForm, {game}).translated, 10);
+assert.deepEqual(profileForm.select.options.map(option => option.getAttribute('value')), profileKeys);
+assert.match(profileForm.label.textContent, /^Бронетранспортер «Химера»:/u);
+assert.equal(profileForm.label.childNodes[1], profileForm.child);
+assert.equal(profileForm.mounted[0].textContent, 'Мультилазер');
+assert.equal(profileForm.mounted[1].textContent, 'Тяжелый болтер');
+assert.equal(profileForm.mounted[2].textContent, 'My custom gun');
+assert.equal(applyVehicleUiTranslations(new DialogV2(), profileForm, {game}).translated, 0);
+const unrelatedForm = profileRoot(); unrelatedForm.select.options[0].textContent = 'My vehicle';
+assert.equal(applyVehicleUiTranslations(new DialogV2(), unrelatedForm, {game}).active, false);
+assert.equal(unrelatedForm.mounted[0].textContent, 'Multilaser');
 const repair = repairRoot();
 const values = repair.location.options.map(o => o.getAttribute('value'));
 assert.equal(applyVehicleUiTranslations(new DialogV2(), repair, {game}).translated, 7);
@@ -115,7 +150,7 @@ const Hooks = {on(name, callback) { callbacks.set(name, callback); calls.push(na
 let currentGame = game;
 const registered = registerVehicleUiAdapter({Hooks, game: () => currentGame});
 assert.equal(registerVehicleUiAdapter({Hooks}), registered);
-assert.equal(calls.length, 2);
+assert.equal(calls.length, 4);
 const fromHook = repairRoot(); callbacks.get('renderApplicationV2')(new DialogV2(), fromHook);
 assert.match(fromHook.location.options[0].textContent, /[А-Яа-яЁё]/u);
 currentGame = {...game, i18n: {lang: 'en'}};

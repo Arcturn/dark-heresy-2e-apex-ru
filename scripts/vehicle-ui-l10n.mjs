@@ -1,6 +1,9 @@
 /** Display translations for stock Apex 0.1.12 vehicle views. */
 import runtime from './runtime-literals.mjs';
 import ui from './ui-literals.mjs';
+import profileData from './vehicle-profile-data.mjs';
+import {registerVehicleProfileTranslations} from './vehicle-profile-l10n.mjs';
+import {applyVehicleOwnedViewLabels, installVehicleOwnedItemView} from './vehicle-owned-view-l10n.mjs';
 const SYSTEM = 'dark-heresy-2e-apex';
 const REGISTRATIONS = new WeakMap();
 export const vehicleTraitSources = Object.freeze({
@@ -119,6 +122,7 @@ export const vehicleTraitSources = Object.freeze({
     "summaryRu": "В труднопроходимой местности получает −20, к манёвренности +10. После любого критического повреждения ходовой части каждое перемещение требует проверки Управления с −10. Ремонт ходовой части занимает половину времени."
   }
 });
+export const vehicleProfileSources = Object.freeze(profileData.displayProfiles);
 const REPAIR_LOCATIONS = Object.freeze({
   "0": "Required tools and supplies; calm weather or away from enemy fire.",
   "10": "Area free from enemy fire; field encampment with basic supplies; hive world of standard prowess.",
@@ -130,6 +134,11 @@ const REPAIR_LOCATIONS = Object.freeze({
 });
 
 const LAST_REPAIR_LOCATION = 'Раскалённая пустыня или ледяной покров; густые джунгли; плохо снабжаемая полевая база; продолжающееся сражение; орбитальная бомбардировка; район под властью культа.';
+const PROFILE_WEAPONS = Object.freeze({
+  'Dagger Teeth': 'Зубы-кинжалы', 'Autogun': 'Автоган', 'Multilaser': 'Мультилазер',
+  'Heavy Bolter': 'Тяжелый болтер', 'Heavy Flamer': 'Тяжелый огнемет',
+  'Autocannon': 'Автопушка', 'Storm Bolter': 'Шторм-болтер', 'Heavy Stubber': 'Тяжелый стаббер'
+});
 const enabled = game => game?.system?.id === SYSTEM && game?.i18n?.lang === 'ru';
 const nodeRoot = element => element?.nodeType ? element : element?.[0] ?? element;
 const traitName = source => runtime.labels[source.en] ?? source.en;
@@ -160,7 +169,30 @@ export function localizeVehicleContext(vehicle) {
   if (Array.isArray(vehicle.crew)) out.crew = vehicle.crew.map(row => row.skill ? {
     ...row, skill: {...row.skill, label: skills.get(row.skill.label) ?? row.skill.label}
   } : row);
+  const profile = Object.values(vehicleProfileSources).find(row => row.notes === vehicle.notes);
+  if (profile) out.notes = profile.notesRu;
   return out;
+}
+
+export function translateVehicleProfileOption(key, text) {
+  const row = vehicleProfileSources[key];
+  return row && text === `${row.en} (p. ${row.page})` ? `${row.ru} (стр. ${row.page})` : text;
+}
+
+function profileDialog(app, root) {
+  if (app?.constructor?.name !== 'DialogV2' || !root.querySelector('input[name="rename"][type="checkbox"]')) return null;
+  const select = root.querySelector('select[name="key"]');
+  if (!select?.options || select.options.length !== Object.keys(vehicleProfileSources).length) return null;
+  const keys = Object.keys(vehicleProfileSources);
+  const options = Array.from(select.options);
+  if (options.some((option, index) => {
+    const key = option.getAttribute('value');
+    const row = vehicleProfileSources[key];
+    if (key !== keys[index] || !row) return true;
+    const original = `${row.en} (p. ${row.page})`;
+    return option.textContent !== original && option.textContent !== translateVehicleProfileOption(key, original);
+  })) return null;
+  return options;
 }
 
 export function translateVehicleRepairOption(value, text) {
@@ -221,6 +253,17 @@ export function applyVehicleUiTranslations(app, html, {game = globalThis.game} =
       if (after !== before) { option.textContent = after; stats.translated++; }
     }
   }
+  const profiles = profileDialog(app, root);
+  if (profiles) {
+    stats.active = true;
+    for (const option of profiles) stats.translated += updateText(option, text => translateVehicleProfileOption(option.getAttribute('value'), text));
+    for (const label of root.querySelectorAll('label[data-dh2e-vehicle-for]')) {
+      const profile = vehicleProfileSources[label.getAttribute('data-dh2e-vehicle-for')];
+      if (!profile) continue;
+      stats.translated += updateText(label, text => text.startsWith(`${profile.en}: `) ? profile.ru + text.slice(profile.en.length) : text);
+      for (const option of label.querySelectorAll('select option')) stats.translated += updateText(option, text => PROFILE_WEAPONS[text] ?? text);
+    }
+  }
   const panel = root.matches?.('.dh2e-veh') ? root : root.querySelector('.dh2e-veh');
   if (!panel) return stats;
   stats.active = true;
@@ -243,6 +286,10 @@ export function applyVehicleUiTranslations(app, html, {game = globalThis.game} =
       return translated ? value.replace(name, translated) : value;
     });
   }
+  for (const note of panel.querySelectorAll('p.apex-note')) stats.translated += updateText(note, text => {
+    const profile = Object.values(vehicleProfileSources).find(row => row.notes === text);
+    return profile?.notesRu ?? text;
+  });
   return stats;
 }
 
@@ -266,18 +313,38 @@ export function applyVehicleChatTranslations(message, html, {game = globalThis.g
   return stats;
 }
 
-export function registerVehicleUiAdapter({Hooks = globalThis.Hooks, game = () => globalThis.game} = {}) {
+export function registerVehicleUiAdapter({Hooks = globalThis.Hooks, game = () => globalThis.game, importer = path => import(path)} = {}) {
   if (!Hooks?.on || !Hooks?.off) return null;
   if (REGISTRATIONS.has(Hooks)) return REGISTRATIONS.get(Hooks);
   const current = () => typeof game === 'function' ? game() : game;
-  const appHook = Hooks.on('renderApplicationV2', (app, html) => applyVehicleUiTranslations(app, html, {game: current()}));
+  const profileRegistration = registerVehicleProfileTranslations({Hooks, game});
+  const appHook = Hooks.on('renderApplicationV2', (app, html) => {
+    applyVehicleUiTranslations(app, html, {game: current()});
+    applyVehicleOwnedViewLabels(app, html, {game: current()});
+  });
   const chatHook = Hooks.on('renderChatMessageHTML', (message, html) => applyVehicleChatTranslations(message, html, {game: current()}));
   let disposed = false;
+  const readyHook = Hooks.once?.('ready', async () => {
+    if (!enabled(current()) || disposed) return;
+    // Physical weapons use Dh2eGearSheet, which extends the engine item sheet
+    // directly. Dh2eItemSheet is a separate class, so each needs its own bridge.
+    for (const [file, name] of [['dh2e-item-sheet', 'Dh2eItemSheet'], ['dh2e-gear-sheet', 'Dh2eGearSheet']]) {
+      try {
+        const path = `systems/${SYSTEM}/src/sheets/${file}.mjs`;
+        const route = typeof globalThis.foundry?.utils?.getRoute === 'function'
+          ? globalThis.foundry.utils.getRoute(path) : `/${path}`;
+        const source = await importer(route);
+        if (!disposed) installVehicleOwnedItemView(source[name], {game});
+      } catch (error) { console.warn(`dh2e-ru: ${name} vehicle item view translation unavailable`, error); }
+    }
+  });
   const registration = Object.freeze({appHook, chatHook, dispose() {
     if (disposed) return;
     disposed = true;
     Hooks.off('renderApplicationV2', appHook);
     Hooks.off('renderChatMessageHTML', chatHook);
+    profileRegistration?.dispose();
+    if (readyHook !== undefined) Hooks.off('ready', readyHook);
     REGISTRATIONS.delete(Hooks);
   }});
   REGISTRATIONS.set(Hooks, registration);

@@ -1,0 +1,140 @@
+{
+  "system": {
+    "id": "dark-heresy-2e-apex",
+    "version": "0.1.12"
+  },
+  "locale": {
+    "sourceKeys": 7067,
+    "russianKeys": 7142,
+    "presentSourceKeys": 7067,
+    "missingKeys": [],
+    "blankValues": [],
+    "typeMismatches": [],
+    "placeholderMismatches": [],
+    "identicalValues": [
+      {
+        "key": "FALLOUTMAW.SystemTitle",
+        "value": "Dark Heresy 2E [Apex Edition]"
+      },
+      {
+        "key": "FALLOUTMAW.Tile.CoverMaterialNone",
+        "value": "—"
+      },
+      {
+        "key": "FALLOUTMAW.Settings.Presets.Columns.Id",
+        "value": "ID"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.DamageTypes.none",
+        "value": "—"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.Item.Classes.none",
+        "value": "—"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.Item.Fields.none",
+        "value": "—"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.Item.Jam91",
+        "value": "91+"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.ItemSheet.ArmourTypes.none",
+        "value": "—"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.Battlefield.Title",
+        "value": "Dark Heresy"
+      },
+      {
+        "key": "FALLOUTMAW.DH2E.Initiative.Line",
+        "value": "1d10 {roll} + {bonus}"
+      }
+    ],
+    "passed": true
+  },
+  "sourceScope": {
+    "manifestProvided": true,
+    "complete": true,
+    "expectedFiles": 708,
+    "observedFiles": 708,
+    "missingExpectedFiles": [],
+    "missingDirectories": [],
+    "files": {
+      "js": 608,
+      "hbs": 85,
+      "css": 15
+    }
+  },
+  "staticReferences": {
+    "occurrences": 5544,
+    "unique": 3376,
+    "missingRussianReferences": [],
+    "absentFromEnglish": [
+      {
+        "file": "src/combat/dh2e-responses.mjs",
+        "line": 538,
+        "key": "FALLOUTMAW.DH2E.Traits.Sturdy",
+        "inEnglish": false,
+        "inRussian": true
+      },
+      {
+        "file": "src/combat/dh2e-vehicle-runtime.mjs",
+        "line": 704,
+        "key": "FALLOUTMAW.DH2E.Characteristics.weaponSkill",
+        "inEnglish": false,
+        "inRussian": true
+      },
+      {
+        "file": "src/combat/dh2e-vehicle-runtime.mjs",
+        "line": 705,
+        "key": "FALLOUTMAW.DH2E.Characteristics.ballisticSkill",
+        "inEnglish": false,
+        "inRussian": true
+      },
+      {
+        "file": "src/rolls/skill-check.mjs",
+        "line": 1897,
+        "key": "FALLOUTMAW.DH2E.Attack.CalledShot",
+        "inEnglish": false,
+        "inRussian": true
+      },
+      {
+        "file": "src/sheets/dh2e-item-sheet.mjs",
+        "line": 262,
+        "key": "FALLOUTMAW.DH2E.Skills.psyniscience",
+        "inEnglish": false,
+        "inRussian": true
+      }
+    ]
+  },
+  "catalogSynchronization": [
+    {
+      "jsonPath": "data/hardcoded-ui.v022.json",
+      "modulePath": "scripts/hardcoded-ui-data-v022.mjs",
+      "synchronized": true,
+      "differences": []
+    },
+    {
+      "jsonPath": "data/runtime-literals.ru.json",
+      "modulePath": "scripts/runtime-literals.mjs",
+      "synchronized": true,
+      "differences": []
+    }
+  ],
+  "checksPassed": true,
+  "limitations": [
+    "checksPassed validates locale entries, placeholders, recognized full key calls and paired catalogs, not full UI coverage.",
+    "Source completeness is unknown without a manifest; missing source files are reported when one is supplied.",
+    "Candidates include technical values, hidden branches and already covered adapters. Their count is not an untranslated UI count.",
+    "Dynamic prefixes validate declared English keys only. Runtime values and namespace helpers require review.",
+    "Extraction is lexical, not an AST or full call graph. Identical values also include formulas, names and symbols.",
+    "Foundry rendering, binary compendiums, user-created documents and third-party modules are outside this static check."
+  ],
+  "sourceCommit": "b3482f7b6628ad0112e2ace1c7aed9df7a6732de",
+  "auditDate": "2026-11-13",
+  "fileBlobHashesVerified": 712,
+  "dynamicKeyReferenceCount": 218
+}

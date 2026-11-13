@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import book from '../scripts/book-view-data.mjs';
 import {localizeActorBookContext,localizePowerRow,localizeSustainWarning} from '../scripts/book-view-l10n.mjs';
-import {applyBookChatTranslations,registerBookChatUiAdapter,translatePsychicChatFact} from '../scripts/book-chat-ui-adapter.mjs';
+import {applyBookChatTranslations,registerBookChatUiAdapter,translatePsychicChatFact,translateTickTestSmall} from '../scripts/book-chat-ui-adapter.mjs';
 
 const game={system:{id:'dark-heresy-2e-apex'},i18n:{lang:'ru'}};
 const actor={name:'Acolyte',items:{contents:[]}};
@@ -108,4 +108,28 @@ const freshCard=new Element('article',{classes:'dark-heresy-2e-apex-chat-card dh
 callbacks.get('renderChatMessageHTML')({},freshCard);
 assert.equal(fresh.children[1].textContent,'4 м');
 registration.dispose();assert.equal(callbacks.size,0);
-console.log('v1.1.0 psychic sustain context, chat facts, stock tooltips, language gates and re-render safety: PASS');
+// Source tickTestPill shapes, including characteristic modifiers and unlabelled Medicae rolls.
+const tickSmall=new Element('small',{text:'WP-20 43/50'});
+const tickPill=new Element('span',{classes:'dh2e-tick-pill bad',text:'WP',attributes:{'data-tooltip':'43 / 50 · 1 DoF — Custom WP note','data-roll':'43'},children:[new Element('i'),tickSmall]});
+const medicae=new Element('span',{classes:'dh2e-tick-pill ok',text:'Medicae',attributes:{'data-tooltip':'23 / 60 · 4 DoS'},children:[new Element('small',{text:'23/60'})]});
+const actorHeading=new Element('span',{classes:'dh2e-tick-name',text:'Medicae · WP 43/50'});
+const metric=new Element('span',{classes:'dh2e-tick-pill',text:'4 m'});
+const namedPill=new Element('span',{classes:'dh2e-tick-pill',text:'Medicae',attributes:{'data-tooltip':'Custom item description'},children:[new Element('small',{text:'Левая рука'})]});
+const tickCard=new Element('div',{classes:'dh2e-tick-card',children:[actorHeading,tickPill,medicae,metric,namedPill]});
+const unrelatedPill=new Element('span',{classes:'dh2e-tick-pill',text:'WP',attributes:{'data-tooltip':'43 / 50 · 1 DoS'},children:[new Element('small',{text:'WP 43/50'})]});
+const tickRoot=new Element('section',{children:[tickCard,unrelatedPill]});
+applyBookChatTranslations({},tickRoot,{game});
+assert.equal(tickPill.childNodes[0].nodeValue,'СВ');
+assert.equal(tickSmall.textContent,'СВ-20 43/50');
+assert.equal(tickPill.getAttribute('data-tooltip'),'43 / 50 · 1 СП — Custom WP note');
+assert.equal(tickPill.getAttribute('data-roll'),'43');
+assert.equal(medicae.childNodes[0].nodeValue,'Медика');
+assert.equal(medicae.children[0].textContent,'23/60');
+assert.equal(medicae.getAttribute('data-tooltip'),'23 / 60 · 4 СУ');
+assert.equal(metric.textContent,'4 м');
+assert.equal(actorHeading.textContent,'Medicae · WP 43/50');
+assert.equal(namedPill.childNodes[0].nodeValue,'Medicae');
+assert.equal(unrelatedPill.childNodes[0].nodeValue,'WP');
+assert.equal(applyBookChatTranslations({},tickRoot,{game}).translated,0);
+for(const [source,expected] of [['T 20/40','Вын 20/40'],['Ag 30/40','Лов 30/40'],['Int+20 43/50','Инт+20 43/50'],['Custom 43/50','Custom 43/50'],['WP Player','WP Player']])assert.equal(translateTickTestSmall(source),expected);
+console.log('v1.1.0 psychic and tick cards, stock tooltips, language gates and re-render safety: PASS');

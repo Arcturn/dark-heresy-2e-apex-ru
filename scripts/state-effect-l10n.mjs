@@ -1,4 +1,5 @@
 /** Source-exact view and creation translation for Apex stock state effects. */
+import {observeStateEffectTooltips} from './state-effect-tooltip-l10n.mjs';
 const SYSTEM = "dark-heresy-2e-apex";
 const PATCHED = Symbol.for("dark-heresy-2e-apex-ru.stateEffectView.v110");
 const REGISTRATIONS = new WeakMap();
@@ -254,6 +255,30 @@ function stateId(document) {
 const ruleKey = id => `FALLOUTMAW.DH2E.States.${id}.Rule`;
 const nameKey = id => `FALLOUTMAW.DH2E.States.${id}.Name`;
 const markup = (rule, page, pageWord) => `<p>${rule}</p><p><em>Dark Heresy ${pageWord} ${page}</em></p>`;
+// Exact labels written by the built-in extra-attack rules. These are display
+// substitutions only; the combat flag's label and attack eligibility stay intact.
+const FREE_ATTACK_LABELS = Object.freeze({
+  'Multiple Arms': 'Множество рук',
+  'Devastating Assault': 'Неостановимый Натиск',
+  'Counter Attack': 'Контратака'
+});
+
+export function translateStateEffectName(id, value, game = globalThis.game) {
+  const source = stateEffectSources[id];
+  if (!enabled(game) || !source || typeof value !== 'string') return value;
+  const key = nameKey(id), localized = game.i18n.localize(key);
+  if (typeof localized !== 'string' || localized === key) return value;
+  if (value === source.name) return localized;
+  if (id !== 'dh2e-free-attack') return value;
+  for (const base of [source.name, localized]) {
+    const prefix = `${base}: `;
+    if (!value.startsWith(prefix)) continue;
+    const suffix = value.slice(prefix.length);
+    const label = FREE_ATTACK_LABELS[suffix] ?? (Object.values(FREE_ATTACK_LABELS).includes(suffix) ? suffix : null);
+    if (label) return `${localized}: ${label}`;
+  }
+  return value;
+}
 
 function matchedDescription(id, value, game) {
   const source = stateEffectSources[id];
@@ -277,8 +302,8 @@ function translatedFields(source, game) {
   const description = matchedDescription(id, source.description, game);
   if (description === null) return {};
   const values = description === source.description ? {} : {description};
-  const name = game.i18n.localize(nameKey(id));
-  if (source.name === entry.name && name !== nameKey(id)) values.name = name;
+  const name = translateStateEffectName(id, source.name, game);
+  if (name !== source.name) values.name = name;
   return values;
 }
 
@@ -348,6 +373,7 @@ export function registerStateEffectTranslations({
   if (REGISTRATIONS.has(Hooks)) return REGISTRATIONS.get(Hooks);
   const state = {viewInstalled: false, viewError: null};
   let disposed = false;
+  let tooltipObserver = null;
   const createHook = Hooks.on('preCreateActiveEffect', (document, data) => {
     // Hook return values must not cancel creation.
     translateNewStateEffect(document, data, {game: current(game)});
@@ -357,8 +383,12 @@ export function registerStateEffectTranslations({
   const readyHook = Hooks.once('ready', async () => {
     catalog();
     if (!enabled(current(game)) || disposed) return;
+    tooltipObserver = observeStateEffectTooltips({tooltip: current(game)?.tooltip?.tooltip, game});
     try {
-      const source = await importer(`/systems/${SYSTEM}/src/sheets/active-effect-sheet.mjs`);
+      const path = `systems/${SYSTEM}/src/sheets/active-effect-sheet.mjs`;
+      const route = typeof globalThis.foundry?.utils?.getRoute === 'function'
+        ? globalThis.foundry.utils.getRoute(path) : `/${path}`;
+      const source = await importer(route);
       if (!disposed) state.viewInstalled = installStateEffectView(source.FalloutMaWActiveEffectSheet, {game});
     } catch (error) {
       state.viewError = String(error?.message ?? error);
@@ -371,6 +401,7 @@ export function registerStateEffectTranslations({
     Hooks.off('preCreateActiveEffect', createHook);
     Hooks.off('i18nInit', i18nHook);
     Hooks.off('ready', readyHook);
+    tooltipObserver?.dispose();
     REGISTRATIONS.delete(Hooks);
   }});
   REGISTRATIONS.set(Hooks, api);

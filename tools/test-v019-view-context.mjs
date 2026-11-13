@@ -135,6 +135,28 @@ assert.equal(aResult.talents[0].cost,200);
 assert.equal((await new Dh2eRollDialog()._prepareContext()).rows[1].label,'Ближняя дистанция');
 assert.equal(JSON.stringify(originalActor),originalBefore);
 assert.equal((await loadSystemViewClasses({importer:async()=>({})})).FalloutMaWActorSheet,undefined);
+const originalFoundry=globalThis.foundry;
+const systemRoutes=[
+ 'systems/dark-heresy-2e-apex/src/sheets/actor-sheet.mjs',
+ 'systems/dark-heresy-2e-apex/src/apps/dh2e-advancement.mjs',
+ 'systems/dark-heresy-2e-apex/src/apps/dh2e-roll-dialog.mjs'
+];
+try{
+ const modules={FalloutMaWActorSheet,Dh2eAdvancementApplication,Dh2eRollDialog};
+ for(const prefix of [null,'','foundry']){
+   const paths=[];
+   globalThis.foundry=prefix===null?undefined:{utils:{getRoute(path){
+     assert.equal(path,'systems/dark-heresy-2e-apex/src');
+     return `/${prefix?prefix+'/':''}${path}`;
+   }}};
+   const loaded=await loadSystemViewClasses({importer:async path=>{paths.push(path);return modules;}});
+   assert.deepEqual(paths,systemRoutes.map(path=>`/${prefix?prefix+'/':''}${path}`));
+   assert.deepEqual(loaded,modules);
+ }
+}finally{
+ if(originalFoundry===undefined)delete globalThis.foundry;
+ else globalThis.foundry=originalFoundry;
+}
 mockGame.i18n.lang='en';
 assert.equal((await sApp._prepareContext()).dh2eTalents[0].label,'Strong Minded','non-Russian runtime untouched');
 assert.equal((await new Dh2eRollDialog()._prepareContext()).rows[0].label,'Standard Attack');

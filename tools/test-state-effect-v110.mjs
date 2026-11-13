@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {
-  stateEffectSources, translateStateEffectDescription, translateNewStateEffect,
+  stateEffectSources, translateStateEffectDescription, translateStateEffectName, translateNewStateEffect,
   translateStateStatusDefinitions, installStateEffectView, registerStateEffectTranslations
 } from '../scripts/state-effect-l10n.mjs';
 
@@ -90,6 +90,31 @@ const nameOnlyView = await nameOnlySheet._prepareContext();
 assert.equal(nameOnlyView.source.name, expectedName);
 assert.equal(nameOnlyView.source.description, expected);
 assert.equal(nameOnlySheet._processFormData(null, null, nameOnlyView.source).name, source.name);
+const freeId = 'dh2e-free-attack', freeSource = stateEffectSources[freeId];
+const freeRu = translations[`FALLOUTMAW.DH2E.States.${freeId}.Name`];
+for (const [suffix, translatedSuffix] of [['Multiple Arms','Множество рук'],['Devastating Assault','Неостановимый Натиск'],['Counter Attack','Контратака']]) {
+  const target = `${freeRu}: ${translatedSuffix}`;
+  for (const base of [freeSource.name, freeRu]) {
+    const value = `${base}: ${suffix}`;
+    assert.equal(translateStateEffectName(freeId, value, game), target);
+    const namedSource = {...stock(freeId, freeSource), name: value};
+    const unchangedSource = JSON.stringify(namedSource);
+    const pendingEffect = pending(namedSource);
+    translateNewStateEffect(pendingEffect, namedSource, {game});
+    assert.equal(pendingEffect.updates[0].name, target);
+    assert.equal(pendingEffect.updates[0].flags, undefined);
+    assert.equal(JSON.stringify(namedSource), unchangedSource);
+    const stateSheet = new EffectSheet({source: namedSource});
+    const stateView = await stateSheet._prepareContext();
+    assert.equal(stateView.source.name, target);
+    assert.equal(stateSheet._processFormData(null, null, stateView.source).name, value);
+  }
+  assert.equal(translateStateEffectName(freeId, target, game), target);
+}
+for (const customName of [`${freeRu}: My custom attack`, `${freeSource.name}: Multiple Arms + custom`, 'Custom: Counter Attack'])
+  assert.equal(translateStateEffectName(freeId, customName, game), customName);
+assert.equal(translateStateEffectName(id, `${entry.name}: Counter Attack`, game), `${entry.name}: Counter Attack`);
+assert.equal(translateStateEffectName(freeId, `${freeSource.name}: Counter Attack`, english), `${freeSource.name}: Counter Attack`);
 const unflagged = new EffectSheet({source: {...source, flags: {}}});
 assert.equal(await unflagged._prepareContext(), unflagged.context);
 // HUD effects lack dh2eState: accept all 39 exact icons/status IDs and stock bodies.
@@ -135,5 +160,27 @@ await fire('ready');
 assert.deepEqual(imports, [`/systems/${SYSTEM}/src/sheets/active-effect-sheet.mjs`]);
 assert.deepEqual(api.status(), {viewInstalled: true, viewError: null});
 api.dispose(); api.dispose(); assert.equal(callbacks.size, 0);
+// The dynamic source import respects Foundry's optional hosting prefix.
+const oldFoundry = globalThis.foundry;
+try {
+  for (const prefix of ['', '/foundry']) {
+    const requested = [];
+    globalThis.foundry = {utils: {getRoute(path) {
+      assert.equal(path, `systems/${SYSTEM}/src/sheets/active-effect-sheet.mjs`);
+      return `${prefix}/${path}`;
+    }}};
+    const routed = registerStateEffectTranslations({Hooks, game, CONFIG: {statusEffects: []}, importer: async path => {
+      requested.push(path);
+      return {FalloutMaWActiveEffectSheet: RegisteredSheet};
+    }});
+    await fire('ready');
+    assert.deepEqual(requested, [`${prefix}/systems/${SYSTEM}/src/sheets/active-effect-sheet.mjs`]);
+    assert.deepEqual(routed.status(), {viewInstalled: true, viewError: null});
+    routed.dispose();
+  }
+} finally {
+  if (oldFoundry === undefined) delete globalThis.foundry;
+  else globalThis.foundry = oldFoundry;
+}
 assert.equal(registerStateEffectTranslations({Hooks: null}), null);
 console.log('v1.1.0 state effects: 39 exact stock descriptions, new creation, view/save semantics and hooks: PASS');

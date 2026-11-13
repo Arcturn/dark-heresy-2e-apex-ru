@@ -6,6 +6,7 @@
  */
 import {localizeActorContext,localizeAdvancementContext,localizeRollContext,searchAdvancementRows} from './keyed-view-l10n.mjs';
 import {localizeHudBookContext} from './book-view-l10n.mjs';
+import {localizeVehicleHudContext} from './vehicle-owned-view-l10n.mjs';
 const SYS='dark-heresy-2e-apex';
 const MOD='dark-heresy-2e-apex-ru';
 const PATCHED=Symbol.for(`${MOD}.contextBridge.v021`);
@@ -26,7 +27,7 @@ function patchConstructor(ctor,kind){
     }
     if(kind==='hud'){
       const prepared=await original.apply(this,args);
-      return localizeHudBookContext(prepared,this.actor);
+      return localizeVehicleHudContext(localizeHudBookContext(prepared,this.actor),this.actor);
     }
     if(kind==='roll'){
       const prepared=await original.apply(this,args);
@@ -77,11 +78,14 @@ export function installViewContextBridges(classes={}){
 }
 /** Resolve the classes from the *installed system* — no changes to source files. */
 export async function loadSystemViewClasses({importer=path=>import(path)}={}){
-  const base=`/systems/${SYS}/src/`;
+  // Foundry may be hosted below a route prefix (for example /foundry/).
+  const route=`systems/${SYS}/src`;
+  const base=typeof globalThis.foundry?.utils?.getRoute==='function'
+    ? globalThis.foundry.utils.getRoute(route) : `/${route}`;
   const entries={
-    FalloutMaWActorSheet:`${base}sheets/actor-sheet.mjs`,
-    Dh2eAdvancementApplication:`${base}apps/dh2e-advancement.mjs`,
-    Dh2eRollDialog:`${base}apps/dh2e-roll-dialog.mjs`
+    FalloutMaWActorSheet:`${base}/sheets/actor-sheet.mjs`,
+    Dh2eAdvancementApplication:`${base}/apps/dh2e-advancement.mjs`,
+    Dh2eRollDialog:`${base}/apps/dh2e-roll-dialog.mjs`
   };
   const found={};
   for(const [name,path] of Object.entries(entries)){

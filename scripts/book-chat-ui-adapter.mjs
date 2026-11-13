@@ -4,6 +4,7 @@
 import book from './book-view-data.mjs';
 import {psychicNameFromEnglish} from './book-view-l10n.mjs';
 import {translatePowerDescriptor} from './token-hud-ui-adapter.mjs';
+import uiDictionary from './ui-literals.mjs';
 const SYS='dark-heresy-2e-apex';
 const REG=new WeakMap();
 const active=g=>g?.system?.id===SYS&&g?.i18n?.lang==='ru';
@@ -121,6 +122,36 @@ function translatePsychicFacts(card,game,stats){
     if(translated.tooltip!==fact.tooltip){line.setAttribute('data-tooltip',translated.tooltip);stats.translated++;}
   }
 }
+const TICK_TEST_TOOLTIP=/^(\d+ \/ \d+ · \d+) (DoS|DoF|СУ|СП)(?=$| — )/u;
+const TICK_DEGREES=Object.freeze({DoS:'СУ',DoF:'СП'});
+/** tickTestPill writes these numeric strings separately from actor names. */
+export function translateTickTestSmall(text){
+  if(typeof text!=='string')return text;
+  const match=/^([A-Za-z]+)([+−-]\d+)? (\d+\/\d+)$/u.exec(text);
+  const label=match&&uiDictionary.characteristicAbbreviations[match[1]];
+  return label?`${label}${match[2]??''} ${match[3]}`:text;
+}
+function translateTickPills(card,stats){
+  for(const pill of roots(card,'.dh2e-tick-pill')){
+    const small=Array.from(pill.children??[]).find(child=>child.tagName==='SMALL');
+    const tooltip=pill.getAttribute?.('data-tooltip')??'';
+    if(TICK_TEST_TOOLTIP.test(tooltip)){
+      changeText(small,translateTickTestSmall,stats);
+      changeText(pill,text=>{
+        const core=text.trim();
+        const translated=core==='Medicae'?uiDictionary.coreSkillNames.doctor.ru:uiDictionary.characteristicAbbreviations[core];
+        if(!translated)return text;
+        const position=text.indexOf(core);
+        return text.slice(0,position)+translated+text.slice(position+core.length);
+      },stats);
+      const translated=tooltip.replace(TICK_TEST_TOOLTIP,(_match,numbers,degrees)=>
+        `${numbers} ${TICK_DEGREES[degrees]??degrees}`);
+      if(translated!==tooltip){pill.setAttribute('data-tooltip',translated);stats.translated++;}
+    }
+    if(!small&&!tooltip)changeText(pill,text=>text.replace(/^(\s*\d+(?:[.,]\d+)?) m(\s*)$/u,'$1 м$2'),stats);
+    if(/^\d+$/u.test(small?.textContent??''))changeText(pill,text=>text==='Table 5-3'?'Таблица 5-3':text,stats);
+  }
+}
 export function applyBookChatTranslations(message,html,{game=globalThis.game}={}){
   const stats={active:false,translated:0};
   if(!active(game))return stats;
@@ -132,6 +163,7 @@ export function applyBookChatTranslations(message,html,{game=globalThis.game}={}
     translatePsychicFacts(card,game,stats);
   }
   for(const card of roots(root,'.dh2e-warp-card')){
+    translateTickPills(card,stats);
     const name=card.querySelector?.('.dh2e-warp-name');
     const description=card.querySelector?.('.dh2e-warp-text');
     const sourceName=name?.textContent??'';
@@ -142,9 +174,11 @@ export function applyBookChatTranslations(message,html,{game=globalThis.game}={}
     }
   }
   for(const card of roots(root,'.dh2e-crit-card')){
+    translateTickPills(card,stats);
     for(const title of roots(card,'.dh2e-crit-band span'))changeText(title,translateCriticalTable,stats);
     for(const paragraph of roots(card,'.dh2e-crit-text'))changeText(paragraph,s=>book.criticalTexts?.[s]??s,stats);
   }
+  for(const card of roots(root,'.dh2e-tick-card'))translateTickPills(card,stats);
   // Messages may contain normal chat/user text alongside the cards. Never
   // iterate outside the exact system-owned chat card subtree.
   return stats;

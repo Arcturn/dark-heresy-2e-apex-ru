@@ -1,0 +1,3014 @@
+{
+  "scope": "Lexical 300-candidate audit list only; not live Foundry coverage. Fix rows refer to findings during review, not post-fix state.",
+  "counts": {
+    "localized-dynamic-or-core-or-custom": 12,
+    "existing-translation-path": 198,
+    "technical-or-unconsumed-source": 37,
+    "identified-for-final-fix": 31,
+    "scanner-artifact": 22
+  },
+  "rows": [
+    {
+      "file": "src/abilities/ability-use.mjs",
+      "line": 1194,
+      "kind": "direct-notification",
+      "text": "${getAbilityDisplayName(abilityItem)}: ${availability.reason}.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 0,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/apps/creature-options-config.mjs",
+      "line": 789,
+      "kind": "direct-notification",
+      "text": "${label}: ${error.message}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 1,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/apps/creature-options-config.mjs",
+      "line": 821,
+      "kind": "direct-notification",
+      "text": "${race.name || race.id} / ${localize(\"FALLOUTMAW.Common.Load\")}: ${error.message}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 2,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/apps/creature-options-config.mjs",
+      "line": 829,
+      "kind": "direct-notification",
+      "text": "${race.name || race.id} / ${limb.label || limb.key}: ${error.message}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 3,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/apps/dh2e-compendium-builder.mjs",
+      "line": 48,
+      "kind": "property.label",
+      "text": "DH2e: Equipment",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 4,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/apps/dh2e-compendium-builder.mjs",
+      "line": 85,
+      "kind": "property.label",
+      "text": "DH2e: Character Creation",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 5,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/apps/dh2e-compendium-builder.mjs",
+      "line": 108,
+      "kind": "property.label",
+      "text": "DH2e: Psychic Powers",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 6,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/apps/dh2e-subtlety.mjs",
+      "line": 97,
+      "kind": "property.label",
+      "text": "−1d10",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 7,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/apps/dh2e-subtlety.mjs",
+      "line": 98,
+      "kind": "property.label",
+      "text": "−1d5",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 8,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/apps/dh2e-subtlety.mjs",
+      "line": 99,
+      "kind": "property.label",
+      "text": "+1d5",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 9,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/apps/dh2e-subtlety.mjs",
+      "line": 100,
+      "kind": "property.label",
+      "text": "+1d10",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 10,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/apps/token-action-hud.mjs",
+      "line": 453,
+      "kind": "property.title",
+      "text": "Token Action HUD",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 11,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/apps/token-prototype-defaults-config.mjs",
+      "line": 90,
+      "kind": "direct-notification",
+      "text": "TOKEN.AssignWarn",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 12,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/canvas/custom-token-selection.mjs",
+      "line": 189,
+      "kind": "direct-notification",
+      "text": "${getRowLabel(row)}: ${row.reason}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 13,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/canvas/token-layer.mjs",
+      "line": 17,
+      "kind": "direct-notification",
+      "text": "GAME.PausedWarning",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 14,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/canvas/token.mjs",
+      "line": 281,
+      "kind": "direct-notification",
+      "text": "GAME.PausedWarning",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 15,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/canvas/token.mjs",
+      "line": 285,
+      "kind": "direct-notification",
+      "text": "CONTROLS.ObjectIsLocked",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 16,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/canvas/traps.mjs",
+      "line": 305,
+      "kind": "direct-notification",
+      "text": "${name}: ${instruction}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 17,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/combat/damage-hub.mjs",
+      "line": 429,
+      "kind": "direct-notification",
+      "text": "No active GM is available to apply damage.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 18,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/damage-hub.mjs",
+      "line": 459,
+      "kind": "direct-notification",
+      "text": "No active GM is available to apply damage.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 19,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/damage-hub.mjs",
+      "line": 581,
+      "kind": "direct-notification",
+      "text": "No active GM is available to create a first aid effect.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 20,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/damage-hub.mjs",
+      "line": 623,
+      "kind": "direct-notification",
+      "text": "No active GM is available to create a first aid withdrawal effect.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 21,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/damage-hub.mjs",
+      "line": 657,
+      "kind": "direct-notification",
+      "text": "No active GM is available to remove first aid effects.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 22,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-actions.mjs",
+      "line": 487,
+      "kind": "property.label",
+      "text": "Multiple Arms",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 23,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-conditions.mjs",
+      "line": 45,
+      "kind": "property.label",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 24,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-conditions.mjs",
+      "line": 56,
+      "kind": "property.label",
+      "text": "WP",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 25,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-conditions.mjs",
+      "line": 80,
+      "kind": "property.label",
+      "text": "WP",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 26,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-conditions.mjs",
+      "line": 97,
+      "kind": "property.label",
+      "text": "Ag",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 27,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-conditions.mjs",
+      "line": 220,
+      "kind": "property.label",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 28,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-creature-traits.mjs",
+      "line": 59,
+      "kind": "property.label",
+      "text": "WP",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 29,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-creature-traits.mjs",
+      "line": 106,
+      "kind": "property.label",
+      "text": "Int+20",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 30,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-critical-runtime.mjs",
+      "line": 70,
+      "kind": "property.label",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 31,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-critical-surroundings.mjs",
+      "line": 350,
+      "kind": "property.label",
+      "text": "Ag",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 32,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-hands.mjs",
+      "line": 48,
+      "kind": "property.label",
+      "text": "1H",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 33,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-hands.mjs",
+      "line": 49,
+      "kind": "property.label",
+      "text": "2H",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 34,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-hands.mjs",
+      "line": 50,
+      "kind": "property.label",
+      "text": "1H / 2H",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 35,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-lingering-qualities.mjs",
+      "line": 63,
+      "kind": "property.label",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 36,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/combat/dh2e-psychic-runtime.mjs",
+      "line": 473,
+      "kind": "property.label",
+      "text": "Resistance (Psychic Powers)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 37,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-psychic-runtime.mjs",
+      "line": 480,
+      "kind": "property.label",
+      "text": "Bastion of Iron Will",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 38,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-responses.mjs",
+      "line": 634,
+      "kind": "property.label",
+      "text": "Sturdy",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 39,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-responses.mjs",
+      "line": 794,
+      "kind": "property.label",
+      "text": "Sturdy",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 40,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-talent-effects.mjs",
+      "line": 310,
+      "kind": "property.label",
+      "text": "Coordinated Interrogation",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 41,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-talent-effects.mjs",
+      "line": 314,
+      "kind": "property.label",
+      "text": "Superior Chirurgeon",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 42,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-talent-effects.mjs",
+      "line": 318,
+      "kind": "property.label",
+      "text": "Bulging Biceps (Heft)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 43,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/dh2e-talent-effects.mjs",
+      "line": 321,
+      "kind": "property.label",
+      "text": "Catfall (falling)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 44,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/combat/weapon-attack-controller.mjs",
+      "line": 1392,
+      "kind": "direct-notification",
+      "text": "${label}: ${targetName} — ${row?.reason || game.i18n.localize(\"FALLOUTMAW.Messages.AimedTargetChanged\")}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 45,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/combat/weapon-attack-controller.mjs",
+      "line": 7816,
+      "kind": "direct-notification",
+      "text": "${target.name ?? target.actor?.name ?? \"Target\"}: ${game.i18n.localize(\"FALLOUTMAW.Messages.AimedTargetChanged\")}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 46,
+      "classification": "localized-dynamic-or-core-or-custom"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 9,
+      "kind": "property.label",
+      "text": "Tracked",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 47,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 10,
+      "kind": "property.label",
+      "text": "Wheeled",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 48,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 11,
+      "kind": "property.label",
+      "text": "Skimmer",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 49,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 12,
+      "kind": "property.label",
+      "text": "Walker",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 50,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 13,
+      "kind": "property.label",
+      "text": "Aircraft",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 51,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 14,
+      "kind": "property.label",
+      "text": "Spacecraft",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 52,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 58,
+      "kind": "property.label",
+      "text": "Clear, open ground, paved roadway.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 53,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 59,
+      "kind": "property.label",
+      "text": "Rough graven road, cleared dry field.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 54,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 60,
+      "kind": "property.label",
+      "text": "Deep mud or standing water less than 20 cm deep, drifting sand, dense undergrowth and brush.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 55,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 61,
+      "kind": "property.label",
+      "text": "Flowing water about 1 metre deep, rocky and unstable terrain, thick forests or ruined cityscapes (fail by 4+ DoF: bogged down).",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 56,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 74,
+      "kind": "property.label",
+      "text": "45 degrees to the vehicle's left.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 57,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 75,
+      "kind": "property.label",
+      "text": "Straight ahead.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 58,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 76,
+      "kind": "property.label",
+      "text": "45 degrees to the vehicle's right.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 59,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 119,
+      "kind": "property.label",
+      "text": "Revered and ancient forge world; well-stocked repair facility.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 60,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 120,
+      "kind": "property.label",
+      "text": "Field base with ample supplies; hive world of superior manufacturing prowess.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 61,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 121,
+      "kind": "property.label",
+      "text": "Area free from enemy fire; field encampment with basic supplies; hive world of standard prowess.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 62,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 122,
+      "kind": "property.label",
+      "text": "Required tools and supplies; calm weather or away from enemy fire.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 63,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 123,
+      "kind": "property.label",
+      "text": "Rudimentary or faulty tools; close to battlefields; run-down forge world; open without facilities; inclement weather.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 64,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 124,
+      "kind": "property.label",
+      "text": "Ruined forge world; storms, blizzards or sandstorms; insect swarms; under bombardment; primitive locale.",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 65,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/data/dh2e/vehicles.mjs",
+      "line": 125,
+      "kind": "property.label",
+      "text": "Blistering desert or ice sheet; dense jungle; poorly-supplied field base; ongoing battle; orbital bombardment; cult-dominated region.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 66,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 24,
+      "kind": "direct-notification",
+      "text": "The item is already being used. Wait for the action to finish.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 67,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 33,
+      "kind": "direct-notification",
+      "text": "The previous use is already paid for. The effect is not repeated.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 68,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 39,
+      "kind": "direct-notification",
+      "text": "The previous use is complete. The effect is not repeated.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 69,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 58,
+      "kind": "direct-notification",
+      "text": "The previous item use is unfinished. The GM must check the effect and either consume or release the item.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 70,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 97,
+      "kind": "direct-notification",
+      "text": "Use interrupted. The item is kept for GM review; the effect will not repeat.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 71,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 44,
+      "kind": "property.title",
+      "text": "Unfinished item use",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 72,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 47,
+      "kind": "property.label",
+      "text": "Effect applied: consume the item",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 73,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 48,
+      "kind": "property.label",
+      "text": "No effect: release the item",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 74,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/inventory/consumption-receipt.mjs",
+      "line": 49,
+      "kind": "property.label",
+      "text": "Keep for review",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 75,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/items/first-aid.mjs",
+      "line": 79,
+      "kind": "direct-notification",
+      "text": "${item.name}: item is depleted.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 76,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/items/first-aid.mjs",
+      "line": 108,
+      "kind": "direct-notification",
+      "text": "${item.name}: not enough charges.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 77,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/items/first-aid.mjs",
+      "line": 799,
+      "kind": "property.label",
+      "text": "Cancel",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 78,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 30,
+      "kind": "property.label",
+      "text": "Weapons",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 79,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 31,
+      "kind": "property.label",
+      "text": "Ammunition",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 80,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 32,
+      "kind": "property.label",
+      "text": "Weapon Modifications",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 81,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 33,
+      "kind": "property.label",
+      "text": "Armour",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 82,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 34,
+      "kind": "property.label",
+      "text": "Force Fields",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 83,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 35,
+      "kind": "property.label",
+      "text": "Clothing and Personal Gear",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 84,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 36,
+      "kind": "property.label",
+      "text": "Drugs and Consumables",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 85,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 37,
+      "kind": "property.label",
+      "text": "Tools",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 86,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/migrations/dh2e-purge-fallout.mjs",
+      "line": 38,
+      "kind": "property.label",
+      "text": "Cybernetics",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 87,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/races/natural-items.mjs",
+      "line": 171,
+      "kind": "direct-notification",
+      "text": "Natural race weapons cannot be deleted from an actor.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 88,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/rolls/dh2e-cover.mjs",
+      "line": 10,
+      "kind": "property.label",
+      "text": "Armour-glass, genatorium pipes, thin metal, wooden planks",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 89,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-cover.mjs",
+      "line": 11,
+      "kind": "property.label",
+      "text": "Flakboard, storage crates, sandbags, thick ice, trees",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 90,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-cover.mjs",
+      "line": 12,
+      "kind": "property.label",
+      "text": "Cogitator banks, stasis pods, standard barricades",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 91,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-cover.mjs",
+      "line": 13,
+      "kind": "property.label",
+      "text": "Rockcrete, hatchways, thick iron, stone",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 92,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-cover.mjs",
+      "line": 14,
+      "kind": "property.label",
+      "text": "Armaplas, voidship bulkheads, plasteel",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 93,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-gear-effects.mjs",
+      "line": 52,
+      "kind": "property.label",
+      "text": "Bionic arm (Poor): fine dexterity, Agility halved",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 94,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-gear-effects.mjs",
+      "line": 64,
+      "kind": "property.label",
+      "text": "Bionic lungs (Poor)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 95,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-gear-effects.mjs",
+      "line": 87,
+      "kind": "property.label",
+      "text": "Synthmuscle (Best)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 96,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 13,
+      "kind": "property.label",
+      "text": "Feral World",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 97,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 19,
+      "kind": "property.label",
+      "text": "Forge World",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 98,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 26,
+      "kind": "property.label",
+      "text": "Highborn",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 99,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 32,
+      "kind": "property.label",
+      "text": "Hive World",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 100,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 38,
+      "kind": "property.label",
+      "text": "Shrine World",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 101,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 44,
+      "kind": "property.label",
+      "text": "Voidborn",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 102,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 56,
+      "kind": "property.label",
+      "text": "Adeptus Administratum",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 103,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 64,
+      "kind": "property.label",
+      "text": "Adeptus Arbites",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 104,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 72,
+      "kind": "property.label",
+      "text": "Adeptus Astra Telepathica",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 105,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 80,
+      "kind": "property.label",
+      "text": "Adeptus Mechanicus",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 106,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 89,
+      "kind": "property.label",
+      "text": "Adeptus Ministorum",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 107,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 97,
+      "kind": "property.label",
+      "text": "Imperial Guard",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 108,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 105,
+      "kind": "property.label",
+      "text": "Outcast",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 109,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 118,
+      "kind": "property.label",
+      "text": "Assassin",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 110,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 123,
+      "kind": "property.label",
+      "text": "Chirurgeon",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 111,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 128,
+      "kind": "property.label",
+      "text": "Desperado",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 112,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 133,
+      "kind": "property.label",
+      "text": "Hierophant",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 113,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 138,
+      "kind": "property.label",
+      "text": "Mystic",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 114,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 143,
+      "kind": "property.label",
+      "text": "Sage",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 115,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 148,
+      "kind": "property.label",
+      "text": "Seeker",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 116,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-origins.mjs",
+      "line": 153,
+      "kind": "property.label",
+      "text": "Warrior",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 117,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-psychic-effects.mjs",
+      "line": 76,
+      "kind": "property.label",
+      "text": "Prescience",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 118,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/rolls/dh2e-psychic-effects.mjs",
+      "line": 78,
+      "kind": "property.label",
+      "text": "Forewarning",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 119,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/rolls/dh2e-psychic-effects.mjs",
+      "line": 87,
+      "kind": "property.label",
+      "text": "Invisibility",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 120,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 59,
+      "kind": "property.label",
+      "text": "Common Lore",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 121,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 63,
+      "kind": "property.label",
+      "text": "Forbidden Lore",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 122,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 65,
+      "kind": "property.label",
+      "text": "Linguistics",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 123,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 67,
+      "kind": "property.label",
+      "text": "Navigate",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 124,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 69,
+      "kind": "property.label",
+      "text": "Operate",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 125,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 71,
+      "kind": "property.label",
+      "text": "Scholastic Lore",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 126,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-skills.mjs",
+      "line": 73,
+      "kind": "property.label",
+      "text": "Trade",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 127,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 8,
+      "kind": "property.label",
+      "text": "Uninjured",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 128,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 9,
+      "kind": "property.label",
+      "text": "Barely Injured",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 129,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 10,
+      "kind": "property.label",
+      "text": "Injured",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 130,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 11,
+      "kind": "property.label",
+      "text": "Badly Injured",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 131,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 12,
+      "kind": "property.label",
+      "text": "Near Death",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 132,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 13,
+      "kind": "property.label",
+      "text": "Unconscious",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 133,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/dh2e-wound-states.mjs",
+      "line": 14,
+      "kind": "property.label",
+      "text": "Dead",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 134,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1367,
+      "kind": "property.label",
+      "text": "Haywire Field",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 135,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1373,
+      "kind": "property.label",
+      "text": "Baneful Presence",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 136,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1380,
+      "kind": "property.label",
+      "text": "Gas leak",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 137,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1385,
+      "kind": "property.label",
+      "text": "Soulless Aura",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 138,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1497,
+      "kind": "property.label",
+      "text": "Situational modifiers / talents",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 139,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1498,
+      "kind": "property.label",
+      "text": "Traits, drug penalties / encumbrance",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 140,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1499,
+      "kind": "property.label",
+      "text": "Test modifier / Fate",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 141,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1500,
+      "kind": "property.label",
+      "text": "Assistance",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 142,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1501,
+      "kind": "property.label",
+      "text": "Attack modifiers",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 143,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1502,
+      "kind": "property.label",
+      "text": "Social disposition",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 144,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1503,
+      "kind": "property.label",
+      "text": "Item rules",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 145,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 1709,
+      "kind": "property.label",
+      "text": "Devastating Assault",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 146,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2379,
+      "kind": "property.label",
+      "text": "Skill bonus / effects",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 147,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2380,
+      "kind": "property.label",
+      "text": "Advancement bonus",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 148,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2381,
+      "kind": "property.label",
+      "text": "Equipment / ability bonus",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 149,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2382,
+      "kind": "property.label",
+      "text": "Percentage adjustment",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 150,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2848,
+      "kind": "property.label",
+      "text": "Foreboding",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 151,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 2915,
+      "kind": "property.label",
+      "text": "Counter Attack",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 152,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3032,
+      "kind": "property.label",
+      "text": "Counter Attack",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 153,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3178,
+      "kind": "property.label",
+      "text": "Unarmed against an armed foe",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 154,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3179,
+      "kind": "property.label",
+      "text": "Vehicles",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 155,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3181,
+      "kind": "property.label",
+      "text": "Damaged weapon",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 156,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3182,
+      "kind": "property.label",
+      "text": "Darkness / shadow",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 157,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3183,
+      "kind": "property.label",
+      "text": "Target size",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 158,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3184,
+      "kind": "property.label",
+      "text": "Blind",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 159,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3187,
+      "kind": "property.label",
+      "text": "No Weapon Training",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 160,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3193,
+      "kind": "property.label",
+      "text": "Talents (Marksman, Precision Killer…)",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 161,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rolls/skill-check.mjs",
+      "line": 3199,
+      "kind": "property.label",
+      "text": "Target's Hard Target",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 162,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/rules/dh2e-rule-blocks.mjs",
+      "line": 26,
+      "kind": "property.label",
+      "text": "text",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 163,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/rules/dh2e-rule-blocks.mjs",
+      "line": 45,
+      "kind": "property.label",
+      "text": "text",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 164,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "src/settings/presets/manager.mjs",
+      "line": 123,
+      "kind": "direct-notification",
+      "text": "${SYSTEM_TITLE}: ${runtime.lastError}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 165,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/settings/presets/manager.mjs",
+      "line": 1763,
+      "kind": "direct-notification",
+      "text": "${SYSTEM_TITLE}: ${runtime.lastError}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 166,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/actor-sheet.mjs",
+      "line": 2141,
+      "kind": "property.title",
+      "text": "Gain Corruption",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 167,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/sheets/actor-sheet.mjs",
+      "line": 2144,
+      "kind": "property.label",
+      "text": "Apply",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 168,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 17,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 169,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 23,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 170,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 30,
+      "kind": "property.label",
+      "text": "Dark Heresy Item",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 171,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 35,
+      "kind": "property.label",
+      "text": "Dark Heresy Item",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 172,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 53,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 173,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 58,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 174,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 64,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 175,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "src/sheets/registration.mjs",
+      "line": 69,
+      "kind": "property.label",
+      "text": "Dark Heresy 2E [Apex Edition] V2",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 176,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "templates/actor/animation-library-browser.hbs",
+      "line": 4,
+      "kind": "hbs.fragment",
+      "text": "dark-heresy-2e-apex",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 177,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 10,
+      "kind": "hbs.fragment",
+      "text": "( xp)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 178,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 39,
+      "kind": "hbs.fragment",
+      "text": "+5 ·  xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 179,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 56,
+      "kind": "hbs.fragment",
+      "text": "·  xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 180,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 82,
+      "kind": "hbs.fragment",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 181,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 119,
+      "kind": "hbs.fragment",
+      "text": "xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 182,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 139,
+      "kind": "hbs.fragment",
+      "text": "·  xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 183,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 159,
+      "kind": "hbs.fragment",
+      "text": "xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 184,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 180,
+      "kind": "hbs.fragment",
+      "text": "xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 185,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-advancement.hbs",
+      "line": 191,
+      "kind": "hbs.fragment",
+      "text": "−1 ·  xp",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 186,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-character-creation.hbs",
+      "line": 15,
+      "kind": "hbs.fragment",
+      "text": "p.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 187,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-character-creation.hbs",
+      "line": 16,
+      "kind": "hbs.fragment",
+      "text": "p.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 188,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/dh2e-character-creation.hbs",
+      "line": 17,
+      "kind": "hbs.fragment",
+      "text": "p.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 189,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-advances-tab.hbs",
+      "line": 8,
+      "kind": "hbs.aria-label",
+      "text": "Total experience",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 190,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-advances-tab.hbs",
+      "line": 9,
+      "kind": "hbs.aria-label",
+      "text": "Spent experience",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 191,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-advances-tab.hbs",
+      "line": 26,
+      "kind": "hbs.fragment",
+      "text": "XP",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 192,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-header.hbs",
+      "line": 58,
+      "kind": "hbs.aria-label",
+      "text": "GM",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 193,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 199,
+      "kind": "hbs.aria-label",
+      "text": "Damage taken",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 194,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 199,
+      "kind": "hbs.aria-label",
+      "text": "Base Wounds",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 195,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 201,
+      "kind": "hbs.aria-label",
+      "text": "Critical damage",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 196,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 204,
+      "kind": "hbs.aria-label",
+      "text": "Fatigue",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 197,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 209,
+      "kind": "hbs.aria-label",
+      "text": "Fate Points",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 198,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 209,
+      "kind": "hbs.aria-label",
+      "text": "Fate Threshold",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 199,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 215,
+      "kind": "hbs.aria-label",
+      "text": "Initiative modifier",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 200,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 220,
+      "kind": "hbs.aria-label",
+      "text": "Insanity",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 201,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 224,
+      "kind": "hbs.aria-label",
+      "text": "Corruption",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 202,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 228,
+      "kind": "hbs.aria-label",
+      "text": "Influence",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 203,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 238,
+      "kind": "hbs.aria-label",
+      "text": "Movement modifier",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 204,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 248,
+      "kind": "hbs.aria-label",
+      "text": "Remove",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 205,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 75,
+      "kind": "hbs.fragment",
+      "text": "m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 206,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 76,
+      "kind": "hbs.fragment",
+      "text": "m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 207,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 76,
+      "kind": "hbs.fragment",
+      "text": "↦  m ()",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 208,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 79,
+      "kind": "hbs.fragment",
+      "text": "kph",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 209,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 83,
+      "kind": "hbs.fragment",
+      "text": "Operate",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 210,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 169,
+      "kind": "hbs.fragment",
+      "text": "Class",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 211,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 170,
+      "kind": "hbs.fragment",
+      "text": "Rng",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 212,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 170,
+      "kind": "hbs.fragment",
+      "text": "m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 213,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 171,
+      "kind": "hbs.fragment",
+      "text": "RoF",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 214,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 172,
+      "kind": "hbs.fragment",
+      "text": "Dmg",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 215,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 173,
+      "kind": "hbs.fragment",
+      "text": "Pen",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 216,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 174,
+      "kind": "hbs.fragment",
+      "text": "Clip",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 217,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 214,
+      "kind": "hbs.fragment",
+      "text": "1d10+",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 218,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 231,
+      "kind": "hbs.fragment",
+      "text": "m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 219,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-main-tab.hbs",
+      "line": 238,
+      "kind": "hbs.fragment",
+      "text": "(m)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 220,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 8,
+      "kind": "hbs.aria-label",
+      "text": "Psy rating",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 221,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 14,
+      "kind": "hbs.aria-label",
+      "text": "Psyker class",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 222,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 40,
+      "kind": "hbs.fragment",
+      "text": "PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 223,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 53,
+      "kind": "hbs.fragment",
+      "text": "PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 224,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 73,
+      "kind": "hbs.fragment",
+      "text": "Pen",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 225,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/apex-psychic-tab.hbs",
+      "line": 79,
+      "kind": "hbs.fragment",
+      "text": "xp · p.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 226,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/effects-tab.hbs",
+      "line": 10,
+      "kind": "hbs.fragment",
+      "text": "p.",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 227,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/identity-tab.hbs",
+      "line": 13,
+      "kind": "hbs.fragment",
+      "text": "T",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 228,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/identity-tab.hbs",
+      "line": 19,
+      "kind": "hbs.fragment",
+      "text": "(p. )",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 229,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/identity-tab.hbs",
+      "line": 47,
+      "kind": "hbs.fragment",
+      "text": "(p. )",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 230,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/indicators-tab.hbs",
+      "line": 106,
+      "kind": "hbs.fragment",
+      "text": "x",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 231,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/actor/parts/indicators-tab.hbs",
+      "line": 218,
+      "kind": "hbs.fragment",
+      "text": "x",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 232,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/actor/parts/inventory-tab.hbs",
+      "line": 67,
+      "kind": "hbs.fragment",
+      "text": "kg",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 233,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/inventory-tab.hbs",
+      "line": 71,
+      "kind": "hbs.fragment",
+      "text": "kg",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 234,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/inventory-tab.hbs",
+      "line": 130,
+      "kind": "hbs.fragment",
+      "text": "kg",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 235,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/inventory-tab.hbs",
+      "line": 138,
+      "kind": "hbs.fragment",
+      "text": "m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 236,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/token-action-hud-resources.hbs",
+      "line": 57,
+      "kind": "hbs.fragment",
+      "text": "/  m",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 237,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/parts/token-action-hud-resources.hbs",
+      "line": 70,
+      "kind": "hbs.fragment",
+      "text": "−20 BS · ½",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 238,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/token-action-hud-scale-settings.hbs",
+      "line": 13,
+      "kind": "hbs.fragment",
+      "text": "px",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 239,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/actor/token-action-hud.hbs",
+      "line": 27,
+      "kind": "hbs.aria-label",
+      "text": "Body",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 240,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/actor/token-action-hud.hbs",
+      "line": 43,
+      "kind": "hbs.aria-label",
+      "text": "Limbs",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 241,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/apps/combat-carousel/add-event.hbs",
+      "line": 33,
+      "kind": "hbs.placeholder",
+      "text": "path/image.png",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 242,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/apps/combat-carousel/combatant-tooltip.hbs",
+      "line": 18,
+      "kind": "hbs.fragment",
+      "text": "{{#if\n                attribute.max}}/}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 243,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/global-map/travel-settings.hbs",
+      "line": 7,
+      "kind": "hbs.fragment",
+      "text": "mov",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 244,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/container-special-grids.hbs",
+      "line": 21,
+      "kind": "hbs.fragment",
+      "text": "x",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 245,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/container-special-grids.hbs",
+      "line": 27,
+      "kind": "hbs.fragment",
+      "text": "x",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 246,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-critical-steps.hbs",
+      "line": 22,
+      "kind": "hbs.aria-label",
+      "text": "Remove step",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 247,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-critical-steps.hbs",
+      "line": 54,
+      "kind": "hbs.aria-label",
+      "text": "Remove case",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 248,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-applied.hbs",
+      "line": 14,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-critical-steps.hbs\" rows=rows}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 249,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 26,
+      "kind": "hbs.placeholder",
+      "text": "20 metres x psy rating",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 250,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 36,
+      "kind": "hbs.placeholder",
+      "text": "1d10",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 251,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 85,
+      "kind": "hbs.placeholder",
+      "text": "20*PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 252,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 86,
+      "kind": "hbs.placeholder",
+      "text": "1d10+PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 253,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 88,
+      "kind": "hbs.placeholder",
+      "text": "2*PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 254,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 90,
+      "kind": "hbs.placeholder",
+      "text": "PR",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 255,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 57,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-critical-steps.hbs\" rows=criticalStepRows}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 256,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 63,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-critical-steps.hbs\" rows=injuryStepRows}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 257,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 95,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.Item.Qualities\") field=\"system.dh2e.attack.qualities\" source=\"weaponQualities\" format=\"qualities\" stored=source.dh2e.attack.qualities editable=editable wide=true}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 258,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 105,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.Subtype\") field=\"system.dh2e.subtype\" source=\"powerSubtypes\" format=\"qualities\" stored=source.dh2e.subtype editable=editable wide=true}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 259,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 138,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.Minus\") field=\"system.dh2e.minus\" source=\"characteristics\" format=\"keys\" stored=source.dh2e.minus editable=editable}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 260,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-rule-fields.hbs",
+      "line": 150,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick-lines.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.OriginTraits\") field=\"system.dh2e.traits\" source=\"traits\" format=\"line\" stored=source.dh2e.traits editable=editable}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 261,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 115,
+      "kind": "hbs.placeholder",
+      "text": "3d10",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 262,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 118,
+      "kind": "hbs.placeholder",
+      "text": "1d10-TB",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 263,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 131,
+      "kind": "hbs.placeholder",
+      "text": "1d5",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 264,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 27,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.Item.Group\") field=\"system.dh2e.weaponGroup\" source=\"weaponGroups\" format=\"key\" single=\"true\" stored=source.dh2e.weaponGroup editable=editable}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 265,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 30,
+      "kind": "hbs.fragment",
+      "text": "(SB ×)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 266,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 32,
+      "kind": "hbs.fragment",
+      "text": "(m)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 267,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 38,
+      "kind": "hbs.fragment",
+      "text": "S",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 268,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 39,
+      "kind": "hbs.fragment",
+      "text": "Semi",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 269,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 40,
+      "kind": "hbs.fragment",
+      "text": "Full",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 270,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 58,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.Item.Qualities\") field=\"system.dh2e.qualities\" source=\"weaponQualities\" format=\"qualities\" stored=source.dh2e.qualities editable=editable wide=true}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 271,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 105,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-upgrade-fields.hbs\"}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 272,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 135,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.PenaltyCharacteristics\") field=\"system.dh2e.drug.after.characteristics\" source=\"characteristics\" format=\"keys\" stored=source.dh2e.drug.after.characteristics editable=editable wide=true}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 273,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 151,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-item-rule-fields.hbs\"}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 274,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 157,
+      "kind": "hbs.fragment",
+      "text": "(kg)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 275,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "templates/item/dh2e-item-sheet.hbs",
+      "line": 168,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-item-rules.hbs\"}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 276,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-upgrade-fields.hbs",
+      "line": 10,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.WeaponClasses\") field=\"system.dh2e.upgrade.classes\" source=\"weaponClasses\" format=\"keys\" stored=source.dh2e.upgrade.classes editable=editable}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 277,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/dh2e-upgrade-fields.hbs",
+      "line": 31,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/dh2e-pick.hbs\" label=(localize \"FALLOUTMAW.DH2E.ItemSheet.QualitiesRemove\") field=\"system.dh2e.upgrade.qualitiesRemove\" source=\"weaponQualities\" format=\"keys\" stored=source.dh2e.upgrade.qualitiesRemove editable=editable}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 278,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 95,
+      "kind": "hbs.fragment",
+      "text": "{group}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 279,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 1186,
+      "kind": "hbs.fragment",
+      "text": "functionModuleSlots path=\"system.functions.damageMitigation\" moduleSlots=protectionModuleSlots}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 280,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 1907,
+      "kind": "hbs.fragment",
+      "text": "damageMitigationEditor}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 281,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 1946,
+      "kind": "hbs.fragment",
+      "text": "weaponActionSettings}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 282,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 2797,
+      "kind": "hbs.fragment",
+      "text": "functionModuleSlots}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 283,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-gear-functions.hbs",
+      "line": 2980,
+      "kind": "hbs.fragment",
+      "text": "weaponActionSettings}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 284,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/item/item-sheet.hbs",
+      "line": 2155,
+      "kind": "hbs.placeholder",
+      "text": "Las, Solid Projectile, Chain…",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 285,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "templates/item/item-sheet.hbs",
+      "line": 2199,
+      "kind": "hbs.placeholder",
+      "text": "Tearing, Proven (3), Blast (2)",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 286,
+      "classification": "identified-for-final-fix"
+    },
+    {
+      "file": "templates/item/item-sheet.hbs",
+      "line": 1094,
+      "kind": "hbs.fragment",
+      "text": "{group}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 287,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/item/item-sheet.hbs",
+      "line": 2348,
+      "kind": "hbs.fragment",
+      "text": "\"systems/dark-heresy-2e-apex/templates/item/item-gear-functions.hbs\"}}",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 288,
+      "classification": "scanner-artifact"
+    },
+    {
+      "file": "templates/settings/creature-options-config.hbs",
+      "line": 105,
+      "kind": "hbs.placeholder",
+      "text": "20 + str + con * 2",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 289,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "templates/settings/creature-options-config.hbs",
+      "line": 110,
+      "kind": "hbs.placeholder",
+      "text": "20 + 10*str",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 290,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/dark-heresy-2e-apex.css",
+      "line": 544,
+      "kind": "css.content",
+      "text": "x",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 291,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/dark-heresy-2e-apex.css",
+      "line": 7855,
+      "kind": "css.content",
+      "text": "GM mode",
+      "exactRuntimeCatalogEntry": true,
+      "reviewRequired": true,
+      "index": 292,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "styles/dark-heresy-2e-apex.css",
+      "line": 9529,
+      "kind": "css.content",
+      "text": "v",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 293,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/dark-heresy-2e-apex.css",
+      "line": 19721,
+      "kind": "css.content",
+      "text": "\\25B8",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 294,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/dark-heresy-2e-apex.css",
+      "line": 19726,
+      "kind": "css.content",
+      "text": "\\25BE",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 295,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/skin/30-chat.css",
+      "line": 316,
+      "kind": "css.content",
+      "text": "DoS",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 296,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "styles/skin/30-chat.css",
+      "line": 317,
+      "kind": "css.content",
+      "text": "DoF",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 297,
+      "classification": "existing-translation-path"
+    },
+    {
+      "file": "styles/skin/51-dh2e-item.css",
+      "line": 518,
+      "kind": "css.content",
+      "text": "\\f078",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 298,
+      "classification": "technical-or-unconsumed-source"
+    },
+    {
+      "file": "styles/skin/51-dh2e-item.css",
+      "line": 519,
+      "kind": "css.content",
+      "text": "\\f077",
+      "exactRuntimeCatalogEntry": false,
+      "reviewRequired": true,
+      "index": 299,
+      "classification": "technical-or-unconsumed-source"
+    }
+  ],
+  "sourceCommit": "b3482f7b6628ad0112e2ace1c7aed9df7a6732de",
+  "reviewDate": "2026-11-13"
+}

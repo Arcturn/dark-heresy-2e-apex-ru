@@ -1,4 +1,6 @@
 /** Stock display values introduced by Apex settings and template fragments. */
+import {translatePresetError} from './runtime-message-l10n.mjs';
+
 const SYSTEM = 'dark-heresy-2e-apex';
 const REGISTRATIONS = new WeakMap();
 const INPUT_VIEWS = new WeakMap();
@@ -34,10 +36,29 @@ const TILE_MATERIAL_LABELS = Object.freeze({
 });
 const TILE_COVER_SELECTOR = '.dark-heresy-2e-apex-tile-special-property-row select[name$=".coverKey"] option[value]';
 const TILE_MATERIAL_SELECTOR = '.dark-heresy-2e-apex-tile-special-property-row select[data-tile-cover-material] option[value]';
+const HUD_LIFT_SELECTOR = '.dark-heresy-2e-apex-token-action-hud-scale-field > strong[data-token-action-hud-lift-output]';
+// These fields feed English-only range/quality parsers and exact group-key
+// lookups. Localize the explanation, keeping usable canonical examples.
+const ITEM_INPUT_HINTS = Object.freeze({
+  'system.dh2e.range':['20 metres x psy rating','Пример записи: 20 metres x psy rating'],
+  'system.dh2e.weaponGroup':['Las, Solid Projectile, Chain…','Одна группа: las / solidProjectile / chain'],
+  'system.dh2e.qualities':['Tearing, Proven (3), Blast (2)','Свойства по-английски: Tearing, Proven (3), Blast (2)']
+});
+const SHEET_CHOICE_LABELS = Object.freeze({
+  [`${SYSTEM}.FalloutMaWActorSheet`]:['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2'],
+  [`${SYSTEM}.FalloutMaWItemSheet`]:['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2'],
+  [`${SYSTEM}.Dh2eItemSheet`]:['Dark Heresy Item','Предмет Dark Heresy'],
+  [`${SYSTEM}.Dh2eGearSheet`]:['Dark Heresy Item','Предмет Dark Heresy'],
+  [`${SYSTEM}.FalloutMaWActiveEffectSheet`]:['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2'],
+  'core.AmbientLightConfig':['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2'],
+  [`${SYSTEM}.FalloutMaWTileConfig`]:['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2'],
+  [`${SYSTEM}.PeriodicDamageRegionBehaviorConfig`]:['Dark Heresy 2E [Apex Edition] V2','Dark Heresy 2E [Apex Edition] — лист V2']
+});
 
 export function translateStockLabel(group, value) {
   if (typeof value !== 'string') return value;
-  const translation = STOCK_LABELS[group]?.[value.trim()];
+  const labels = Object.hasOwn(STOCK_LABELS,group) ? STOCK_LABELS[group] : null;
+  const translation = labels && Object.hasOwn(labels,value.trim()) ? labels[value.trim()] : null;
   return translation ? value.replace(value.trim(), translation) : value;
 }
 
@@ -47,6 +68,10 @@ export function translateStockFragment(kind, value) {
   if (kind === 'tier') return value.replace(/^(\s*)T([1-3])(\s*)$/u,'$1Ранг $2$3');
   if (kind === 'page') return value.replace(/(<em>\s*)p\.\s*(\d+)(\s*<\/em>)/gu,'$1стр. $2$3');
   if (kind === 'movement') return value.replace(/^(\s*-?\d+(?:[.,]\d+)?\s*\/\s*-?\d+(?:[.,]\d+)?\s+)m(\s*)$/u,'$1м$2');
+  if (kind === 'grip') return value.replace(/^(\s*)(1H(?:\s+−20)?|2H|1H\s*\/\s*2H)(\s*)$/u,
+    (_match,before,label,after) => before + label.replace(/([12])H/gu,'$1 р.') + after);
+  if (kind === 'lift') return value.replace(/^(\s*\d+\s+)px(\s*)$/u,'$1пикс.$2');
+  if (kind === 'thrown') return value.replace(/\(SB ×\)(\s*)$/u,'(БС ×)$1');
   return value;
 }
 
@@ -81,14 +106,18 @@ export function showStockInput(input, group) {
     if (input.ownerDocument.activeElement === previous.proxy) return false;
     restoreStockInput(input);
   }
+  // These editors use text inputs. Never turn another kind of control (or a
+  // pre-existing hidden control) into an editable translated name.
+  if (input.type && input.type !== 'text') return false;
   const canonical = input.value;
   const displayed = translateStockLabel(group, canonical);
   if (displayed === canonical) return false;
   const proxy = input.ownerDocument.createElement('input');
   proxy.type = 'text';
   proxy.className = input.className;
+  const resetValue = input.defaultValue ?? canonical;
+  proxy.defaultValue = translateStockLabel(group,resetValue);
   proxy.value = displayed;
-  proxy.defaultValue = displayed;
   syncProxyState(input,proxy);
   proxy.dataset.dh2eRuStockView = 'true';
   const labels = Array.from(input.labels ?? []);
@@ -100,23 +129,42 @@ export function showStockInput(input, group) {
   for (const {label} of labelAssociations) label.setAttribute('for',proxy.id);
   const state = {
     proxy,canonical,displayed,lastCanonical:canonical,labelAssociations,
+    oldType:input.getAttribute('type'),
+    oldValue:input.getAttribute('value'),
     oldDisplay:input.style.display,
     oldAriaHidden:input.getAttribute('aria-hidden'),
     oldTabIndex:input.getAttribute('tabindex')
   };
+  // CSS hiding alone leaves a required input in constraint validation and the
+  // browser cannot focus that invalid field. Hidden inputs are successful form
+  // controls but do not validate; the focusable proxy owns text constraints.
+  // Source collectors use names/data-field, not input[type=text] selectors.
+  input.setAttribute('type','hidden');
   input.style.display = 'none';
   input.setAttribute('aria-hidden','true');
   input.setAttribute('tabindex','-1');
   input.insertAdjacentElement('afterend',proxy);
   const forward = event => {
     event.stopPropagation();
-    input.value = proxy.value === displayed ? canonical : proxy.value;
+    input.value = proxy.value === state.displayed ? state.canonical : proxy.value;
     state.lastCanonical = input.value;
     const EventClass = input.ownerDocument.defaultView?.Event ?? globalThis.Event;
     input.dispatchEvent(new EventClass(event.type,{bubbles:true}));
   };
   proxy.addEventListener('input',forward);
   proxy.addEventListener('change',forward);
+  // A hidden input uses its value attribute as its current value. After native
+  // reset, reapply the original text-input default; respect canceled resets.
+  state.form = input.form;
+  state.onReset = event => queueMicrotask(() => {
+    if (event.defaultPrevented || INPUT_VIEWS.get(input) !== state) return;
+    input.value = resetValue;
+    state.canonical = resetValue;
+    state.displayed = translateStockLabel(group,resetValue);
+    proxy.value = state.displayed;
+    state.lastCanonical = resetValue;
+  });
+  state.form?.addEventListener('reset',state.onReset);
   INPUT_VIEWS.set(input,state);
   return true;
 }
@@ -125,7 +173,7 @@ function syncProxyState(input, proxy) {
   proxy.disabled = input.disabled;
   proxy.readOnly = input.readOnly;
   proxy.required = input.required;
-  for (const attribute of ['aria-label','aria-labelledby','aria-describedby','title','placeholder','maxlength','minlength','size']) {
+  for (const attribute of ['aria-label','aria-labelledby','aria-describedby','title','placeholder','pattern','maxlength','minlength','size']) {
     const value = input.getAttribute?.(attribute);
     if (value !== null && value !== undefined) proxy.setAttribute(attribute,value);
     else proxy.removeAttribute(attribute);
@@ -135,6 +183,15 @@ function syncProxyState(input, proxy) {
 export function restoreStockInput(input) {
   const state = INPUT_VIEWS.get(input);
   if (!state) return false;
+  const currentValue = input.value;
+  // Switching to hidden changes the native value mode: edits also update its
+  // value attribute. Restore the original default without losing live edits.
+  for (const [name,value] of [['type',state.oldType],['value',state.oldValue]]) {
+    if (value === null) input.removeAttribute(name);
+    else input.setAttribute(name,value);
+  }
+  input.value = currentValue;
+  state.form?.removeEventListener('reset',state.onReset);
   input.style.display = state.oldDisplay;
   for (const [name,value] of [['aria-hidden',state.oldAriaHidden],['tabindex',state.oldTabIndex]]) {
     if (value === null) input.removeAttribute(name);
@@ -220,6 +277,48 @@ function translateTileCover(root, stats) {
   });
 }
 
+function translateItemInputHints(root, stats) {
+  for (const [name,[source,translation]] of Object.entries(ITEM_INPUT_HINTS)) {
+    each(root,`input[name="${name}"][placeholder]`,input => {
+      if (input.getAttribute('placeholder') !== source) return;
+      input.setAttribute('placeholder',translation);
+      stats.text++;
+    });
+  }
+}
+
+function translateDocumentSheetChoices(app, root, stats) {
+  const CoreConfig = globalThis.foundry?.applications?.apps?.DocumentSheetConfig;
+  if (CoreConfig && app.constructor !== CoreConfig) return;
+  const document = app.document;
+  const documentName = document?.documentName ?? document?.constructor?.documentName;
+  if (!documentName || typeof app.constructor.getSheetClassesForSubType !== 'function') return;
+  // The core window has no system marker. Verify its current registered
+  // choices through the public v13 API instead of translating every select.
+  let choices;
+  try { choices = app.constructor.getSheetClassesForSubType(documentName,document.type); }
+  catch { return; }
+  each(root,'select option[value]',option => {
+    const id = option.getAttribute('value');
+    const labels = SHEET_CHOICE_LABELS[id];
+    if (!labels || ![choices?.sheetClasses?.[id],choices?.defaultClasses?.[id]].some(label => labels.includes(label))) return;
+    const [source,translation] = labels;
+    stats.text += directText(option,value => value.trim() === source ? value.replace(source,translation) : value);
+  });
+}
+
+function translatePresetStatus(name, root, stats) {
+  if (name !== 'SettingsPresetsConfig') return;
+  each(root,'.dark-heresy-2e-apex-settings-presets-summary-error',element => {
+    const title = element.getAttribute('title');
+    const translated = translatePresetError(title);
+    if (translated !== title) { element.setAttribute('title',translated); stats.text++; }
+    for (const child of element.children ?? []) {
+      if (child.tagName === 'SPAN') stats.text += directText(child,translatePresetError);
+    }
+  });
+}
+
 function translateToolTooltip(root, stats) {
   const selector = '.dark-heresy-2e-apex-inventory-tooltip .function-section > h4, .dark-heresy-2e-apex-inventory-tooltip .function-row > span';
   each(root,selector,element => {
@@ -263,6 +362,11 @@ export function translateStockUI(app, element, {game = globalThis.game} = {}) {
     stats.active = true;
     return stats;
   }
+  if (name === 'DocumentSheetConfig') {
+    stats.active = true;
+    translateDocumentSheetChoices(app,root,stats);
+    return stats;
+  }
   const marker = '.dark-heresy-2e-apex, [class*="dark-heresy-2e-apex-"], [class*="dh2e-"], [class*="apex-"]';
   if (!SETTINGS_GROUPS[name] && !root.matches?.(marker) && !root.querySelector?.(marker)) return stats;
   stats.active = true;
@@ -273,9 +377,18 @@ export function translateStockUI(app, element, {game = globalThis.game} = {}) {
     if (after !== before) { element.setAttribute('data-tooltip',after); stats.text++; }
   });
   each(root,'.dh2e-hud-move .dark-heresy-2e-apex-token-hud-meter-header > strong',element => { stats.text += directText(element,value => translateStockFragment('movement',value)); });
+  each(root,'.apex-hands .apex-grip',element => { stats.text += directText(element,value => translateStockFragment('grip',value)); });
+  each(root,HUD_LIFT_SELECTOR,element => { stats.text += directText(element,value => translateStockFragment('lift',value)); });
+  each(root,'.dh2e-profile > label > input[name="dh2eThrownRange"]',input => {
+    for (const sibling of input.parentElement?.children ?? []) {
+      if (sibling.tagName === 'SPAN') stats.text += directText(sibling,value => translateStockFragment('thrown',value));
+    }
+  });
   translateSettings(name,root,stats);
   translateTileCover(root,stats);
   translateSystemOptions(root,stats);
+  translateItemInputHints(root,stats);
+  translatePresetStatus(name,root,stats);
   translateToolTooltip(root,stats);
   return stats;
 }
@@ -294,6 +407,12 @@ export function registerStockUiAdapterV110({Hooks = globalThis.Hooks,game = () =
       if (!active(currentGame())) return;
       const roots = new Set();
       for (const record of records) {
+        // The source slider replaces this exact output's textContent on every
+        // preview. Our own nodeValue replacement is characterData, unobserved.
+        if (record.target?.matches?.(HUD_LIFT_SELECTOR)) {
+          const field = record.target.closest('.dark-heresy-2e-apex-token-action-hud-scale-field');
+          if (field) roots.add(field);
+        }
         for (const node of record.addedNodes ?? []) {
           if (node.nodeType !== 1) continue;
           // Tile add/type-change handlers replace their list via innerHTML
