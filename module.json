@@ -55,5 +55,8 @@
     ]
   },
   "readme": "README.md",
-  "changelog": "CHANGELOG.md"
+  "changelog": "CHANGELOG.md",
+  "url": "https://github.com/Arcturn/dark-heresy-2e-apex-ru",
+  "manifest": "https://raw.githubusercontent.com/Arcturn/dark-heresy-2e-apex-ru/main/module.json",
+  "download": "https://github.com/Arcturn/dark-heresy-2e-apex-ru/archive/refs/heads/main.zip"
 }
