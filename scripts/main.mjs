@@ -24,6 +24,7 @@ import {registerStockUiAdapterV110} from "./stock-ui-adapter-v110.mjs";
 import {registerVehicleUiAdapter} from "./vehicle-ui-l10n.mjs";
 import {registerStateEffectTranslations} from "./state-effect-l10n.mjs";
 import {registerRulePickerUiAdapter} from "./rule-picker-ui-adapter.mjs";
+import {registerDefenceChatUiAdapter} from "./defence-chat-ui-adapter.mjs";
 
 export const MODULE_ID = "dark-heresy-2e-apex-ru";
 export const SYSTEM_ID = "dark-heresy-2e-apex";
@@ -39,6 +40,7 @@ export function applyRussianTypography(gameInstance = globalThis.game, documentI
 // Context-specific labels run before the legacy exact-text dictionaries.
 registerStockUiAdapterV110();
 registerRulePickerUiAdapter();
+registerDefenceChatUiAdapter();
 registerVehicleUiAdapter();
 registerRuntimeMessageLocalization();
 registerStateEffectTranslations();

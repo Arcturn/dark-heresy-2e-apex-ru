@@ -2,7 +2,7 @@
   "id": "dark-heresy-2e-apex-ru",
   "title": "Dark Heresy 2E [Apex Edition] — Русская локализация",
   "description": "Русская локализация Dark Heresy 2E [Apex Edition] 0.1.10–0.1.12 для Foundry VTT 14. Перевод интерфейсов, уведомлений, психосил, транспорта и компендиумов. Дополнительная обработка строк, встроенных в код системы.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
